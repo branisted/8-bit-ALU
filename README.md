@@ -1,5 +1,5 @@
 # 8-bit ALU Project
-Implementation of a structurally designed 8-bit ALU using Verilog with ModelSim.
+Implementation of a structurally designed 8-bit Arithmetic Logic Unit (ALU) using Verilog with ModelSim.
 
 ## Folder Structure
 - `docs/` contains all of the documentation for the project.
@@ -10,7 +10,7 @@ Implementation of a structurally designed 8-bit ALU using Verilog with ModelSim.
 - `src/registers` contains register unit.
 - `testbenches/` contains testbenches for verifying functionality.
 
-## Getting Started
+## Running the project
 1. Compile the Verilog files.
 2. Run testbenches to verify functionality.
 3. Simulate using ModelSim or a similar tool.
