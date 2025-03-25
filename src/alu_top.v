@@ -28,6 +28,7 @@ module alu_8bit (
     adder_8bit ADDER (
         .A(A),
         .B(B),
+        .Cin(0)
         .sum(sum)
     );
 

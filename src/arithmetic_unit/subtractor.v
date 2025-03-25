@@ -18,7 +18,7 @@ module subtractor_8bit (
     inverter_8bit inv (.B(B), .B_inv(B_inv));
 
     // Add A and Two’s Complement of B (B_inv + 1) using CLA
-    cla_8bit CLA_Sub (
+    adder_8bit CLA_Sub (
         .A(A),
         .B(B_inv),
         .Cin(1'b1), // Adding 1 for two’s complement
