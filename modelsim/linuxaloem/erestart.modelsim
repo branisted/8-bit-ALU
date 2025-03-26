@@ -1,0 +1,8 @@
+#! /bin/sh
+
+rfile="$LS_SUBCWD/$LSB_JOBID/.restart_cmd"
+
+rcmd="$LSB_ERESTART_USRCMD -restore $LS_SUBCWD/Job_lsf_$LSB_OLD_JOBID/$LSB_OLD_JOBID.chk"
+
+echo "LSB_RESTART_CMD=$rcmd" > $rfile
+

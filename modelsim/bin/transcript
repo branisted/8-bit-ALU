@@ -1,0 +1,133 @@
+cd /home/brad/Desktop/AC/lab9
+cd ..
+cd lab11
+ls
+# fdivby5.v
+# fdivby5.v~
+# run_fdivby5.txt
+# run_fdivby5.txt~
+# work
+emacs run_fdivby5.txt &
+# 29864
+cp run_fdivby5.txt run_fdivby5_1.txt
+emacs run_fdivby5_1.txt &
+# 29895
+do run_fdivby5_1.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fdivby5
+# ** Error: fdivby5.v(7): near ")": Missing port in ansi port list.
+# ** Error: /home/brad/Desktop/AC/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_fdivby5_1.txt line 2
+# /home/brad/Desktop/AC/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog fdivby5.v"
+emacs fdivby5.v
+emacs fdivby5.v &
+# 29987
+do run_fdivby5_1.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fdivby5
+# ** Error: fdivby5.v(14): Undefined variable: fclk.
+# -- Compiling module fdivby5_tb
+# ** Error: fdivby5.v(46): near "~": syntax error, unexpected '~'
+# ** Error: /home/brad/Desktop/AC/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_fdivby5_1.txt line 2
+# /home/brad/Desktop/AC/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog fdivby5.v"
+do run_fdivby5_1.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fdivby5
+# ** Error: fdivby5.v(20): Undefined variable: fclk.
+# -- Compiling module fdivby5_tb
+# ** Error: fdivby5.v(46): near "~": syntax error, unexpected '~'
+# ** Error: /home/brad/Desktop/AC/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_fdivby5_1.txt line 2
+# /home/brad/Desktop/AC/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog fdivby5.v"
+do run_fdivby5_1.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fdivby5
+# -- Compiling module fdivby5_tb
+# ** Error: fdivby5.v(46): near "~": syntax error, unexpected '~'
+# ** Error: /home/brad/Desktop/AC/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_fdivby5_1.txt line 2
+# /home/brad/Desktop/AC/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog fdivby5.v"
+do run_fdivby5_1.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fdivby5
+# -- Compiling module fdivby5_tb
+# 
+# Top level modules:
+# 	fdivby5_tb
+# vsim fdivby5_tb 
+# Loading work.fdivby5_tb
+# Loading work.fdivby5
+# Invalid time value: 200s
+do run_fdivby5_1.txt &
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fdivby5
+# -- Compiling module fdivby5_tb
+# 
+# Top level modules:
+# 	fdivby5_tb
+# vsim fdivby5_tb 
+# Loading work.fdivby5_tb
+# Loading work.fdivby5
+# Invalid time value: 200s
+emacs run_fdivby5_1.txt &
+# 30094
+do run_fdivby5_1.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fdivby5
+# -- Compiling module fdivby5_tb
+# 
+# Top level modules:
+# 	fdivby5_tb
+# vsim fdivby5_tb 
+# Loading work.fdivby5_tb
+# Loading work.fdivby5
+# WARNING: No extended dataflow License exists
+do run_fdivby5_1.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fdivby5
+# -- Compiling module fdivby5_tb
+# 
+# Top level modules:
+# 	fdivby5_tb
+# vsim fdivby5_tb 
+# Loading work.fdivby5_tb
+# Loading work.fdivby5
+do run_fdivby5_1.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fdivby5
+# -- Compiling module fdivby5_tb
+# 
+# Top level modules:
+# 	fdivby5_tb
+# vsim fdivby5_tb 
+# Loading work.fdivby5_tb
+# Loading work.fdivby5
+do run_fdivby5_1.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fdivby5
+# -- Compiling module fdivby5_tb
+# 
+# Top level modules:
+# 	fdivby5_tb
+# vsim fdivby5_tb 
+# Loading work.fdivby5_tb
+# Loading work.fdivby5

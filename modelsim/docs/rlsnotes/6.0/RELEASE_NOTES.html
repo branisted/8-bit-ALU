@@ -1,0 +1,1079 @@
+
+<HEAD>
+<TITLE>6.0 Release Notes</TITLE>
+</HEAD>
+<HTML>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+<CENTER>
+<h1>
+&nbsp;<a NAME="TOC"></a>Release Notes For Model<i>Sim</i> Altera 6.0
+<br></h1></center>
+<center>
+&nbsp;Copyright Mentor Graphics Corporation 2004
+<br>
+&nbsp;All rights reserved.
+<br>
+&nbsp;This document contains information that is proprietary to Mentor Graphics Corporation.
+<br>
+&nbsp;The original recipient of this document may duplicate this document in whole or in
+<br>
+&nbsp;part for internal business purposes only, provided that this entire notice appears in all
+<br>
+&nbsp;copies. In duplicating any part of this document, the recipient agrees to make every
+<br>
+&nbsp;reasonable effort to prevent the unauthorized use and distribution of the proprietary
+<br>
+&nbsp;information.
+</center>
+
+
+&nbsp;
+<blockquote>
+<blockquote>
+<center><b>Aug 19 2004</b></center>
+</blockquote>
+</blockquote>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<li>
+<b>Product Installation and Licensing Information</b></li>
+
+<br>For brief instructions about product installation please visit the
+"install_notes" file in www.model.com. The install_notes
+file can be viewed at:
+<br><a href="http://www.model.com/products/release.asp">http://www.model.com/products/release.asp</a>
+<br>For detailed information about product installation and licensing see
+the ModelSim Start Here Guide. The manual can be downloaded from:
+<br><a href="http://www.model.com/support/documentation.asp">http://www.model.com/support/documentation.asp</a>
+<br>&nbsp;
+<li>
+<b>Release Notes Archives</b></li>
+<br>For release notes of previous versions visit the release notes archive
+at: <a href="http://www.model.com/support/default.asp">http://www.model.com/support/default.asp</a>
+<br>or find them in the installed modeltech tree in &lt;path to modeltech installation&gt;/docs/rlsnotes
+<br>&nbsp;
+<li>
+<b>How to get Support</b></li>
+<p>This OEM product is supported by Altera Corporation
+<ul>
+<!--
+<li>Telephone Support
+<p>
+Call 800-800-3753 or 408-544-7000
+<br>&nbsp;
+<br>&nbsp;
+<li>Email Support
+<p><a href="mailto:support@altera.com">support@altera.com</a>
+<br>&nbsp;
+<br>&nbsp;
+-->
+<li>World-Wide-Web Support
+<p><a href="http://www.altera.com/mySupport">http://www.altera.com/mySupport</a>
+<br>&nbsp;
+</ul>
+<br>&nbsp;
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<h3>
+<b>Index to Release Notes</b></h3>
+
+<blockquote>
+<li>
+<u><a href="#keyinfo">Key Information</a></u></li>
+
+<li>
+<u><a href="#uidefects">User Interface Defects Repaired in 6.0</a></u></li>
+
+<li>
+<u><a href="#verilogdefects">Verilog Defects Repaired in 6.0</a></u></li>
+
+<li>
+<u><a href="#plidefects">PLI Defects Repaired in 6.0</a></u></li>
+
+<li>
+<u><a href="#vhdldefects">VHDL Defects Repaired in 6.0</a></u></li>
+
+<li>
+<u><a href="#flidefects">FLI Defects Repaired in 6.0</a></u></li>
+
+<li>
+<u><a href="#vitaldefects">VITAL Defects Repaired in 6.0</a></u></li>
+
+<li>
+<u><a href="#systemcdefects">SystemC Defects Repaired in 6.0</a></u></li>
+
+<li>
+<u><a href="#psldefects">PSL Defects Repaired in 6.0</a></u></li>
+
+<li>
+<u><a href="#mixeddefects">Mixed Language Defects Repaired in 6.0</a></u></li>
+
+<li>
+<u><a href="#generaldefects">General Defects Repaired in 6.0</a></u></li>
+
+<li>
+<u><a href="#mgcdefects">Mentor Graphics DRs Repaired in 6.0</a></u></li>
+
+<li>
+<u><a href="#knowndefects">Known Defects in 6.0</a></u></li>
+
+<li>
+<u><a href="#productchanges">Product Changes to 6.0</a></u></li>
+
+<li>
+<u><a href="#newfeatures">New Features Added to 6.0</a></u></li>
+</blockquote>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="keyinfo"></a><b>Key Information</b>
+<ul>
+<li>
+The following platform changes are effective as of the 6.0 release.<BR>
+
+<UL>
+<LI>64-bit ModelSim is supported on the AMD Opteron and compatible processors running 64-bit Linux (SuSE 9.0 (x86-64) or RedHat Enterprise Linux WS release 3) as the linux_x86_64 platform. The ModelSim profiling feature is not supported in 64-bit mode. 32-bit ModelSim for the linux platform may also be installed and used concurrently on these systems.
+<LI>RedHat 6.0 through 7.1 are no longer supported. 
+</UL>
+
+</li>
+<li>
+You must recompile or refresh your models if you are moving forward from 5.8x or  earlier release versions. See "Regenerating your design libraries" in the ModelSim User's Manual for more information on refreshing your models.</li>
+<li>
+Acrobat reader version 4.0 or greater must be used to read any
+.pdf file contained in ModelSim version 5.5c or greater.
+
+</li>
+<li>
+Product changes and new features mentioned here are introduced in the 6.0
+release. If you are migrating to the 6.0 release from 5.8x or earlier releases,
+please also consult version 5.8x release notes for product changes and new 
+features introduced during the 5.8 patch releases. The previous version 
+release notes can be found in your modeltech installation directory at 
+docs/rlsnotes.
+</li>
+<li>
+The HP-UX 10.20 platform is no longer supported as of the ModelSim
+5.7 release. The hp700 platform executables are built on HP-UX 11.0.
+Please note that in order for FLI/PLI shared libraries to be
+loaded and executed correctly by the hp700 version of vsim, they
+must be compiled and linked on HP-UX 11.0.
+</li>
+<li>
+Beginning with the 5.6 release (on Windows platforms only),
+attempts to link in libvsim.lib or tk83.lib using the Microsoft
+Visual C++ linker version 5.0 will fail with a message similar to
+"Invalid file or disk full: cannot seek to 0xaa77b00". Microsoft
+Visual C++ version 6.0 should be used.
+
+</li>
+<li>
+Beginning with the 5.8 release, FLEXlm licensing software is upgraded to version 8.2. For floating licenses it will be necessary to verify that the vendor daemon (i.e., modeltech or mgcld) and the license server (i.e., lmgrd) have FLEXlm versions equal to or greater than 8.2.  The vendor daemons and lmgrd that are shipped with this release will be FLEXlm version 8.2.  If the current FLEXlm version of your vendor daemon and lmgrd are less than 8.2, then you need to stop your license server and restart it using the vendor daemon and lmgrd contained in this release.  If you use nodelocked licenses you don't need to do anything.</li>
+<li>
+Beginning in the 5.8 release, ModelSim will no longer support SDF files compressed in the Unix compress format (.Z), but will support the GNU zip format (.gz).  Therefore, ModelSim will read in compressed SDF files that are created only with GNU zip (gzip).  ModelSim does not require the file to have a .gz extension, but it will error on files that have a .Z extension.</li>
+<li>
+ModelSim's SystemC support has dependencies on both operating system version and C++ compiler version.  The OS support is slightly different than ModelSim's OS support for designs without SystemC content. Also, 64-bit compilation is not supported for SystemC designs.
+<br>
+Supported Operating Systems and C++ compilers:<br>
+<ul>
+<li>RedHat 7.3 and greater, gcc 3.2</li>
+<li>RedHat EWS2.1/7.2 and greater, gcc 3.2.3 (ModelSim version 5.8b and greater)</li>
+<li>SunOS 5.6 and greater, gcc 3.2</li>
+<li>HP-UX 11.0 and greater, gcc 3.2.3 (ModelSim versions 6.0 and greater)</li>
+<li>HP-UX 11.0 and greater, aCC 3.45 (ModelSim versions pre-6.0 only)</li>
+<li>Win32 XP and 2000, gcc 3.2.3 (ModelSim versions 6.0 and greater)</li>
+</ul>
+</li>
+<li>
+ModelSim LE does not support VHDL. However, it does support Verilog and SystemC.</li>
+<li>
+CDEBUG compatibility information by platform.<BR>
+<UL>
+<LI>On HP-UX 11.0, ModelSim uses the built-in HP wdb 3.3 program as the underlying C/C++ debugger.  In order to run wdb successfully, you must have installed HP-UX PHSS_23842, or a superseding patch.  Without this patch installed, error messages will occur during CDEBUG startup.
+<LI>On rs6000, gdb-6.0 works with gcc-3.2. Additionally, when creating shared objects, 'ld' (/bin/ld) should be used, not 'gcc'.
+This combination works with AIX-5.1. On AIX-5.1  use gcc-3.2-aix51.
+The native compiler /bin/cc is not compatible with gdb-6.0.
+</UL>
+
+</li>
+<li>
+The vcom compiler default language has been changed from VHDL-1987 to
+VHDL-2002. To choose a specific language version:<br>
+<UL>
+<LI>select the appropriate
+version from the compiler options menu in the GUI,<br>
+<LI>invoke vcom using
+switches -87, -93, or -2002, or<br>
+<LI>set the VHDL93 variable in the [vcom] section of modelsim.ini.<BR>
+Appropriate values for VHDL93 are:<br>
+<UL>
+<LI>0, 87, or 1987 for VHDL-1987;<br>
+<LI>1, 93, or 1993 for VHDL-1993;<br>
+<LI>2, 02, or 2002 for VHDL-2002.<br>
+</UL>
+</UL>
+</li>
+<li>
+Although the vlog compiler currently supports some SystemVerilog features, these extensions are not enabled by default because they require new language keywords that may conflict with identifiers in existing code.  There are two ways to enable SystemVerilog features: the first is by using the <b>-sv</b> command line option and the second is by naming the source file with a ".sv" suffix.</li>
+<li>The following lists the supported platforms:
+   <ul>
+   <li>win32aloem - Windows 98, Me, NT, 2000, XP
+   <li>sunos5aloem - Solaris 2.6, 7, 8, 9
+   <li>hp700aloem - HP-UX 11
+   <li>linuxaloem - RedHat 7.2 and higher.
+   </ul>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="uidefects"></a><b>User Interface Defects Repaired in 6.0</b>
+<ul>
+<li>
+Under Windows, if ModelSim is asked to open a file, and the user has a custom tool associated with this file, ModelSim will now check to see if the custom  association is actually vsim.exe, vish.exe, or modelsim.exe.  This prevents the infinite launch recursion that some customers have experienced.</li>
+<li>
+VHDL access types can now be expanded in the Variables window.</li>
+<li>
+Some slowness would be exhibited when setting a breakpoint in the Source window, especially in large files and/or when there is a large number of breakpoints.  This problem has been resolved.</li>
+<li>
+When a breakpoint is reached while running from a do file, and a (paused) prompt is issued, the Simulate toolbar would remain disabled.  This issue has been resolved.</li>
+<li>
+The Wave window 'tools->combine' dialog crashed in some cases with the following error if two arrays were combined and the 'noflatten' checkbox was unchecked.<br>
+<code>Fatal WLF Error (14): evaluating expression(concat_noflatten)&{...}"<br>
+Internal error Result size overflow in concatenation</code></li>
+<li>
+Concatenation of virtual signal groups is no longer flattened into a single list.  </li>
+<li>
+The <b>change</b> command did not work on objects that were accessed through multiple access types. For example, if S is a record with a field named nxt that is an access type to another record, the command <b>change s.nxt.field value </b> produced an error.</li>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="verilogdefects"></a><b>Verilog Defects Repaired in 6.0</b>
+<ul>
+<li>
+Erroneous setuphold or recrem timing checks with a limit sum that is negative are no longer completely disabled, but now only the negative limit is set to zero.</li>
+<li>
+Code coverage for Verilog conditions and expressions ignored expressions containing integer literals or the '~' operator. Warning messages were added to the vlog compiler for expressions rejected by code coverage.</li>
+<li>
+In some cases pulses on delay nets were suppressed without being reported due to Rise/Fall delay net delay variations.</li>
+<li>
+Annotating a setuphold that is declared with both setup and hold values of zero resulted in a "Failed to find matching specify timing constraint" error when using <b>+delayed_timing_checks</b>.</li>
+<li>
+Vsim crashed when a pulse occurred on an input with a delayed version used in a setuphold or recrem system task.</li>
+<li>
+In some cases pulse rejection in rise/fall delay nets incorrectly suppress a pulse.</li>
+<li>
+Module inlining with <b>-fast</b> did not apply the net delay of a dominating net to the collapsed simulation net.
+</li>
+<li>
+A Verilog cell with conditional path delays and optimized with the <b>-fast</b> option could produce a spurious known value near the beginning of simulation.
+</li>
+<li>
+The use of <b>+transport_int_delays</b> caused vsim to crash under certain conditions.</li>
+<li>
+SDF conditions that were very long (more than 500 characters after being stripped of whitespace and parentheses) failed to back annotate due to a string length limitation; the limitation has been temporarily doubled and will be re-engineered to be unlimited in a future release.
+</li>
+<li>
+A design having a concatenation connected to the port of an inlined module resulted in a compiler crash when compiled with <b>-fast</b> if the port was referenced with bit-selects or part-selects in lhs expressions and if the indices were hierarchical references or function calls.</li>
+<li>
+Bit vector slices used in arrays of instanciations were not indexed correctly for the port connection. </li>
+<li>
+The Always @* construct now supports net arrays in the inferred sensitivity list.</li>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="plidefects"></a><b>PLI Defects Repaired in 6.0</b>
+<ul>
+<li>
+Report error PLI-3691 if a system function is used as a task (without return variable).</li>
+<li>
+$sformat() has been changed to be a system task rather than a system function as per draft version of 2005 Verilog LRM.</li>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="vhdldefects"></a><b>VHDL Defects Repaired in 6.0</b>
+<ul>
+<li>
+When a VHDL entity and architecture are in different source files, and the entity contains executable code, ModelSim is now able to set breakpoints in the entity code and correctly display entity source while stepping through the entity code.  The same is true of VHDL code in a PSL vunit, which is necessarily in different source file(s) from the entity and architecture.
+</li>
+<li>
+Under the following conditions:<br>
+<OL>
+<LI>Default binding is used,<br>
+<LI>The component is directly visible,<br>
+<LI>Two different matching entities are referenced by (different) USE clauses,<br>
+</OL>
+One of these entities was incorrectly chosen for binding in some cases.</li>
+<li>
+When a design used the foreign language interface, ModelSim hung and issued a confusing error message if the pathname in the <b>-foreign</b> string contained parentheses.</li>
+<li>
+The predefined attributes 'HIGH and 'LOW return the upper and lower bound, respectively, of a range.  The LRM definitions of upper bound and lower bound in section "3.1 Scalar types" are not useful if the range is a null range, and in fact are contradicted by Note 1 in section "14.1 Predefined attributes".  ModelSim now implements this Note, not the formal definitions of upper and lower bounds.  The implication is that for a non-null range, there is no change in behavior, and
+LOW <= HIGH as before.  For a null range, applying the definition in the Note results in HIGH < LOW and in fact this condition can be used to determine if a range is null.</li>
+<li>
+Using the "NOT" function for pre-defined types like bit, bit_vector, etc. as the actual/formal port of an instance caused vsim to crash.</li>
+<li>
+Under certain conditions <b>examine</b>, <b>describe</b> and mti_FindVar() crashed the simulator. This occurred when a single architecture was large and contained subprogram declarations either in the architecture or within a process.</li>
+<li>
+Under certain conditions, code coverage silently accepted expressions that could not be processed for condition or expression coverage. vcom now warns the user when these cases arise.</li>
+<li>
+Compiling with optimization level <b>-O4</b> or higher produced wrong results for certain cases involving sequential signal assignments with multiple waveforms and constant values for the first waveform. Compiling with optimization level <b>-O1</b> or lower always produced correct results.
+</li>
+<li>
+Compilation for expression coverage (<b>-cover e</b>) failed when expression lengths were very long.  The threshold for failure has been doubled, and a future release will allow unlimited lengths.</li>
+<li>
+Commands to save, merge and reload code coverage were not properly handling
+VHDL packages of the same name if then were located in different libraries. Warnings about duplicate package names were issued.</li>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="flidefects"></a><b>FLI Defects Repaired in 6.0</b>
+<ul>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="vitaldefects"></a><b>VITAL Defects Repaired in 6.0</b>
+<ul>
+<li>
+In some cases multisource interconnect delay times were calculated incorrectly
+when all path delays were zero.</li>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="systemcdefects"></a><b>SystemC Defects Repaired in 6.0</b>
+<ul>
+<li>
+All SystemC kernel messages have been ported to the ModelSim message system.
+Hence <b>verror</b> can be used to get more detailed information on these errors.</li>
+<li>
+SystemC delta counting now matches OSCI. The function delta_count() now returns the cumulative simulation delta count instead of incremental delta count.  The delta count is no longer reset during time advance.</li>
+<li>
+Signal event detection was not accurate. The function sc_signal&lt;T&gt;::event() now returns true only if there is a value change event on the signal.</li>
+<li>
+A Verilog module can instantiate SystemC modules using Verilog 2001 instance array syntax.</li>
+<li>
+A Verilog module instantiated by SystemC can now do a hierarchical reference to another top-level Verilog module.</li>
+<li>
+ModelSim catches any signals or ports that are not debuggable.  Previously, certain combinations of source code and compile flags caused some signals or ports to be created improperly. Undetected signals or ports caused missing signal names and crashes during debug sessions. These are now detected and the signal or port is hidden from debug. By default, ModelSim issues a warning for each of these, affording the user the opportunity to fix the source code. Warnings will not be issued unless either ShowUndebuggableScTypeWarning or ShowUnassociatedScNameWarning is enabled in the "modelsim.ini" file.</li>
+<li>
+The problem happened when a VHDL module instantiated a SystemC module and
+the SystemC module name is not lower-cased. The results was vcom cannot load the 
+SC design unit.</li>
+<li>
+The sccom option <b>-nonamebind</b> is now obsolete.  The name-binding feature was  reimplemented to always happen at runtime. Code generation is nolonger done for name-binding. Coding restriction regarding inline functions and incomplete header files were removed.</li>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="psldefects"></a><b>PSL Defects Repaired in 6.0</b>
+<ul>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="mixeddefects"></a><b>Mixed Language Defects Repaired in 6.0</b>
+<ul>
+<li>
+ModelSim does not allow VHDL generics of type std_logic_vector on the interface
+from Verilog to VHDL.  In previous releases, this restriction was not enforced and the generic value was passed incorrectly.  An error is now issued.</li>
+<li>
+If a Verilog module was directly instantiated in VHDL using the 93 direct entity
+construct, incorrect values resulted in some cases if a type conversion or conversion function was used on the actual. The type of the type conversion or conversion function is required to be BIT, BIT_VECTOR, STD_LOGIC, or STD_LOGIC_VECTOR.</li>
+<li>
+A mixed design with a VHDL top having an entity or configuration instantiation of a Verilog module and having sub-element association in the actual of a port connection, where each sub-element is associated with individual signals, simulated incorrectly if the Verilog port was not parameter dependent. ModelSim now generates a warning for the above case if the Verilog port is parameterized, stating that simulation results for such cases may be incorrect.
+</li>
+<li>
+A mixed design having a VHDL or Verilog top instantiating a VHDL middle which instantiates a Verilog bottom and where the formal ports of the VHDL middle are unconstrained ports will now simulate correctly. Earlier releases produced an illegal size mismatch error.
+</li>
+<li>
+A mixed design with a Verilog top instantiating an array of instances of VHDL bottoms which have unconstrained ports will now generate an appropriate error. Earlier releases gave incorrect results or errors.</li>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="generaldefects"></a><b>General Defects Repaired in 6.0</b>
+<ul>
+<li>
+The functionality, which was new in 5.8, to release licenses when ModelSim is suspended by a SIGTSTP signal and reacquire the licenses when a SIGCONT signal is received was re-implemented for 6.0. There was a race condition in the original implementation that was resolved. If a CTRL-Z (which sends a SIGTSTP) was followed very quickly by a command line "bg" (which sends a SIGCONT) in order to put the ModelSim session in the background, the signal handlers failed.<br>
+The 6.0 version of this functionality includes a configurable delay between the suspension of ModelSim and the release of the licenses. There is a new environment variable, MTI_RELEASE_ON_SUSPEND, that is used to turn off the release of licenses on suspension of ModelSim or to set the length of the delay. There are two basic settings for this new environment variable:
+<ul>
+<li>MTI_RELEASE_ON_SUSPEND=0  (Turns off the license release when ModelSim is suspended)</li>
+<li>MTI_RELEASE_ON_SUSPEND=N  (N is an integer greater than 0 to set the length of delay to N seconds)</li>
+</ul>
+By default the license release functionality is turned on and the delay is set to 10 seconds. This way the licenses are released on suspension of ModelSim with a SIGTSTP (CTRL-Z) by default but there won't be problems when putting the ModelSim session in the background with a CTRL-Z followed by a quick "bg".
+<br>
+In 5.8, it was possible to turn off the license release functionality on suspension of ModelSim by setting the environment variable RELEASE_ON_SUSPEND to 0. This will still work in 6.0. Note that the RELEASE_ON_SUSPEND environment variable cannot be used to set a delay value. It is recommended that customers transition to using the new environment variable MTI_RELEASE_ON_SUSPEND at their earliest convenience.
+	</li>
+<li>
+A problem occurred while viewing memory contents inside vhdl packages.</li>
+<li>
+vcover merge reported the following error message while merging two coverage database files:<br>
+"Bad pointer/access type passed to memory subsystem.
+Pointer may have been previously deallocated.(vlib-5) ****** Memory failure. *****"</li>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="mgcdefects"></a><b>Mentor Graphics DRs Repaired in 6.0</b>
+<ul>
+<li>
+DR 00178787 - WriteLine doesn't deallocate the line.</li>
+<li>
+ER 00074919 / SC 169128  - Eliminate unbound message from simulator.</li>
+<li>
+DR 00205184 - Please enhance error message: ** Fatal: (vlog-9) Problem while writing token file "<unknown>".</li>
+<li>
+DR 00201892 - vsim error if VHDL top to connect Verilog pin to 'OPEN'.</li>
+<li>
+DR 00203115 - Errors in single elaboration for File IO and generics.</li>
+<li>
+DR 00207431 - The <b>vcover convert</b> command syntax is different than the one described in the User Manual.</li>
+<li>
+DR 00204625 - Adding data at end of cov file.</li>
+<li>
+ER 00141715 - Flexibility to turn off all warning messages that ModelSim produces
+including those issued with vsim-<4_digit_number>.</li>
+<li>
+ER 00090188 - A way to see how much memory is used by different modules of a design (profiler).</li>
+<li>
+DR 00204047 - Wrong error message with <b>-87</b> switch.</li>
+<li>
+DR 00205011 - Need to improve warning message linked with mti_GetResolvedOutputValue() function usage.</li>
+<li>
+DR 00202910 - Defect in Modelsim SE 5.8 command reference manual <b>-vcover merge</b>.</li>
+<li>
+DR 00146201 - ModelSim editor doesn't see "uncommented line" in real time.</li>
+<li>
+ER 00149514 - Displaying Access Type Values in the Wave Window.</li>
+<li>
+DR 00201584 - Executable lines not marked blue during break with VHDL assert.</li>
+<li>
+DR 00176300 - Not same info from vcom <b>-help</b> and from vcom options in the Reference Manual.</li>
+<li>
+DR 00203222 - Net arrays giving false error if * is used in sensitivity list.</li>
+<li>
+DR 00206780 - IterationLimit not correct.</li>
+<li>
+DR 00207426 - Uncorrect error message (vsim-SDF-3262) for SETUP.</li>
+<li>
+DR 00211064 - Wrong SDR error with option <b>+delayed_timing_checks</b>.</li>
+<li>
+DR 00208635 - Problem handling three dimensional arrays.</li>
+<li>
+DR 00208083 - X inputs caused 0/1 to be observed for primitive gates.</li>
+<li>
+DR 00204209 - Incremental compile with sccom does not work.</li>
+<li>
+DR 00205088 - Incorrect sim results for 5.8 optimized simulation, worked in 5.7.</li>
+<li>
+DR 00201927 - No maximize button for KDE 3.2.1.</li>
+<li>
+DR 00204197 - Modelsim crash when selecting a SystemC object in the Structure window.
+</li>
+<li>
+DR 00201348 - SystemC : sc_signal<T>::event() doesn't work correctly.</li>
+<li>
+DR 00203129 - Concatenation of virtual signal is producing flat list.</li>
+<li>
+DR 00197551 - Vsim fails to load a mixed SystemC/VHDL design under Linux.</li>
+<li>
+DR 00199342 - Sequential UDP updating the output immediately.</li>
+<li>
+DR 00201466 - vcd2wlf with non-compliant state values errors with incorrect line #s.</li>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="knowndefects"></a><b>Known Defects in 6.0</b>
+<ul>
+<li>
+Verilog configurations do not work correctly with the vopt flow. You must use the
+<b>-fast</b> option on the vlog command line for Verilog configurations to work correctly.
+
+
+ </li>
+<li>
+Processing of the PSL cover directive will produce too many matches in some circumstances, causing the cover count to be too high.
+
+The problem occurs with coverage of sequences like {{a;b} | {c;d}} or {a[*1 to 2]; b[*1 to 2]}.  In sequences like these, the same sequence for the same input at the same start time may succeed simultaneously in multiple ways.  For example, the first sequence may succeed with a and c followed on the next cycle by b and d; this satisfies both the simultaneous {a;b} and {c;d} sequences.
+
+Logically, the evaluation should increment the count once and only once for a single directive with a given set of inputs from a given start time.  However, in the above example, the Modelsim 6.0 implementation will increment the count twice.
+
+This will be corrected in a subsequent patch.
+</li>
+<li>
+When you are creating a code coverage exclusion file, the filenames you enter
+must use the same paths that were given for the file to <b>vcom</b> or 
+<b>vlog</b>. Otherwise you will get an error: "** Warning: (vsim-3684) File 
+'/u/xx/src/test.vhd' has no coverage data associated with it."</li>
+<li>
+Toggle coverage currently counts zero-delay glitches as valid toggle data. 
+This will be fixed in an upcoming release.</li>
+<li>
+Synopsys SmartModels can crash on the hppa64 platform.</li>
+<li>
+Profiling is not supported on the linux_x86_64 platform (64-bit ModelSim for the AMD Opteron) and may cause ModelSim to crash.
+</li>
+<li>
+The documentation incorrectly uses the meta comment /* sparse */ in Verilog to
+specify a sparse memory.  The meta comment currently cannot contain spaces. The
+correct meta comment is /*sparse*/.</li>
+<li>
+Restart is not supported on Windows if the design contains SystemC elements.</li>
+<li>
+Editable waveforms do not print correctly. The signal names print correctly but the waveforms are missing.</li>
+<li>
+Delayed virtual signals, that specify the delay using pound-sign notation within
+the expression, will not work correctly for triggering the list window. Instead,
+use the <b>virtual signal -delay</b> option for specifying the delay. That seems
+to work correctly.</li>
+<li>
+The data structures for code coverage are currently unable to handle coverage
+data that consists only of toggle data. If you specify only toggle data using 
+the compiler <b>-cover</b> option, when you ask for a coverage report, you
+will get an error message that there is no data to report. Instead, you
+can get the toggle data using the <b>toggle report</b> command.</li>
+<li>
+If you do a search in the wave window on a bit of a multi-bit Verilog register,
+and you are counting falling transitions, the count may be incorrect. (Transitions
+are counted by setting up the search for an excessive number of transitions,
+then the search reports the number actually found when the end of file is hit.)</li>
+<li>
+The <b>noview source</b> command does not work. With the new source editor implementation, the method of closing source windows will be changing. This issue will be resolved in the next release.</li>
+<li>
+SystemC shared library is not unloaded on Windows in case of a Fatal error. The SystemC shared library will be locked in such a case and no further operations can be performed on the shared library like loading the same design or doing sccom <b>-link</b>. To perform further operations on the shared library, <b>quit -sim</b> should be issued. This defect will be fixed in the 6.0a release.</li>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="productchanges"></a><b>Product Changes to 6.0</b>
+<ul>
+<li>
+Significant User Interface changes occurred in this release. Please see 
+the New Features section below for details.
+</li>
+<li>
+A new usage flow was implemented in this release. See "vopt" in
+the New Features section below for details.
+</li>
+<li>
+The 'raw_data' argument to <b>profile option</b> is no longer needed or supported.  Both raw count and percentage values are now reported.</li>
+<li>
+The Pref*(user_hook) will no longer be saved when doing a Save Preferences or [write preferences].  The reason is that the hook will most likely fail unless the associated callback functions are also saved and it is not possible to discover all necessary functions for saving.</li>
+<li>
+Simulation Option changes, accessed from the "Simulation Options" dialog box, are recorded in the active ini file, if the file is writable, and will affect the current session as well as all future sessions.  If the file is read-only, the option changes will affect only the current session.  The simulation options affected are: 
+<pre>
+    BreakOnAssertion             RunLength 		  
+    DefaultForceKind 	         StdArithNoWarnings 	  
+    DefaultRadix 	         WLFCompress 	  
+    IgnoreError 	         WLFDeleteOnQuit 	  
+    IgnoreFailure 	         WLFOptimize		  
+    IgnoreNote 		         WLFSaveAllRegions	  
+    IgnoreWarning	         WLFSizeLimit 	  
+    IterationLimit	         WLFTimeLimit
+    NumericStdNoWarnings
+</PRE>
+</li>
+<li>
+OEM applications that bind with libvsim on hppa64 must now also include libxnet (i.e. -lxnet) when linking their application.</li>
+<li>
+The C Debug tool is now supported in the hpux_ia64 version of ModelSim. The HP wdb/gdb 4.2 debugger is used and packaged with ModelSim.</li>
+<li>
+The C Debug tool is now supported in the hpux_ia64 version of ModelSim. The HP wdb/gdb 4.2 debugger is used and packaged with ModelSim.</li>
+<li>
+OEM applications that bind with libvsim on hppa64 must now also include libxnet (i.e. -lxnet) when linking their applicaiton.</li>
+</ul>
+<p>
+<h4>
+<hr WIDTH="100%"></h4>
+<p><a NAME="newfeatures"></a><b>New Features Added to 6.0</b>
+<ul>
+<li>
+This feature is supported in ModelSim SE only.
+<br>
+A new executable called <b>vopt</b> has been added. It enhances the
+functionality that was previously obtained by compiling Verilog
+source files with the <b>-fast</b> or <b>+opt</b> switches.
+<br>
+<b>vopt</b> performs design-wide optimizations, but also allows VHDL
+design units to be included.  It's effectively the same as using
+<b>vlog +opt</b>, but with support for VHDL as well.
+<br>
+It also generates a new type of library design unit, which shows
+up as an "OPTIMIZED DESIGN" when a <b>vdir</b> command is executed.
+You may directly simulate an optimized design by simply invoking
+vsim directly on it.
+<br>
+<b>vopt</b> works on one or more top-level modules that
+represent the design root(s).  It traverses the entire design,
+optimizes it, and writes the output to the requested location.
+For example, if "top" is the root of the design, one might do:
+"vopt top -o mydesign".
+<br>
+The <b>-o</b> switch is used to specify the output location, in this
+case "mydesign".  You can then simply do "vsim mydesign" to
+invoke on the optimized design.
+<br>
+<b>vsim</b> also contains provisions for automatically invoking vopt on
+a design.  This is not on by default, but can be enabled by
+setting the variable <b>VoptFlow</b> to <b>1</b> in your modelsim.ini
+file.  See the SE User's Manual for more details on the
+automatic invocation of vopt.
+<br>
+Note that the <b>vopt</b> step is NOT required and simply exists as a
+refinement step for the previous functionality implemented with
+the Verilog compilers' (vlog) <b>-fast</b> and <b>+opt</b> switches.
+
+</li>
+<li>
+A number of changes have been made to the ModelSim User Interface. All of these changes have one common goal, to give more control over the desktop by bringing all the various ModelSim windows into a single window.
+<ul>
+<li>The following views are now part of the Main window:</li>
+<ul>
+<li>Workspace</li>
+<li>Transcript</li>
+<li>Objects (formally known as Signals)</li>
+<li>Active Processes</li>
+<li>Locals (formally known as Variables)</li>
+<li>Profile</li>
+<li>Profile Details (new)</li>
+<li>Assertions</li>
+<li>Functional Coverage (new)</li>
+<li>Source</li>
+<li>Memory</li>
+<li>Missed Coverage</li>
+<li>Instance Coverage</li>
+<li>Coverage Details</li>
+<li>Current Exclusions</li>
+<li>Watch (new)</li>
+</ul>
+<li>Signals and Variables windows renamed:<br>These windows have been renamed to better reflect their contents. With the addition of System Verilog, System C and PSL, the Signals window contains more than just signals and the Variables window contains more than just VHDL variables.  The Objects window contains valued objects that are static in nature and exist independent of execution context.  The Locals window displays valued objects that are visible to the current execution context.</li>
+<li>Process window removed:<br> Processes no longer have their own window, they are now listed in the Structure view. The list of current active processes are listed in the Active Process window.</li>
+<li>Source and Memory content views consolidated:<br> They have been placed in a new Multiple Document Interface (MDI) area. This area has tabs at the bottom as the old Source window did, but this window also gives various methods to display and manage multiple documents at one time. There are two major modes for the MDI window, Classic and Tabbed. A good way to learn how these two modes work is to experiment with them, then you can decide which works best for you.</li>
+<ul><li>Classic Mode:<br> In this mode windows can be managed similar to older MDI applications commonly found on MS Windows. Each window has Minimize, Maximize, and Restore buttons in the title bar used to control the layout of each window within the MDI area.</li>
+<li>Tabbed Mode:<br>  In this mode each window is accessed via a tab, and the tabs may be grouped into one or more tab groups.  Tab group control is accessed via the RMB context menu on the tabs themselves.</li></ul>
+<li>Source editor reimplemented:<br>  This editor is based on the HDL Designer Series text editor.  This editor will provide more editing features and better language syntax highlighting.  In future releases additional features will be enabled providing a more powerful design entry and debug environment.</li>
+<li>Memory window has changed:<br>  The memory browser is now part of the Workspace view and can be opened via the View->Debug Windows menu.  When a memory is selected, a memory contents editor will open in the MDI area.  All other memory viewing and editing operations are the same as before.</li>
+<li>Window pane management:<br>  </li>
+<ul><li>In 5.8, the various window panes in the Main window could be arranged in a grid of rows and columns.  In 6.0, the pane arrangement is more complex.  The simplest way to think about it is to view each window as a cell that can be split horizontally or vertically.  This provides for more flexible and useful layouts.</li>
+<li>In addition to being arranged in the Main window, most panes may also be undocked and displayed as a separate top-level window. </li>
+<li>Window panes may also be zoomed so that it fills the entire Main window frame.</li></ul>
+<li>Window layouts:<br>  There are three primary pane layouts, one for each primary mode of the simulator.  The default layout is used when ModelSim is first invoked and when no design has been loaded in the simulator.  The Load layout is used when a design has been loaded.  The Coverage layout is used when code coverage is enabled.  ModelSim will transition to each layout automatically when the state of the simulator changes.  Layouts are persistent from one invocation of ModelSim to the next.  If, for some reason, the layout becomes unreasonable or is not working, the Window-&gt;Initial Layout menu item will erase all persistent layouts and re-initialize them back to the factory defaults. </li>
+<li>Menus and Toolbars:<br>  ModelSim uses an active pane model to control the menus and toolbars.  The active pane is the one that has focus and is indicated by a differently colored pane title bar.  So, for example, the Cut, Copy, Paste menu entries and toolbar buttons will act on the current active pane.  This applies to all menu items and toolbar buttons that are shared between the various window panes.  If a particular menu entry or toolbar button is inactive (grayed out), it means the current active pane does not support that action.</li>
+<li>The File-&gt;Open, Save, and Save As options:<br> These options depend on the active pane model to determine what to open or save.  The Open toolbar button supports the open action on all types of files.  Use the Files of Type: combo box to choose what type of item to open.</li>
+<li>Drag and Drop:<br> This operation has been improved to support more targets for drop operations, including other applications.  For example, you can drag a signal name from the Objects window to MS Word.</li>
+<li>&quot;Find In Files&quot;:<br> This feature will search files on disk for a string or pattern.  The list of file matches are shown in the transcript window. A Double-Click on an entry in the transcript window will display the file and line in the Source view.</li>
+</ul>
+</li>
+<li>
+Additional interface features for SystemVerilog were added:
+<UL>
+<LI>Export and import tasks and functions in modports are now supported.
+<LI>When a modport is specified for a module instance, the use of any interface item not listed in that modport produces an error.
+<LI>Interface parameters can now be used.
+</UL></li>
+<li>
+The ModelSim language templates have been extended to include SystemC.</li>
+<li>
+SystemC time resolution and user time unit can now be set using the sc_set_time_resolution() and sc_set_default_time_unit() functions from the SystemC source code.  The behavior of these functions remains unchanged from their native OSCI implementation for designs containing only SystemC modules.  Please refer to the ModelSim Users Manual for details on the resolution limit and default time unit selection for mixed-language designs.</li>
+<li>
+Modelsim 6.0 contains enhancements to the FLI to support SystemC.
+In addition to the current acc
+header files acc_user.h and acc_vhdl.h, there is now a third file called
+acc_sc.h which contains the constant definitions for the SystemC regions,
+accScModule, and signals, accScPrimChannel.<BR>
+
+All of the FLI functions that return an existing mtiRegionIdT can now
+return SystemC regions.  These functions are:<BR>
+
+<UL>    Enhanced Region Functions
+<LI>    mti_FindRegion()
+<LI>    mti_FirstLowerRegion()
+<LI>    mti_GetCallingRegion()
+<LI>    mti_GetCurrentRegion()
+<LI>    mti_GetTopRegion()
+<LI>    mti_HigherRegion()
+<LI>    mti_NextRegion()
+<LI>    mti_GetProcessRegion()
+<LI>    mti_GetSignalRegion()
+</UL>
+
+
+mti_GetRegionKind() called on a SystemC region returns accScModule.<BR>
+mti_CreateRegion() has not yet been enhanced to support SystemC regions.<BR>
+
+
+All of the FLI functions that return an existing mtiSignalIdT can
+now return SystemC signals.  These functions are:<BR>
+
+<UL>    Enhanced Signal Functions
+<LI>    mti_FindPort()
+<LI>    mti_FindSignal()
+<LI>    mti_FirstSignal()
+<LI>    mti_NextSignal()
+<LI>    mti_GetDrivingSignals()
+<LI>    mti_GetParentSignal()
+<LI>    mti_GetSignalSubelements()
+</UL>
+
+mti_GetRegionKind() called on a SystemC signal returns accScPrimChannel.<BR>
+mti_CreateSignal() has not yet been enhanced to support SystemC regions.<BR>
+
+
+Functions that take an mtiRegionIdT or mtiSignalIdT argument which have
+not yet been enhanced to support SystemC will result in an error message when
+SystemC arguments are passed to them.  These functions are:<BR>
+
+<UL>    Region Functions
+<LI>    mti_CreateRegion() - takes an mtiRegionIdT
+</UL>
+
+<UL>    Process Functions
+<LI>    mti_Sensitize() - takes an mtiSignalIdT
+</UL>
+
+<UL>    Signal Functions
+<LI>    mti_CreateSignal() - takes an mtiRegionIdT
+<LI>    mti_ForceSignal() - takes an mtiSignalIdT
+<LI>    mti_ReleaseSignal() - takes an mtiSignalIdT
+<LI>    mti_GetSignalValue() - takes an mtiSignalIdT
+<LI>    mti_GetSignalValueIndirect() - takes an mtiSignalIdT
+<LI>    mti_GetArraySignalValue() - takes an mtiSignalIdT
+<LI>    mti_SetSignalValue() - takes an mtiSignalIdT
+<LI>    mti_SignalIsResolved() - takes an mtiSignalIdT
+</UL>
+
+<UL>    Driver Functions
+<LI>    mti_CreateDriver() - takes an mtiSignalIdT
+</UL><BR>
+
+The cosimulation interface functions have been similarly updated to support SystemC.  For documentation, see cosim.note in the oem directory.</li>
+<li>
+sccom now has a <b>-f</b> option which enables the specification of commands in a file. </li>
+<li>
+An SC signal (including sc_signal, sc_buffer, sc_signal_resolved, and sc_signal_rv) can control or observe an HDL signal using the two new member functions:<br>
+<ul>
+    <li>bool control_foreign_signal(const char* name);<br>
+    <li>bool observe_foreign_signal(const char* name);
+</ul>
+Controlling an HDL signal from an sc_clock is also supported using control_foreign_signal().</li>
+<li>
+The "extern forkjoin task" feature in SystemVerilog interfaces is now supported.</li>
+<li>
+Message suppression and severity setting can be done on the command line
+(for vcom, vlog, sccom and vsim). The syntax is:<br>
+<code>
+-note &lt;message number&gt;[,&lt;message number&gt;...]
+<br>-warning &lt;message number&gt;[,&lt;message number&gt;...]
+<br>-error &lt;message number&gt;[,&lt;message number&gt;...]
+<br>-suppress &lt;message number&gt;[,&lt;message number&gt;...]
+</code>
+<br>This can also be done by adding directives to the msg_system section [msg_system] of the modelsim.ini file. The syntax is:<br>
+<code>
+note = &lt;message number&gt;[,&lt;message number&gt;...]
+<br>warning = &lt;message number&gt;[,&lt;message number&gt;...]
+<br>error = &lt;message number&gt;[,&lt;message number}&gt;...]
+<br>suppress = &lt;message number&gt;[,&lt;message number&gt;...]
+</code>
+<br>For <b>-note</b>, <b>-warning</b>, and <b>-error</b>, the listed messages will have their severity  set to the level specified by the switch.
+For <b>-suppress</b>, the listed messages will be suppressed. Note: Internal
+and fatal messages can't be suppressed nor can they have their severity
+level changed. The following is an example command line usage of the <b>-suppress</b> switch:<br>
+<code>
+  vsim -suppress 3007,3009 mytop
+</code>
+<br>In this example the numbers map to the following messages:
+<br> 3007 - Defparam iteration limit exceeded.
+<br> 3009 - Module does not have a `timescale directive in effect, but previous modules do.</li>
+<li>
+VHDL 2002 protected types have been implemented in ModelSim. Because the standard specification is highly contradictory on operators for protected types, the operators have not been implemented.</li>
+<li>
+The $nochange timing check is now supported in optimized cells.</li>
+<li>
+Dynamic arrays may now be used as parameters for tasks, as in:<br>
+<code>
+task sum(input int a[], b[], output int x[]);<br>
+</code>
+The size of a dynamic array parameter is set before the call to the task, so the task sees <i>x</i> in the above example as if it were set with <i>new</i> at the start of the task's code.</li>
+<li>
+On UNIX platforms it is now possible to have ModelSim load PLI and FLI shared objects with global symbol visibility.<BR>Symbols in global shared objects can be referred to by C/C++ code in any other shared object.
+
+<BR>You can specify global shared objects in two ways:
+<OL>
+<LI> Use "vsim <b>-gblso</b> <shared_obj>".  Multiple <b>-gblso</b> options can be specified.
+</LI>
+<LI> Use variable GlobalSharedObjectList in modelsim.ini.
+</LI>
+</OL>
+
+Any global shared objects are loaded prior to all other shared objects in the system.  In addition, global shared objects are listed in the order specified by the user.
+
+<BR>This feature is not supported on AIX or Windows.
+You should not specify a SystemVerilog DPI import shared object as global if it calls any DPI export tasks or functions.</li>
+<li>
+ModelSim 6.0 contains support for sparse Verilog memories. Sparse memories yield slower runtime performance than default memories, but much larger storage can be handled when relatively few memory addresses are accessed.<BR>
+
+There are two modes of operation: <BR><OL><LI>The first mode is an automatic mode based on the new modelsim.ini variable "SparseMemThreshold". This variable specifies the memory depth above which Verilog memories are automatically implemented with a sparse algorithm.  Note that only simple Verilog 2-D reg arrays can be made sparse at this time.  For the new vopt flow, the reg arrays must be sized with elaboration-time constants (including parameters).  But for the incremental flow, the reg arrays must be sized 
+with compile-time constants (not parameters).<BR>
+
+<LI>The second mode of operation involves manual specification 
+of sparse memories in source code.  There are two ways to 
+specify sparseness: using Verilog 2001 attributes and using metacomment syntax. <BR>
+
+<OL>
+<LI> The following are examples of using Verilog 2001 attribute syntax: 
+<BR>  (* mti_sparse *) reg [15:0] mymem1 [0:10000000]; 
+<BR>  (* mti_sparse = 1 *) reg [127:0] mymem2 [0:10000000000]; 
+
+<BR>If you want to turn off automatic sparse mode for a given memory instance, you can use attribute syntax as follows:
+<BR>  (* mti_sparse = 0 *) reg [31:0] mymem3 [0:5000000];<BR>
+
+<LI>You can use a simple metacomment /*sparse*/ (no whitespace) also: 
+<BR>   reg /*sparse*/ [15:0] mymem4 [0:20000]; 
+</OL></OL>
+To find out which memories in your design were successfully identified and implemented as sparse, you can use the <b>write report -l</b> command.  This command lists each sparse memory's name and the current amount of byte storage consumed by the memory. 
+</li>
+<li>
+Modelsim 6.0 contains two new command line option and one modelsim.ini file option for PSL assume directives.
+
+They are as follows.
+<ul><b>vsim command line options</b>
+
+<li><b>-assume</b>    : Simulate PSL assume directives same as assert directives.
+<li><b>-noassume</b>  : Do not simulate PSL assume directives.
+<li>By default, PSL assume directive is simulated as assert directive.
+</ul>
+
+<ul><b>modelsim.ini file variable</b>
+
+<li>SimulateAssumeDirectives = 0 Do not simulate PSL assume directive.
+<li>SimulateAssumeDirectives = 1 Simulate PSL assume directive as assert directive.
+<li>Default value for SimulateAssumeDirectives = 1
+</ul></li>
+<li>
+Modelsim 6.0 has support for accessing command line options from within SystemC code.<BR>
+
+<UL>    New vsim command line option for SystemC argc/argv support:
+<LI>    [<b>-sc_arg</b> &lt;string&gt; ...]
+</UL>
+
+    Specifies a string representing a startup argument which is
+    subsequently accessible from within SystemC via the sc_argc() and
+    sc_argv() functions.<BR>
+
+<UL>    New functions:
+<LI>    int sc_argc()
+<LI>    const char * const *sc_argv()
+</UL>
+
+    These global functions return respectively the number of
+    and the actual arguments specified on
+    the vsim command line with the <b>-sc_arg</b> option.  These functions
+    can be invoked from anywhere within <nop>SystemC code.
+</li>
+<li>
+SystemVerilog dynamic memories are now supported in the memtool GUI.</li>
+<li>
+WLF Time Collapsing, is a new feature which allows three different modes of recording events to a WLF file.  The modes are controlled with a vsim command switch or the WLFCollapseMode modelsim.ini variable.  Briefly, the three modes are:
+<ul>
+<li>No Collapse: All events for each logged signal are recorded to the WLF file.
+<li>Delta Collapse: The final value for a logged signal is recorded at the end of the delta in which the signal has one or more events. (default)
+<li>Time Collapse: The final value for a logged signal is recorded at the end of the time step in which the signal has one or more events.
+</ul>
+Please see the ModelSim User's Manual for further details.</li>
+<li>
+SystemC debug now includes aggregates of signals and ports.  Aggregates may be arrays, structures, or classes where all members are signals or ports.  Aggregates that combine other objects such as modules or C/C++ intrinsic data types are not supported in debug, though they remain simulatable.
+<pre>
+   struct myBus {
+      sc_signal<int> i;
+      sc_signal<double> d;
+   };
+
+   myBus  busPair[2];
+</pre>
+The example above illustrates an array of structures of signals.  This complex aggregate is debuggable and appears in ModelSim as a signal with the type array of structure.  The aggregate and its elements may be accessed with the usual C/C++ style syntax:
+<pre>
+   describe busPair
+   examine { busPair[0].i }
+   add wave busPair
+</pre>
+
+Name binding must be enabled for debugging of aggregate signals and ports.</li>
+<li>
+SystemC debug support now includes sc_fifos and ports for fifos.  In ModelSim, an sc_fifo<T> appears as an array of type T.  All fifos are normalized for display by the examine command or in the GUI windows such that:
+<ul>
+<li> The left-most (examine command) or top-most (Wave window) element is the next value to be read from the fifo.
+<li> Each element is shown.  
+<li> Empty elements are marked as unused.
+<li> The next element that can be written is the left-most or top-most unused element.
+</ul>
+</li>
+<li>
+SystemC primitive channels like sc_semaphore and sc_mutex are now supported for debug.</li>
+<li>
+Member variables of SystemC modules (SC_MODULE) are now supported for debug.</li>
+<li>
+ModelSim 6.0 supports SystemC on Windows.  sccom uses MinGW gcc 3.2.3 for compiling the SystemC source code.  C-Debug is supported on Windows with MinGW gdb 6.0.</li>
+<li>
+Parameter passing on SystemC and HDL boundary is now supported.</li>
+<li>
+sccom <b>-work</b> is now supported.</li>
+<li>
+vcom and vsim now support default binding at compile or load time for
+binding VHDL component instances to their entities. The default in 6.0
+is to perform default binding at load time.<br>
+
+Selecting default binding time:
+<ul>
+<li>Use vcom <b>-bindAtCompile</b> to perform default binding at compile time.
+Use vcom <b>-bindAtLoad</b> to perform default binding at load time.</li>
+<li>Set the BindAtCompile variable in the modelsim.ini file to 1 to
+perform default binding at compile time. Leave the variable set to 0 to
+perform default binding at load time.</li>
+</ul>
+Comparison of the two default binding times:<br>
+Default binding at compile time provides earlier detection of errors and
+may sometimes give clearer error messages. However, it requires a
+bottom-up order of compilation (i.e., an instantiated entity must be
+compiled before the design unit which instantiates it.) Also, some
+spurious warning messages may be generated.<br>
+Default binding at load time gives more flexibility in the order in
+which design units are analyzed and does not give unnecessary warning
+messages.<br>
+Expected differences with earlier ModelSim versions:
+<ul>
+<li>When you use default binding at load time, fewer design units are
+loaded during compilation, so the vcom.log file will have fewer
+"loading" messages.</li>
+<li>When you use default binding at load time, the compiler does not check
+to see if default binding is possible. Therefore, messages such as the
+following will no longer appear: "** Warning: [1]  File1.vhd(532): No default binding for component 'xyz'. (No entity named 'xyz' was found.)"
+</li>
+</ul></li>
+<li>
+The PSL 1.1 label feature is now supported.<br>
+Example:<br>
+-- psl mylabel: assert never ( count>limit );
+</li>
+<li>
+The PSL 1.1 report keyword has been added for PSL directives and appears in the assertion log or transcript.<br>
+Example:<br>
+-- psl assert never ( count>limit ) report "Count over limit." ;
+
+
+</li>
+<li>
+Functional coverage is implemented in ModelSim 6.0 through the PSL cover directive.  A functional coverage GUI is available as one of the product's debug windows. The <b>fcover</b> command line interface is available.  There is a chapter of the SE manual that discusses the new features.
+
+
+</li>
+<li>
+Initial source code release of the
+    .../modeltech/verilog_src/verilog_psl_checkers
+and 
+    .../modeltech/vhdl_src/vhdl_psl_checkers
+libraries.</li>
+<li>
+The SystemVerilog Direct Programming Interface (DPI) is supported in ModelSim 6.0.  ModelSim's DPI is compliant with the SystemVerilog 3.1a LRM.  There are several limitations in the current release:
+<UL>
+<LI>Structs and unions cannot be passed as arguments to import or export tasks/functions</LI>
+<LI>Unpacked arrays cannot be passed as arguments to export tasks/functions</LI>
+<LI>Open arrays are not supported</LI>
+<LI>Import/export task/function arguments with parameterized types are supported only in the vopt flow</LI>
+<LI>If DPI tasks/functions are present in a design, checkpoint save is not supported</LI>
+<LI>If DPI tasks/functions are present in a design, restart from time 0 is not supported</LI>
+</UL>
+Please see the ModelSim 6.0 User's Guide for more details on using DPI on your platform of choice.</li>
+<li>
+New SystemVerilog features:
+<ul>
+<li>Integer/logic & real literals                      
+<li>logic data type                                    
+<li>Real and shortreal data types                      
+<li>Void data types                                    
+<li>Classes, partial support                           
+<li>Type casting                                       
+<li>Array querying functions                           
+<li>Associative arrays & array methods                 
+<li>Constants                                          
+<li>Assignment operators                               
+<li>Operations on logic and bit types                  
+<li>Wild equality and wild inequality                  
+<li>do while loop                                      
+<li>Jump statements                                    
+<li>always_comb, always_latch, & always_ff               
+<li>void functions                                     
+<li>Class Objects, Object properties and methods, Constuctors 
+<li>Classes  method "This" reference                                       
+<li>Relaxed port connection rules                      
+<li>Time unit & precision                              
+<li>Interface modports                                 
+<li>Tasks and functions in interfaces                  
+<li>Parameterized interfaces                           
+<li>Direct programming interface (see release note above)
+</ul>
+</li>
+<li>
+The C Debug tool has a new command:<br>
+<b>cdbg trace_entry_point on|off</b> [<i>FLI_PLI_function_name</i>]. This will help a user debug an FLI/PLI application when a design is loaded with vsim <b>-trace_foreign 1</b>. ModelSim will stop at a C breakpoint each time a named FLI or PLI function is called from the user's application. Then, using the <b>tb</b> and <b>pop</b> commands, the user will be able to investigate the C code at the place the function was called.
+</li>
+<li>
+The vopt <b>+acc</b> option accepts an "<b>a</b>" (assertions) specifier to preserve PSL assertion and functional coverage browser data when the vopt compile flow is used.  Note that if a PSL construct is being driven by a port signal, the vopt optimization process may replace that signal name with its higher-level driver.  So in this case, if the local port name is preferred, the <b>+acc</b> "<b>p</b>" option should also be specified (i.e. <b>+acc=ap</b>).</li>
+<li>
+A new window has been added for debugging.  The Watch window shows values for signals and variables at the current simulation time.  You can add any signal or variable in the design either by dragging the object from the Objects or Locals window or by using the <b>add watch</b> command.</li>
+<li>
+A mixed design (VHDL top instantiating Verilog module) will now support a constant value as an actual of a port connection.</li>
+<li>
+A new menu "View Memory Contents" is added to the popup menu of the Object window.  This menu will be enabled when a selected object is a memory.</li>
+<li>
+On platforms that support both 32-bit and 64-bit ModelSim, when ModelSim executables are invoked from the modeltech/bin directory by a Unix shell command (using full path specification or PATH search) the choice of 32-bit or 64-bit ModelSim can be driven by setting the MTI_VCO_MODE environment variable to a value of 32 or 64. If MTI_VCO_MODE is not set, the choice is made as in previous ModelSim releases giving preference to the highest performance installed version.
+</li>
+<li>
+The following GUI changes are made on 6.0 to run vopt from GUI.
+
+A new dialog box called "Design Optimization" is added to the
+Simulate menu to allow the user to optimize their designs using
+vopt with specified options.
+
+The "Simulate..." menu item is renamed to "Start Simulation...".
+
+The "Simulation Options..." menu item is renamed to "Runtime Options...".
+
+Removed the "Optimize" button from the "Simulate" dialog box.
+
+Renamed the "Options" tab to "Others" in the "Simulate" dialog box,
+as the other tabs are also for specifying different options.
+
+Added a checkbox in "Simulation" dialog box to run vsim with
+<b>-vopt</b>/<b>-novopt</b> options and a button to specify the <b>-voptargs</b> options.
+
+Added a new Project item called "Optimization Configuration" to
+create project specific settings for running vopt.
+The "Simulate" menu item is removed from the Project's right click
+pop up menu. Double click and the "Execute" menu item are there to
+run Optimization and Simulation configurations.
+A new button "Add Folder" is added to the Optimization Configuration
+and Simulation Configuration dialog boxes to create folders from there.
+</li>
+<li>
+The ability to create waveforms graphically is added. These waveforms can be used 
+as stimulus on a load design or can be exported in VCD format, Force file format, or as a Verilog/VHDL testbench for future use.</li>
+<li>
+The GUI now handles array indices as enumerations.</li>
+<li>
+Code coverage now supports exclusion of condition and expression udp truth table rows. The exclusion file format has been expanded to include the following.
+<br>
+<b>-c</b> | <b>-e</b> '{'&lt;line_num&gt; &lt;row|row1-row2&gt;+'}'
+<br>
+where <b>-c</b> refers to a condition and <b>-e</b> refers to an expression, on line line_num. The line number is followed by a space-separated list of row numbers or ranges of row numbers. The line number and list of row numbers are surrounded by curly braces.</li>
+<li>
+The GUI now handles array indices as enumerations.</li>
+</ul>
+</BODY>
+</HTML>

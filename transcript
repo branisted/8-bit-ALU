@@ -1,0 +1,149 @@
+pwd
+# /home/brad/Desktop/projects/8-bit-ALU
+vlib work -sv -work work src/**/*.v src/*.v testbenches/tb_alu_top.v
+# Usage: vlib -help
+#        vlib [-short | -dos | -long | -unix ] [-archive [-compact <compact>]]
+#             [-depend [<depend>]] [-mapping [<mapping>]] [-target [<target>]]
+#             [-vendor [<vendor>]] [-version [<version>]]
+#             [-unnamed_designs <count>] [(-lock|-unlock) <design>]
+#             [-locklib|-unlocklib] <library_name>
+vlib work -sv -work work src/**/*.v
+# Usage: vlib -help
+#        vlib [-short | -dos | -long | -unix ] [-archive [-compact <compact>]]
+#             [-depend [<depend>]] [-mapping [<mapping>]] [-target [<target>]]
+#             [-vendor [<vendor>]] [-version [<version>]]
+#             [-unnamed_designs <count>] [(-lock|-unlock) <design>]
+#             [-locklib|-unlocklib] <library_name>
+vdel -all
+# ** Error: (vdel-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vdel-57) Library 'work' is missing or is not a valid ModelSim library.
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vdel failed.
+vlib work
+vlib work -sv -work work src/**/*.v src/*.v testbenches/tb_alu_top.v
+# Usage: vlib -help
+#        vlib [-short | -dos | -long | -unix ] [-archive [-compact <compact>]]
+#             [-depend [<depend>]] [-mapping [<mapping>]] [-target [<target>]]
+#             [-vendor [<vendor>]] [-version [<version>]]
+#             [-unnamed_designs <count>] [(-lock|-unlock) <design>]
+#             [-locklib|-unlocklib] <library_name>
+vlib work -sv -work work src/**/*.v
+# Usage: vlib -help
+#        vlib [-short | -dos | -long | -unix ] [-archive [-compact <compact>]]
+#             [-depend [<depend>]] [-mapping [<mapping>]] [-target [<target>]]
+#             [-vendor [<vendor>]] [-version [<version>]]
+#             [-unnamed_designs <count>] [(-lock|-unlock) <design>]
+#             [-locklib|-unlocklib] <library_name>
+vlog work -sv -work work src/**/*.v src/*.v testbenches/tb_alu_top.v
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder_8bit
+# -- Compiling module Shifter
+# -- Compiling module Subtractor
+# -- Compiling module divider_non_restoring
+# -- Compiling module booth_encoder
+# -- Compiling module cla_9bit
+# -- Compiling module multiplier_booth_radix4
+# -- Compiling module inverter_8bit
+# -- Compiling module subtractor_8bit
+# -- Compiling module control_unit
+# -- Compiling module mux4to1_16bit
+# -- Compiling module input_register
+# -- Compiling module output_register
+# -- Compiling module alu_8bit
+# ** Error: src/alu_top.v(32): near ".": syntax error, unexpected '.', expecting ')'
+# -- Compiling module tb_alu_8bit
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+vlog work -sv -work work src/**/*.v src/*.v testbenches/tb_alu_top.v
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder_8bit
+# -- Compiling module Shifter
+# -- Compiling module Subtractor
+# -- Compiling module divider_non_restoring
+# -- Compiling module booth_encoder
+# -- Compiling module cla_9bit
+# -- Compiling module multiplier_booth_radix4
+# -- Compiling module inverter_8bit
+# -- Compiling module subtractor_8bit
+# -- Compiling module control_unit
+# -- Compiling module mux4to1_16bit
+# -- Compiling module input_register
+# -- Compiling module output_register
+# -- Compiling module alu_8bit
+# -- Compiling module tb_alu_8bit
+# 
+# Top level modules:
+# 	input_register
+# 	output_register
+# 	tb_alu_8bit
+vdel -all
+vlib work
+vlog work -sv -work work src/**/*.v src/*.v testbenches/tb_alu_top.v
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder_8bit
+# -- Compiling module Shifter
+# -- Compiling module Subtractor
+# -- Compiling module divider_non_restoring
+# -- Compiling module booth_encoder
+# -- Compiling module cla_9bit
+# -- Compiling module multiplier_booth_radix4
+# -- Compiling module inverter_8bit
+# -- Compiling module subtractor_8bit
+# -- Compiling module control_unit
+# -- Compiling module mux4to1_16bit
+# -- Compiling module input_register
+# -- Compiling module output_register
+# -- Compiling module alu_8bit
+# -- Compiling module tb_alu_8bit
+# 
+# Top level modules:
+# 	input_register
+# 	output_register
+# 	tb_alu_8bit
+vsim work.tb_alu_8bit
+# vsim work.tb_alu_8bit 
+# Loading sv_std.std
+# Loading work.tb_alu_8bit
+# Loading work.alu_8bit
+# Loading work.control_unit
+# Loading work.adder_8bit
+# Loading work.subtractor_8bit
+# Loading work.inverter_8bit
+# Loading work.multiplier_booth_radix4
+# Loading work.booth_encoder
+# Loading work.cla_9bit
+# Loading work.divider_non_restoring
+# Loading work.Subtractor
+# Loading work.Shifter
+# Loading work.mux4to1_16bit
+# ** Error: (vsim-3838) src/alu_top.v(25): Variable '/tb_alu_8bit/uut/done' written by continuous and procedural assignments. See src/alu_top.v(76). 
+#         Region: /tb_alu_8bit/uut/CTRL_UNIT
+# ** Warning: (vsim-3017) src/alu_top.v(33): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_alu_8bit/uut/ADDER
+# ** Warning: (vsim-3015) src/alu_top.v(33): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'Cin'.
+#         Region: /tb_alu_8bit/uut/ADDER
+# ** Error: (vsim-3063) src/alu_top.v(33): Port 'sum' not found in the connected module (4th connection).
+#         Region: /tb_alu_8bit/uut/ADDER
+# ** Warning: (vsim-3722) src/alu_top.v(33): [TFMPC] - Missing connection for port 'Sum'.
+# ** Warning: (vsim-3722) src/alu_top.v(33): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) src/alu_top.v(40): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /tb_alu_8bit/uut/SUBTRACTOR
+# ** Error: (vsim-3063) src/alu_top.v(40): Port 'diff' not found in the connected module (3rd connection).
+#         Region: /tb_alu_8bit/uut/SUBTRACTOR
+# ** Warning: (vsim-3722) src/alu_top.v(40): [TFMPC] - Missing connection for port 'Diff'.
+# ** Warning: (vsim-3722) src/alu_top.v(40): [TFMPC] - Missing connection for port 'Cout'.
+# ** Error: (vsim-3389) src/alu_top.v(50): Port 'clk' not found in the connected module (1st connection).
+#         Region: /tb_alu_8bit/uut/MULTIPLIER
+# ** Error: (vsim-3389) src/alu_top.v(50): Port 'reset' not found in the connected module (2nd connection).
+#         Region: /tb_alu_8bit/uut/MULTIPLIER
+# ** Error: (vsim-3389) src/alu_top.v(50): Port 'multiplicand' not found in the connected module (3rd connection).
+#         Region: /tb_alu_8bit/uut/MULTIPLIER
+# ** Error: (vsim-3389) src/alu_top.v(50): Port 'multiplier' not found in the connected module (4th connection).
+#         Region: /tb_alu_8bit/uut/MULTIPLIER
+# ** Error: (vsim-3389) src/alu_top.v(50): Port 'product' not found in the connected module (5th connection).
+#         Region: /tb_alu_8bit/uut/MULTIPLIER
+# ** Error: (vsim-3389) src/alu_top.v(50): Port 'done' not found in the connected module (6th connection).
+#         Region: /tb_alu_8bit/uut/MULTIPLIER
+# ** Fatal: (vsim-3365) src/alu_top.v(50): Too many port connections. Expected 3, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_alu_8bit/uut/MULTIPLIER File: src/arithmetic_unit/multiplier_booth_radix4.v
+# FATAL ERROR while loading design
+# Error loading design
