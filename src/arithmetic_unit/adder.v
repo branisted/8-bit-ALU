@@ -1,5 +1,7 @@
 // The adder used is an Carry Lookahead Adder (CLA) due to the fact that Booth's Multiplication also uses it.
 
+`timescale 1ns / 1ps
+
 module adder (
     input [7:0] A, B,
     input Cin,
