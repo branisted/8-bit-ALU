@@ -1,0 +1,131 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/brad/Desktop/projects/8-bit-ALU/run
+vadder
+IckSZgX5gAYc^90bJ80dZP1
+VG`^>Nn3ab7T[cA:<:_O=a3
+w1743081452
+8../src/arithmetic_unit/adder.v
+F../src/arithmetic_unit/adder.v
+L0 5
+Z1 OV;L;6.5b;42
+r1
+31
+o-O0
+!s100 PZgEbIbQ3@n1RE1PnOdmT1
+!s85 0
+!s101 -O0
+valu_top
+IE>ZYL_VzMCc68Glnn<J`=0
+VYM2HJQfilfW:]]WWW]2>73
+w1743088717
+8../src/alu_top.v
+F../src/alu_top.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 6D04PkO56FKWUgfS@nSba1
+!s85 0
+!s101 -O0
+vcontrol_unit
+I^?X<WfNlHW`jVDlKIZ;CZ3
+V7GJQGOWf^dj@1OGL:0^;F2
+w1743087131
+8../src/control_unit/control_unit.v
+F../src/control_unit/control_unit.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 7oc7MZl>BPkOZ7=>YLU:G2
+!s85 0
+!s101 -O0
+vdivider
+I5?S2D`6TIeX@B@9:a4^B=3
+VhlIDk]OCUkk>C?c`5[`mI2
+w1743088552
+8../src/arithmetic_unit/divider.v
+F../src/arithmetic_unit/divider.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 _[DUf0dNV7QCGaN>1Q?WR2
+!s85 0
+!s101 -O0
+vinput_register
+IW6Mj0QKYZ3`dKMz@1@z>H3
+V274R4AU6G12cm0fnZkzdi0
+w1743088515
+8../src/registers/input_register.v
+F../src/registers/input_register.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 boJh1KEXP^`oQOKm?nTY`3
+!s85 0
+!s101 -O0
+vmultiplier
+I1dF;Il<P>HS8z1>8Di`1^0
+VFd1WjQ<jjlCb0nCOF:WMP0
+w1743083713
+8../src/arithmetic_unit/multiplier.v
+F../src/arithmetic_unit/multiplier.v
+L0 5
+R1
+r1
+31
+o-O0
+!s100 o056BMLWd9zZ_oM4;dkMZ0
+!s85 0
+!s101 -O0
+voutput_register
+I^2:Qn9jQ1@heUSzCAzT4N3
+VS^RYl507ji<mFTIU=BozF3
+w1743088514
+8../src/registers/output_register.v
+F../src/registers/output_register.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 >Wmlj`NPa^J>3g@PoUA8m3
+!s85 0
+!s101 -O0
+vsubtractor
+I]3DFBG=XDkC3U1[4oV>^F2
+VG=D>KKFaIMfzJUYT6klW[2
+w1743081218
+8../src/arithmetic_unit/subtractor.v
+F../src/arithmetic_unit/subtractor.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 ;>4Qhez<W5madOzC=A^ZG0
+!s85 0
+!s101 -O0
+vtb_alu_top
+!s100 0aH_T[:CWoPUF5AN<=Og<0
+IOHz6Fmf<6C5kVLVj@eI9:3
+V[^bcgM<CGOJY[XhOI]GRJ1
+w1743088924
+8../testbenches/tb_alu_top.v
+F../testbenches/tb_alu_top.v
+L0 3
+R1
+r1
+!s85 0
+31
+!s101 -O0
+o-O0

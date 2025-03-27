@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module output_register (
     input clk,                // Clock signal
     input reset,              // Reset signal (active high)

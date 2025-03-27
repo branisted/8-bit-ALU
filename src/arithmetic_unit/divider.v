@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module divider (
     input [7:0] A,        // 8-bit numerator (A)
     input [7:0] B,        // 8-bit denominator (B)

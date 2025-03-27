@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module control_unit (
     input [1:0] op_sel,      // Operation selector (00=ADD, 01=SUB, 10=MUL, 11=DIV)
     input clk,               // Clock signal

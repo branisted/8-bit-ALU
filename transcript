@@ -1,0 +1,966 @@
+pwd
+# /home/brad/Desktop/projects/8-bit-ALU
+cd run
+do run_tb_control_unit.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_control_unit
+# 
+# Top level modules:
+# 	tb_control_unit
+# vsim tb_control_unit 
+# Loading work.tb_control_unit
+# Loading work.control_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_control_unit/uut
+# ** Error: (vish-4014) No objects found matching '/tb_control_unit/A'.
+# Error in macro ./run_tb_control_unit.do line 22
+# (vish-4014) No objects found matching '/tb_control_unit/A'.
+#     while executing
+# "add wave -radix unsigned /tb_control_unit/A"
+do run_tb_control_unit.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_control_unit
+# 
+# Top level modules:
+# 	tb_control_unit
+# vsim tb_control_unit 
+# Loading work.tb_control_unit
+# Loading work.control_unit
+# Applying reset...
+# At time                    0: op_sel = 00, load_alu = 0, alu_op = 00, done = 0
+# At time                15000: op_sel = 00, load_alu = 1, alu_op = 00, done = 1
+# Test: op_sel = 00 (ADD)
+# Test: op_sel = 01 (SUB)
+# At time                30000: op_sel = 01, load_alu = 1, alu_op = 00, done = 1
+# At time                35000: op_sel = 01, load_alu = 1, alu_op = 01, done = 1
+# Test: op_sel = 10 (MUL)
+# At time                40000: op_sel = 10, load_alu = 1, alu_op = 01, done = 1
+# At time                45000: op_sel = 10, load_alu = 1, alu_op = 10, done = 0
+# Test: op_sel = 11 (DIV)
+# At time                50000: op_sel = 11, load_alu = 1, alu_op = 10, done = 0
+# At time                55000: op_sel = 11, load_alu = 1, alu_op = 11, done = 0
+# Applying reset again...
+# At time                60000: op_sel = 11, load_alu = 0, alu_op = 00, done = 0
+# At time                75000: op_sel = 11, load_alu = 1, alu_op = 11, done = 0
+# ** Note: $finish    : ../testbenches/tb_control_unit.v(70)
+#    Time: 80 ns  Iteration: 0  Instance: /tb_control_unit
+# 1
+# Break in Module tb_control_unit at ../testbenches/tb_control_unit.v line 70
+# Simulation Breakpoint: 1
+# Break in Module tb_control_unit at ../testbenches/tb_control_unit.v line 70
+# MACRO ./run_tb_control_unit.do PAUSED at line 31
+do run_tb_mux4to1.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# ** Error: (vlog-7) Failed to open design unit file "../src/mux4to1/mux4to1.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_mux4to1.do line 10
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog ../src/mux4to1/mux4to1.v"
+do run_tb_mux4to1.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# ** Error: (vlog-7) Failed to open design unit file "../src/mux/mux4to1/mux4to1.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_mux4to1.do line 10
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog ../src/mux/mux4to1/mux4to1.v"
+do run_tb_mux4to1.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux2to1
+# -- Compiling module mux4to1
+# 
+# Top level modules:
+# 	mux4to1
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_mux4to1
+# 
+# Top level modules:
+# 	tb_mux4to1
+# vsim tb_mux4to1 
+# Loading work.tb_mux4to1
+# Loading work.mux4to1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'mux4to1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_mux4to1/uut
+# Loading work.mux2to1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'mux2to1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_mux4to1/uut/mux_level_0[0]/mux0
+# Time = 0 | data = 1010101010101010 | sel = 00 | out = 1010101010101010
+# Time = 10000 | data = 1010101010101010 | sel = 01 | out = x101010101010101
+# Time = 20000 | data = 1010101010101010 | sel = 10 | out = x101010101010101
+# Time = 30000 | data = 1010101010101010 | sel = 11 | out = xx10101010101010
+# Time = 40000 | data = 1100110011001100 | sel = 00 | out = 1100110011001100
+# Time = 50000 | data = 1100110011001100 | sel = 01 | out = x110011001100110
+# Time = 60000 | data = 1100110011001100 | sel = 10 | out = x110011001100110
+# Time = 70000 | data = 1100110011001100 | sel = 11 | out = xx11001100110011
+# ** Note: $finish    : ../testbenches/tb_mux4to1.v(54)
+#    Time: 80 ns  Iteration: 0  Instance: /tb_mux4to1
+# 1
+# Break in Module tb_mux4to1 at ../testbenches/tb_mux4to1.v line 54
+# Simulation Breakpoint: 1
+# Break in Module tb_mux4to1 at ../testbenches/tb_mux4to1.v line 54
+# MACRO ./run_tb_mux4to1.do PAUSED at line 25
+do run_tb_register.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_register
+# 
+# Top level modules:
+# 	tb_register
+# vsim tb_register 
+# Loading work.tb_register
+# Loading work.input_register
+# ** Warning: (vsim-3009) [TSCALE] - Module 'input_register' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_register/uut
+# Time = 0 | reset = 1 | in_data = 00000000 | load = 0 | out_data = 00000000
+# Time = 10000 | reset = 0 | in_data = 00000000 | load = 0 | out_data = 00000000
+# Time = 20000 | reset = 0 | in_data = 10101010 | load = 1 | out_data = 00000000
+# Time = 25000 | reset = 0 | in_data = 10101010 | load = 1 | out_data = 10101010
+# Time = 30000 | reset = 0 | in_data = 10101010 | load = 0 | out_data = 10101010
+# Time = 40000 | reset = 0 | in_data = 11110000 | load = 1 | out_data = 10101010
+# Time = 45000 | reset = 0 | in_data = 11110000 | load = 1 | out_data = 11110000
+# Time = 50000 | reset = 0 | in_data = 11110000 | load = 0 | out_data = 11110000
+# Time = 60000 | reset = 0 | in_data = 00001111 | load = 0 | out_data = 11110000
+# Time = 80000 | reset = 1 | in_data = 00001111 | load = 0 | out_data = 00000000
+# Time = 90000 | reset = 0 | in_data = 00001111 | load = 0 | out_data = 00000000
+# ** Note: $finish    : ../testbenches/tb_register.v(55)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_register
+# 1
+# Break in Module tb_register at ../testbenches/tb_register.v line 55
+# Simulation Breakpoint: 1
+# Break in Module tb_register at ../testbenches/tb_register.v line 55
+# MACRO ./run_tb_register.do PAUSED at line 27
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# ** Error: (vlog-7) Failed to open design unit file "../src/mux/mux2to1.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_alu_top.do line 15
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog ../src/mux/mux2to1.v"
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module output_register
+# 
+# Top level modules:
+# 	output_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# ** Error: ../src/alu_top.v(80): (vlog-2110) Illegal reference to net "alu_out".
+# ** Error: ../src/alu_top.v(83): (vlog-2110) Illegal reference to net "alu_out".
+# ** Error: ../src/alu_top.v(84): (vlog-2110) Illegal reference to net "alu_out".
+# ** Error: ../src/alu_top.v(85): (vlog-2110) Illegal reference to net "alu_out".
+# ** Error: ../src/alu_top.v(86): (vlog-2110) Illegal reference to net "alu_out".
+# ** Error: ../src/alu_top.v(87): (vlog-2110) Illegal reference to net "alu_out".
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_alu_top.do line 18
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog ../src/alu_top.v"
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module output_register
+# 
+# Top level modules:
+# 	output_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.input_register
+# Loading work.control_unit
+# ** Warning: (vsim-3010) [TSCALE] - Module 'control_unit' has a `timescale directive in effect, but previous modules do not.
+#         Region: /tb_alu_top/uut/control_inst
+# Loading work.adder
+# Loading work.subtractor
+# Loading work.multiplier
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/divider_inst
+# Loading work.output_register
+# ** Warning: (vsim-3009) [TSCALE] - Module 'output_register' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/output_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(28): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'load'.
+#         Region: /tb_alu_top/uut/A_reg_inst
+# ** Error: (vsim-3053) ../src/alu_top.v(28): Illegal output or inout port connection (port 'out_data').
+#         Region: /tb_alu_top/uut/A_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(36): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'load'.
+#         Region: /tb_alu_top/uut/B_reg_inst
+# ** Error: (vsim-3053) ../src/alu_top.v(36): Illegal output or inout port connection (port 'out_data').
+#         Region: /tb_alu_top/uut/B_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(55): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'Cin'.
+#         Region: /tb_alu_top/uut/adder_inst
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run_tb_alu_top.do PAUSED at line 24
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module output_register
+# 
+# Top level modules:
+# 	output_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.input_register
+# ** Warning: (vsim-3009) [TSCALE] - Module 'input_register' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/A_reg_inst
+# Loading work.control_unit
+# Loading work.adder
+# Loading work.subtractor
+# Loading work.multiplier
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/divider_inst
+# Loading work.output_register
+# ** Warning: (vsim-3009) [TSCALE] - Module 'output_register' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/output_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(30): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'load'.
+#         Region: /tb_alu_top/uut/A_reg_inst
+# ** Error: (vsim-3053) ../src/alu_top.v(30): Illegal output or inout port connection (port 'out_data').
+#         Region: /tb_alu_top/uut/A_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(38): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'load'.
+#         Region: /tb_alu_top/uut/B_reg_inst
+# ** Error: (vsim-3053) ../src/alu_top.v(38): Illegal output or inout port connection (port 'out_data').
+#         Region: /tb_alu_top/uut/B_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(57): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'Cin'.
+#         Region: /tb_alu_top/uut/adder_inst
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run_tb_alu_top.do PAUSED at line 24
+do run_tb_register.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_register
+# 
+# Top level modules:
+# 	tb_register
+# vsim tb_register 
+# Loading work.tb_register
+# Loading work.input_register
+# Time = 0 | reset = 1 | in_data = 00000000 | load = 0 | out_data = 00000000
+# Time = 10000 | reset = 0 | in_data = 00000000 | load = 0 | out_data = 00000000
+# Time = 20000 | reset = 0 | in_data = 10101010 | load = 1 | out_data = 00000000
+# Time = 25000 | reset = 0 | in_data = 10101010 | load = 1 | out_data = 10101010
+# Time = 30000 | reset = 0 | in_data = 10101010 | load = 0 | out_data = 10101010
+# Time = 40000 | reset = 0 | in_data = 11110000 | load = 1 | out_data = 10101010
+# Time = 45000 | reset = 0 | in_data = 11110000 | load = 1 | out_data = 11110000
+# Time = 50000 | reset = 0 | in_data = 11110000 | load = 0 | out_data = 11110000
+# Time = 60000 | reset = 0 | in_data = 00001111 | load = 0 | out_data = 11110000
+# Time = 80000 | reset = 1 | in_data = 00001111 | load = 0 | out_data = 00000000
+# Time = 90000 | reset = 0 | in_data = 00001111 | load = 0 | out_data = 00000000
+# ** Note: $finish    : ../testbenches/tb_register.v(55)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_register
+# 1
+# Break in Module tb_register at ../testbenches/tb_register.v line 55
+# Simulation Breakpoint: 1
+# Break in Module tb_register at ../testbenches/tb_register.v line 55
+# MACRO ./run_tb_register.do PAUSED at line 27
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module output_register
+# 
+# Top level modules:
+# 	output_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.input_register
+# Loading work.control_unit
+# Loading work.adder
+# Loading work.subtractor
+# Loading work.multiplier
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/divider_inst
+# Loading work.output_register
+# ** Warning: (vsim-3015) ../src/alu_top.v(30): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'load'.
+#         Region: /tb_alu_top/uut/A_reg_inst
+# ** Error: (vsim-3053) ../src/alu_top.v(30): Illegal output or inout port connection (port 'out_data').
+#         Region: /tb_alu_top/uut/A_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(38): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'load'.
+#         Region: /tb_alu_top/uut/B_reg_inst
+# ** Error: (vsim-3053) ../src/alu_top.v(38): Illegal output or inout port connection (port 'out_data').
+#         Region: /tb_alu_top/uut/B_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(57): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'Cin'.
+#         Region: /tb_alu_top/uut/adder_inst
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run_tb_alu_top.do PAUSED at line 24
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module output_register
+# 
+# Top level modules:
+# 	output_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.input_register
+# Loading work.control_unit
+# Loading work.adder
+# Loading work.subtractor
+# Loading work.multiplier
+# Loading work.divider
+# Loading work.output_register
+# ** Warning: (vsim-3015) ../src/alu_top.v(30): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'load'.
+#         Region: /tb_alu_top/uut/A_reg_inst
+# ** Error: (vsim-3053) ../src/alu_top.v(30): Illegal output or inout port connection (port 'out_data').
+#         Region: /tb_alu_top/uut/A_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(38): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'load'.
+#         Region: /tb_alu_top/uut/B_reg_inst
+# ** Error: (vsim-3053) ../src/alu_top.v(38): Illegal output or inout port connection (port 'out_data').
+#         Region: /tb_alu_top/uut/B_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(57): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'Cin'.
+#         Region: /tb_alu_top/uut/adder_inst
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run_tb_alu_top.do PAUSED at line 24
+do run_tb_register.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_register
+# 
+# Top level modules:
+# 	tb_register
+# vsim tb_register 
+# Loading work.tb_register
+# Loading work.input_register
+# Time = 0 | reset = 1 | in_data = 00000000 | load = 0 | out_data = 00000000
+# Time = 10000 | reset = 0 | in_data = 00000000 | load = 0 | out_data = 00000000
+# Time = 20000 | reset = 0 | in_data = 10101010 | load = 1 | out_data = 00000000
+# Time = 25000 | reset = 0 | in_data = 10101010 | load = 1 | out_data = 10101010
+# Time = 30000 | reset = 0 | in_data = 10101010 | load = 0 | out_data = 10101010
+# Time = 40000 | reset = 0 | in_data = 11110000 | load = 1 | out_data = 10101010
+# Time = 45000 | reset = 0 | in_data = 11110000 | load = 1 | out_data = 11110000
+# Time = 50000 | reset = 0 | in_data = 11110000 | load = 0 | out_data = 11110000
+# Time = 60000 | reset = 0 | in_data = 00001111 | load = 0 | out_data = 11110000
+# Time = 80000 | reset = 1 | in_data = 00001111 | load = 0 | out_data = 00000000
+# Time = 90000 | reset = 0 | in_data = 00001111 | load = 0 | out_data = 00000000
+# ** Note: $finish    : ../testbenches/tb_register.v(55)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_register
+# 1
+# Break in Module tb_register at ../testbenches/tb_register.v line 55
+# Simulation Breakpoint: 1
+# Break in Module tb_register at ../testbenches/tb_register.v line 55
+# MACRO ./run_tb_register.do PAUSED at line 27
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module output_register
+# 
+# Top level modules:
+# 	output_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.input_register
+# Loading work.control_unit
+# Loading work.adder
+# Loading work.subtractor
+# Loading work.multiplier
+# Loading work.divider
+# Loading work.output_register
+# ** Warning: (vsim-3015) ../src/alu_top.v(30): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'load'.
+#         Region: /tb_alu_top/uut/A_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(38): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'load'.
+#         Region: /tb_alu_top/uut/B_reg_inst
+# ** Warning: (vsim-3015) ../src/alu_top.v(57): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'Cin'.
+#         Region: /tb_alu_top/uut/adder_inst
+# ** Note: $finish    : ../testbenches/tb_alu_top.v(58)
+#    Time: 90 ns  Iteration: 0  Instance: /tb_alu_top
+# 1
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 58
+# Simulation Breakpoint: 1
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 58
+# MACRO ./run_tb_alu_top.do PAUSED at line 38
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module output_register
+# 
+# Top level modules:
+# 	output_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.input_register
+# Loading work.control_unit
+# Loading work.adder
+# Loading work.subtractor
+# Loading work.multiplier
+# Loading work.divider
+# Loading work.output_register
+# ** Note: $finish    : ../testbenches/tb_alu_top.v(58)
+#    Time: 90 ns  Iteration: 0  Instance: /tb_alu_top
+# 1
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 58
+# Simulation Breakpoint: 1
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 58
+# MACRO ./run_tb_alu_top.do PAUSED at line 38
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module output_register
+# 
+# Top level modules:
+# 	output_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.input_register
+# Loading work.control_unit
+# Loading work.adder
+# Loading work.subtractor
+# Loading work.multiplier
+# Loading work.divider
+# Loading work.output_register
+# Time =                    0 | A = 00 | B = 00 | op_sel = 00 | result = 0000
+# Time =                20000 | A = aa | B = 55 | op_sel = 00 | result = 0000
+# Time =                40000 | A = aa | B = 55 | op_sel = 01 | result = 0000
+# Time =                45000 | A = aa | B = 55 | op_sel = 01 | result = 00ff
+# Time =                60000 | A = 03 | B = 02 | op_sel = 10 | result = 00ff
+# Time =                65000 | A = 03 | B = 02 | op_sel = 10 | result = 0055
+# Time =                80000 | A = 04 | B = 02 | op_sel = 11 | result = 0055
+# Time =                85000 | A = 04 | B = 02 | op_sel = 11 | result = 0006
+# ** Note: $finish    : ../testbenches/tb_alu_top.v(45)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_alu_top
+# 1
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 45
+# Simulation Breakpoint: 1
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 45
+# MACRO ./run_tb_alu_top.do PAUSED at line 38
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module output_register
+# 
+# Top level modules:
+# 	output_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.input_register
+# Loading work.control_unit
+# Loading work.adder
+# Loading work.subtractor
+# Loading work.multiplier
+# Loading work.divider
+# Loading work.output_register
+# Time =                    0 | A =   0 | B =   0 | op_sel = 00 | result =     0
+# Time =                20000 | A = 170 | B =  85 | op_sel = 00 | result =     0
+# Time =                40000 | A = 170 | B =  85 | op_sel = 01 | result =     0
+# Time =                45000 | A = 170 | B =  85 | op_sel = 01 | result =   255
+# Time =                60000 | A =   3 | B =   2 | op_sel = 10 | result =   255
+# Time =                65000 | A =   3 | B =   2 | op_sel = 10 | result =    85
+# Time =                80000 | A =   4 | B =   2 | op_sel = 11 | result =    85
+# Time =                85000 | A =   4 | B =   2 | op_sel = 11 | result =     6
+# ** Note: $finish    : ../testbenches/tb_alu_top.v(45)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_alu_top
+# 1
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 45
+# Simulation Breakpoint: 1
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 45
+# MACRO ./run_tb_alu_top.do PAUSED at line 38
+do run_tb_register.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_register
+# 
+# Top level modules:
+# 	tb_register
+# vsim tb_register 
+# Loading work.tb_register
+# Loading work.input_register
+# Time = 0 | reset = 1 | in_data = 00000000 | load = 0 | out_data = 00000000
+# Time = 10000 | reset = 0 | in_data = 00000000 | load = 0 | out_data = 00000000
+# Time = 20000 | reset = 0 | in_data = 10101010 | load = 1 | out_data = 00000000
+# Time = 25000 | reset = 0 | in_data = 10101010 | load = 1 | out_data = 10101010
+# Time = 30000 | reset = 0 | in_data = 10101010 | load = 0 | out_data = 10101010
+# Time = 40000 | reset = 0 | in_data = 11110000 | load = 1 | out_data = 10101010
+# Time = 45000 | reset = 0 | in_data = 11110000 | load = 1 | out_data = 11110000
+# Time = 50000 | reset = 0 | in_data = 11110000 | load = 0 | out_data = 11110000
+# Time = 60000 | reset = 0 | in_data = 00001111 | load = 0 | out_data = 11110000
+# Time = 80000 | reset = 1 | in_data = 00001111 | load = 0 | out_data = 00000000
+# Time = 90000 | reset = 0 | in_data = 00001111 | load = 0 | out_data = 00000000
+# ** Note: $finish    : ../testbenches/tb_register.v(55)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_register
+# 1
+# Break in Module tb_register at ../testbenches/tb_register.v line 55
+# Simulation Breakpoint: 1
+# Break in Module tb_register at ../testbenches/tb_register.v line 55
+# MACRO ./run_tb_register.do PAUSED at line 27
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module input_register
+# 
+# Top level modules:
+# 	input_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module output_register
+# 
+# Top level modules:
+# 	output_register
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.input_register
+# Loading work.control_unit
+# Loading work.adder
+# Loading work.subtractor
+# Loading work.multiplier
+# Loading work.divider
+# Loading work.output_register
+# Time =                    0 | A = 00000000 | B = 00000000 | op_sel = 00 | result = 0000000000000000
+# Time =                20000 | A = 10101010 | B = 01010101 | op_sel = 00 | result = 0000000000000000
+# Time =                40000 | A = 10101010 | B = 01010101 | op_sel = 01 | result = 0000000000000000
+# Time =                45000 | A = 10101010 | B = 01010101 | op_sel = 01 | result = 0000000011111111
+# Time =                60000 | A = 00000011 | B = 00000010 | op_sel = 10 | result = 0000000011111111
+# Time =                65000 | A = 00000011 | B = 00000010 | op_sel = 10 | result = 0000000001010101
+# Time =                80000 | A = 00000100 | B = 00000010 | op_sel = 11 | result = 0000000001010101
+# Time =                85000 | A = 00000100 | B = 00000010 | op_sel = 11 | result = 0000000000000110
+# ** Note: $finish    : ../testbenches/tb_alu_top.v(45)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_alu_top
+# 1
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 45
+# Simulation Breakpoint: 1
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 45
+# MACRO ./run_tb_alu_top.do PAUSED at line 38

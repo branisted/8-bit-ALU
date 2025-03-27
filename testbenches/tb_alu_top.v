@@ -1,81 +1,54 @@
-module tb_alu_8bit;
+`timescale 1ns / 1ps
 
-    // Testbench signals
-    reg clk;
-    reg reset;
+module tb_alu_top;
+
+    // Declare signals for testing
     reg [7:0] A, B;
     reg [1:0] op_sel;
-    reg load;
+    reg clk, reset;
     wire [15:0] result;
-    wire done;
 
-    // Instantiate the ALU
-    alu_8bit uut (
-        .clk(clk),
-        .reset(reset),
+    // Instantiate the alu_top module
+    alu_top uut (
         .A(A),
         .B(B),
         .op_sel(op_sel),
-        .load(load),
-        .result(result),
-        .done(done)
+        .clk(clk),
+        .reset(reset),
+        .result(result)
     );
 
-    // Clock generation (50 MHz)
+    // Clock generation
     always begin
-        #10 clk = ~clk; // 50 MHz clock with 10 ns period
+        #5 clk = ~clk;  // Clock with 10ns period (50 MHz)
     end
 
-    // Test procedure
+    // Stimulus process
     initial begin
         // Initialize signals
         clk = 0;
-        reset = 0;
-        A = 8'b00000000;  // Operand A
-        B = 8'b00000000;  // Operand B
-        op_sel = 2'b00;   // Start with ADD operation
-        load = 0;
+        reset = 1;
+        A = 8'b0;
+        B = 8'b0;
+        op_sel = 2'b00;
 
         // Apply reset
-        reset = 1;
-        #20 reset = 0;
+        #10 reset = 0;
 
-        // Test ADD operation (A + B)
-        A = 8'b00000001;  // A = 1
-        B = 8'b00000001;  // B = 1
-        op_sel = 2'b00;   // ADD
-        load = 1;
-        #20 load = 0;
+        // Test cases
+        #10 A = 8'b10101010; B = 8'b01010101; op_sel = 2'b00; // ADD
+        #20 A = 8'b10101010; B = 8'b01010101; op_sel = 2'b01; // SUB
+        #20 A = 8'b00000011; B = 8'b00000010; op_sel = 2'b10; // MUL
+        #20 A = 8'b00000100; B = 8'b00000010; op_sel = 2'b11; // DIV
 
-        // Test SUB operation (A - B)
-        A = 8'b00000010;  // A = 2
-        B = 8'b00000001;  // B = 1
-        op_sel = 2'b01;   // SUB
-        load = 1;
-        #20 load = 0;
-
-        // Test MUL operation (A * B)
-        A = 8'b00000010;  // A = 2
-        B = 8'b00000010;  // B = 2
-        op_sel = 2'b10;   // MUL
-        load = 1;
-        #40 load = 0;     // Wait longer for multiplication to complete
-
-        // Test DIV operation (A / B)
-        A = 8'b00000100;  // A = 4
-        B = 8'b00000010;  // B = 2
-        op_sel = 2'b11;   // DIV
-        load = 1;
-        #40 load = 0;     // Wait longer for division to complete
-
-        // End simulation
-        $finish;
+        // Finish the simulation
+        #20 $finish;
     end
 
-    // Display result at each step
+    // Monitor and log relevant signals
     initial begin
-        $monitor("At time %t: A = %b, B = %b, op_sel = %b, result = %b, done = %b", 
-                 $time, A, B, op_sel, result, done);
+        $monitor("Time = %t | A = %b | B = %b | op_sel = %b | result = %b", 
+                 $time, A, B, op_sel, result);
     end
 
 endmodule
