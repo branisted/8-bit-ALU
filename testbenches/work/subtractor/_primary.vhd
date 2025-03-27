@@ -5,6 +5,6 @@ entity subtractor is
         A               : in     vl_logic_vector(7 downto 0);
         B               : in     vl_logic_vector(7 downto 0);
         Diff            : out    vl_logic_vector(7 downto 0);
-        Cout            : out    vl_logic
+        Borrow          : out    vl_logic
     );
 end subtractor;

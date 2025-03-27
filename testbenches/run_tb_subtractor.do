@@ -10,7 +10,7 @@ log -r /*
 add wave -radix unsigned /tb_subtractor/A
 add wave -radix unsigned /tb_subtractor/B
 add wave -radix unsigned /tb_subtractor/Diff
-add wave -radix unsigned /tb_subtractor/Cout
+add wave -radix unsigned /tb_subtractor/Borrow
 
 run 100ns
 

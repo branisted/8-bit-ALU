@@ -1,20 +1,23 @@
 module subtractor (
     input [7:0] A, B,
     output [7:0] Diff,
-    output Cout // Borrow indicator
+    output Borrow
 );
-    wire [7:0] B_inv; // One’s complement of B
+    wire [7:0] B_complement;
+    wire Cin, Cout;
 
-    // Invert B using the structural Inverter module
-    assign B_inv = ~B;
+    assign B_complement = ~B; // Compute bitwise NOT of B
+    assign Cin = 1'b1;        // Add 1 for two’s complement
 
-    // Add A and Two’s Complement of B (B_inv + 1) using CLA
-    adder CLA_Sub (
+    // Instantiate the CLA Adder to perform A + (~B + 1)
+    adder cla_adder (
         .A(A),
-        .B(B_inv),
-        .Cin(1'b1), // Adding 1 for two’s complement
+        .B(B_complement),
+        .Cin(Cin),
         .Sum(Diff),
-        .Cout(Cout)  // Borrow indicator
+        .Cout(Cout) // Cout is actually "No Borrow", so we invert it
     );
+
+    assign Borrow = ~Cout; // Invert Cout to get the actual borrow
 
 endmodule
