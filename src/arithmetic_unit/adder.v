@@ -1,6 +1,6 @@
 // The adder used is an Carry Lookahead Adder (CLA) due to the fact that Booth's Multiplication also uses it.
 
-module adder_8bit (
+module adder (
     input [7:0] A, B,
     input Cin,
     output [7:0] Sum,

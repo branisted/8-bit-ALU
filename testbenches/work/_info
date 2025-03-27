@@ -1,0 +1,61 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/brad/Desktop/projects/8-bit-ALU/testbenches
+vadder
+ITIDDl?4TJm4l^n7mZ@S?F3
+VG`^>Nn3ab7T[cA:<:_O=a3
+w1743077046
+8../src/arithmetic_unit/adder.v
+F../src/arithmetic_unit/adder.v
+L0 3
+Z1 OV;L;6.5b;42
+r1
+31
+o-O0
+!s100 ^ZC@L]BFRn<Xi11VB9ENL0
+!s85 0
+!s101 -O0
+vsubtractor
+I5OJ=c;GDfSgFHl:T<jd@F1
+VB4ZmCk`O_<3YdjKD[lS=h2
+w1743078170
+8../src/arithmetic_unit/subtractor.v
+F../src/arithmetic_unit/subtractor.v
+L0 1
+R1
+r1
+31
+o-O0
+!s100 23D3AP5V@VSNWi>n:@BA[2
+!s85 0
+!s101 -O0
+vtb_adder
+Ie@KiVKeGR]VEcQiGh3?Vd2
+VAHM:i0gKj9DL5;1mThGWk0
+w1743076844
+8tb_adder.v
+Ftb_adder.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 kfCLO];=JeM<F3iT0=`BU2
+!s85 0
+!s101 -O0
+vtb_subtractor
+!s100 1h_6dF<RL<zh>>cR9RB>?0
+IPA04_8U4l]gzGSH9P5R;<1
+VnGe64iaNFeY@LbThOoWmd1
+w1743078063
+8tb_subtractor.v
+Ftb_subtractor.v
+L0 3
+R1
+r1
+!s85 0
+31
+!s101 -O0
+o-O0
