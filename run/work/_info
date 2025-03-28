@@ -3,127 +3,141 @@ K3
 13
 cModel Technology
 Z0 d/home/brad/Desktop/projects/8-bit-ALU/run
-vadder
-IckSZgX5gAYc^90bJ80dZP1
-VG`^>Nn3ab7T[cA:<:_O=a3
-w1743081452
-8../src/arithmetic_unit/adder.v
-F../src/arithmetic_unit/adder.v
-L0 5
-Z1 OV;L;6.5b;42
+vadder_8bit
+Id=fkkb:_OYUd6eCFb1PRU1
+Vi89@FiTJ_^`PQdXcZ3F1o2
+Z1 w1743123174
+Z2 8../src/arithmetic_unit/multiplier.v
+Z3 F../src/arithmetic_unit/multiplier.v
+L0 74
+Z4 OV;L;6.5b;42
 r1
 31
 o-O0
-!s100 PZgEbIbQ3@n1RE1PnOdmT1
+!s100 bC9CozjRiEHOEDD9;?JU:3
 !s85 0
 !s101 -O0
-valu_top
-IE>ZYL_VzMCc68Glnn<J`=0
-VYM2HJQfilfW:]]WWW]2>73
-w1743088717
-8../src/alu_top.v
-F../src/alu_top.v
-L0 3
+vcontrol
+IXMQ_Yz<>;m04CnSOTa^CZ0
+V:U6[8P@Dg[fGCP1^3I?TC0
 R1
+R2
+R3
+L0 60
+R4
 r1
 31
 o-O0
-!s100 6D04PkO56FKWUgfS@nSba1
+!s100 V8PPDh@_@0mimI`45W?eU3
 !s85 0
 !s101 -O0
-vcontrol_unit
-I^?X<WfNlHW`jVDlKIZ;CZ3
-V7GJQGOWf^dj@1OGL:0^;F2
-w1743087131
-8../src/control_unit/control_unit.v
-F../src/control_unit/control_unit.v
-L0 3
+vcounter_3bit
+I9Fckk0G7zUa[=TU>]Ob6=0
+V9Qe1D3TDKC6QR1G:_HZPJ1
 R1
+R2
+R3
+L0 43
+R4
 r1
 31
 o-O0
-!s100 7oc7MZl>BPkOZ7=>YLU:G2
+!s100 Ab>fdYYNLO>WLIojViG_a1
 !s85 0
 !s101 -O0
-vdivider
-I5?S2D`6TIeX@B@9:a4^B=3
-VhlIDk]OCUkk>C?c`5[`mI2
-w1743088552
-8../src/arithmetic_unit/divider.v
-F../src/arithmetic_unit/divider.v
-L0 3
+vdff
+INhL]812Fj?3KbgNHjgIZ]0
+V5WiCYS3dhHHYe]8aH4g3O1
 R1
+R2
+R3
+L0 30
+R4
 r1
 31
 o-O0
-!s100 _[DUf0dNV7QCGaN>1Q?WR2
-!s85 0
-!s101 -O0
-vinput_register
-IW6Mj0QKYZ3`dKMz@1@z>H3
-V274R4AU6G12cm0fnZkzdi0
-w1743088515
-8../src/registers/input_register.v
-F../src/registers/input_register.v
-L0 3
-R1
-r1
-31
-o-O0
-!s100 boJh1KEXP^`oQOKm?nTY`3
+!s100 <cShZcSR2VS=39UB0jMJ@0
 !s85 0
 !s101 -O0
 vmultiplier
-I1dF;Il<P>HS8z1>8Di`1^0
-VFd1WjQ<jjlCb0nCOF:WMP0
-w1743083713
-8../src/arithmetic_unit/multiplier.v
-F../src/arithmetic_unit/multiplier.v
-L0 5
+I96@z:Wz>^Cg7@Z<K^e[QL3
+V<k0Z6<:_=n00kM3fFeF?D1
 R1
+R2
+R3
+L0 115
+R4
 r1
 31
 o-O0
-!s100 o056BMLWd9zZ_oM4;dkMZ0
+!s100 kJiFO4nXQFJLaK5kEdl<60
 !s85 0
 !s101 -O0
-voutput_register
-I^2:Qn9jQ1@heUSzCAzT4N3
-VS^RYl507ji<mFTIU=BozF3
-w1743088514
-8../src/registers/output_register.v
-F../src/registers/output_register.v
-L0 3
+vmux_3to1
+Iok4__ecI]Zk4@QZo[Og8F3
+VP@8k3<Id@BmVVEnJ7anlW2
 R1
+R2
+R3
+L0 92
+R4
 r1
 31
 o-O0
-!s100 >Wmlj`NPa^J>3g@PoUA8m3
+!s100 lgYNz;TDGz;nfm2WQR4iY3
 !s85 0
 !s101 -O0
-vsubtractor
-I]3DFBG=XDkC3U1[4oV>^F2
-VG=D>KKFaIMfzJUYT6klW[2
-w1743081218
-8../src/arithmetic_unit/subtractor.v
-F../src/arithmetic_unit/subtractor.v
-L0 3
+vregister_8bit
+IU9hAQ_?EV:Qk2M=@C4]6f2
+V^0^L`2U92^`PKOIMh=9<g2
 R1
+R2
+R3
+L0 6
+R4
 r1
 31
 o-O0
-!s100 ;>4Qhez<W5madOzC=A^ZG0
+!s100 i_G_GA8D4T>c_V72F:?XE2
 !s85 0
 !s101 -O0
-vtb_alu_top
-!s100 0aH_T[:CWoPUF5AN<=Og<0
-IOHz6Fmf<6C5kVLVj@eI9:3
-V[^bcgM<CGOJY[XhOI]GRJ1
-w1743088924
-8../testbenches/tb_alu_top.v
-F../testbenches/tb_alu_top.v
-L0 3
+vshifter_16bit
+I[Y]RTmB@UY`<52:lfU:CG2
+Vk83l2==mS7WO23]_LBoCC1
 R1
+R2
+R3
+L0 107
+R4
+r1
+31
+o-O0
+!s100 X`?nHeQ<HdKb7E0UlMPAi2
+!s85 0
+!s101 -O0
+vsubtractor_8bit
+IBaRQZAjIm5jQc[=iKJ_L>2
+Vc4d=COC`[eoVLeNHAdMnD3
+R1
+R2
+R3
+L0 83
+R4
+r1
+31
+o-O0
+!s100 T_6H1lUMd1;2NbANiH5e41
+!s85 0
+!s101 -O0
+vtb_multiplier
+!s100 2?=mkdaZ@bVe6iz59UDB]2
+I]UZ6@DnWW]07N]MUhog>10
+VzjL;ioaV=?_4H6n?5lzoa2
+w1743123243
+8../testbenches/tb_multiplier.v
+F../testbenches/tb_multiplier.v
+L0 3
+R4
 r1
 !s85 0
 31

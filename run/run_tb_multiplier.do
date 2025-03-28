@@ -16,10 +16,12 @@ vsim tb_multiplier
 
 log -r /*
 
-add wave -radix unsigned /tb_multiplier/A
-add wave -radix unsigned /tb_multiplier/B
-add wave -radix unsigned /tb_multiplier/Product
+add wave -radix unsigned /tb_multiplier/clk
+add wave -radix unsigned /tb_multiplier/rst
+add wave -radix unsigned /tb_multiplier/multiplier
+add wave -radix unsigned /tb_multiplier/multiplicand
+add wave -radix unsigned /tb_multiplier/product
 
-run 200ns
+run -all
 
 quit -sim
