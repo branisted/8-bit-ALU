@@ -1,2424 +1,13 @@
 cd run
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# A=00000000, B=00000000 -> Product=0000000000000000
-# A=00000001, B=00000001 -> Product=1111111111111110
-# A=00000010, B=00000001 -> Product=1111111111111100
-# A=00000111, B=00000011 -> Product=0000000000101010
-# A=00001000, B=00001000 -> Product=0000000100000000
-# A=11111111, B=11111111 -> Product=1111111000000010
-# A=11111110, B=00000001 -> Product=1111111000000100
-# A=11111111, B=00000001 -> Product=1111111000000010
-# A=10000000, B=10000000 -> Product=0000000000000000
-# A=00000001, B=11111111 -> Product=1111111111111110
-# A=11110000, B=00001111 -> Product=0001110000100000
-# A=11111100, B=11111101 -> Product=1111011000101000
-# A=01010101, B=10101010 -> Product=0011011111001000
-# A=01010101, B=00000000 -> Product=0000000000000000
-# A=11111111, B=11110000 -> Product=1110000000100000
-# A=10101010, B=01010101 -> Product=1000111100011100
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(58)
-#    Time: 160 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 58
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 58
-# MACRO ./run_tb_multiplier.do PAUSED at line 23
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# A=  0, B=  0 -> Product=    0
-# A=  1, B=  1 -> Product=65534
-# A=  2, B=  1 -> Product=65532
-# A=  7, B=  3 -> Product=   42
-# A=  8, B=  8 -> Product=  256
-# A=255, B=255 -> Product=65026
-# A=254, B=  1 -> Product=65028
-# A=255, B=  1 -> Product=65026
-# A=128, B=128 -> Product=    0
-# A=  1, B=255 -> Product=65534
-# A=240, B= 15 -> Product= 7200
-# A=252, B=253 -> Product=63016
-# A= 85, B=170 -> Product=14280
-# A= 85, B=  0 -> Product=    0
-# A=255, B=240 -> Product=57376
-# A=170, B= 85 -> Product=36636
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(57)
-#    Time: 160 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 57
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 57
-# MACRO ./run_tb_multiplier.do PAUSED at line 23
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# A=   0, B=   0 -> Product=     0
-# A=   1, B=   1 -> Product=    -2
-# A=   2, B=   1 -> Product=    -4
-# A=   7, B=   3 -> Product=    42
-# A=   8, B=   8 -> Product=   256
-# A=  -1, B=  -1 -> Product=  -510
-# A=  -2, B=   1 -> Product=  -508
-# A=  -1, B=   1 -> Product=  -510
-# A=-128, B=-128 -> Product=     0
-# A=   1, B=  -1 -> Product=    -2
-# A= -16, B=  15 -> Product=  7200
-# A=  -4, B=  -3 -> Product= -2520
-# A=  85, B= -86 -> Product= 14280
-# A=  85, B=   0 -> Product=     0
-# A=  -1, B= -16 -> Product= -8160
-# A= -86, B=  85 -> Product=-28900
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(74)
-#    Time: 160 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 74
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 74
-# MACRO ./run_tb_multiplier.do PAUSED at line 23
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# A=   0, B=   0 -> Product=     0
-# A=   1, B=   1 -> Product=     1
-# A=   2, B=   1 -> Product=     2
-# A=   7, B=   3 -> Product=    21
-# A=   8, B=   8 -> Product=    64
-# A=  -1, B=  -1 -> Product=  -255
-# A=  -2, B=   1 -> Product=    -2
-# A=  -1, B=   1 -> Product=    -1
-# A=-128, B=-128 -> Product=-16384
-# A=   1, B=  -1 -> Product=    -1
-# A= -16, B=  15 -> Product=  -496
-# A=  -4, B=  -3 -> Product= -1012
-# A=  85, B= -86 -> Product= -7310
-# A=  85, B=   0 -> Product=     0
-# A=  -1, B= -16 -> Product= -4080
-# A= -86, B=  85 -> Product= -7310
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(74)
-#    Time: 160 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 74
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 74
-# MACRO ./run_tb_multiplier.do PAUSED at line 23
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# A=   0, B=   0 -> Product=     0
-# A=   1, B=   1 -> Product=    -1
-# A=   2, B=   1 -> Product=    -2
-# A=   7, B=   3 -> Product=    21
-# A=   8, B=   8 -> Product=   128
-# A=  -1, B=  -1 -> Product=     1
-# A=  -2, B=   1 -> Product=     2
-# A=  -1, B=   1 -> Product=     1
-# A=-128, B=-128 -> Product=     0
-# A=   1, B=  -1 -> Product=    -1
-# A= -16, B=  15 -> Product=  -240
-# A=  -4, B=  -3 -> Product=    20
-# A=  85, B= -86 -> Product=  7140
-# A=  85, B=   0 -> Product=     0
-# A=  -1, B= -16 -> Product=    16
-# A= -86, B=  85 -> Product=  7310
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(74)
-#    Time: 160 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 74
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 74
-# MACRO ./run_tb_multiplier.do PAUSED at line 23
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(10): Register is illegal in left-hand side of continuous assignment
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# A=   0, B=   0 -> Product=     0
-# A=   1, B=   1 -> Product=     1
-# A=   2, B=   1 -> Product=     2
-# A=   7, B=   3 -> Product=    21
-# A=   8, B=   8 -> Product=    64
-# A=  -1, B=  -1 -> Product=     1
-# A=  -2, B=   1 -> Product=    -2
-# A=  -1, B=   1 -> Product=    -1
-# A=-128, B=-128 -> Product= 16384
-# A=   1, B=  -1 -> Product=    -1
-# A= -16, B=  15 -> Product=  -240
-# A=  -4, B=  -3 -> Product=    12
-# A=  85, B= -86 -> Product= -7310
-# A=  85, B=   0 -> Product=     0
-# A=  -1, B= -16 -> Product=    16
-# A= -86, B=  85 -> Product= -7310
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(74)
-#    Time: 160 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 74
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 74
-# MACRO ./run_tb_multiplier.do PAUSED at line 23
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(39): Undefined variable: N.
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# ** Error: ../src/arithmetic_unit/multiplier.v(72): near "8": syntax error, unexpected "INTEGER NUMBER", expecting "IDENTIFIER" or "TYPE_IDENTIFIER"
-# -- Compiling module booth_shift_reg
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# ** Error: ../src/arithmetic_unit/multiplier.v(72): near "8": syntax error, unexpected "INTEGER NUMBER", expecting "IDENTIFIER" or "TYPE_IDENTIFIER"
-# -- Compiling module booth_shift_reg
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# ** Warning: (vsim-3017) ../src/arithmetic_unit/multiplier.v(77): [TFMPC] - Too few port connections. Expected 5, found 4.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Error: (vsim-3063) ../src/arithmetic_unit/multiplier.v(77): Port 'a' not found in the connected module (1st connection).
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Error: (vsim-3063) ../src/arithmetic_unit/multiplier.v(77): Port 'b' not found in the connected module (2nd connection).
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Error: (vsim-3063) ../src/arithmetic_unit/multiplier.v(77): Port 'cin' not found in the connected module (3rd connection).
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Error: (vsim-3063) ../src/arithmetic_unit/multiplier.v(77): Port 'sum' not found in the connected module (4th connection).
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3722) ../src/arithmetic_unit/multiplier.v(77): [TFMPC] - Missing connection for port 'A'.
-# ** Warning: (vsim-3722) ../src/arithmetic_unit/multiplier.v(77): [TFMPC] - Missing connection for port 'B'.
-# ** Warning: (vsim-3722) ../src/arithmetic_unit/multiplier.v(77): [TFMPC] - Missing connection for port 'Cin'.
-# ** Warning: (vsim-3722) ../src/arithmetic_unit/multiplier.v(77): [TFMPC] - Missing connection for port 'Sum'.
-# ** Warning: (vsim-3722) ../src/arithmetic_unit/multiplier.v(77): [TFMPC] - Missing connection for port 'Cout'.
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./run_tb_multiplier.do PAUSED at line 16
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'A'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'B'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'Sum'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Error: (vish-4014) No objects found matching '/tb_multiplier/A'.
-# Error in macro ./run_tb_multiplier.do line 20
-# (vish-4014) No objects found matching '/tb_multiplier/A'.
-#     while executing
-# "add wave -radix unsigned /tb_multiplier/A"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'A'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'B'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'Sum'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Error: (vsim-3053) ../src/arithmetic_unit/multiplier.v(78): Illegal output or inout port connection (port 'Cout').
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'Cout'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./run_tb_multiplier.do PAUSED at line 16
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'A'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'B'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'Sum'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Error: (vish-4014) No objects found matching '/tb_multiplier/A'.
-# Error in macro ./run_tb_multiplier.do line 20
-# (vish-4014) No objects found matching '/tb_multiplier/A'.
-#     while executing
-# "add wave -radix unsigned /tb_multiplier/A"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'A'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'B'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'Sum'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# At time                    0: State: WORKING, Product: 0000
-# At time                85000: State: WORKING, Product: 0003
-# At time                95000: State: WORKING, Product: Z203
-# At time               105000: State: WORKING, Product: Z103
-# At time               115000: State: WORKING, Product: Z003
-# At time               125000: State: WORKING, Product: z003
-# At time               135000: State: WORKING, Product: zZ03
-# At time               145000: State: WORKING, Product: zZ03
-# At time               155000: State: WORKING, Product: zZ03
-# At time               165000: State:    DONE, Product: zz03
-# Test Case:  * 
-# [FAIL] Expected: 15, Got: Z
-# ----------------------------
-# At time               195000: State: WORKING, Product: 0032
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'A'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'B'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'Sum'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# At time                    0: State: WORKING, Product: 0000
-# At time                85000: State: WORKING, Product: 0003
-# At time                95000: State: WORKING, Product: Z203
-# At time               105000: State: WORKING, Product: Z103
-# At time               115000: State: WORKING, Product: Z003
-# At time               125000: State: WORKING, Product: z003
-# At time               135000: State: WORKING, Product: zZ03
-# At time               145000: State: WORKING, Product: zZ03
-# At time               155000: State: WORKING, Product: zZ03
-# At time               165000: State:    DONE, Product: zz03
-# Test Case:  * 
-# [FAIL] Expected: 15, Got: Z
-# ----------------------------
-# At time               195000: State: WORKING, Product: 0032
-# At time               275000: State:    DONE, Product: 0032
-# Test Case:  * 
-# [FAIL] Expected: 5000, Got: 50
-# ----------------------------
-# At time               305000: State: WORKING, Product: 007f
-# At time               315000: State: WORKING, Product: Zf7f
-# At time               325000: State: WORKING, Product: Zf7f
-# At time               335000: State: WORKING, Product: Zf7f
-# At time               345000: State: WORKING, Product: z77f
-# At time               355000: State: WORKING, Product: zZ7f
-# At time               365000: State: WORKING, Product: zZ7f
-# At time               375000: State: WORKING, Product: zZ7f
-# At time               385000: State:    DONE, Product: zz7f
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: Z
-# ----------------------------
-# At time               415000: State: WORKING, Product: 00fe
-# At time               495000: State:    DONE, Product: 00fe
-# Test Case:  * 
-# [FAIL] Expected: 2, Got: 254
-# ----------------------------
-# At time               525000: State: WORKING, Product: 000f
-# At time               535000: State: WORKING, Product: Z80f
-# At time               545000: State: WORKING, Product: Zc0f
-# At time               555000: State: WORKING, Product: Ze0f
-# At time               565000: State: WORKING, Product: zf0f
-# At time               575000: State: WORKING, Product: zZ0f
-# At time               585000: State: WORKING, Product: zZ0f
-# At time               595000: State: WORKING, Product: zZ0f
-# At time               605000: State:    DONE, Product: zz0f
-# Test Case:  * 
-# [FAIL] Expected: -240, Got: Z
-# ----------------------------
-# At time               635000: State: WORKING, Product: 0080
-# At time               715000: State:    DONE, Product: 0080
-# Test Case:  * 
-# [FAIL] Expected: 16384, Got: 128
-# ----------------------------
-# At time               745000: State: WORKING, Product: 00ff
-# At time               755000: State: WORKING, Product: Z0ff
-# At time               765000: State: WORKING, Product: Z0ff
-# At time               775000: State: WORKING, Product: Z0ff
-# At time               785000: State: WORKING, Product: z0ff
-# At time               795000: State: WORKING, Product: zZff
-# At time               805000: State: WORKING, Product: zZff
-# At time               815000: State: WORKING, Product: zZff
-# At time               825000: State:    DONE, Product: zzff
-# Test Case:  * 
-# [FAIL] Expected: 0, Got: Z
-# ----------------------------
-# At time               855000: State: WORKING, Product: 007f
-# At time               865000: State: WORKING, Product: Zf7f
-# At time               875000: State: WORKING, Product: Zf7f
-# At time               885000: State: WORKING, Product: Zf7f
-# At time               895000: State: WORKING, Product: z77f
-# At time               905000: State: WORKING, Product: zZ7f
-# At time               915000: State: WORKING, Product: zZ7f
-# At time               925000: State: WORKING, Product: zZ7f
-# At time               935000: State:    DONE, Product: zz7f
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: Z
-# ----------------------------
-# At time               965000: State: WORKING, Product: 0000
-# At time              1045000: State:    DONE, Product: 0000
-# Test Case:  * 
-# [PASS] Result: 0
-# ----------------------------
-# At time              1075000: State: WORKING, Product: 00f1
-# At time              1085000: State: WORKING, Product: Z7f1
-# At time              1095000: State: WORKING, Product: Z3f1
-# At time              1105000: State: WORKING, Product: Z1f1
-# At time              1115000: State: WORKING, Product: z0f1
-# At time              1125000: State: WORKING, Product: zZf1
-# At time              1135000: State: WORKING, Product: zZf1
-# At time              1145000: State: WORKING, Product: zZf1
-# At time              1155000: State:    DONE, Product: zzf1
-# Test Case:  * 
-# [FAIL] Expected: -225, Got: Z
-# ----------------------------
-# At time              1185000: State: WORKING, Product: 0019
-# At time              1195000: State: WORKING, Product: Z819
-# At time              1205000: State: WORKING, Product: Z419
-# At time              1215000: State: WORKING, Product: Z219
-# At time              1225000: State: WORKING, Product: z919
-# At time              1235000: State: WORKING, Product: zZ19
-# At time              1245000: State: WORKING, Product: zZ19
-# At time              1255000: State: WORKING, Product: zZ19
-# At time              1265000: State:    DONE, Product: zz19
-# Test Case:  * 
-# [FAIL] Expected: -2800, Got: Z
-# ----------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(91)
-#    Time: 1290 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 91
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 91
-# MACRO ./run_tb_multiplier.do PAUSED at line 28
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'A'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'B'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'Sum'.
-#         Region: /tb_multiplier/dut/arith_unit/cla_adder
-# At time                    0: State: WORKING, Product: 0000
-# At time                85000: State: WORKING, Product: 0003
-# At time                95000: State: WORKING, Product: Z281
-# At time               105000: State: WORKING, Product: Z140
-# At time               115000: State: WORKING, Product: Xe20
-# At time               125000: State: WORKING, Product: Xf10
-# At time               135000: State: WORKING, Product: XX88
-# At time               145000: State: WORKING, Product: zXc4
-# At time               155000: State: WORKING, Product: zXe2
-# At time               165000: State:    DONE, Product: zXf1
-# Test Case:  * 
-# [FAIL] Expected: 15, Got: X
-# ----------------------------
-# At time               195000: State: WORKING, Product: 0032
-# At time               205000: State: WORKING, Product: 0019
-# At time               215000: State: WORKING, Product: Z20c
-# At time               225000: State: WORKING, Product: X706
-# At time               235000: State: WORKING, Product: X383
-# At time               245000: State: WORKING, Product: Xbc1
-# At time               255000: State: WORKING, Product: XXe0
-# At time               265000: State: WORKING, Product: XXf0
-# At time               275000: State:    DONE, Product: XX78
-# Test Case:  * 
-# [FAIL] Expected: 5000, Got: X
-# ----------------------------
-# At time               305000: State: WORKING, Product: 007f
-# At time               315000: State: WORKING, Product: Zfbf
-# At time               325000: State: WORKING, Product: Zfdf
-# At time               335000: State: WORKING, Product: Zfef
-# At time               345000: State: WORKING, Product: z7f7
-# At time               355000: State: WORKING, Product: zZfb
-# At time               365000: State: WORKING, Product: zZfd
-# At time               375000: State: WORKING, Product: zZfe
-# At time               385000: State:    DONE, Product: Xxff
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: X
-# ----------------------------
-# At time               415000: State: WORKING, Product: 00fe
-# At time               425000: State: WORKING, Product: 007f
-# At time               435000: State: WORKING, Product: Zfbf
-# At time               445000: State: WORKING, Product: Zfdf
-# At time               455000: State: WORKING, Product: Zfef
-# At time               465000: State: WORKING, Product: zff7
-# At time               475000: State: WORKING, Product: zZfb
-# At time               485000: State: WORKING, Product: zZfd
-# At time               495000: State:    DONE, Product: zZfe
-# Test Case:  * 
-# [FAIL] Expected: 2, Got: Z
-# ----------------------------
-# At time               525000: State: WORKING, Product: 000f
-# At time               535000: State: WORKING, Product: Z807
-# At time               545000: State: WORKING, Product: Zc03
-# At time               555000: State: WORKING, Product: Ze01
-# At time               565000: State: WORKING, Product: zf00
-# At time               575000: State: WORKING, Product: XX80
-# At time               585000: State: WORKING, Product: XXc0
-# At time               595000: State: WORKING, Product: XXe0
-# At time               605000: State:    DONE, Product: zxf0
-# Test Case:  * 
-# [FAIL] Expected: -240, Got: X
-# ----------------------------
-# At time               635000: State: WORKING, Product: 0080
-# At time               645000: State: WORKING, Product: 0040
-# At time               655000: State: WORKING, Product: 0020
-# At time               665000: State: WORKING, Product: 0010
-# At time               675000: State: WORKING, Product: 0008
-# At time               685000: State: WORKING, Product: 0004
-# At time               695000: State: WORKING, Product: 0002
-# At time               705000: State: WORKING, Product: 0001
-# At time               715000: State:    DONE, Product: Z000
-# Test Case:  * 
-# [FAIL] Expected: 16384, Got: Z
-# ----------------------------
-# At time               745000: State: WORKING, Product: 00ff
-# At time               755000: State: WORKING, Product: Z07f
-# At time               765000: State: WORKING, Product: Z03f
-# At time               775000: State: WORKING, Product: Z01f
-# At time               785000: State: WORKING, Product: z00f
-# At time               795000: State: WORKING, Product: zZ07
-# At time               805000: State: WORKING, Product: zZ03
-# At time               815000: State: WORKING, Product: zZ01
-# At time               825000: State:    DONE, Product: zz00
-# Test Case:  * 
-# [FAIL] Expected: 0, Got: Z
-# ----------------------------
-# At time               855000: State: WORKING, Product: 007f
-# At time               865000: State: WORKING, Product: Zfbf
-# At time               875000: State: WORKING, Product: Zfdf
-# At time               885000: State: WORKING, Product: Zfef
-# At time               895000: State: WORKING, Product: z7f7
-# At time               905000: State: WORKING, Product: zZfb
-# At time               915000: State: WORKING, Product: zZfd
-# At time               925000: State: WORKING, Product: zZfe
-# At time               935000: State:    DONE, Product: Xxff
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: X
-# ----------------------------
-# At time               965000: State: WORKING, Product: 0000
-# At time              1045000: State:    DONE, Product: 0000
-# Test Case:  * 
-# [PASS] Result: 0
-# ----------------------------
-# At time              1075000: State: WORKING, Product: 00f1
-# At time              1085000: State: WORKING, Product: Z7f8
-# At time              1095000: State: WORKING, Product: Xc7c
-# At time              1105000: State: WORKING, Product: Xe3e
-# At time              1115000: State: WORKING, Product: Xf1f
-# At time              1125000: State: WORKING, Product: XX0f
-# At time              1135000: State: WORKING, Product: XX87
-# At time              1145000: State: WORKING, Product: XXc3
-# At time              1155000: State:    DONE, Product: zxe1
-# Test Case:  * 
-# [FAIL] Expected: -225, Got: X
-# ----------------------------
-# At time              1185000: State: WORKING, Product: 0019
-# At time              1195000: State: WORKING, Product: Z80c
-# At time              1205000: State: WORKING, Product: Xc06
-# At time              1215000: State: WORKING, Product: Xe03
-# At time              1225000: State: WORKING, Product: Xf01
-# At time              1235000: State: WORKING, Product: XX80
-# At time              1245000: State: WORKING, Product: XXc0
-# At time              1255000: State: WORKING, Product: XXe0
-# At time              1265000: State:    DONE, Product: Xxf0
-# Test Case:  * 
-# [FAIL] Expected: -2800, Got: X
-# ----------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(91)
-#    Time: 1290 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 91
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 91
-# MACRO ./run_tb_multiplier.do PAUSED at line 28
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# At time                    0: State: WORKING, Product: 0000
-# At time                85000: State: WORKING, Product: 0003
-# At time                95000: State: WORKING, Product: 0181
-# At time               105000: State: WORKING, Product: 0040
-# At time               115000: State: WORKING, Product: ff20
-# At time               125000: State: WORKING, Product: ff10
-# At time               135000: State: WORKING, Product: ff88
-# At time               145000: State: WORKING, Product: ffc4
-# At time               155000: State: WORKING, Product: ffe2
-# Test Case:  * 
-# [FAIL] Expected: 15, Got: -30
-# ----------------------------
-# At time               185000: State: WORKING, Product: 0032
-# At time               195000: State: WORKING, Product: 0019
-# At time               205000: State: WORKING, Product: 190c
-# At time               215000: State: WORKING, Product: f306
-# At time               225000: State: WORKING, Product: f983
-# At time               235000: State: WORKING, Product: 15c1
-# At time               245000: State: WORKING, Product: 0ae0
-# At time               255000: State: WORKING, Product: ecf0
-# Test Case:  * 
-# [FAIL] Expected: 5000, Got: -4880
-# ----------------------------
-# At time               285000: State: WORKING, Product: 007f
-# At time               295000: State: WORKING, Product: 1fbf
-# At time               305000: State: WORKING, Product: 0fdf
-# At time               315000: State: WORKING, Product: 07ef
-# At time               325000: State: WORKING, Product: 03f7
-# At time               335000: State: WORKING, Product: 01fb
-# At time               345000: State: WORKING, Product: 00fd
-# At time               355000: State: WORKING, Product: 00fe
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: 254
-# ----------------------------
-# At time               395000: State: WORKING, Product: 007f
-# At time               405000: State: WORKING, Product: ffbf
-# At time               415000: State: WORKING, Product: ffdf
-# At time               425000: State: WORKING, Product: ffef
-# At time               435000: State: WORKING, Product: fff7
-# At time               445000: State: WORKING, Product: fffb
-# At time               455000: State: WORKING, Product: fffd
-# Test Case:  * 
-# [FAIL] Expected: 2, Got: -3
-# ----------------------------
-# At time               485000: State: WORKING, Product: 000f
-# At time               495000: State: WORKING, Product: fc07
-# At time               505000: State: WORKING, Product: fe03
-# At time               515000: State: WORKING, Product: ff01
-# At time               525000: State: WORKING, Product: ff00
-# At time               535000: State: WORKING, Product: 0380
-# At time               545000: State: WORKING, Product: 01c0
-# At time               555000: State: WORKING, Product: 00e0
-# Test Case:  * 
-# [FAIL] Expected: -240, Got: 224
-# ----------------------------
-# At time               585000: State: WORKING, Product: 0080
-# At time               595000: State: WORKING, Product: 0040
-# At time               605000: State: WORKING, Product: 0020
-# At time               615000: State: WORKING, Product: 0010
-# At time               625000: State: WORKING, Product: 0008
-# At time               635000: State: WORKING, Product: 0004
-# At time               645000: State: WORKING, Product: 0002
-# At time               655000: State: WORKING, Product: 0001
-# Test Case:  * 
-# [FAIL] Expected: 16384, Got: 1
-# ----------------------------
-# At time               685000: State: WORKING, Product: 00ff
-# At time               695000: State: WORKING, Product: 007f
-# At time               705000: State: WORKING, Product: 003f
-# At time               715000: State: WORKING, Product: 001f
-# At time               725000: State: WORKING, Product: 000f
-# At time               735000: State: WORKING, Product: 0007
-# At time               745000: State: WORKING, Product: 0003
-# At time               755000: State: WORKING, Product: 0001
-# Test Case:  * 
-# [FAIL] Expected: 0, Got: 1
-# ----------------------------
-# At time               785000: State: WORKING, Product: 007f
-# At time               795000: State: WORKING, Product: 1fbf
-# At time               805000: State: WORKING, Product: 0fdf
-# At time               815000: State: WORKING, Product: 07ef
-# At time               825000: State: WORKING, Product: 03f7
-# At time               835000: State: WORKING, Product: 01fb
-# At time               845000: State: WORKING, Product: 00fd
-# At time               855000: State: WORKING, Product: 00fe
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: 254
-# ----------------------------
-# At time               885000: State: WORKING, Product: 0000
-# Test Case:  * 
-# [PASS] Result: 0
-# ----------------------------
-# At time               985000: State: WORKING, Product: 00f1
-# At time               995000: State: WORKING, Product: 03f8
-# At time              1005000: State: WORKING, Product: fe7c
-# At time              1015000: State: WORKING, Product: ff3e
-# At time              1025000: State: WORKING, Product: ff1f
-# At time              1035000: State: WORKING, Product: 030f
-# At time              1045000: State: WORKING, Product: 0187
-# At time              1055000: State: WORKING, Product: 00c3
-# Test Case:  * 
-# [FAIL] Expected: -225, Got: 195
-# ----------------------------
-# At time              1085000: State: WORKING, Product: 0019
-# At time              1095000: State: WORKING, Product: e40c
-# At time              1105000: State: WORKING, Product: 0e06
-# At time              1115000: State: WORKING, Product: 0703
-# At time              1125000: State: WORKING, Product: e701
-# At time              1135000: State: WORKING, Product: f380
-# At time              1145000: State: WORKING, Product: 15c0
-# At time              1155000: State: WORKING, Product: 0ae0
-# Test Case:  * 
-# [FAIL] Expected: -2800, Got: 2784
-# ----------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(92)
-#    Time: 1181 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 92
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 92
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# At time                    0: State: WORKING, Product: 0000
-# At time                85000: State: WORKING, Product: 0003
-# At time                95000: State: WORKING, Product: fe81
-# At time               105000: State: WORKING, Product: ffc0
-# At time               115000: State: WORKING, Product: 00e0
-# At time               125000: State: WORKING, Product: 00f0
-# At time               135000: State: WORKING, Product: 0078
-# At time               145000: State: WORKING, Product: 003c
-# At time               155000: State: WORKING, Product: 001e
-# Test Case:  * 
-# [FAIL] Expected: 15, Got: 30
-# ----------------------------
-# At time               185000: State: WORKING, Product: 0032
-# At time               195000: State: WORKING, Product: 0019
-# At time               205000: State: WORKING, Product: e70c
-# At time               215000: State: WORKING, Product: 0c06
-# At time               225000: State: WORKING, Product: 0683
-# At time               235000: State: WORKING, Product: ea41
-# At time               245000: State: WORKING, Product: f520
-# At time               255000: State: WORKING, Product: 1310
-# Test Case:  * 
-# [FAIL] Expected: 5000, Got: 4880
-# ----------------------------
-# At time               285000: State: WORKING, Product: 007f
-# At time               295000: State: WORKING, Product: e0bf
-# At time               305000: State: WORKING, Product: f05f
-# At time               315000: State: WORKING, Product: f82f
-# At time               325000: State: WORKING, Product: fc17
-# At time               335000: State: WORKING, Product: fe0b
-# At time               345000: State: WORKING, Product: ff05
-# At time               355000: State: WORKING, Product: ff02
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: -254
-# ----------------------------
-# At time               385000: State: WORKING, Product: 00fe
-# At time               395000: State: WORKING, Product: 007f
-# At time               405000: State: WORKING, Product: 00bf
-# At time               415000: State: WORKING, Product: 005f
-# At time               425000: State: WORKING, Product: 002f
-# At time               435000: State: WORKING, Product: 0017
-# At time               445000: State: WORKING, Product: 000b
-# At time               455000: State: WORKING, Product: 0005
-# Test Case:  * 
-# [FAIL] Expected: 2, Got: 5
-# ----------------------------
-# At time               485000: State: WORKING, Product: 000f
-# At time               495000: State: WORKING, Product: 0407
-# At time               505000: State: WORKING, Product: 0203
-# At time               515000: State: WORKING, Product: 0101
-# At time               525000: State: WORKING, Product: 0000
-# At time               535000: State: WORKING, Product: fc80
-# At time               545000: State: WORKING, Product: fe40
-# At time               555000: State: WORKING, Product: ff20
-# Test Case:  * 
-# [FAIL] Expected: -240, Got: -224
-# ----------------------------
-# At time               585000: State: WORKING, Product: 0080
-# At time               595000: State: WORKING, Product: 0040
-# At time               605000: State: WORKING, Product: 0020
-# At time               615000: State: WORKING, Product: 0010
-# At time               625000: State: WORKING, Product: 0008
-# At time               635000: State: WORKING, Product: 0004
-# At time               645000: State: WORKING, Product: 0002
-# At time               655000: State: WORKING, Product: 0001
-# Test Case:  * 
-# [FAIL] Expected: 16384, Got: 1
-# ----------------------------
-# At time               685000: State: WORKING, Product: 00ff
-# At time               695000: State: WORKING, Product: 007f
-# At time               705000: State: WORKING, Product: 003f
-# At time               715000: State: WORKING, Product: 001f
-# At time               725000: State: WORKING, Product: 000f
-# At time               735000: State: WORKING, Product: 0007
-# At time               745000: State: WORKING, Product: 0003
-# At time               755000: State: WORKING, Product: 0001
-# Test Case:  * 
-# [FAIL] Expected: 0, Got: 1
-# ----------------------------
-# At time               785000: State: WORKING, Product: 007f
-# At time               795000: State: WORKING, Product: e0bf
-# At time               805000: State: WORKING, Product: f05f
-# At time               815000: State: WORKING, Product: f82f
-# At time               825000: State: WORKING, Product: fc17
-# At time               835000: State: WORKING, Product: fe0b
-# At time               845000: State: WORKING, Product: ff05
-# At time               855000: State: WORKING, Product: ff02
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: -254
-# ----------------------------
-# At time               885000: State: WORKING, Product: 0000
-# Test Case:  * 
-# [PASS] Result: 0
-# ----------------------------
-# At time               985000: State: WORKING, Product: 00f1
-# At time               995000: State: WORKING, Product: fcf8
-# At time              1005000: State: WORKING, Product: 01fc
-# At time              1015000: State: WORKING, Product: 00fe
-# At time              1025000: State: WORKING, Product: 00ff
-# At time              1035000: State: WORKING, Product: fcff
-# At time              1045000: State: WORKING, Product: fe7f
-# At time              1055000: State: WORKING, Product: ff3f
-# Test Case:  * 
-# [FAIL] Expected: -225, Got: -193
-# ----------------------------
-# At time              1085000: State: WORKING, Product: 0019
-# At time              1095000: State: WORKING, Product: 1c0c
-# At time              1105000: State: WORKING, Product: f206
-# At time              1115000: State: WORKING, Product: f903
-# At time              1125000: State: WORKING, Product: 1801
-# At time              1135000: State: WORKING, Product: 0c80
-# At time              1145000: State: WORKING, Product: ea40
-# At time              1155000: State: WORKING, Product: f520
-# Test Case:  * 
-# [FAIL] Expected: -2800, Got: -2784
-# ----------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(92)
-#    Time: 1181 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 92
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 92
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# At time                    0: State: WORKING, Product: 0000
-# At time                85000: State: WORKING, Product: 0003
-# At time                95000: State: WORKING, Product: 0181
-# At time               105000: State: WORKING, Product: 0040
-# At time               115000: State: WORKING, Product: ff20
-# At time               125000: State: WORKING, Product: ff10
-# At time               135000: State: WORKING, Product: ff88
-# At time               145000: State: WORKING, Product: ffc4
-# At time               155000: State: WORKING, Product: ffe2
-# Test Case:  * 
-# [FAIL] Expected: 15, Got: -30
-# ----------------------------
-# At time               185000: State: WORKING, Product: 0032
-# At time               195000: State: WORKING, Product: 0019
-# At time               205000: State: WORKING, Product: 190c
-# At time               215000: State: WORKING, Product: f306
-# At time               225000: State: WORKING, Product: f983
-# At time               235000: State: WORKING, Product: 15c1
-# At time               245000: State: WORKING, Product: 0ae0
-# At time               255000: State: WORKING, Product: ecf0
-# Test Case:  * 
-# [FAIL] Expected: 5000, Got: -4880
-# ----------------------------
-# At time               285000: State: WORKING, Product: 007f
-# At time               295000: State: WORKING, Product: 1fbf
-# At time               305000: State: WORKING, Product: 0fdf
-# At time               315000: State: WORKING, Product: 07ef
-# At time               325000: State: WORKING, Product: 03f7
-# At time               335000: State: WORKING, Product: 01fb
-# At time               345000: State: WORKING, Product: 00fd
-# At time               355000: State: WORKING, Product: 00fe
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: 254
-# ----------------------------
-# At time               395000: State: WORKING, Product: 007f
-# At time               405000: State: WORKING, Product: ffbf
-# At time               415000: State: WORKING, Product: ffdf
-# At time               425000: State: WORKING, Product: ffef
-# At time               435000: State: WORKING, Product: fff7
-# At time               445000: State: WORKING, Product: fffb
-# At time               455000: State: WORKING, Product: fffd
-# Test Case:  * 
-# [FAIL] Expected: 2, Got: -3
-# ----------------------------
-# At time               485000: State: WORKING, Product: 000f
-# At time               495000: State: WORKING, Product: fc07
-# At time               505000: State: WORKING, Product: fe03
-# At time               515000: State: WORKING, Product: ff01
-# At time               525000: State: WORKING, Product: ff00
-# At time               535000: State: WORKING, Product: 0380
-# At time               545000: State: WORKING, Product: 01c0
-# At time               555000: State: WORKING, Product: 00e0
-# Test Case:  * 
-# [FAIL] Expected: -240, Got: 224
-# ----------------------------
-# At time               585000: State: WORKING, Product: 0080
-# At time               595000: State: WORKING, Product: 0040
-# At time               605000: State: WORKING, Product: 0020
-# At time               615000: State: WORKING, Product: 0010
-# At time               625000: State: WORKING, Product: 0008
-# At time               635000: State: WORKING, Product: 0004
-# At time               645000: State: WORKING, Product: 0002
-# At time               655000: State: WORKING, Product: 0001
-# Test Case:  * 
-# [FAIL] Expected: 16384, Got: 1
-# ----------------------------
-# At time               685000: State: WORKING, Product: 00ff
-# At time               695000: State: WORKING, Product: 007f
-# At time               705000: State: WORKING, Product: 003f
-# At time               715000: State: WORKING, Product: 001f
-# At time               725000: State: WORKING, Product: 000f
-# At time               735000: State: WORKING, Product: 0007
-# At time               745000: State: WORKING, Product: 0003
-# At time               755000: State: WORKING, Product: 0001
-# Test Case:  * 
-# [FAIL] Expected: 0, Got: 1
-# ----------------------------
-# At time               785000: State: WORKING, Product: 007f
-# At time               795000: State: WORKING, Product: 1fbf
-# At time               805000: State: WORKING, Product: 0fdf
-# At time               815000: State: WORKING, Product: 07ef
-# At time               825000: State: WORKING, Product: 03f7
-# At time               835000: State: WORKING, Product: 01fb
-# At time               845000: State: WORKING, Product: 00fd
-# At time               855000: State: WORKING, Product: 00fe
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: 254
-# ----------------------------
-# At time               885000: State: WORKING, Product: 0000
-# Test Case:  * 
-# [PASS] Result: 0
-# ----------------------------
-# At time               985000: State: WORKING, Product: 00f1
-# At time               995000: State: WORKING, Product: 03f8
-# At time              1005000: State: WORKING, Product: fe7c
-# At time              1015000: State: WORKING, Product: ff3e
-# At time              1025000: State: WORKING, Product: ff1f
-# At time              1035000: State: WORKING, Product: 030f
-# At time              1045000: State: WORKING, Product: 0187
-# At time              1055000: State: WORKING, Product: 00c3
-# Test Case:  * 
-# [FAIL] Expected: -225, Got: 195
-# ----------------------------
-# At time              1085000: State: WORKING, Product: 0019
-# At time              1095000: State: WORKING, Product: e40c
-# At time              1105000: State: WORKING, Product: 0e06
-# At time              1115000: State: WORKING, Product: 0703
-# At time              1125000: State: WORKING, Product: e701
-# At time              1135000: State: WORKING, Product: f380
-# At time              1145000: State: WORKING, Product: 15c0
-# At time              1155000: State: WORKING, Product: 0ae0
-# Test Case:  * 
-# [FAIL] Expected: -2800, Got: 2784
-# ----------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(92)
-#    Time: 1181 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 92
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 92
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# At time                    0: State: WORKING, Product: 0000
-# At time                85000: State: WORKING, Product: 0003
-# At time                95000: State: WORKING, Product: 0181
-# At time               105000: State: WORKING, Product: 0040
-# At time               115000: State: WORKING, Product: ffa0
-# At time               125000: State: WORKING, Product: ff50
-# At time               135000: State: WORKING, Product: ffa8
-# At time               145000: State: WORKING, Product: ffd4
-# At time               155000: State: WORKING, Product: ffea
-# Test Case:  * 
-# [FAIL] Expected: 15, Got: -22
-# ----------------------------
-# At time               185000: State: WORKING, Product: 0032
-# At time               195000: State: WORKING, Product: 0019
-# At time               205000: State: WORKING, Product: 190c
-# At time               215000: State: WORKING, Product: f386
-# At time               225000: State: WORKING, Product: f9c3
-# At time               235000: State: WORKING, Product: 15e1
-# At time               245000: State: WORKING, Product: 0af0
-# At time               255000: State: WORKING, Product: ec78
-# Test Case:  * 
-# [FAIL] Expected: 5000, Got: -5000
-# ----------------------------
-# At time               285000: State: WORKING, Product: 007f
-# At time               295000: State: WORKING, Product: 1fbf
-# At time               305000: State: WORKING, Product: 0fdf
-# At time               315000: State: WORKING, Product: 07ef
-# At time               325000: State: WORKING, Product: 03f7
-# At time               335000: State: WORKING, Product: 01fb
-# At time               345000: State: WORKING, Product: 00fd
-# At time               355000: State: WORKING, Product: 00fe
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: 254
-# ----------------------------
-# At time               395000: State: WORKING, Product: 007f
-# At time               405000: State: WORKING, Product: ffbf
-# At time               415000: State: WORKING, Product: ffdf
-# At time               425000: State: WORKING, Product: ffef
-# At time               435000: State: WORKING, Product: fff7
-# At time               445000: State: WORKING, Product: fffb
-# At time               455000: State: WORKING, Product: fffd
-# Test Case:  * 
-# [FAIL] Expected: 2, Got: -3
-# ----------------------------
-# At time               485000: State: WORKING, Product: 000f
-# At time               495000: State: WORKING, Product: fc07
-# At time               505000: State: WORKING, Product: fe03
-# At time               515000: State: WORKING, Product: ff01
-# At time               525000: State: WORKING, Product: ff00
-# At time               535000: State: WORKING, Product: 0400
-# At time               545000: State: WORKING, Product: 0200
-# At time               555000: State: WORKING, Product: 0100
-# Test Case:  * 
-# [FAIL] Expected: -240, Got: 256
-# ----------------------------
-# At time               585000: State: WORKING, Product: 0080
-# At time               595000: State: WORKING, Product: 0040
-# At time               605000: State: WORKING, Product: 0020
-# At time               615000: State: WORKING, Product: 0010
-# At time               625000: State: WORKING, Product: 0008
-# At time               635000: State: WORKING, Product: 0004
-# At time               645000: State: WORKING, Product: 0002
-# At time               655000: State: WORKING, Product: 0001
-# Test Case:  * 
-# [FAIL] Expected: 16384, Got: 1
-# ----------------------------
-# At time               685000: State: WORKING, Product: 00ff
-# At time               695000: State: WORKING, Product: 007f
-# At time               705000: State: WORKING, Product: 003f
-# At time               715000: State: WORKING, Product: 001f
-# At time               725000: State: WORKING, Product: 000f
-# At time               735000: State: WORKING, Product: 0007
-# At time               745000: State: WORKING, Product: 0003
-# At time               755000: State: WORKING, Product: 0001
-# Test Case:  * 
-# [FAIL] Expected: 0, Got: 1
-# ----------------------------
-# At time               785000: State: WORKING, Product: 007f
-# At time               795000: State: WORKING, Product: 1fbf
-# At time               805000: State: WORKING, Product: 0fdf
-# At time               815000: State: WORKING, Product: 07ef
-# At time               825000: State: WORKING, Product: 03f7
-# At time               835000: State: WORKING, Product: 01fb
-# At time               845000: State: WORKING, Product: 00fd
-# At time               855000: State: WORKING, Product: 00fe
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: 254
-# ----------------------------
-# At time               885000: State: WORKING, Product: 0000
-# Test Case:  * 
-# [PASS] Result: 0
-# ----------------------------
-# At time               985000: State: WORKING, Product: 00f1
-# At time               995000: State: WORKING, Product: 03f8
-# At time              1005000: State: WORKING, Product: fefc
-# At time              1015000: State: WORKING, Product: ff7e
-# At time              1025000: State: WORKING, Product: ff3f
-# At time              1035000: State: WORKING, Product: 031f
-# At time              1045000: State: WORKING, Product: 018f
-# At time              1055000: State: WORKING, Product: 00c7
-# Test Case:  * 
-# [FAIL] Expected: -225, Got: 199
-# ----------------------------
-# At time              1085000: State: WORKING, Product: 0019
-# At time              1095000: State: WORKING, Product: e40c
-# At time              1105000: State: WORKING, Product: 0e86
-# At time              1115000: State: WORKING, Product: 0743
-# At time              1125000: State: WORKING, Product: e721
-# At time              1135000: State: WORKING, Product: f390
-# At time              1145000: State: WORKING, Product: 1648
-# At time              1155000: State: WORKING, Product: 0b24
-# Test Case:  * 
-# [FAIL] Expected: -2800, Got: 2852
-# ----------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(92)
-#    Time: 1181 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 92
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 92
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module booth_shift_reg
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Loading work.booth_shift_reg
-# At time                    0: State: WORKING, Product: 0000
-# At time                85000: State: WORKING, Product: 0003
-# At time                95000: State: WORKING, Product: 0181
-# At time               105000: State: WORKING, Product: 0040
-# At time               115000: State: WORKING, Product: ff20
-# At time               125000: State: WORKING, Product: ff10
-# At time               135000: State: WORKING, Product: ff88
-# At time               145000: State: WORKING, Product: ffc4
-# At time               155000: State: WORKING, Product: ffe2
-# Test Case:  * 
-# [FAIL] Expected: 15, Got: -30
-# ----------------------------
-# At time               185000: State: WORKING, Product: 0032
-# At time               195000: State: WORKING, Product: 0019
-# At time               205000: State: WORKING, Product: 190c
-# At time               215000: State: WORKING, Product: f306
-# At time               225000: State: WORKING, Product: f983
-# At time               235000: State: WORKING, Product: 15c1
-# At time               245000: State: WORKING, Product: 0ae0
-# At time               255000: State: WORKING, Product: ecf0
-# Test Case:  * 
-# [FAIL] Expected: 5000, Got: -4880
-# ----------------------------
-# At time               285000: State: WORKING, Product: 007f
-# At time               295000: State: WORKING, Product: 1fbf
-# At time               305000: State: WORKING, Product: 0fdf
-# At time               315000: State: WORKING, Product: 07ef
-# At time               325000: State: WORKING, Product: 03f7
-# At time               335000: State: WORKING, Product: 01fb
-# At time               345000: State: WORKING, Product: 00fd
-# At time               355000: State: WORKING, Product: 00fe
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: 254
-# ----------------------------
-# At time               395000: State: WORKING, Product: 007f
-# At time               405000: State: WORKING, Product: ffbf
-# At time               415000: State: WORKING, Product: ffdf
-# At time               425000: State: WORKING, Product: ffef
-# At time               435000: State: WORKING, Product: fff7
-# At time               445000: State: WORKING, Product: fffb
-# At time               455000: State: WORKING, Product: fffd
-# Test Case:  * 
-# [FAIL] Expected: 2, Got: -3
-# ----------------------------
-# At time               485000: State: WORKING, Product: 000f
-# At time               495000: State: WORKING, Product: fc07
-# At time               505000: State: WORKING, Product: fe03
-# At time               515000: State: WORKING, Product: ff01
-# At time               525000: State: WORKING, Product: ff00
-# At time               535000: State: WORKING, Product: 0380
-# At time               545000: State: WORKING, Product: 01c0
-# At time               555000: State: WORKING, Product: 00e0
-# Test Case:  * 
-# [FAIL] Expected: -240, Got: 224
-# ----------------------------
-# At time               585000: State: WORKING, Product: 0080
-# At time               595000: State: WORKING, Product: 0040
-# At time               605000: State: WORKING, Product: 0020
-# At time               615000: State: WORKING, Product: 0010
-# At time               625000: State: WORKING, Product: 0008
-# At time               635000: State: WORKING, Product: 0004
-# At time               645000: State: WORKING, Product: 0002
-# At time               655000: State: WORKING, Product: 0001
-# Test Case:  * 
-# [FAIL] Expected: 16384, Got: 1
-# ----------------------------
-# At time               685000: State: WORKING, Product: 00ff
-# At time               695000: State: WORKING, Product: 007f
-# At time               705000: State: WORKING, Product: 003f
-# At time               715000: State: WORKING, Product: 001f
-# At time               725000: State: WORKING, Product: 000f
-# At time               735000: State: WORKING, Product: 0007
-# At time               745000: State: WORKING, Product: 0003
-# At time               755000: State: WORKING, Product: 0001
-# Test Case:  * 
-# [FAIL] Expected: 0, Got: 1
-# ----------------------------
-# At time               785000: State: WORKING, Product: 007f
-# At time               795000: State: WORKING, Product: 1fbf
-# At time               805000: State: WORKING, Product: 0fdf
-# At time               815000: State: WORKING, Product: 07ef
-# At time               825000: State: WORKING, Product: 03f7
-# At time               835000: State: WORKING, Product: 01fb
-# At time               845000: State: WORKING, Product: 00fd
-# At time               855000: State: WORKING, Product: 00fe
-# Test Case:  * 
-# [FAIL] Expected: 16129, Got: 254
-# ----------------------------
-# At time               885000: State: WORKING, Product: 0000
-# Test Case:  * 
-# [PASS] Result: 0
-# ----------------------------
-# At time               985000: State: WORKING, Product: 00f1
-# At time               995000: State: WORKING, Product: 03f8
-# At time              1005000: State: WORKING, Product: fe7c
-# At time              1015000: State: WORKING, Product: ff3e
-# At time              1025000: State: WORKING, Product: ff1f
-# At time              1035000: State: WORKING, Product: 030f
-# At time              1045000: State: WORKING, Product: 0187
-# At time              1055000: State: WORKING, Product: 00c3
-# Test Case:  * 
-# [FAIL] Expected: -225, Got: 195
-# ----------------------------
-# At time              1085000: State: WORKING, Product: 0019
-# At time              1095000: State: WORKING, Product: e40c
-# At time              1105000: State: WORKING, Product: 0e06
-# At time              1115000: State: WORKING, Product: 0703
-# At time              1125000: State: WORKING, Product: e701
-# At time              1135000: State: WORKING, Product: f380
-# At time              1145000: State: WORKING, Product: 15c0
-# At time              1155000: State: WORKING, Product: 0ae0
-# Test Case:  * 
-# [FAIL] Expected: -2800, Got: 2784
-# ----------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(92)
-#    Time: 1181 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 92
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 92
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(27): (vlog-2110) Illegal reference to net "sub".
-# ** Error: ../src/arithmetic_unit/multiplier.v(27): (vlog-2110) Illegal reference to net "add".
-# ** Error: ../src/arithmetic_unit/multiplier.v(28): (vlog-2110) Illegal reference to net "sub".
-# ** Error: ../src/arithmetic_unit/multiplier.v(28): (vlog-2110) Illegal reference to net "add".
-# ** Error: ../src/arithmetic_unit/multiplier.v(29): (vlog-2110) Illegal reference to net "sub".
-# ** Error: ../src/arithmetic_unit/multiplier.v(29): (vlog-2110) Illegal reference to net "add".
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# [5000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [15000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [25000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [35000] Cycle 1: A=000000000 Q=x0000000 Q_prev=0 Add/Sub=00
-# [45000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [55000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [65000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [75000] Cycle 0: A=000000000 Q=00000011 Q_prev=0 Add/Sub=10
-# [85000] Cycle 1: A=000000010 Q=10000001 Q_prev=1 Add/Sub=00
-# [95000] Cycle 2: A=000000001 Q=11000000 Q_prev=1 Add/Sub=01
-# [105000] Cycle 3: A=111111110 Q=01100000 Q_prev=0 Add/Sub=00
-# [115000] Cycle 4: A=111111111 Q=10110000 Q_prev=0 Add/Sub=00
-# [125000] Cycle 5: A=111111111 Q=01011000 Q_prev=0 Add/Sub=00
-# [135000] Cycle 6: A=111111111 Q=00101100 Q_prev=0 Add/Sub=00
-# [145000] Cycle 7: A=111111111 Q=00010110 Q_prev=0 Add/Sub=00
-# Test Case: 5 * 3
-# Expected: 15  Got: -234
-# Internal State: A=111111111 Q=00001011 Q_prev=0 Add=1 Sub=0
-# ----------------------------------
-# [165000] Cycle 0: A=000000000 Q=00110010 Q_prev=0 Add/Sub=00
-# [175000] Cycle 1: A=000000000 Q=00011001 Q_prev=0 Add/Sub=10
-# [185000] Cycle 2: A=000110010 Q=00001100 Q_prev=1 Add/Sub=01
-# [195000] Cycle 3: A=111100111 Q=00000110 Q_prev=0 Add/Sub=00
-# [205000] Cycle 4: A=111110011 Q=10000011 Q_prev=0 Add/Sub=10
-# [215000] Cycle 5: A=000101011 Q=11000001 Q_prev=1 Add/Sub=00
-# [225000] Cycle 6: A=000010101 Q=11100000 Q_prev=1 Add/Sub=01
-# [235000] Cycle 7: A=111011000 Q=11110000 Q_prev=0 Add/Sub=00
-# Test Case: 100 * 50
-# Expected: 5000  Got: -10000
-# Internal State: A=111101100 Q=01111000 Q_prev=0 Add=0 Sub=0
-# ----------------------------------
-# [255000] Cycle 0: A=000000000 Q=11111110 Q_prev=0 Add/Sub=00
-# [265000] Cycle 1: A=000000000 Q=11111111 Q_prev=0 Add/Sub=10
-# [275000] Cycle 2: A=111111111 Q=11111111 Q_prev=1 Add/Sub=00
-# [285000] Cycle 3: A=111111111 Q=01111111 Q_prev=1 Add/Sub=00
-# [295000] Cycle 4: A=111111111 Q=00111111 Q_prev=1 Add/Sub=00
-# [305000] Cycle 5: A=111111111 Q=00011111 Q_prev=1 Add/Sub=00
-# [315000] Cycle 6: A=111111111 Q=00001111 Q_prev=1 Add/Sub=00
-# [325000] Cycle 7: A=111111111 Q=00000111 Q_prev=1 Add/Sub=00
-# Test Case: -1 * -2
-# Expected: 2  Got: -249
-# Internal State: A=111111111 Q=00000011 Q_prev=1 Add=0 Sub=0
-# ----------------------------------
-# [345000] Cycle 0: A=000000000 Q=10000000 Q_prev=0 Add/Sub=00
-# [355000] Cycle 1: A=000000000 Q=01000000 Q_prev=0 Add/Sub=00
-# [365000] Cycle 2: A=000000000 Q=00100000 Q_prev=0 Add/Sub=00
-# [375000] Cycle 3: A=000000000 Q=00010000 Q_prev=0 Add/Sub=00
-# [385000] Cycle 4: A=000000000 Q=00001000 Q_prev=0 Add/Sub=00
-# [395000] Cycle 5: A=000000000 Q=00000100 Q_prev=0 Add/Sub=00
-# [405000] Cycle 6: A=000000000 Q=00000010 Q_prev=0 Add/Sub=00
-# [415000] Cycle 7: A=000000000 Q=00000001 Q_prev=0 Add/Sub=10
-# Test Case: -128 * -128
-# Expected: 16384  Got: 1
-# Internal State: A=111000000 Q=00000000 Q_prev=1 Add=0 Sub=1
-# ----------------------------------
-# [435000] Cycle 0: A=000000000 Q=11111111 Q_prev=0 Add/Sub=10
-# [445000] Cycle 1: A=000000000 Q=01111111 Q_prev=1 Add/Sub=00
-# [455000] Cycle 2: A=000000000 Q=00111111 Q_prev=1 Add/Sub=00
-# [465000] Cycle 3: A=000000000 Q=00011111 Q_prev=1 Add/Sub=00
-# [475000] Cycle 4: A=000000000 Q=00001111 Q_prev=1 Add/Sub=00
-# [485000] Cycle 5: A=000000000 Q=00000111 Q_prev=1 Add/Sub=00
-# [495000] Cycle 6: A=000000000 Q=00000011 Q_prev=1 Add/Sub=00
-# [505000] Cycle 7: A=000000000 Q=00000001 Q_prev=1 Add/Sub=00
-# Test Case: 0 * -1
-# Expected: 0  Got: 1
-# Internal State: A=000000000 Q=00000000 Q_prev=1 Add=0 Sub=1
-# ----------------------------------
-# [525000] Cycle 0: A=000000000 Q=01111111 Q_prev=0 Add/Sub=10
-# [535000] Cycle 1: A=000111111 Q=10111111 Q_prev=1 Add/Sub=00
-# [545000] Cycle 2: A=000011111 Q=01011111 Q_prev=1 Add/Sub=00
-# [555000] Cycle 3: A=000001111 Q=00101111 Q_prev=1 Add/Sub=00
-# [565000] Cycle 4: A=000000111 Q=00010111 Q_prev=1 Add/Sub=00
-# [575000] Cycle 5: A=000000011 Q=00001011 Q_prev=1 Add/Sub=00
-# [585000] Cycle 6: A=000000001 Q=00000101 Q_prev=1 Add/Sub=00
-# [595000] Cycle 7: A=000000000 Q=00000010 Q_prev=1 Add/Sub=01
-# Test Case: 127 * 127
-# Expected: 16129  Got: 2
-# Internal State: A=111000000 Q=10000001 Q_prev=0 Add=1 Sub=0
-# ----------------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(73)
-#    Time: 601 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 73
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 73
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# [5000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [15000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [25000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [35000] Cycle 1: A=000000000 Q=x0000000 Q_prev=0 Add/Sub=00
-# [45000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [55000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [65000] Cycle 0: A=000000000 Q=00000000 Q_prev=0 Add/Sub=00
-# [75000] Cycle 0: A=000000000 Q=00000011 Q_prev=0 Add/Sub=10
-# [85000] Cycle 1: A=000000010 Q=10000001 Q_prev=1 Add/Sub=00
-# [95000] Cycle 2: A=000000001 Q=11000000 Q_prev=1 Add/Sub=01
-# [105000] Cycle 3: A=111111110 Q=01100000 Q_prev=0 Add/Sub=00
-# [115000] Cycle 4: A=111111111 Q=10110000 Q_prev=0 Add/Sub=00
-# [125000] Cycle 5: A=111111111 Q=01011000 Q_prev=0 Add/Sub=00
-# [135000] Cycle 6: A=111111111 Q=00101100 Q_prev=0 Add/Sub=00
-# [145000] Cycle 7: A=111111111 Q=00010110 Q_prev=0 Add/Sub=00
-# Test Case: 5 * 3
-# Expected: 15  Got: -234
-# Internal State: A=111111111 Q=00001011 Q_prev=0 Add=1 Sub=0
-# ----------------------------------
-# [165000] Cycle 0: A=000000000 Q=00110010 Q_prev=0 Add/Sub=00
-# [175000] Cycle 1: A=000000000 Q=00011001 Q_prev=0 Add/Sub=10
-# [185000] Cycle 2: A=000110010 Q=00001100 Q_prev=1 Add/Sub=01
-# [195000] Cycle 3: A=111100111 Q=00000110 Q_prev=0 Add/Sub=00
-# [205000] Cycle 4: A=111110011 Q=10000011 Q_prev=0 Add/Sub=10
-# [215000] Cycle 5: A=000101011 Q=11000001 Q_prev=1 Add/Sub=00
-# [225000] Cycle 6: A=000010101 Q=11100000 Q_prev=1 Add/Sub=01
-# [235000] Cycle 7: A=111011000 Q=11110000 Q_prev=0 Add/Sub=00
-# Test Case: 100 * 50
-# Expected: 5000  Got: -10000
-# Internal State: A=111101100 Q=01111000 Q_prev=0 Add=0 Sub=0
-# ----------------------------------
-# [255000] Cycle 0: A=000000000 Q=11111110 Q_prev=0 Add/Sub=00
-# [265000] Cycle 1: A=000000000 Q=11111111 Q_prev=0 Add/Sub=10
-# [275000] Cycle 2: A=111111111 Q=11111111 Q_prev=1 Add/Sub=00
-# [285000] Cycle 3: A=111111111 Q=01111111 Q_prev=1 Add/Sub=00
-# [295000] Cycle 4: A=111111111 Q=00111111 Q_prev=1 Add/Sub=00
-# [305000] Cycle 5: A=111111111 Q=00011111 Q_prev=1 Add/Sub=00
-# [315000] Cycle 6: A=111111111 Q=00001111 Q_prev=1 Add/Sub=00
-# [325000] Cycle 7: A=111111111 Q=00000111 Q_prev=1 Add/Sub=00
-# Test Case: -1 * -2
-# Expected: 2  Got: -249
-# Internal State: A=111111111 Q=00000011 Q_prev=1 Add=0 Sub=0
-# ----------------------------------
-# [345000] Cycle 0: A=000000000 Q=10000000 Q_prev=0 Add/Sub=00
-# [355000] Cycle 1: A=000000000 Q=01000000 Q_prev=0 Add/Sub=00
-# [365000] Cycle 2: A=000000000 Q=00100000 Q_prev=0 Add/Sub=00
-# [375000] Cycle 3: A=000000000 Q=00010000 Q_prev=0 Add/Sub=00
-# [385000] Cycle 4: A=000000000 Q=00001000 Q_prev=0 Add/Sub=00
-# [395000] Cycle 5: A=000000000 Q=00000100 Q_prev=0 Add/Sub=00
-# [405000] Cycle 6: A=000000000 Q=00000010 Q_prev=0 Add/Sub=00
-# [415000] Cycle 7: A=000000000 Q=00000001 Q_prev=0 Add/Sub=10
-# Test Case: -128 * -128
-# Expected: 16384  Got: 1
-# Internal State: A=111000000 Q=00000000 Q_prev=1 Add=0 Sub=1
-# ----------------------------------
-# [435000] Cycle 0: A=000000000 Q=11111111 Q_prev=0 Add/Sub=10
-# [445000] Cycle 1: A=000000000 Q=01111111 Q_prev=1 Add/Sub=00
-# [455000] Cycle 2: A=000000000 Q=00111111 Q_prev=1 Add/Sub=00
-# [465000] Cycle 3: A=000000000 Q=00011111 Q_prev=1 Add/Sub=00
-# [475000] Cycle 4: A=000000000 Q=00001111 Q_prev=1 Add/Sub=00
-# [485000] Cycle 5: A=000000000 Q=00000111 Q_prev=1 Add/Sub=00
-# [495000] Cycle 6: A=000000000 Q=00000011 Q_prev=1 Add/Sub=00
-# [505000] Cycle 7: A=000000000 Q=00000001 Q_prev=1 Add/Sub=00
-# Test Case: 0 * -1
-# Expected: 0  Got: 1
-# Internal State: A=000000000 Q=00000000 Q_prev=1 Add=0 Sub=1
-# ----------------------------------
-# [525000] Cycle 0: A=000000000 Q=01111111 Q_prev=0 Add/Sub=10
-# [535000] Cycle 1: A=000111111 Q=10111111 Q_prev=1 Add/Sub=00
-# [545000] Cycle 2: A=000011111 Q=01011111 Q_prev=1 Add/Sub=00
-# [555000] Cycle 3: A=000001111 Q=00101111 Q_prev=1 Add/Sub=00
-# [565000] Cycle 4: A=000000111 Q=00010111 Q_prev=1 Add/Sub=00
-# [575000] Cycle 5: A=000000011 Q=00001011 Q_prev=1 Add/Sub=00
-# [585000] Cycle 6: A=000000001 Q=00000101 Q_prev=1 Add/Sub=00
-# [595000] Cycle 7: A=000000000 Q=00000010 Q_prev=1 Add/Sub=01
-# Test Case: 127 * 127
-# Expected: 16129  Got: 2
-# Internal State: A=111000000 Q=10000001 Q_prev=0 Add=1 Sub=0
-# ----------------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(73)
-#    Time: 601 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 73
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 73
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# -- Compiling module booth_encoder
-# -- Compiling module arithmetic_unit
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.booth_encoder
-# Loading work.arithmetic_unit
-# Loading work.adder
-# Test: 5 * 3 => Exp: 15 Got: -30 FAIL
-# Test: 100 * 50 => Exp: 5000 Got: -4880 FAIL
-# Test: -1 * -2 => Exp: 2 Got: -3 FAIL
-# Test: -128 * -128 => Exp: 16384 Got: 1 FAIL
-# Test: 0 * -1 => Exp: 0 Got: 1 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(52)
-#    Time: 461 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 52
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 52
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(28): (vlog-2110) Illegal reference to net "sub".
-# ** Error: ../src/arithmetic_unit/multiplier.v(28): (vlog-2110) Illegal reference to net "add".
-# ** Error: ../src/arithmetic_unit/multiplier.v(29): (vlog-2110) Illegal reference to net "sub".
-# ** Error: ../src/arithmetic_unit/multiplier.v(29): (vlog-2110) Illegal reference to net "add".
-# ** Error: ../src/arithmetic_unit/multiplier.v(30): (vlog-2110) Illegal reference to net "sub".
-# ** Error: ../src/arithmetic_unit/multiplier.v(30): (vlog-2110) Illegal reference to net "add".
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -15 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -5000 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -2 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: -16384 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: -16129 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -30 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -2320 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -4 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: -8192 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: -7938 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -15 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -2440 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -2 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: -8192 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: -7937 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -30 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -4880 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -4 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: 0 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: 254 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 601 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -30 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -10000 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -4 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: 0 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: 254 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 601 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -30 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -10000 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -4 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: 0 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: 254 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 601 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Warning: ../src/arithmetic_unit/multiplier.v(72): 'multiplier' already exists and will be overwritten.
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(133): near "*": syntax error, unexpected '*', expecting "class"
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: 32753 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: 27768 FAIL
-# Test: -1 * -2 => Expected: 2 Got: 32766 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: 16384 PASS
-# Test: 0 * -1 => Expected: 0 Got: -32768 FAIL
-# Test: 127 * 127 => Expected: 16129 Got: 16639 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -15 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -5000 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -2 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: -16384 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: -16129 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(70): near "endmodule": syntax error, unexpected "endmodule", expecting ';' or ','
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: X FAIL
-# Test: 100 * 50 => Expected: 5000 Got: X FAIL
-# Test: -1 * -2 => Expected: 2 Got: X FAIL
-# Test: -128 * -128 => Expected: 16384 Got: X FAIL
-# Test: 0 * -1 => Expected: 0 Got: X FAIL
-# Test: 127 * 127 => Expected: 16129 Got: X FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(68): near "b": syntax error, unexpected "IDENTIFIER", expecting ',' or '}'
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: 32753 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: 27768 FAIL
-# Test: -1 * -2 => Expected: 2 Got: 32766 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: 16384 PASS
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: 16639 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -15 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -5000 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -2 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: -16384 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: -16129 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -11 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -4932 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -2 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: -16384 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: -16001 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -15 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -5000 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -2 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: -16384 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: -16129 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -15 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -5000 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -2 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: -16384 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: -16129 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# ** Warning: (vsim-3015) ../testbenches/tb_multiplier.v(21): [PCDPC] - Port size (17 or 17) does not match connection size (16) for port 'product'.
-#         Region: /tb_multiplier/dut
-# Test: 5 * 3 => Expected: 15 Got: -15 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -5000 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -2 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: -16384 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: -16129 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(66): Illegal concatenation of an unsized constant.
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: 32753 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: 27768 FAIL
-# Test: -1 * -2 => Expected: 2 Got: 32766 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: 16384 PASS
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: 16639 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -15 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -5000 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -2 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: -16384 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: -16129 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(60)
-#    Time: 661 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 60
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: -15 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -5000 FAIL
-# Test: -1 * -2 => Expected: 2 Got: -2 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: -16384 FAIL
-# Test: -1 * 3 => Expected: -3 Got: 3 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: -16129 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(61)
-#    Time: 761 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 61
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 61
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(67): near ",": syntax error, unexpected ','
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(67): near ",": syntax error, unexpected ','
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: 15 PASS
-# Test: 100 * 50 => Expected: 5000 Got: 5000 PASS
-# Test: -1 * -2 => Expected: 2 Got: 2 PASS
-# Test: -128 * -128 => Expected: 16384 Got: 16384 PASS
-# Test: -1 * 3 => Expected: -3 Got: -3 PASS
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: 16129 PASS
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(61)
-#    Time: 761 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 61
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 61
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Break key hit 
-# Simulation stop requested.
-# Simulation Breakpoint: Simulation stop requested.
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-stop
-stop
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(29): (vlog-2110) Illegal reference to net "sub".
-# ** Error: ../src/arithmetic_unit/multiplier.v(29): (vlog-2110) Illegal reference to net "add".
-# ** Error: ../src/arithmetic_unit/multiplier.v(30): (vlog-2110) Illegal reference to net "sub".
-# ** Error: ../src/arithmetic_unit/multiplier.v(30): (vlog-2110) Illegal reference to net "add".
-# ** Error: ../src/arithmetic_unit/multiplier.v(31): (vlog-2110) Illegal reference to net "sub".
-# ** Error: ../src/arithmetic_unit/multiplier.v(31): (vlog-2110) Illegal reference to net "add".
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: 248 FAIL
-# Test: 100 * 50 => Expected: 5000 Got: -5792 FAIL
-# Test: -1 * -2 => Expected: 2 Got: 124 FAIL
-# Test: -128 * -128 => Expected: 16384 Got: 0 FAIL
-# Test: -1 * 3 => Expected: -3 Got: 6 FAIL
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: 14 FAIL
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(61)
-#    Time: 691 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 61
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 61
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Test: 5 * 3 => Expected: 15 Got: 15 PASS
-# Test: 100 * 50 => Expected: 5000 Got: 5000 PASS
-# Test: -1 * -2 => Expected: 2 Got: 2 PASS
-# Test: -128 * -128 => Expected: 16384 Got: 16384 PASS
-# Test: -1 * 3 => Expected: -3 Got: -3 PASS
-# Test: 0 * -1 => Expected: 0 Got: 0 PASS
-# Test: 127 * 127 => Expected: 16129 Got: 16129 PASS
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(61)
-#    Time: 761 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 61
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 61
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux_16bit
+# -- Compiling module adder_16bit
+# -- Compiling module subtractor_16bit
+# -- Compiling module register_16bit
 # -- Compiling module register_8bit
-# -- Compiling module dff
-# -- Compiling module counter_3bit
-# -- Compiling module control
-# -- Compiling module adder_8bit
-# -- Compiling module subtractor_8bit
-# -- Compiling module mux_3to1
-# -- Compiling module shifter_16bit
+# -- Compiling module register_1bit
+# -- Compiling module counter_4bit
 # -- Compiling module multiplier
 # 
 # Top level modules:
@@ -2430,36 +19,23 @@ do run_tb_multiplier.do
 # 	tb_multiplier
 # vsim tb_multiplier 
 # Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.register_8bit
-# Loading work.dff
-# Loading work.counter_3bit
-# Loading work.control
-# Loading work.adder_8bit
-# Loading work.subtractor_8bit
-# Loading work.mux_3to1
-# Loading work.shifter_16bit
-# ** Error: (vsim-3389) ../testbenches/tb_multiplier.v(21): Port 'start' not found in the connected module (3rd connection).
-#         Region: /tb_multiplier/dut
-# ** Error: (vsim-3389) ../testbenches/tb_multiplier.v(21): Port 'done' not found in the connected module (7th connection).
-#         Region: /tb_multiplier/dut
-# ** Fatal: (vsim-3365) ../testbenches/tb_multiplier.v(21): Too many port connections. Expected 5, found 7.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multiplier/dut File: ../src/arithmetic_unit/multiplier.v
-# FATAL ERROR while loading design
+# ** Error: (vsim-3033) ../testbenches/tb_multiplier.v(21): Instantiation of 'booth_mult_structural' failed. The design unit was not found.
+#         Region: /tb_multiplier
+#         Searched libraries:
+#             /home/brad/Desktop/projects/8-bit-ALU/run/work
 # Error loading design
 # Error: Error loading design 
 #        Pausing macro execution 
 # MACRO ./run_tb_multiplier.do PAUSED at line 15
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux_16bit
+# -- Compiling module adder_16bit
+# -- Compiling module subtractor_16bit
+# -- Compiling module register_16bit
 # -- Compiling module register_8bit
-# -- Compiling module dff
-# -- Compiling module counter_3bit
-# -- Compiling module control
-# -- Compiling module adder_8bit
-# -- Compiling module subtractor_8bit
-# -- Compiling module mux_3to1
-# -- Compiling module shifter_16bit
+# -- Compiling module register_1bit
+# -- Compiling module counter_4bit
 # -- Compiling module multiplier
 # 
 # Top level modules:
@@ -2472,29 +48,27 @@ do run_tb_multiplier.do
 # vsim tb_multiplier 
 # Loading work.tb_multiplier
 # Loading work.multiplier
+# Loading work.register_16bit
 # Loading work.register_8bit
-# Loading work.dff
-# Loading work.counter_3bit
-# Loading work.control
-# Loading work.adder_8bit
-# Loading work.subtractor_8bit
-# Loading work.mux_3to1
-# Loading work.shifter_16bit
-# ** Error: (vish-4014) No objects found matching '/tb_multiplier/start'.
-# Error in macro ./run_tb_multiplier.do line 21
-# (vish-4014) No objects found matching '/tb_multiplier/start'.
+# Loading work.register_1bit
+# Loading work.counter_4bit
+# Loading work.adder_16bit
+# Loading work.subtractor_16bit
+# Loading work.mux_16bit
+# ** Error: (vish-4014) No objects found matching '/tb_multiplier/A'.
+# Error in macro ./run_tb_multiplier.do line 19
+# (vish-4014) No objects found matching '/tb_multiplier/A'.
 #     while executing
-# "add wave -radix unsigned /tb_multiplier/start"
+# "add wave -radix unsigned /tb_multiplier/A"
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux_16bit
+# -- Compiling module adder_16bit
+# -- Compiling module subtractor_16bit
+# -- Compiling module register_16bit
 # -- Compiling module register_8bit
-# -- Compiling module dff
-# -- Compiling module counter_3bit
-# -- Compiling module control
-# -- Compiling module adder_8bit
-# -- Compiling module subtractor_8bit
-# -- Compiling module mux_3to1
-# -- Compiling module shifter_16bit
+# -- Compiling module register_1bit
+# -- Compiling module counter_4bit
 # -- Compiling module multiplier
 # 
 # Top level modules:
@@ -2507,51 +81,62 @@ do run_tb_multiplier.do
 # vsim tb_multiplier 
 # Loading work.tb_multiplier
 # Loading work.multiplier
+# Loading work.register_16bit
 # Loading work.register_8bit
-# Loading work.dff
-# Loading work.counter_3bit
-# Loading work.control
-# Loading work.adder_8bit
-# Loading work.subtractor_8bit
-# Loading work.mux_3to1
-# Loading work.shifter_16bit
-# Test Case:   0 *   0
-# Expected:   0, Actual:     0
-# Result: PASS
-# ---------------------------
-# Test Case: 255 * 255
-# Expected:   1, Actual:     0
-# Result: FAIL
-# ---------------------------
-# Test Case: 170 *  85
-# Expected: 114, Actual:     0
-# Result: FAIL
-# ---------------------------
-# Test Case: 123 *  45
-# Expected: 159, Actual:     0
-# Result: FAIL
-# ---------------------------
-# Test Case: 128 * 128
-# Expected:   0, Actual:     0
-# Result: FAIL
-# ---------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(47)
-#    Time: 465 ns  Iteration: 0  Instance: /tb_multiplier
+# Loading work.register_1bit
+# Loading work.counter_4bit
+# Loading work.adder_16bit
+# Loading work.subtractor_16bit
+# Loading work.mux_16bit
+# Test 1:    5 *    3 =      x (Expected: 15)
+# Test 2:   -4 *    6 =      x (Expected: -24)
+# Test 3:   -3 *   -7 =      x (Expected: 21)
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(68)
+#    Time: 365 ns  Iteration: 0  Instance: /tb_multiplier
 # 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 47
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 68
 # Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 47
-# MACRO ./run_tb_multiplier.do PAUSED at line 25
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 68
+# MACRO ./run_tb_multiplier.do PAUSED at line 27
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux_16bit
+# -- Compiling module adder_16bit
+# -- Compiling module subtractor_16bit
+# -- Compiling module register_16bit
 # -- Compiling module register_8bit
-# -- Compiling module dff
-# -- Compiling module counter_3bit
-# -- Compiling module control
-# -- Compiling module adder_8bit
-# -- Compiling module subtractor_8bit
-# -- Compiling module mux_3to1
-# -- Compiling module shifter_16bit
+# -- Compiling module register_1bit
+# -- Compiling module counter_4bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# ** Error: (vsim-3033) ../testbenches/tb_multiplier.v(21): Instantiation of 'booth_mult_structural' failed. The design unit was not found.
+#         Region: /tb_multiplier
+#         Searched libraries:
+#             /home/brad/Desktop/projects/8-bit-ALU/run/work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run_tb_multiplier.do PAUSED at line 15
+cd run
+# couldn't change working directory to "run": no such file or directory
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux_16bit
+# -- Compiling module adder_16bit
+# -- Compiling module subtractor_16bit
+# -- Compiling module register_16bit
+# -- Compiling module register_8bit
+# -- Compiling module register_1bit
+# -- Compiling module counter_4bit
 # -- Compiling module multiplier
 # 
 # Top level modules:
@@ -2564,80 +149,28 @@ do run_tb_multiplier.do
 # vsim tb_multiplier 
 # Loading work.tb_multiplier
 # Loading work.multiplier
+# Loading work.register_16bit
 # Loading work.register_8bit
-# Loading work.dff
-# Loading work.counter_3bit
-# Loading work.control
-# Loading work.adder_8bit
-# Loading work.subtractor_8bit
-# Loading work.mux_3to1
-# Loading work.shifter_16bit
-# ** Warning: (vsim-3017) ../testbenches/tb_multiplier.v(17): [TFMPC] - Too few port connections. Expected 7, found 5.
-#         Region: /tb_multiplier/uut
-# ** Warning: (vsim-3722) ../testbenches/tb_multiplier.v(17): [TFMPC] - Missing connection for port 'start'.
-# ** Warning: (vsim-3722) ../testbenches/tb_multiplier.v(17): [TFMPC] - Missing connection for port 'done'.
-# Test Case:   0 *   0
-# Expected:   0, Actual:     0
-# Result: PASS
-# ---------------------------
-# Test Case: 255 * 255
-# Expected:   1, Actual:     x
-# Result: FAIL
-# ---------------------------
-# Test Case: 170 *  85
-# Expected: 114, Actual:     x
-# Result: FAIL
-# ---------------------------
-# Test Case: 123 *  45
-# Expected: 159, Actual:     x
-# Result: FAIL
-# ---------------------------
-# Test Case: 128 * 128
-# Expected:   0, Actual:     X
-# Result: FAIL
-# ---------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(47)
-#    Time: 465 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 47
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 47
-# MACRO ./run_tb_multiplier.do PAUSED at line 25
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module register_8bit
-# -- Compiling module dff
-# -- Compiling module counter_3bit
-# -- Compiling module control
-# -- Compiling module adder_8bit
-# -- Compiling module subtractor_8bit
-# -- Compiling module mux_3to1
-# -- Compiling module shifter_16bit
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_booth_multiplier
-# 
-# Top level modules:
-# 	tb_booth_multiplier
-# vsim tb_multiplier 
-# ** Error: (vsim-3170) Could not find '/home/brad/Desktop/projects/8-bit-ALU/run/work.tb_multiplier'.
+# Loading work.register_1bit
+# Loading work.counter_4bit
+# Loading work.adder_16bit
+# Loading work.subtractor_16bit
+# Loading work.mux_16bit
+# ** Error: (vsim-3043) ../testbenches/tb_multiplier.v(30): Unresolved reference to 'booth_mult_structural_tb'.
+#         Region: /tb_multiplier
 # Error loading design
 # Error: Error loading design 
 #        Pausing macro execution 
 # MACRO ./run_tb_multiplier.do PAUSED at line 15
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux_16bit
+# -- Compiling module adder_16bit
+# -- Compiling module subtractor_16bit
+# -- Compiling module register_16bit
 # -- Compiling module register_8bit
-# -- Compiling module dff
-# -- Compiling module counter_3bit
-# -- Compiling module control
-# -- Compiling module adder_8bit
-# -- Compiling module subtractor_8bit
-# -- Compiling module mux_3to1
-# -- Compiling module shifter_16bit
+# -- Compiling module register_1bit
+# -- Compiling module counter_4bit
 # -- Compiling module multiplier
 # 
 # Top level modules:
@@ -2650,33 +183,322 @@ do run_tb_multiplier.do
 # vsim tb_multiplier 
 # Loading work.tb_multiplier
 # Loading work.multiplier
+# Loading work.register_16bit
 # Loading work.register_8bit
-# Loading work.dff
-# Loading work.counter_3bit
-# Loading work.control
-# Loading work.adder_8bit
-# Loading work.subtractor_8bit
-# Loading work.mux_3to1
-# Loading work.shifter_16bit
-# Test Case:   0 *   0
-# Expected:   0, Actual:     0
-# ---------------------------
-# Test Case: 255 * 255
-# Expected:   1, Actual:     3
-# ---------------------------
-# Test Case: 170 *  85
-# Expected: 114, Actual:  7311
-# ---------------------------
-# Test Case: 123 *  45
-# Expected: 159, Actual: 65232
-# ---------------------------
-# Test Case: 128 * 128
-# Expected:   0, Actual: 65533
-# ---------------------------
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(34)
-#    Time: 515 ns  Iteration: 0  Instance: /tb_multiplier
+# Loading work.register_1bit
+# Loading work.counter_4bit
+# Loading work.adder_16bit
+# Loading work.subtractor_16bit
+# Loading work.mux_16bit
+# Time=0 A=xxxx Q=xxxxxxxx Q_1=x Count= x Product=xxxx Done=x
+# Time=35000 A=0000 Q=00000011 Q_1=0 Count= 8 Product=0003 Done=0
+# Time=45000 A=fffb Q=00000000 Q_1=1 Count= 7 Product=fb00 Done=0
+# Time=55000 A=0000 Q=11111011 Q_1=0 Count= 6 Product=00fb Done=0
+# Time=65000 A=fffb Q=00000000 Q_1=1 Count= 5 Product=fb00 Done=0
+# Time=75000 A=0000 Q=11111011 Q_1=0 Count= 4 Product=00fb Done=0
+# Time=85000 A=fffb Q=00000000 Q_1=1 Count= 3 Product=fb00 Done=0
+# Time=95000 A=0000 Q=11111011 Q_1=0 Count= 2 Product=00fb Done=0
+# Time=105000 A=fffb Q=00000000 Q_1=1 Count= 1 Product=fb00 Done=0
+# Time=115000 A=0000 Q=11111011 Q_1=0 Count= 0 Product=00fb Done=1
+# Test 1:    5 *    3 =    251 (Expected: 15)
+# Time=145000 A=0000 Q=00000110 Q_1=0 Count= 8 Product=0006 Done=0
+# Time=155000 A=0000 Q=00000000 Q_1=0 Count= 7 Product=0000 Done=0
+# Time=165000 A=0000 Q=00000000 Q_1=0 Count= 6 Product=0000 Done=0
+# Time=175000 A=0000 Q=00000000 Q_1=0 Count= 5 Product=0000 Done=0
+# Time=185000 A=0000 Q=00000000 Q_1=0 Count= 4 Product=0000 Done=0
+# Time=195000 A=0000 Q=00000000 Q_1=0 Count= 3 Product=0000 Done=0
+# Time=205000 A=0000 Q=00000000 Q_1=0 Count= 2 Product=0000 Done=0
+# Time=215000 A=0000 Q=00000000 Q_1=0 Count= 1 Product=0000 Done=0
+# Time=225000 A=0000 Q=00000000 Q_1=0 Count= 0 Product=0000 Done=1
+# Test 2:   -4 *    6 =      0 (Expected: -24)
+# Time=255000 A=0000 Q=11111001 Q_1=0 Count= 8 Product=00f9 Done=0
+# Time=265000 A=0003 Q=00000000 Q_1=1 Count= 7 Product=0300 Done=0
+# Time=275000 A=0000 Q=00000011 Q_1=0 Count= 6 Product=0003 Done=0
+# Time=285000 A=0003 Q=00000000 Q_1=1 Count= 5 Product=0300 Done=0
+# Time=295000 A=0000 Q=00000011 Q_1=0 Count= 4 Product=0003 Done=0
+# Time=305000 A=0003 Q=00000000 Q_1=1 Count= 3 Product=0300 Done=0
+# Time=315000 A=0000 Q=00000011 Q_1=0 Count= 2 Product=0003 Done=0
+# Time=325000 A=0003 Q=00000000 Q_1=1 Count= 1 Product=0300 Done=0
+# Time=335000 A=0000 Q=00000011 Q_1=0 Count= 0 Product=0003 Done=1
+# Test 3:   -3 *   -7 =      3 (Expected: 21)
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(67)
+#    Time: 365 ns  Iteration: 0  Instance: /tb_multiplier
 # 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 34
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
 # Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 34
-# MACRO ./run_tb_multiplier.do PAUSED at line 25
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
+# MACRO ./run_tb_multiplier.do PAUSED at line 27
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux_16bit
+# -- Compiling module adder_16bit
+# -- Compiling module subtractor_16bit
+# -- Compiling module register_16bit
+# -- Compiling module register_8bit
+# -- Compiling module register_1bit
+# -- Compiling module counter_4bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# Loading work.register_16bit
+# Loading work.register_8bit
+# Loading work.register_1bit
+# Loading work.counter_4bit
+# Loading work.adder_16bit
+# Loading work.subtractor_16bit
+# Loading work.mux_16bit
+# Time=0 A=xxxx Q=xxxxxxxx Q_1=x Count= x Product=xxxx Done=x
+# Time=35000 A=0000 Q=00000011 Q_1=0 Count= 8 Product=0003 Done=0
+# Time=45000 A=fffb Q=00000001 Q_1=1 Count= 7 Product=fb01 Done=0
+# Time=55000 A=fffb Q=10000000 Q_1=1 Count= 6 Product=fb80 Done=0
+# Time=65000 A=0000 Q=11000000 Q_1=0 Count= 5 Product=00c0 Done=0
+# Time=75000 A=0000 Q=01100000 Q_1=0 Count= 4 Product=0060 Done=0
+# Time=85000 A=0000 Q=00110000 Q_1=0 Count= 3 Product=0030 Done=0
+# Time=95000 A=0000 Q=00011000 Q_1=0 Count= 2 Product=0018 Done=0
+# Time=105000 A=0000 Q=00001100 Q_1=0 Count= 1 Product=000c Done=0
+# Time=115000 A=0000 Q=00000110 Q_1=0 Count= 0 Product=0006 Done=1
+# Test 1:    5 *    3 =      6 (Expected: 15)
+# Time=145000 A=0000 Q=00000110 Q_1=0 Count= 8 Product=0006 Done=0
+# Time=155000 A=0000 Q=00000011 Q_1=0 Count= 7 Product=0003 Done=0
+# Time=165000 A=0004 Q=00000001 Q_1=1 Count= 6 Product=0401 Done=0
+# Time=175000 A=0004 Q=00000000 Q_1=1 Count= 5 Product=0400 Done=0
+# Time=185000 A=0000 Q=00000000 Q_1=0 Count= 4 Product=0000 Done=0
+# Time=195000 A=0000 Q=00000000 Q_1=0 Count= 3 Product=0000 Done=0
+# Time=205000 A=0000 Q=00000000 Q_1=0 Count= 2 Product=0000 Done=0
+# Time=215000 A=0000 Q=00000000 Q_1=0 Count= 1 Product=0000 Done=0
+# Time=225000 A=0000 Q=00000000 Q_1=0 Count= 0 Product=0000 Done=1
+# Test 2:   -4 *    6 =      0 (Expected: -24)
+# Time=255000 A=0000 Q=11111001 Q_1=0 Count= 8 Product=00f9 Done=0
+# Time=265000 A=0003 Q=01111100 Q_1=1 Count= 7 Product=037c Done=0
+# Time=275000 A=0000 Q=10111110 Q_1=0 Count= 6 Product=00be Done=0
+# Time=285000 A=0000 Q=01011111 Q_1=0 Count= 5 Product=005f Done=0
+# Time=295000 A=0003 Q=00101111 Q_1=1 Count= 4 Product=032f Done=0
+# Time=305000 A=0003 Q=10010111 Q_1=1 Count= 3 Product=0397 Done=0
+# Time=315000 A=0003 Q=11001011 Q_1=1 Count= 2 Product=03cb Done=0
+# Time=325000 A=0003 Q=11100101 Q_1=1 Count= 1 Product=03e5 Done=0
+# Time=335000 A=0003 Q=11110010 Q_1=1 Count= 0 Product=03f2 Done=1
+# Test 3:   -3 *   -7 =   1010 (Expected: 21)
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(67)
+#    Time: 365 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
+# MACRO ./run_tb_multiplier.do PAUSED at line 27
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux_16bit
+# -- Compiling module adder_16bit
+# -- Compiling module subtractor_16bit
+# -- Compiling module register_16bit
+# -- Compiling module register_8bit
+# -- Compiling module register_1bit
+# -- Compiling module counter_4bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# Loading work.register_16bit
+# Loading work.register_8bit
+# Loading work.register_1bit
+# Loading work.counter_4bit
+# Loading work.adder_16bit
+# Loading work.subtractor_16bit
+# Loading work.mux_16bit
+# Time=0 A=xxxx Q=xxxxxxxx Q_1=x Count= x Product=xxxx Done=x
+# Time=35000 A=0000 Q=00000011 Q_1=0 Count= 8 Product=0003 Done=0
+# Time=45000 A=7ffe Q=10000001 Q_1=1 Count= 7 Product=fe81 Done=0
+# Time=55000 A=1fff Q=11000000 Q_1=1 Count= 6 Product=ffc0 Done=0
+# Time=65000 A=0801 Q=01100000 Q_1=0 Count= 5 Product=0160 Done=0
+# Time=75000 A=0200 Q=00110000 Q_1=0 Count= 4 Product=0030 Done=0
+# Time=85000 A=0080 Q=00011000 Q_1=0 Count= 3 Product=8018 Done=0
+# Time=95000 A=0020 Q=00001100 Q_1=0 Count= 2 Product=200c Done=0
+# Time=105000 A=0008 Q=00000110 Q_1=0 Count= 1 Product=0806 Done=0
+# Time=115000 A=0002 Q=00000011 Q_1=0 Count= 0 Product=0203 Done=1
+# Test 1:    5 *    3 =    515 (Expected: 15)
+# Time=145000 A=0000 Q=00000110 Q_1=0 Count= 8 Product=0006 Done=0
+# Time=155000 A=0000 Q=00000011 Q_1=0 Count= 7 Product=0003 Done=0
+# Time=165000 A=0001 Q=00000001 Q_1=1 Count= 6 Product=0101 Done=0
+# Time=175000 A=0000 Q=00000000 Q_1=1 Count= 5 Product=0000 Done=0
+# Time=185000 A=7fff Q=00000000 Q_1=0 Count= 4 Product=ff00 Done=0
+# Time=195000 A=1fff Q=10000000 Q_1=0 Count= 3 Product=ff80 Done=0
+# Time=205000 A=07ff Q=11000000 Q_1=0 Count= 2 Product=ffc0 Done=0
+# Time=215000 A=01ff Q=11100000 Q_1=0 Count= 1 Product=ffe0 Done=0
+# Time=225000 A=007f Q=11110000 Q_1=0 Count= 0 Product=7ff0 Done=1
+# Test 2:   -4 *    6 =  32752 (Expected: -24)
+# Time=255000 A=0000 Q=11111001 Q_1=0 Count= 8 Product=00f9 Done=0
+# Time=265000 A=0000 Q=11111100 Q_1=1 Count= 7 Product=00fc Done=0
+# Time=275000 A=7fff Q=01111110 Q_1=0 Count= 6 Product=ff7e Done=0
+# Time=285000 A=1fff Q=10111111 Q_1=0 Count= 5 Product=ffbf Done=0
+# Time=295000 A=0800 Q=11011111 Q_1=1 Count= 4 Product=00df Done=0
+# Time=305000 A=0200 Q=01101111 Q_1=1 Count= 3 Product=006f Done=0
+# Time=315000 A=0080 Q=00110111 Q_1=1 Count= 2 Product=8037 Done=0
+# Time=325000 A=0020 Q=00011011 Q_1=1 Count= 1 Product=201b Done=0
+# Time=335000 A=0008 Q=00001101 Q_1=1 Count= 0 Product=080d Done=1
+# Test 3:   -3 *   -7 =   2061 (Expected: 21)
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(67)
+#    Time: 365 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
+# MACRO ./run_tb_multiplier.do PAUSED at line 27
+cd run
+# couldn't change working directory to "run": no such file or directory
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux_16bit
+# -- Compiling module adder_16bit
+# -- Compiling module subtractor_16bit
+# -- Compiling module register_16bit
+# -- Compiling module register_8bit
+# -- Compiling module register_1bit
+# -- Compiling module counter_4bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	mux_16bit
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# Loading work.register_16bit
+# Loading work.register_8bit
+# Loading work.register_1bit
+# Loading work.counter_4bit
+# Loading work.adder_16bit
+# Loading work.subtractor_16bit
+# Time=0 A=xxxx Q=xxxxxxxx Q_1=x Count= x Product=xxxx Done=x
+# Time=35000 A=0000 Q=00000011 Q_1=0 Count= 8 Product=0003 Done=0
+# Time=45000 A=fffd Q=10000001 Q_1=1 Count= 7 Product=fd81 Done=0
+# Time=55000 A=fffe Q=11000000 Q_1=1 Count= 6 Product=fec0 Done=0
+# Time=65000 A=0001 Q=11100000 Q_1=0 Count= 5 Product=01e0 Done=0
+# Time=75000 A=0000 Q=11110000 Q_1=0 Count= 4 Product=00f0 Done=0
+# Time=85000 A=0000 Q=01111000 Q_1=0 Count= 3 Product=0078 Done=0
+# Time=95000 A=0000 Q=00111100 Q_1=0 Count= 2 Product=003c Done=0
+# Time=105000 A=0000 Q=00011110 Q_1=0 Count= 1 Product=001e Done=0
+# Time=115000 A=0000 Q=00001111 Q_1=0 Count= 0 Product=000f Done=1
+# Test 1:    5 *    3 =     15 (Expected: 15)
+# Time=145000 A=0000 Q=00000110 Q_1=0 Count= 8 Product=0006 Done=0
+# Time=155000 A=0000 Q=00000011 Q_1=0 Count= 7 Product=0003 Done=0
+# Time=165000 A=0002 Q=00000001 Q_1=1 Count= 6 Product=0201 Done=0
+# Time=175000 A=0001 Q=00000000 Q_1=1 Count= 5 Product=0100 Done=0
+# Time=185000 A=fffe Q=10000000 Q_1=0 Count= 4 Product=fe80 Done=0
+# Time=195000 A=ffff Q=01000000 Q_1=0 Count= 3 Product=ff40 Done=0
+# Time=205000 A=ffff Q=10100000 Q_1=0 Count= 2 Product=ffa0 Done=0
+# Time=215000 A=ffff Q=11010000 Q_1=0 Count= 1 Product=ffd0 Done=0
+# Time=225000 A=ffff Q=11101000 Q_1=0 Count= 0 Product=ffe8 Done=1
+# Test 2:   -4 *    6 =    -24 (Expected: -24)
+# Time=255000 A=0000 Q=11111001 Q_1=0 Count= 8 Product=00f9 Done=0
+# Time=265000 A=0001 Q=11111100 Q_1=1 Count= 7 Product=01fc Done=0
+# Time=275000 A=ffff Q=01111110 Q_1=0 Count= 6 Product=ff7e Done=0
+# Time=285000 A=ffff Q=10111111 Q_1=0 Count= 5 Product=ffbf Done=0
+# Time=295000 A=0001 Q=01011111 Q_1=1 Count= 4 Product=015f Done=0
+# Time=305000 A=0000 Q=10101111 Q_1=1 Count= 3 Product=00af Done=0
+# Time=315000 A=0000 Q=01010111 Q_1=1 Count= 2 Product=0057 Done=0
+# Time=325000 A=0000 Q=00101011 Q_1=1 Count= 1 Product=002b Done=0
+# Time=335000 A=0000 Q=00010101 Q_1=1 Count= 0 Product=0015 Done=1
+# Test 3:   -3 *   -7 =     21 (Expected: 21)
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(67)
+#    Time: 365 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
+# MACRO ./run_tb_multiplier.do PAUSED at line 27
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux_16bit
+# -- Compiling module adder_16bit
+# -- Compiling module subtractor_16bit
+# -- Compiling module register_16bit
+# -- Compiling module register_8bit
+# -- Compiling module register_1bit
+# -- Compiling module counter_4bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	mux_16bit
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# ** Error: (vsim-3033) ../testbenches/tb_multiplier.v(22): Instantiation of 'booth_mult_structural' failed. The design unit was not found.
+#         Region: /tb_multiplier
+#         Searched libraries:
+#             /home/brad/Desktop/projects/8-bit-ALU/run/work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run_tb_multiplier.do PAUSED at line 15
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module mux_16bit
+# -- Compiling module adder_16bit
+# -- Compiling module subtractor_16bit
+# -- Compiling module register_16bit
+# -- Compiling module register_8bit
+# -- Compiling module register_1bit
+# -- Compiling module counter_4bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	mux_16bit
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# Loading work.register_16bit
+# Loading work.register_8bit
+# Loading work.register_1bit
+# Loading work.counter_4bit
+# Loading work.adder_16bit
+# Loading work.subtractor_16bit
+# Test 1:    5 *    3 =     15 (Expected: 15)
+# Test 2:   -4 *    6 =    -24 (Expected: -24)
+# Test 3:   -3 *   -7 =     21 (Expected: 21)
+# Test 4:    5 *    0 =      0 (Expected: 0)
+# Test 5:  127 *    1 =    127 (Expected: 127)
+# Test 6: -128 *    1 =   -128 (Expected: -128)
+# Test 7:   50 *   50 =   2500 (Expected: 2500)
+# Test 8: -128 *   -1 =    128 (Expected: 128)
+# Test 9: -128 * -128 =  16384 (Expected: 16384)
+# Test 10:  -50 *   50 =  -2500 (Expected: -2500)
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(140)
+#    Time: 1135 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 140
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 140
+# MACRO ./run_tb_multiplier.do PAUSED at line 27

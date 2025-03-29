@@ -1,55 +1,146 @@
 `timescale 1ns / 1ps
 
-module tb_multiplier();
-    reg clk, rst, start;
-    reg [7:0] multiplier, multiplicand;
+// Testbench (same as before, just updated module name)
+module tb_multiplier;
+    reg clk;
+    reg rst;
+    reg start;
+    reg [7:0] multiplicand;
+    reg [7:0] multiplier;
     wire [15:0] product;
     wire done;
     
+    // Instantiate the Booth multiplier
     multiplier uut (
         .clk(clk),
         .rst(rst),
         .start(start),
-        .multiplier(multiplier),
         .multiplicand(multiplicand),
+        .multiplier(multiplier),
         .product(product),
         .done(done)
     );
     
     // Clock generation
-    always #5 clk = ~clk;
-    
     initial begin
         clk = 0;
-        rst = 1;
-        start = 0;
-        #20 rst = 0;
-        
-        test_case(8'd0, 8'd0);
-        test_case(8'd255, 8'd255);
-        test_case(8'd170, 8'd85);
-        test_case(8'd123, 8'd45);
-        test_case(8'd128, 8'd128);
-        
-        #100 $finish;
+        forever #5 clk = ~clk; // 100MHz clock
     end
     
-    task test_case(input [7:0] a, b);
-        begin
-            multiplier = a;
-            multiplicand = b;
-            start = 1;
-            @(posedge clk);
-            start = 0;
-            
-            wait(done);
-            $display("Test Case: %d * %d", a, b);
-            $display("Expected: %d, Actual: %d", 
-                    $unsigned(a) * $unsigned(b), product);
-            $display("---------------------------");
-        end
-    endtask
+    // Test procedure
+    initial begin
+        // Initialize signals
+        rst = 1;
+        start = 0;
+        multiplicand = 8'b0;
+        multiplier = 8'b0;
+        
+        #20 rst = 0;
+        
+        // Test case 1: Basic positive multiplication (5 * 3 = 15)
+        #10;
+        multiplicand = 8'd5;
+        multiplier = 8'd3;
+        start = 1;
+        #10 start = 0;
+        @(posedge done);
+        #10 $display("Test 1: %d * %d = %d (Expected: 15)", 
+                    $signed(multiplicand), $signed(multiplier), $signed(product));
+        
+        // Test case 2: Negative * Positive (-4 * 6 = -24)
+        #20;
+        multiplicand = -8'd4;
+        multiplier = 8'd6;
+        start = 1;
+        #10 start = 0;
+        @(posedge done);
+        #10 $display("Test 2: %d * %d = %d (Expected: -24)", 
+                    $signed(multiplicand), $signed(multiplier), $signed(product));
+        
+        // Test case 3: Negative * Negative (-3 * -7 = 21)
+        #20;
+        multiplicand = -8'd3;
+        multiplier = -8'd7;
+        start = 1;
+        #10 start = 0;
+        @(posedge done);
+        #10 $display("Test 3: %d * %d = %d (Expected: 21)", 
+                    $signed(multiplicand), $signed(multiplier), $signed(product));
+        
+        // Test case 4: Multiply by zero (5 * 0 = 0)
+        #20;
+        multiplicand = 8'd5;
+        multiplier = 8'd0;
+        start = 1;
+        #10 start = 0;
+        @(posedge done);
+        #10 $display("Test 4: %d * %d = %d (Expected: 0)", 
+                    $signed(multiplicand), $signed(multiplier), $signed(product));
+        
+        // Test case 5: Maximum positive (127 * 1 = 127)
+        #20;
+        multiplicand = 8'd127;
+        multiplier = 8'd1;
+        start = 1;
+        #10 start = 0;
+        @(posedge done);
+        #10 $display("Test 5: %d * %d = %d (Expected: 127)", 
+                    $signed(multiplicand), $signed(multiplier), $signed(product));
+        
+        // Test case 6: Minimum negative (-128 * 1 = -128)
+        #20;
+        multiplicand = -8'd128;
+        multiplier = 8'd1;
+        start = 1;
+        #10 start = 0;
+        @(posedge done);
+        #10 $display("Test 6: %d * %d = %d (Expected: -128)", 
+                    $signed(multiplicand), $signed(multiplier), $signed(product));
+        
+        // Test case 7: Large numbers (50 * 50 = 2500)
+        #20;
+        multiplicand = 8'd50;
+        multiplier = 8'd50;
+        start = 1;
+        #10 start = 0;
+        @(posedge done);
+        #10 $display("Test 7: %d * %d = %d (Expected: 2500)", 
+                    $signed(multiplicand), $signed(multiplier), $signed(product));
+        
+        // Test case 8: Negative edge case (-128 * -1 = 128)
+        #20;
+        multiplicand = -8'd128;
+        multiplier = -8'd1;
+        start = 1;
+        #10 start = 0;
+        @(posedge done);
+        #10 $display("Test 8: %d * %d = %d (Expected: 128)", 
+                    $signed(multiplicand), $signed(multiplier), $signed(product));
+        
+        // Test case 9: Both max negative (-128 * -128 = 16384)
+        #20;
+        multiplicand = -8'd128;
+        multiplier = -8'd128;
+        start = 1;
+        #10 start = 0;
+        @(posedge done);
+        #10 $display("Test 9: %d * %d = %d (Expected: 16384)", 
+                    $signed(multiplicand), $signed(multiplier), $signed(product));
+        
+        // Test case 10: Large negative (-50 * 50 = -2500)
+        #20;
+        multiplicand = -8'd50;
+        multiplier = 8'd50;
+        start = 1;
+        #10 start = 0;
+        @(posedge done);
+        #10 $display("Test 10: %d * %d = %d (Expected: -2500)", 
+                    $signed(multiplicand), $signed(multiplier), $signed(product));
+        
+        #20 $finish;
+    end
 endmodule
+
 
 /*
 module tb_multiplier;

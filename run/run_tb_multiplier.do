@@ -18,9 +18,11 @@ log -r /*
 
 add wave -radix unsigned /tb_multiplier/clk
 add wave -radix unsigned /tb_multiplier/rst
-add wave -radix unsigned /tb_multiplier/multiplier
+add wave -radix unsigned /tb_multiplier/start
 add wave -radix unsigned /tb_multiplier/multiplicand
+add wave -radix unsigned /tb_multiplier/multiplier
 add wave -radix unsigned /tb_multiplier/product
+add wave -radix unsigned /tb_multiplier/done
 
 run -all
 
