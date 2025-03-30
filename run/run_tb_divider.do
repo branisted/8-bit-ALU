@@ -16,10 +16,10 @@ vsim tb_divider
 
 log -r /*
 
-add wave -radix unsigned /tb_divider/A
-add wave -radix unsigned /tb_divider/B
-add wave -radix unsigned /tb_divider/quotient
-add wave -radix unsigned /tb_divider/remainder
+#add wave -radix unsigned /tb_divider/A
+#add wave -radix unsigned /tb_divider/B
+#add wave -radix unsigned /tb_divider/quotient
+#add wave -radix unsigned /tb_divider/remainder
 
 run 200ns
 

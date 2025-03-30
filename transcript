@@ -1,116 +1,163 @@
 cd run
-do run_tb_multiplier.do
+do run_tb_divider.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module mux_16bit
-# -- Compiling module adder_16bit
-# -- Compiling module subtractor_16bit
-# -- Compiling module register_16bit
-# -- Compiling module register_8bit
-# -- Compiling module register_1bit
-# -- Compiling module counter_4bit
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# ** Error: (vsim-3033) ../testbenches/tb_multiplier.v(21): Instantiation of 'booth_mult_structural' failed. The design unit was not found.
-#         Region: /tb_multiplier
-#         Searched libraries:
-#             /home/brad/Desktop/projects/8-bit-ALU/run/work
+# vsim tb_divider 
+# ** Error: (vsim-3170) Could not find '/home/brad/Desktop/projects/8-bit-ALU/run/work.tb_divider'.
 # Error loading design
 # Error: Error loading design 
 #        Pausing macro execution 
-# MACRO ./run_tb_multiplier.do PAUSED at line 15
+# MACRO ./run_tb_divider.do PAUSED at line 15
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module mux_16bit
-# -- Compiling module adder_16bit
-# -- Compiling module subtractor_16bit
-# -- Compiling module register_16bit
-# -- Compiling module register_8bit
-# -- Compiling module register_1bit
-# -- Compiling module counter_4bit
 # -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.register_16bit
-# Loading work.register_8bit
-# Loading work.register_1bit
-# Loading work.counter_4bit
-# Loading work.adder_16bit
-# Loading work.subtractor_16bit
-# Loading work.mux_16bit
-# ** Error: (vish-4014) No objects found matching '/tb_multiplier/A'.
-# Error in macro ./run_tb_multiplier.do line 19
-# (vish-4014) No objects found matching '/tb_multiplier/A'.
+# ** Error: ../src/arithmetic_unit/multiplier.v(45): (vlog-2110) Illegal reference to net "temp_A".
+# ** Error: ../src/arithmetic_unit/multiplier.v(46): (vlog-2110) Illegal reference to net "temp_Q".
+# ** Error: ../src/arithmetic_unit/multiplier.v(50): (vlog-2110) Illegal reference to net "temp_A".
+# ** Error: ../src/arithmetic_unit/multiplier.v(51): (vlog-2110) Illegal reference to net "temp_Q".
+# ** Error: ../src/arithmetic_unit/multiplier.v(55): (vlog-2110) Illegal reference to net "temp_A".
+# ** Error: ../src/arithmetic_unit/multiplier.v(56): (vlog-2110) Illegal reference to net "temp_Q".
+# ** Error: ../src/arithmetic_unit/multiplier.v(64): (vlog-2110) Illegal reference to net "A_reg".
+# ** Error: ../src/arithmetic_unit/multiplier.v(65): (vlog-2110) Illegal reference to net "Q_reg".
+# ** Error: ../src/arithmetic_unit/multiplier.v(66): (vlog-2110) Illegal reference to net "Q1_reg".
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_multiplier.do line 12
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
 #     while executing
-# "add wave -radix unsigned /tb_multiplier/A"
+# "vlog ../src/arithmetic_unit/multiplier.v"
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module mux_16bit
-# -- Compiling module adder_16bit
-# -- Compiling module subtractor_16bit
-# -- Compiling module register_16bit
-# -- Compiling module register_8bit
-# -- Compiling module register_1bit
-# -- Compiling module counter_4bit
+# -- Compiling module multiplier
+# ** Error: ../src/arithmetic_unit/multiplier.v(64): (vlog-2110) Illegal reference to net "A_reg".
+# ** Error: ../src/arithmetic_unit/multiplier.v(65): (vlog-2110) Illegal reference to net "Q_reg".
+# ** Error: ../src/arithmetic_unit/multiplier.v(66): (vlog-2110) Illegal reference to net "Q1_reg".
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_multiplier.do line 12
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog ../src/arithmetic_unit/multiplier.v"
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# ** Error: ../src/arithmetic_unit/multiplier.v(17): 'A_reg' already declared in this scope (multiplier).
+# ** Error: ../src/arithmetic_unit/multiplier.v(67): Undefined variable: clk.
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_multiplier.do line 12
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog ../src/arithmetic_unit/multiplier.v"
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# ** Error: ../src/arithmetic_unit/multiplier.v(67): Undefined variable: clk.
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_multiplier.do line 12
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog ../src/arithmetic_unit/multiplier.v"
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# ** Error: ../src/arithmetic_unit/multiplier.v(74): (vlog-2110) Illegal reference to net "result".
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_multiplier.do line 12
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog ../src/arithmetic_unit/multiplier.v"
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# ** Error: ../src/arithmetic_unit/multiplier.v(74): (vlog-2110) Illegal reference to net "result".
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_multiplier.do line 12
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog ../src/arithmetic_unit/multiplier.v"
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# ** Error: ../src/arithmetic_unit/multiplier.v(74): (vlog-2110) Illegal reference to net "result".
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_multiplier.do line 12
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog ../src/arithmetic_unit/multiplier.v"
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
 # -- Compiling module multiplier
 # 
 # Top level modules:
 # 	multiplier
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	cla_4bit
+# 	full_adder
+# 	half_adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
 # -- Compiling module tb_multiplier
+# ** Warning: ../testbenches/tb_multiplier.v(45): [RDGN] - Redundant digits in numeric literal.
 # 
 # Top level modules:
 # 	tb_multiplier
 # vsim tb_multiplier 
 # Loading work.tb_multiplier
 # Loading work.multiplier
-# Loading work.register_16bit
-# Loading work.register_8bit
-# Loading work.register_1bit
-# Loading work.counter_4bit
-# Loading work.adder_16bit
-# Loading work.subtractor_16bit
-# Loading work.mux_16bit
-# Test 1:    5 *    3 =      x (Expected: 15)
-# Test 2:   -4 *    6 =      x (Expected: -24)
-# Test 3:   -3 *   -7 =      x (Expected: 21)
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(68)
-#    Time: 365 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 68
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 68
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
+# ** Error: (vish-4014) No objects found matching '/tb_multiplier/clk'.
+# Error in macro ./run_tb_multiplier.do line 20
+# (vish-4014) No objects found matching '/tb_multiplier/clk'.
+#     while executing
+# "add wave -radix unsigned /tb_multiplier/clk"
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module mux_16bit
-# -- Compiling module adder_16bit
-# -- Compiling module subtractor_16bit
-# -- Compiling module register_16bit
-# -- Compiling module register_8bit
-# -- Compiling module register_1bit
-# -- Compiling module counter_4bit
 # -- Compiling module multiplier
 # 
 # Top level modules:
 # 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	cla_4bit
+# 	full_adder
+# 	half_adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# ** Warning: ../testbenches/tb_multiplier.v(45): [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# TEST PASSED: A=00000000, B=00000000 | Result: 0000000000000000
+# ** Error: (vsim-3601) Iteration limit reached at time 10 ns.
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	cla_4bit
+# 	full_adder
+# 	half_adder
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
 # -- Compiling module tb_multiplier
 # 
@@ -118,29 +165,31 @@ do run_tb_multiplier.do
 # 	tb_multiplier
 # vsim tb_multiplier 
 # Loading work.tb_multiplier
-# ** Error: (vsim-3033) ../testbenches/tb_multiplier.v(21): Instantiation of 'booth_mult_structural' failed. The design unit was not found.
+# ** Error: (vsim-3033) ../testbenches/tb_multiplier.v(13): Instantiation of 'booth_radix2_multiplier' failed. The design unit was not found.
 #         Region: /tb_multiplier
 #         Searched libraries:
 #             /home/brad/Desktop/projects/8-bit-ALU/run/work
 # Error loading design
 # Error: Error loading design 
 #        Pausing macro execution 
-# MACRO ./run_tb_multiplier.do PAUSED at line 15
-cd run
-# couldn't change working directory to "run": no such file or directory
+# MACRO ./run_tb_multiplier.do PAUSED at line 16
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module mux_16bit
-# -- Compiling module adder_16bit
-# -- Compiling module subtractor_16bit
-# -- Compiling module register_16bit
-# -- Compiling module register_8bit
-# -- Compiling module register_1bit
-# -- Compiling module counter_4bit
 # -- Compiling module multiplier
 # 
 # Top level modules:
 # 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	cla_4bit
+# 	full_adder
+# 	half_adder
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
 # -- Compiling module tb_multiplier
 # 
@@ -149,32 +198,30 @@ do run_tb_multiplier.do
 # vsim tb_multiplier 
 # Loading work.tb_multiplier
 # Loading work.multiplier
-# Loading work.register_16bit
-# Loading work.register_8bit
-# Loading work.register_1bit
-# Loading work.counter_4bit
-# Loading work.adder_16bit
-# Loading work.subtractor_16bit
-# Loading work.mux_16bit
-# ** Error: (vsim-3043) ../testbenches/tb_multiplier.v(30): Unresolved reference to 'booth_mult_structural_tb'.
-#         Region: /tb_multiplier
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./run_tb_multiplier.do PAUSED at line 15
+# A=00000000, B=00000000 -> Result=0000000000000000
+# ** Error: (vsim-3601) Iteration limit reached at time 10 ns.
+# ** Error: Active logfile is not in simulation mode
+# Error in macro ./run_tb_multiplier.do line 18
+# Active logfile is not in simulation mode
+#     while executing
+# "log -r /*"
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module mux_16bit
-# -- Compiling module adder_16bit
-# -- Compiling module subtractor_16bit
-# -- Compiling module register_16bit
-# -- Compiling module register_8bit
-# -- Compiling module register_1bit
-# -- Compiling module counter_4bit
 # -- Compiling module multiplier
 # 
 # Top level modules:
 # 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	cla_4bit
+# 	full_adder
+# 	half_adder
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
 # -- Compiling module tb_multiplier
 # 
@@ -183,322 +230,5 @@ do run_tb_multiplier.do
 # vsim tb_multiplier 
 # Loading work.tb_multiplier
 # Loading work.multiplier
-# Loading work.register_16bit
-# Loading work.register_8bit
-# Loading work.register_1bit
-# Loading work.counter_4bit
-# Loading work.adder_16bit
-# Loading work.subtractor_16bit
-# Loading work.mux_16bit
-# Time=0 A=xxxx Q=xxxxxxxx Q_1=x Count= x Product=xxxx Done=x
-# Time=35000 A=0000 Q=00000011 Q_1=0 Count= 8 Product=0003 Done=0
-# Time=45000 A=fffb Q=00000000 Q_1=1 Count= 7 Product=fb00 Done=0
-# Time=55000 A=0000 Q=11111011 Q_1=0 Count= 6 Product=00fb Done=0
-# Time=65000 A=fffb Q=00000000 Q_1=1 Count= 5 Product=fb00 Done=0
-# Time=75000 A=0000 Q=11111011 Q_1=0 Count= 4 Product=00fb Done=0
-# Time=85000 A=fffb Q=00000000 Q_1=1 Count= 3 Product=fb00 Done=0
-# Time=95000 A=0000 Q=11111011 Q_1=0 Count= 2 Product=00fb Done=0
-# Time=105000 A=fffb Q=00000000 Q_1=1 Count= 1 Product=fb00 Done=0
-# Time=115000 A=0000 Q=11111011 Q_1=0 Count= 0 Product=00fb Done=1
-# Test 1:    5 *    3 =    251 (Expected: 15)
-# Time=145000 A=0000 Q=00000110 Q_1=0 Count= 8 Product=0006 Done=0
-# Time=155000 A=0000 Q=00000000 Q_1=0 Count= 7 Product=0000 Done=0
-# Time=165000 A=0000 Q=00000000 Q_1=0 Count= 6 Product=0000 Done=0
-# Time=175000 A=0000 Q=00000000 Q_1=0 Count= 5 Product=0000 Done=0
-# Time=185000 A=0000 Q=00000000 Q_1=0 Count= 4 Product=0000 Done=0
-# Time=195000 A=0000 Q=00000000 Q_1=0 Count= 3 Product=0000 Done=0
-# Time=205000 A=0000 Q=00000000 Q_1=0 Count= 2 Product=0000 Done=0
-# Time=215000 A=0000 Q=00000000 Q_1=0 Count= 1 Product=0000 Done=0
-# Time=225000 A=0000 Q=00000000 Q_1=0 Count= 0 Product=0000 Done=1
-# Test 2:   -4 *    6 =      0 (Expected: -24)
-# Time=255000 A=0000 Q=11111001 Q_1=0 Count= 8 Product=00f9 Done=0
-# Time=265000 A=0003 Q=00000000 Q_1=1 Count= 7 Product=0300 Done=0
-# Time=275000 A=0000 Q=00000011 Q_1=0 Count= 6 Product=0003 Done=0
-# Time=285000 A=0003 Q=00000000 Q_1=1 Count= 5 Product=0300 Done=0
-# Time=295000 A=0000 Q=00000011 Q_1=0 Count= 4 Product=0003 Done=0
-# Time=305000 A=0003 Q=00000000 Q_1=1 Count= 3 Product=0300 Done=0
-# Time=315000 A=0000 Q=00000011 Q_1=0 Count= 2 Product=0003 Done=0
-# Time=325000 A=0003 Q=00000000 Q_1=1 Count= 1 Product=0300 Done=0
-# Time=335000 A=0000 Q=00000011 Q_1=0 Count= 0 Product=0003 Done=1
-# Test 3:   -3 *   -7 =      3 (Expected: 21)
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(67)
-#    Time: 365 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module mux_16bit
-# -- Compiling module adder_16bit
-# -- Compiling module subtractor_16bit
-# -- Compiling module register_16bit
-# -- Compiling module register_8bit
-# -- Compiling module register_1bit
-# -- Compiling module counter_4bit
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.register_16bit
-# Loading work.register_8bit
-# Loading work.register_1bit
-# Loading work.counter_4bit
-# Loading work.adder_16bit
-# Loading work.subtractor_16bit
-# Loading work.mux_16bit
-# Time=0 A=xxxx Q=xxxxxxxx Q_1=x Count= x Product=xxxx Done=x
-# Time=35000 A=0000 Q=00000011 Q_1=0 Count= 8 Product=0003 Done=0
-# Time=45000 A=fffb Q=00000001 Q_1=1 Count= 7 Product=fb01 Done=0
-# Time=55000 A=fffb Q=10000000 Q_1=1 Count= 6 Product=fb80 Done=0
-# Time=65000 A=0000 Q=11000000 Q_1=0 Count= 5 Product=00c0 Done=0
-# Time=75000 A=0000 Q=01100000 Q_1=0 Count= 4 Product=0060 Done=0
-# Time=85000 A=0000 Q=00110000 Q_1=0 Count= 3 Product=0030 Done=0
-# Time=95000 A=0000 Q=00011000 Q_1=0 Count= 2 Product=0018 Done=0
-# Time=105000 A=0000 Q=00001100 Q_1=0 Count= 1 Product=000c Done=0
-# Time=115000 A=0000 Q=00000110 Q_1=0 Count= 0 Product=0006 Done=1
-# Test 1:    5 *    3 =      6 (Expected: 15)
-# Time=145000 A=0000 Q=00000110 Q_1=0 Count= 8 Product=0006 Done=0
-# Time=155000 A=0000 Q=00000011 Q_1=0 Count= 7 Product=0003 Done=0
-# Time=165000 A=0004 Q=00000001 Q_1=1 Count= 6 Product=0401 Done=0
-# Time=175000 A=0004 Q=00000000 Q_1=1 Count= 5 Product=0400 Done=0
-# Time=185000 A=0000 Q=00000000 Q_1=0 Count= 4 Product=0000 Done=0
-# Time=195000 A=0000 Q=00000000 Q_1=0 Count= 3 Product=0000 Done=0
-# Time=205000 A=0000 Q=00000000 Q_1=0 Count= 2 Product=0000 Done=0
-# Time=215000 A=0000 Q=00000000 Q_1=0 Count= 1 Product=0000 Done=0
-# Time=225000 A=0000 Q=00000000 Q_1=0 Count= 0 Product=0000 Done=1
-# Test 2:   -4 *    6 =      0 (Expected: -24)
-# Time=255000 A=0000 Q=11111001 Q_1=0 Count= 8 Product=00f9 Done=0
-# Time=265000 A=0003 Q=01111100 Q_1=1 Count= 7 Product=037c Done=0
-# Time=275000 A=0000 Q=10111110 Q_1=0 Count= 6 Product=00be Done=0
-# Time=285000 A=0000 Q=01011111 Q_1=0 Count= 5 Product=005f Done=0
-# Time=295000 A=0003 Q=00101111 Q_1=1 Count= 4 Product=032f Done=0
-# Time=305000 A=0003 Q=10010111 Q_1=1 Count= 3 Product=0397 Done=0
-# Time=315000 A=0003 Q=11001011 Q_1=1 Count= 2 Product=03cb Done=0
-# Time=325000 A=0003 Q=11100101 Q_1=1 Count= 1 Product=03e5 Done=0
-# Time=335000 A=0003 Q=11110010 Q_1=1 Count= 0 Product=03f2 Done=1
-# Test 3:   -3 *   -7 =   1010 (Expected: 21)
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(67)
-#    Time: 365 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module mux_16bit
-# -- Compiling module adder_16bit
-# -- Compiling module subtractor_16bit
-# -- Compiling module register_16bit
-# -- Compiling module register_8bit
-# -- Compiling module register_1bit
-# -- Compiling module counter_4bit
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.register_16bit
-# Loading work.register_8bit
-# Loading work.register_1bit
-# Loading work.counter_4bit
-# Loading work.adder_16bit
-# Loading work.subtractor_16bit
-# Loading work.mux_16bit
-# Time=0 A=xxxx Q=xxxxxxxx Q_1=x Count= x Product=xxxx Done=x
-# Time=35000 A=0000 Q=00000011 Q_1=0 Count= 8 Product=0003 Done=0
-# Time=45000 A=7ffe Q=10000001 Q_1=1 Count= 7 Product=fe81 Done=0
-# Time=55000 A=1fff Q=11000000 Q_1=1 Count= 6 Product=ffc0 Done=0
-# Time=65000 A=0801 Q=01100000 Q_1=0 Count= 5 Product=0160 Done=0
-# Time=75000 A=0200 Q=00110000 Q_1=0 Count= 4 Product=0030 Done=0
-# Time=85000 A=0080 Q=00011000 Q_1=0 Count= 3 Product=8018 Done=0
-# Time=95000 A=0020 Q=00001100 Q_1=0 Count= 2 Product=200c Done=0
-# Time=105000 A=0008 Q=00000110 Q_1=0 Count= 1 Product=0806 Done=0
-# Time=115000 A=0002 Q=00000011 Q_1=0 Count= 0 Product=0203 Done=1
-# Test 1:    5 *    3 =    515 (Expected: 15)
-# Time=145000 A=0000 Q=00000110 Q_1=0 Count= 8 Product=0006 Done=0
-# Time=155000 A=0000 Q=00000011 Q_1=0 Count= 7 Product=0003 Done=0
-# Time=165000 A=0001 Q=00000001 Q_1=1 Count= 6 Product=0101 Done=0
-# Time=175000 A=0000 Q=00000000 Q_1=1 Count= 5 Product=0000 Done=0
-# Time=185000 A=7fff Q=00000000 Q_1=0 Count= 4 Product=ff00 Done=0
-# Time=195000 A=1fff Q=10000000 Q_1=0 Count= 3 Product=ff80 Done=0
-# Time=205000 A=07ff Q=11000000 Q_1=0 Count= 2 Product=ffc0 Done=0
-# Time=215000 A=01ff Q=11100000 Q_1=0 Count= 1 Product=ffe0 Done=0
-# Time=225000 A=007f Q=11110000 Q_1=0 Count= 0 Product=7ff0 Done=1
-# Test 2:   -4 *    6 =  32752 (Expected: -24)
-# Time=255000 A=0000 Q=11111001 Q_1=0 Count= 8 Product=00f9 Done=0
-# Time=265000 A=0000 Q=11111100 Q_1=1 Count= 7 Product=00fc Done=0
-# Time=275000 A=7fff Q=01111110 Q_1=0 Count= 6 Product=ff7e Done=0
-# Time=285000 A=1fff Q=10111111 Q_1=0 Count= 5 Product=ffbf Done=0
-# Time=295000 A=0800 Q=11011111 Q_1=1 Count= 4 Product=00df Done=0
-# Time=305000 A=0200 Q=01101111 Q_1=1 Count= 3 Product=006f Done=0
-# Time=315000 A=0080 Q=00110111 Q_1=1 Count= 2 Product=8037 Done=0
-# Time=325000 A=0020 Q=00011011 Q_1=1 Count= 1 Product=201b Done=0
-# Time=335000 A=0008 Q=00001101 Q_1=1 Count= 0 Product=080d Done=1
-# Test 3:   -3 *   -7 =   2061 (Expected: 21)
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(67)
-#    Time: 365 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-cd run
-# couldn't change working directory to "run": no such file or directory
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module mux_16bit
-# -- Compiling module adder_16bit
-# -- Compiling module subtractor_16bit
-# -- Compiling module register_16bit
-# -- Compiling module register_8bit
-# -- Compiling module register_1bit
-# -- Compiling module counter_4bit
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	mux_16bit
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.register_16bit
-# Loading work.register_8bit
-# Loading work.register_1bit
-# Loading work.counter_4bit
-# Loading work.adder_16bit
-# Loading work.subtractor_16bit
-# Time=0 A=xxxx Q=xxxxxxxx Q_1=x Count= x Product=xxxx Done=x
-# Time=35000 A=0000 Q=00000011 Q_1=0 Count= 8 Product=0003 Done=0
-# Time=45000 A=fffd Q=10000001 Q_1=1 Count= 7 Product=fd81 Done=0
-# Time=55000 A=fffe Q=11000000 Q_1=1 Count= 6 Product=fec0 Done=0
-# Time=65000 A=0001 Q=11100000 Q_1=0 Count= 5 Product=01e0 Done=0
-# Time=75000 A=0000 Q=11110000 Q_1=0 Count= 4 Product=00f0 Done=0
-# Time=85000 A=0000 Q=01111000 Q_1=0 Count= 3 Product=0078 Done=0
-# Time=95000 A=0000 Q=00111100 Q_1=0 Count= 2 Product=003c Done=0
-# Time=105000 A=0000 Q=00011110 Q_1=0 Count= 1 Product=001e Done=0
-# Time=115000 A=0000 Q=00001111 Q_1=0 Count= 0 Product=000f Done=1
-# Test 1:    5 *    3 =     15 (Expected: 15)
-# Time=145000 A=0000 Q=00000110 Q_1=0 Count= 8 Product=0006 Done=0
-# Time=155000 A=0000 Q=00000011 Q_1=0 Count= 7 Product=0003 Done=0
-# Time=165000 A=0002 Q=00000001 Q_1=1 Count= 6 Product=0201 Done=0
-# Time=175000 A=0001 Q=00000000 Q_1=1 Count= 5 Product=0100 Done=0
-# Time=185000 A=fffe Q=10000000 Q_1=0 Count= 4 Product=fe80 Done=0
-# Time=195000 A=ffff Q=01000000 Q_1=0 Count= 3 Product=ff40 Done=0
-# Time=205000 A=ffff Q=10100000 Q_1=0 Count= 2 Product=ffa0 Done=0
-# Time=215000 A=ffff Q=11010000 Q_1=0 Count= 1 Product=ffd0 Done=0
-# Time=225000 A=ffff Q=11101000 Q_1=0 Count= 0 Product=ffe8 Done=1
-# Test 2:   -4 *    6 =    -24 (Expected: -24)
-# Time=255000 A=0000 Q=11111001 Q_1=0 Count= 8 Product=00f9 Done=0
-# Time=265000 A=0001 Q=11111100 Q_1=1 Count= 7 Product=01fc Done=0
-# Time=275000 A=ffff Q=01111110 Q_1=0 Count= 6 Product=ff7e Done=0
-# Time=285000 A=ffff Q=10111111 Q_1=0 Count= 5 Product=ffbf Done=0
-# Time=295000 A=0001 Q=01011111 Q_1=1 Count= 4 Product=015f Done=0
-# Time=305000 A=0000 Q=10101111 Q_1=1 Count= 3 Product=00af Done=0
-# Time=315000 A=0000 Q=01010111 Q_1=1 Count= 2 Product=0057 Done=0
-# Time=325000 A=0000 Q=00101011 Q_1=1 Count= 1 Product=002b Done=0
-# Time=335000 A=0000 Q=00010101 Q_1=1 Count= 0 Product=0015 Done=1
-# Test 3:   -3 *   -7 =     21 (Expected: 21)
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(67)
-#    Time: 365 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 67
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module mux_16bit
-# -- Compiling module adder_16bit
-# -- Compiling module subtractor_16bit
-# -- Compiling module register_16bit
-# -- Compiling module register_8bit
-# -- Compiling module register_1bit
-# -- Compiling module counter_4bit
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	mux_16bit
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# ** Error: (vsim-3033) ../testbenches/tb_multiplier.v(22): Instantiation of 'booth_mult_structural' failed. The design unit was not found.
-#         Region: /tb_multiplier
-#         Searched libraries:
-#             /home/brad/Desktop/projects/8-bit-ALU/run/work
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./run_tb_multiplier.do PAUSED at line 15
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module mux_16bit
-# -- Compiling module adder_16bit
-# -- Compiling module subtractor_16bit
-# -- Compiling module register_16bit
-# -- Compiling module register_8bit
-# -- Compiling module register_1bit
-# -- Compiling module counter_4bit
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	mux_16bit
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# Loading work.register_16bit
-# Loading work.register_8bit
-# Loading work.register_1bit
-# Loading work.counter_4bit
-# Loading work.adder_16bit
-# Loading work.subtractor_16bit
-# Test 1:    5 *    3 =     15 (Expected: 15)
-# Test 2:   -4 *    6 =    -24 (Expected: -24)
-# Test 3:   -3 *   -7 =     21 (Expected: 21)
-# Test 4:    5 *    0 =      0 (Expected: 0)
-# Test 5:  127 *    1 =    127 (Expected: 127)
-# Test 6: -128 *    1 =   -128 (Expected: -128)
-# Test 7:   50 *   50 =   2500 (Expected: 2500)
-# Test 8: -128 *   -1 =    128 (Expected: 128)
-# Test 9: -128 * -128 =  16384 (Expected: 16384)
-# Test 10:  -50 *   50 =  -2500 (Expected: -2500)
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(140)
-#    Time: 1135 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 140
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 140
-# MACRO ./run_tb_multiplier.do PAUSED at line 27
+# A=00000000, B=00000000 -> Result=0000000000000000
+# ** Error: (vsim-3601) Iteration limit reached at time 10 ns.

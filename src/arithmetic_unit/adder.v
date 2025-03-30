@@ -8,30 +8,23 @@ module adder (
     output [7:0] Sum,
     output Cout
 );
-    // Propagate and Generate
-    wire [7:0] P, G;
+    wire C4;
 
-    // Internal carries
-    wire [7:0] C;
+    // Lower 4-bit CLA
+    cla_4bit cla_low (
+        .A(A[3:0]),
+        .B(B[3:0]),
+        .Cin(Cin),
+        .Sum(Sum[3:0]),
+        .Cout(C4)
+    );
 
-    // Propagate
-    assign P = A ^ B;
-
-    // Generate
-    assign G = A & B;
-
-    // Carry Lookahead Logic
-    assign C[0] = Cin;
-    assign C[1] = G[0] | (P[0] & C[0]);
-    assign C[2] = G[1] | (P[1] & C[1]);
-    assign C[3] = G[2] | (P[2] & C[2]);
-    assign C[4] = G[3] | (P[3] & C[3]);
-    assign C[5] = G[4] | (P[4] & C[4]);
-    assign C[6] = G[5] | (P[5] & C[5]);
-    assign C[7] = G[6] | (P[6] & C[6]);
-    assign Cout = G[7] | (P[7] & C[7]);
-
-    // Sum Calculation
-    assign Sum = P ^ C;
-
+    // Upper 4-bit CLA
+    cla_4bit cla_high (
+        .A(A[7:4]),
+        .B(B[7:4]),
+        .Cin(C4),
+        .Sum(Sum[7:4]),
+        .Cout(Cout)
+    );
 endmodule

@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module mux2to1 (
     input wire A,      // First input
     input wire B,      // Second input

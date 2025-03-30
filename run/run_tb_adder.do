@@ -10,6 +10,7 @@ vlib work
 
 # Compile Verilog files (add more if needed)
 vlog ../src/arithmetic_unit/adder.v
+vlog ../src/other/*.v
 vlog ../testbenches/tb_adder.v
 
 # Start the simulation
@@ -26,7 +27,7 @@ add wave -radix unsigned /tb_adder/Sum
 add wave -radix unsigned /tb_adder/Cout
 
 # Run the simulation for 200 ns (or adjust the time as necessary)
-run 200ns
+run -all
 
 # End simulation (optional, just for completeness)
 quit -sim

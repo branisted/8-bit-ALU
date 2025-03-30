@@ -2,6 +2,59 @@
 
 `timescale 1ns / 1ps
 
+module multiplier (
+    input [7:0] A,       // Multiplicand (8-bit)
+    input [7:0] B,       // Multiplier (8-bit)
+    output reg [15:0] result  // 16-bit result of multiplication
+);
+
+    // Internal registers
+    reg [7:0] A_reg;       // A (multiplicand) register
+    reg [7:0] Q_reg;       // Q (multiplier) register
+    reg [7:0] Q1_reg;      // Q-1 (previous Q's least significant bit)
+    reg [15:0] product_reg; // Register for the 16-bit product (accumulator)
+    integer i;
+
+    // Booth's multiplication algorithm
+    always @* begin
+        // Initialize registers
+        A_reg <= A;           // Store multiplicand in A_reg
+        Q_reg <= B;           // Store multiplier in Q_reg
+        Q1_reg <= 1'b0;       // Q-1 starts as 0
+        product_reg <= 16'b0; // Clear the product register
+
+        // Iterate for 8 bits (since it's an 8-bit multiplier)
+        for (i = 0; i < 8; i = i + 1) begin
+            // Check the current bits (Q[0] and Q-1)
+            case ({Q_reg[0], Q1_reg})
+                2'b01: begin
+                    // Add A to the product (no sign extension needed)
+                    product_reg = product_reg + {A_reg, 8'b0}; 
+                end
+                2'b10: begin
+                    // Subtract A from the product (no sign extension needed)
+                    product_reg = product_reg - {A_reg, 8'b0}; 
+                end
+                default: begin
+                    // No operation for 00 and 11
+                    product_reg = product_reg;
+                end
+            endcase
+
+            // Right arithmetic shift of product and Q-1
+            {product_reg[15], product_reg[14:0]} = product_reg >> 1;  // Arithmetic shift
+            Q1_reg = Q_reg[0]; // Update Q-1 from Q[0]
+            Q_reg = product_reg[15:8];  // Update Q from the top 8 bits of product
+        end
+
+        // The result is the final value of the product register
+        result <= product_reg;
+    end
+
+endmodule
+
+/*
+
 // Basic components first
 module mux_16bit (
     input wire [15:0] in0,
@@ -156,6 +209,8 @@ module multiplier (
     assign product = {A_out[7:0], Q_out};
 
 endmodule
+
+*/
 
 /*
 module multiplier (

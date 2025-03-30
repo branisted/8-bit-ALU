@@ -1,103 +1,84 @@
 `timescale 1ns / 1ps
 
 module alu_top (
-    input [7:0] A,          // 8-bit input A
-    input [7:0] B,          // 8-bit input B
-    input [1:0] op_sel,     // Operation selector (00=ADD, 01=SUB, 10=MUL, 11=DIV)
-    input clk,              // Clock signal
-    input reset,            // Reset signal (active high)
-    output [15:0] result    // 16-bit result from the ALU
+    input wire clk,
+    input wire rst,
+    input wire start,
+    input wire [1:0] opcode,      // 00: ADD/SUB, 01: MUL, 10: DIV
+    input wire [7:0] operand_A,
+    input wire [7:0] operand_B,
+    output wire [15:0] result,
+    output wire done
 );
 
-    // Internal signals for operation outputs
-    wire [7:0] sum, diff, quotient, remainder;
-    wire [15:0] product;
-    wire carry_out, borrow_out;
-    wire load_alu, done;
-    wire [1:0] alu_op;
-
-    // Intermediate signals for the input registers
-    wire [7:0] A_reg, B_reg;
-    reg [15:0] alu_out; // Change this to reg, since we are assigning it in an always block
-
-    // Instantiate input registers for A and B
-    input_register A_reg_inst (
+    wire load, compute, dec_count, reset_count;
+    wire [1:0] select_op;
+    wire zero_count;
+    
+    control_unit ctrl (
         .clk(clk),
-        .reset(reset),
-        .in_data(A),
-        .load(1'b1), // Load input data (always load on each clock cycle)
-        .out_data(A_reg)
+        .rst(rst),
+        .start(start),
+        .opcode(opcode),
+        .zero_count(zero_count),
+        .load(load),
+        .compute(compute),
+        .dec_count(dec_count),
+        .reset_count(reset_count),
+        .done(done),
+        .select_op(select_op)
     );
 
-    input_register B_reg_inst (
+    wire [7:0] add_sub_result;
+    wire add_sub_cout;
+
+    wire [15:0] mul_result;
+    wire [15:0] div_result;
+
+    // Carry Lookahead Adder (CLA) for Addition
+    adder cla_adder (
+        .A(operand_A),
+        .B(operand_B),
+        .Cin(1'b0),
+        .Sum(add_sub_result),
+        .Cout(add_sub_cout)
+    );
+
+    // CLA-based Subtractor
+    subtractor cla_subtractor (
+        .A(operand_A),
+        .B(operand_B),
+        .Diff(add_sub_result),
+        .Borrow(add_sub_cout)  // Borrow output
+    );
+
+    // Booth Multiplier
+    multiplier booth_mul (
         .clk(clk),
-        .reset(reset),
-        .in_data(B),
-        .load(1'b1), // Load input data (always load on each clock cycle)
-        .out_data(B_reg)
+        .rst(rst),
+        .start(load),
+        .multiplicand(operand_A),
+        .multiplier(operand_B),
+        .product(mul_result),
+        .done(zero_count)
     );
 
-    // Instantiate control unit to decide ALU operation
-    control_unit control_inst (
-        .op_sel(op_sel),
+    /*
+    // Non-Restoring Divider (to be implemented similarly)
+    divider nonrestoring_div (
         .clk(clk),
-        .reset(reset),
-        .load_alu(load_alu),
-        .alu_op(alu_op),
-        .done(done)
+        .rst(rst),
+        .start(load),
+        .dividend(operand_A),
+        .divisor(operand_B),
+        .quotient(div_result),
+        .done(zero_count)
     );
+    */
 
-    // Instantiate the adder, subtractor, multiplier, and divider
-    adder adder_inst (
-        .A(A_reg),
-        .B(B_reg),
-        .Cin(1'b0),  // No carry-in for addition (use 1-bit zero)
-        .Sum(sum),
-        .Cout(carry_out)
-    );
-
-    subtractor subtractor_inst (
-        .A(A_reg),
-        .B(B_reg),
-        .Diff(diff),
-        .Borrow(borrow_out)
-    );
-
-    multiplier multiplier_inst (
-        .A(A_reg),
-        .B(B_reg),
-        .Product(product)
-    );
-
-    divider divider_inst (
-        .A(A_reg),
-        .B(B_reg),
-        .quotient(quotient),
-        .remainder(remainder)
-    );
-
-    // Select output based on alu_op (ADD, SUB, MUL, DIV)
-    always @(posedge clk or posedge reset) begin
-        if (reset) begin
-            alu_out <= 16'b0;
-        end else begin
-            case (alu_op)
-                2'b00: alu_out <= {8'b0, sum};          // ADD
-                2'b01: alu_out <= {8'b0, diff};         // SUB
-                2'b10: alu_out <= product;              // MUL
-                2'b11: alu_out <= {quotient, remainder}; // DIV
-                default: alu_out <= 16'b0;
-            endcase
-        end
-    end
-
-    // Instantiate output register to store the result
-    output_register output_reg_inst (
-        .clk(clk),
-        .reset(reset),
-        .in_data(alu_out),
-        .load(load_alu),  // Load result into the output register when done
-        .out_data(result)
-    );
-
+    // MUX to select the correct result
+    assign result = (select_op == 2'b00) ? {8'b0, add_sub_result} :  // Addition
+                    (select_op == 2'b01) ? {8'b0, add_sub_result} :  // Subtraction
+                    (select_op == 2'b10) ? mul_result :
+                    div_result;
 endmodule

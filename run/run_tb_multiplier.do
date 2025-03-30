@@ -10,19 +10,16 @@ vlib work
 
 # Compile Verilog files (add more if needed)
 vlog ../src/arithmetic_unit/multiplier.v
+vlog ../src/other/*.v
 vlog ../testbenches/tb_multiplier.v
 
 vsim tb_multiplier
 
 log -r /*
 
-add wave -radix unsigned /tb_multiplier/clk
-add wave -radix unsigned /tb_multiplier/rst
-add wave -radix unsigned /tb_multiplier/start
-add wave -radix unsigned /tb_multiplier/multiplicand
-add wave -radix unsigned /tb_multiplier/multiplier
-add wave -radix unsigned /tb_multiplier/product
-add wave -radix unsigned /tb_multiplier/done
+add wave -radix unsigned /tb_multiplier/A
+add wave -radix unsigned /tb_multiplier/B
+add wave -radix unsigned /tb_multiplier/result
 
 run -all
 

@@ -1,25 +1,27 @@
-`timescale 1ns / 1ps
-
 module subtractor (
     input [7:0] A, B,
     output [7:0] Diff,
     output Borrow
 );
     wire [7:0] B_complement;
-    wire Cin, Cout;
+    wire Cin = 1'b1;
+    wire Cout;
 
-    assign B_complement = ~B; // Compute bitwise NOT of B
-    assign Cin = 1'b1;        // Add 1 for two’s complement
+    genvar i;
+    generate
+        for (i = 0; i < 8; i = i + 1) begin : gen_B_complement
+            not (B_complement[i], B[i]);
+        end
+    endgenerate
 
-    // Instantiate the CLA Adder to perform A + (~B + 1)
     adder cla_adder (
         .A(A),
         .B(B_complement),
         .Cin(Cin),
         .Sum(Diff),
-        .Cout(Cout) // Cout is actually "No Borrow", so we invert it
+        .Cout(Cout)
     );
 
-    assign Borrow = ~Cout; // Invert Cout to get the actual borrow
+    not (Borrow, Cout);
 
 endmodule

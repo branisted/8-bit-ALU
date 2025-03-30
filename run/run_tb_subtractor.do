@@ -10,6 +10,7 @@ vlib work
 
 # Compile Verilog files (add more if needed)
 vlog ../src/arithmetic_unit/adder.v
+vlog ../src/other/*.v
 vlog ../src/arithmetic_unit/subtractor.v
 vlog ../testbenches/tb_subtractor.v
 
