@@ -3,99 +3,85 @@ K3
 13
 cModel Technology
 Z0 d/home/brad/Desktop/projects/8-bit-ALU/run
-vcarry_lookahead_unit
-I84ML@MGf9?5g;oj]Z5N2e2
-VidG_53i`3]L^TU@E[nkkm2
-w1743298373
-8../src/other/carry_lookahead_unit.v
-F../src/other/carry_lookahead_unit.v
-L0 1
-Z1 OV;L;6.5b;42
+vadder_16bit
+IcMQdI<Ijn;f]?KA?9l9b<2
+V4hVkII]dPY3KNA8A:0OZ40
+Z1 w1743460933
+Z2 8../src/arithmetic_unit/multiplier.v
+Z3 F../src/arithmetic_unit/multiplier.v
+L0 32
+Z4 OV;L;6.5b;42
 r1
 31
 o-O0
-!s100 iPlY_Ke1k;S88eKBI<MmC1
+!s100 J=OS;o^fe^5n=@=Hi1hck1
 !s85 0
 !s101 -O0
-vcla_4bit
-I5Z_RX8Xz6]59CkHZ4dR=>3
-VPdm967I]j_ndXYRhW6J8S3
-w1743298399
-8../src/other/cla_4bit.v
-F../src/other/cla_4bit.v
-L0 1
+vbooth_encoder
+IC_G=YDc^ZSn][7_7Bbd:X3
+V]GBmUmzU3R8_adWcad1290
 R1
+R2
+R3
+L0 1
+R4
 r1
 31
 o-O0
-!s100 g`SNQBf<W^6;`z=Z?dKo`2
+!s100 Z:ldgzD8UWkf6P>zha68d1
 !s85 0
 !s101 -O0
 vfull_adder
-IX>jmMZbB29@Den8[fnln`1
-VDUJ^hNzT3=5QZ0SE<i6DV2
-w1743297991
-8../src/other/full_adder.v
-F../src/other/full_adder.v
-L0 1
+ILW19aAZ[KB;Po>COac5]L3
+VDXIz@A8ZlZIe0^?_MInkU1
 R1
+R2
+R3
+L0 27
+R4
 r1
 31
 o-O0
-!s100 Y9G:DRU][n6iR8E0]:cRN1
-!s85 0
-!s101 -O0
-vgp_logic
-IJBiL<IzoMbH3]E5PaA^iN3
-VF<HSK<^k0[jQJ85MmGLCb2
-w1743298021
-8../src/other/gp_logic.v
-F../src/other/gp_logic.v
-L0 1
-R1
-r1
-31
-o-O0
-!s100 MVfF;fPPW3YJlm<=O>=e`3
-!s85 0
-!s101 -O0
-vhalf_adder
-I[D:BF^2[DQ;Z9H`c;bgIo3
-VOXhdTM@jk]?DdNSjEa=X72
-w1743297968
-8../src/other/half_adder.v
-F../src/other/half_adder.v
-L0 1
-R1
-r1
-31
-o-O0
-!s100 4AIIO74?fY[c=bE4z3]0<1
+!s100 PHdEgQ4g?eoo:JJ=5P3zz3
 !s85 0
 !s101 -O0
 vmultiplier
-IRPAJ_4`fD9<Hb=az42OIf1
+I?oaEAj=D^>`Kk6fAKXUZT3
 V[31IMznGEk9_Q?bX?]hgX2
-w1743301884
-8../src/arithmetic_unit/multiplier.v
-F../src/arithmetic_unit/multiplier.v
-L0 5
 R1
+R2
+R3
+L0 53
+R4
 r1
 31
 o-O0
-!s100 T`B7Y23`o:fSSeEogaiMz0
+!s100 _=<KDQXCcTA3I;NEc82b<1
+!s85 0
+!s101 -O0
+vpartial_product
+ILSgDH:G3TZ0NAQ=^^Ui3S0
+V2M>QHjBfaVDnH3P2UG;9`2
+R1
+R2
+R3
+L0 14
+R4
+r1
+31
+o-O0
+!s100 B2;C;3nGo8gDT7Z?dPi=D1
 !s85 0
 !s101 -O0
 vtb_multiplier
-!s100 GH`L@`0Y@bL6X<UjJHUgg3
-I8c2faI5F`0<fiWVl[H3o;1
+!s100 P2JTf]ZkIX9Gnk=:Bg02C0
+I?YOTeRm3?2dFI4jG`SIj92
 VzjL;ioaV=?_4H6n?5lzoa2
-w1743302006
+w1743461365
 8../testbenches/tb_multiplier.v
 F../testbenches/tb_multiplier.v
 L0 3
-R1
+R4
 r1
 !s85 0
 31

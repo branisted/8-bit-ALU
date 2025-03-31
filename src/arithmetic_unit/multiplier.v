@@ -1,320 +1,85 @@
-// Booth Radix 2 Multiplier
-
-`timescale 1ns / 1ps
-
-module multiplier (
-    input [7:0] A,       // Multiplicand (8-bit)
-    input [7:0] B,       // Multiplier (8-bit)
-    output reg [15:0] result  // 16-bit result of multiplication
-);
-
-    // Internal registers
-    reg [7:0] A_reg;       // A (multiplicand) register
-    reg [7:0] Q_reg;       // Q (multiplier) register
-    reg [7:0] Q1_reg;      // Q-1 (previous Q's least significant bit)
-    reg [15:0] product_reg; // Register for the 16-bit product (accumulator)
-    integer i;
-
-    // Booth's multiplication algorithm
-    always @* begin
-        // Initialize registers
-        A_reg <= A;           // Store multiplicand in A_reg
-        Q_reg <= B;           // Store multiplier in Q_reg
-        Q1_reg <= 1'b0;       // Q-1 starts as 0
-        product_reg <= 16'b0; // Clear the product register
-
-        // Iterate for 8 bits (since it's an 8-bit multiplier)
-        for (i = 0; i < 8; i = i + 1) begin
-            // Check the current bits (Q[0] and Q-1)
-            case ({Q_reg[0], Q1_reg})
-                2'b01: begin
-                    // Add A to the product (no sign extension needed)
-                    product_reg = product_reg + {A_reg, 8'b0}; 
-                end
-                2'b10: begin
-                    // Subtract A from the product (no sign extension needed)
-                    product_reg = product_reg - {A_reg, 8'b0}; 
-                end
-                default: begin
-                    // No operation for 00 and 11
-                    product_reg = product_reg;
-                end
-            endcase
-
-            // Right arithmetic shift of product and Q-1
-            {product_reg[15], product_reg[14:0]} = product_reg >> 1;  // Arithmetic shift
-            Q1_reg = Q_reg[0]; // Update Q-1 from Q[0]
-            Q_reg = product_reg[15:8];  // Update Q from the top 8 bits of product
-        end
-
-        // The result is the final value of the product register
-        result <= product_reg;
-    end
-
-endmodule
-
-/*
-
-// Basic components first
-module mux_16bit (
-    input wire [15:0] in0,
-    input wire [15:0] in1,
-    input wire sel,
-    output wire [15:0] out
-);
-    assign out = sel ? in1 : in0;
-endmodule
-
-module adder_16bit (
-    input wire [15:0] a,
-    input wire [15:0] b,
-    output wire [15:0] sum
-);
-    assign sum = a + b;
-endmodule
-
-module subtractor_16bit (
-    input wire [15:0] a,
-    input wire [15:0] b,
-    output wire [15:0] diff
-);
-    assign diff = a - b;
-endmodule
-
-module register_16bit (
-    input wire clk,
-    input wire load,
-    input wire [15:0] in,
-    output reg [15:0] out
-);
-    always @(posedge clk)
-        if (load) out <= in;
-endmodule
-
-module register_8bit (
-    input wire clk,
-    input wire load,
-    input wire [7:0] in,
-    output reg [7:0] out
-);
-    always @(posedge clk)
-        if (load) out <= in;
-endmodule
-
-module register_1bit (
-    input wire clk,
-    input wire load,
-    input wire in,
-    output reg out
-);
-    always @(posedge clk)
-        if (load) out <= in;
-endmodule
-
-module counter_4bit (
-    input wire clk,
-    input wire load,
-    input wire dec,
-    input wire [3:0] in,
-    output reg [3:0] out
-);
-    always @(posedge clk) begin
-        if (load) out <= in;
-        else if (dec) out <= out - 1;
-    end
-endmodule
-
-// Main Booth Multiplier
-module multiplier (
-    input wire clk,
-    input wire rst,
-    input wire start,
-    input wire [7:0] multiplicand,
-    input wire [7:0] multiplier,
-    output wire [15:0] product,
-    output wire done
-);
-
-    // Internal wires
-    wire [15:0] A_out, A_in, add_out, sub_out, mux_out;
-    wire [7:0] Q_out, Q_in;
-    wire Q_1_out, Q_1_in;
-    wire [3:0] count_out;
-    wire [1:0] booth_control;
-    
-    // Control signals
-    wire load, compute, zero_count;
-    wire [15:0] extended_multiplicand = { {8{multiplicand[7]}}, multiplicand};
-    
-    // Controller
-    assign load = start;
-    assign zero_count = (count_out == 4'b0);
-    assign compute = ~start & ~zero_count;
-    assign done = zero_count;
-    assign booth_control = {Q_out[0], Q_1_out};
-    
-    // Datapath
-    register_16bit A_reg (
-        .clk(clk),
-        .load(load | compute),
-        .in(A_in),
-        .out(A_out)
-    );
-    
-    register_8bit Q_reg (
-        .clk(clk),
-        .load(load | compute),
-        .in(Q_in),
-        .out(Q_out)
-    );
-    
-    register_1bit Q_1_reg (
-        .clk(clk),
-        .load(load | compute),
-        .in(Q_1_in),
-        .out(Q_1_out)
-    );
-    
-    counter_4bit counter (
-        .clk(clk),
-        .load(load),
-        .dec(compute),
-        .in(4'd8),
-        .out(count_out)
-    );
-    
-    // Arithmetic operations
-    adder_16bit adder (
-        .a(A_out),
-        .b(extended_multiplicand),
-        .sum(add_out)
-    );
-    
-    subtractor_16bit subtractor (
-        .a(A_out),
-        .b(extended_multiplicand),
-        .diff(sub_out)
-    );
-    
-    // Booth control - simplified to single mux with proper precedence
-    assign mux_out = (booth_control == 2'b01) ? add_out :
-                    (booth_control == 2'b10) ? sub_out :
-                    A_out;
-    
-    // Correct arithmetic right shift
-    assign A_in = load ? 16'b0 : {mux_out[15], mux_out[15:1]};
-    assign Q_in = load ? multiplier : {mux_out[0], Q_out[7:1]};
-    assign Q_1_in = load ? 1'b0 : Q_out[0];
-    
-    assign product = {A_out[7:0], Q_out};
-
-endmodule
-
-*/
-
-/*
-module multiplier (
-    input [7:0] A,          // Multiplicand
-    input [7:0] B,          // Multiplier
-    output reg [15:0] P      // Product
-);
-    reg [7:0] A_neg;         // Negative of A (2's complement)
-    reg [7:0] B_reg;         // Temporary register for B
-    reg Q_1;                 // Previous bit of Q (initialized to 0)
-    integer i;
-
-    // A's negative form (2's complement)
-    always @ (A) begin
-        A_neg = ~A + 1;
-    end
-    
-    always @ (A, B) begin
-        B_reg = B;
-        P = 16'b0;           // Initialize the product to 0
-        Q_1 = 0;             // Initialize Q_1 to 0
-
-        // Booth's algorithm main loop (8 iterations)
-        for (i = 0; i < 8; i = i + 1) begin
-            // Check the current two bits (B[0] and Q_1)
-            case ({B_reg[0], Q_1})
-                2'b01: P = P + (A << i);   // Add A shifted
-                2'b10: P = P - (A << i);   // Subtract A shifted
-                default: ;                  // No operation
-            endcase
-
-            // Shift the product and the multiplier (B_reg) right by 1
-            {Q_1, B_reg} = {B_reg[7], B_reg[7:1]}; // Arithmetic right shift B
-            P = P >>> 1;  // Arithmetic right shift product (P)
-        end
-    end
-endmodule
-*/
-
-/*
-
-module multiplier (
-    input clk, 
-    input rst, 
-    input start,
-    input [7:0] multiplicand, 
-    input [7:0] multiplier,
-    output [15:0] product,
-    output done
-);
-
-    reg [8:0] A;         // 9-bit accumulator
-    reg [8:0] Q;         // 9-bit multiplier (8 bits + 1 appended 0)
-    reg Q_prev;          // Previous multiplier bit
-    reg [3:0] count;     // 0-9 iterations
-    
-    reg add, sub;       // Control signals
-    wire [8:0] adder_result;
-
-    // Booth encoder
+module booth_encoder(input [2:0] triplet, output reg [2:0] sel);
     always @(*) begin
-        case ({Q_prev, Q[0]})
-            2'b01: {add, sub} = 2'b10;  // Add
-            2'b10: {add, sub} = 2'b01;  // Subtract
-            default: {add, sub} = 2'b00; 
+        case (triplet)
+            3'b000, 3'b111: sel = 3'b000; // Zero
+            3'b001, 3'b010: sel = 3'b001; // +A
+            3'b011: sel = 3'b010;         // +2A
+            3'b100: sel = 3'b110;         // -2A
+            3'b101, 3'b110: sel = 3'b101; // -A
+            default: sel = 3'b000;
         endcase
     end
-
-    // Sign-extend multiplicand and handle subtraction
-    wire [8:0] m_ext = {multiplicand[7], multiplicand};
-    wire [8:0] b_in = sub ? ~m_ext : m_ext;
-    wire cin = sub;
-    assign adder_result = A + b_in + cin;
-
-    // Shift register and control logic
-    always @(posedge clk or posedge rst) begin
-        if (rst) begin
-            A <= 0;
-            Q <= 0;
-            Q_prev <= 0;
-            count <= 0;
-        end else if (start) begin
-            A <= 0;
-            Q <= {multiplier, 1'b0};  // Append 0 for 9 iterations
-            Q_prev <= 0;
-            count <= 0;
-        end else if (count < 9) begin
-            if (add || sub) begin
-                // Apply add/sub and shift
-                A <= {adder_result[8], adder_result[8:1]};
-                Q <= {adder_result[0], Q[8:1]};
-            end else begin
-                // Shift right without operation
-                A <= {A[8], A[8:1]};
-                Q <= {A[0], Q[8:1]};
-            end
-            Q_prev <= Q[0];
-            count <= count + 1;
-        end
-    end
-
-    assign done = (count == 9);
-    assign product = ~{A[7:0], Q[8:1]} + 1;  // Negate the product
-    //assign product = {A[8], A[7:1], Q[8:1]};  // 16-bit product
 endmodule
 
-*/
+module partial_product(input signed [7:0] A, input [2:0] sel, output signed [15:0] pp);
+    wire signed [15:0] pp_plusA  = { {8{A[7]}}, A };       // Sign-extended +A
+    wire signed [15:0] pp_plus2A = { {7{A[7]}}, A, 1'b0 }; // Sign-extended +2A
+    wire signed [15:0] pp_negA   = -pp_plusA;             // -A
+    wire signed [15:0] pp_neg2A  = -pp_plus2A;            // -2A
+    
+    assign pp = (sel == 3'b001) ? pp_plusA  :
+                (sel == 3'b010) ? pp_plus2A :
+                (sel == 3'b101) ? pp_negA   :
+                (sel == 3'b110) ? pp_neg2A  :
+                16'b0;
+endmodule
+
+module full_adder(input a, b, cin, output sum, cout);
+    assign sum = a ^ b ^ cin;
+    assign cout = (a & b) | (b & cin) | (a & cin);
+endmodule
+
+module adder_16bit(input signed [15:0] a, b, output signed [15:0] sum, output cout);
+    wire [15:0] carry;
+    
+    full_adder fa0(a[0], b[0], 1'b0, sum[0], carry[0]);
+    full_adder fa1(a[1], b[1], carry[0], sum[1], carry[1]);
+    full_adder fa2(a[2], b[2], carry[1], sum[2], carry[2]);
+    full_adder fa3(a[3], b[3], carry[2], sum[3], carry[3]);
+    full_adder fa4(a[4], b[4], carry[3], sum[4], carry[4]);
+    full_adder fa5(a[5], b[5], carry[4], sum[5], carry[5]);
+    full_adder fa6(a[6], b[6], carry[5], sum[6], carry[6]);
+    full_adder fa7(a[7], b[7], carry[6], sum[7], carry[7]);
+    full_adder fa8(a[8], b[8], carry[7], sum[8], carry[8]);
+    full_adder fa9(a[9], b[9], carry[8], sum[9], carry[9]);
+    full_adder fa10(a[10], b[10], carry[9], sum[10], carry[10]);
+    full_adder fa11(a[11], b[11], carry[10], sum[11], carry[11]);
+    full_adder fa12(a[12], b[12], carry[11], sum[12], carry[12]);
+    full_adder fa13(a[13], b[13], carry[12], sum[13], carry[13]);
+    full_adder fa14(a[14], b[14], carry[13], sum[14], carry[14]);
+    full_adder fa15(a[15], b[15], carry[14], sum[15], cout);
+endmodule
+
+module multiplier(input signed [7:0] A, B, output signed [15:0] result);
+    wire [2:0] sel0, sel1, sel2, sel3;
+    wire signed [15:0] pp0, pp1, pp2, pp3;
+    wire signed [15:0] sum0, sum1, sum2;
+    wire cout0, cout1, cout2;
+
+    // Booth encoding
+    booth_encoder enc0(.triplet({B[1:0], 1'b0}), .sel(sel0));
+    booth_encoder enc1(.triplet(B[3:1]), .sel(sel1));
+    booth_encoder enc2(.triplet(B[5:3]), .sel(sel2));
+    booth_encoder enc3(.triplet(B[7:5]), .sel(sel3));
+
+    // Generate partial products
+    partial_product pp_gen0(.A(A), .sel(sel0), .pp(pp0));
+    partial_product pp_gen1(.A(A), .sel(sel1), .pp(pp1));
+    partial_product pp_gen2(.A(A), .sel(sel2), .pp(pp2));
+    partial_product pp_gen3(.A(A), .sel(sel3), .pp(pp3));
+
+    // Proper sign extension and shifting
+    wire signed [17:0] pp0_ext = { {2{pp0[15]}}, pp0 };
+    wire signed [17:0] pp1_ext = { {2{pp1[15]}}, pp1 } << 2;
+    wire signed [17:0] pp2_ext = { {2{pp2[15]}}, pp2 } << 4;
+    wire signed [17:0] pp3_ext = { {2{pp3[15]}}, pp3 } << 6;
+
+    // Addition stages
+    wire signed [17:0] sum0_ext;
+    wire signed [17:0] sum1_ext;
+    
+    adder_16bit add0(.a(pp0_ext[15:0]), .b(pp1_ext[15:0]), .sum(sum0_ext[15:0]), .cout(cout0));
+    adder_16bit add1(.a(sum0_ext[15:0]), .b(pp2_ext[15:0]), .sum(sum1_ext[15:0]), .cout(cout1));
+    adder_16bit add2(.a(sum1_ext[15:0]), .b(pp3_ext[15:0]), .sum(result), .cout(cout2));
+
+endmodule

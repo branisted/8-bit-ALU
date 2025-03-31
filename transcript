@@ -1,195 +1,14 @@
 cd run
-do run_tb_divider.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# vsim tb_divider 
-# ** Error: (vsim-3170) Could not find '/home/brad/Desktop/projects/8-bit-ALU/run/work.tb_divider'.
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./run_tb_divider.do PAUSED at line 15
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(45): (vlog-2110) Illegal reference to net "temp_A".
-# ** Error: ../src/arithmetic_unit/multiplier.v(46): (vlog-2110) Illegal reference to net "temp_Q".
-# ** Error: ../src/arithmetic_unit/multiplier.v(50): (vlog-2110) Illegal reference to net "temp_A".
-# ** Error: ../src/arithmetic_unit/multiplier.v(51): (vlog-2110) Illegal reference to net "temp_Q".
-# ** Error: ../src/arithmetic_unit/multiplier.v(55): (vlog-2110) Illegal reference to net "temp_A".
-# ** Error: ../src/arithmetic_unit/multiplier.v(56): (vlog-2110) Illegal reference to net "temp_Q".
-# ** Error: ../src/arithmetic_unit/multiplier.v(64): (vlog-2110) Illegal reference to net "A_reg".
-# ** Error: ../src/arithmetic_unit/multiplier.v(65): (vlog-2110) Illegal reference to net "Q_reg".
-# ** Error: ../src/arithmetic_unit/multiplier.v(66): (vlog-2110) Illegal reference to net "Q1_reg".
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(64): (vlog-2110) Illegal reference to net "A_reg".
-# ** Error: ../src/arithmetic_unit/multiplier.v(65): (vlog-2110) Illegal reference to net "Q_reg".
-# ** Error: ../src/arithmetic_unit/multiplier.v(66): (vlog-2110) Illegal reference to net "Q1_reg".
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(17): 'A_reg' already declared in this scope (multiplier).
-# ** Error: ../src/arithmetic_unit/multiplier.v(67): Undefined variable: clk.
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(67): Undefined variable: clk.
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(74): (vlog-2110) Illegal reference to net "result".
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(74): (vlog-2110) Illegal reference to net "result".
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# ** Error: ../src/arithmetic_unit/multiplier.v(74): (vlog-2110) Illegal reference to net "result".
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_multiplier.do line 12
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic_unit/multiplier.v"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
 # -- Compiling module multiplier
 # 
 # Top level modules:
 # 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module full_adder
-# -- Compiling module gp_logic
-# -- Compiling module half_adder
-# 
-# Top level modules:
-# 	cla_4bit
-# 	full_adder
-# 	half_adder
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# ** Warning: ../testbenches/tb_multiplier.v(45): [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# ** Error: (vish-4014) No objects found matching '/tb_multiplier/clk'.
-# Error in macro ./run_tb_multiplier.do line 20
-# (vish-4014) No objects found matching '/tb_multiplier/clk'.
-#     while executing
-# "add wave -radix unsigned /tb_multiplier/clk"
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module full_adder
-# -- Compiling module gp_logic
-# -- Compiling module half_adder
-# 
-# Top level modules:
-# 	cla_4bit
-# 	full_adder
-# 	half_adder
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# ** Warning: ../testbenches/tb_multiplier.v(45): [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# Loading work.multiplier
-# TEST PASSED: A=00000000, B=00000000 | Result: 0000000000000000
-# ** Error: (vsim-3601) Iteration limit reached at time 10 ns.
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module full_adder
-# -- Compiling module gp_logic
-# -- Compiling module half_adder
-# 
-# Top level modules:
-# 	cla_4bit
-# 	full_adder
-# 	half_adder
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
-# 
-# Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
-# ** Error: (vsim-3033) ../testbenches/tb_multiplier.v(13): Instantiation of 'booth_radix2_multiplier' failed. The design unit was not found.
-#         Region: /tb_multiplier
-#         Searched libraries:
-#             /home/brad/Desktop/projects/8-bit-ALU/run/work
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./run_tb_multiplier.do PAUSED at line 16
-do run_tb_multiplier.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module multiplier
-# 
-# Top level modules:
-# 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module full_adder
-# -- Compiling module gp_logic
-# -- Compiling module half_adder
-# 
-# Top level modules:
-# 	cla_4bit
-# 	full_adder
-# 	half_adder
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
 # -- Compiling module tb_multiplier
 # 
@@ -198,30 +17,50 @@ do run_tb_multiplier.do
 # vsim tb_multiplier 
 # Loading work.tb_multiplier
 # Loading work.multiplier
-# A=00000000, B=00000000 -> Result=0000000000000000
-# ** Error: (vsim-3601) Iteration limit reached at time 10 ns.
-# ** Error: Active logfile is not in simulation mode
-# Error in macro ./run_tb_multiplier.do line 18
-# Active logfile is not in simulation mode
-#     while executing
-# "log -r /*"
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# ** Warning: (vsim-3017) ../src/arithmetic_unit/multiplier.v(73): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /tb_multiplier/uut/add0
+# ** Warning: (vsim-3722) ../src/arithmetic_unit/multiplier.v(73): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) ../src/arithmetic_unit/multiplier.v(74): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /tb_multiplier/uut/add1
+# ** Warning: (vsim-3722) ../src/arithmetic_unit/multiplier.v(74): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) ../src/arithmetic_unit/multiplier.v(75): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /tb_multiplier/uut/add2
+# ** Warning: (vsim-3722) ../src/arithmetic_unit/multiplier.v(75): [TFMPC] - Missing connection for port 'cout'.
+# Results:
+# 15 * 20 =     0
+# 100 * -6 =      0
+# -128 * -128 =     0
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(25)
+#    Time: 30 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 25
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 25
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
 do run_tb_multiplier.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
 # -- Compiling module multiplier
 # 
 # Top level modules:
 # 	multiplier
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module full_adder
-# -- Compiling module gp_logic
-# -- Compiling module half_adder
-# 
-# Top level modules:
-# 	cla_4bit
-# 	full_adder
-# 	half_adder
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
 # -- Compiling module tb_multiplier
 # 
@@ -230,5 +69,907 @@ do run_tb_multiplier.do
 # vsim tb_multiplier 
 # Loading work.tb_multiplier
 # Loading work.multiplier
-# A=00000000, B=00000000 -> Result=0000000000000000
-# ** Error: (vsim-3601) Iteration limit reached at time 10 ns.
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# 15 * 20 =     0 (Expected 300)
+# 100 * -6 =      0 (Expected -600)
+# -128 * -128 =     0 (Expected 16384)
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(23)
+#    Time: 150 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 23
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 23
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+cd run
+# couldn't change working directory to "run": no such file or directory
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# 15 * 20 =     0 (Expected 300)
+# 100 * -6 =      0 (Expected -600)
+# -128 * -128 =     0 (Expected 16384)
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(23)
+#    Time: 150 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 23
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 23
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# 15 * 20 =     0 (Expected 300)
+# 100 * -6 =      0 (Expected -600)
+# -128 * -128 =     0 (Expected 16384)
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(23)
+#    Time: 150 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 23
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 23
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+cd run
+# couldn't change working directory to "run": no such file or directory
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# sel0=001, sel1=110, sel2=110, sel3=001
+# 15 * 20 =     0 (Expected 300)
+# sel0=110, sel1=100, sel2=001, sel3=001
+# 100 * -6 =      0 (Expected -600)
+# sel0=001, sel1=001, sel2=001, sel3=110
+# -128 * -128 =     0 (Expected 16384)
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(23)
+#    Time: 150 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 23
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 23
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000
+# 15 * 20 =     0 (Expected 300)
+# 100 * -6 =      0 (Expected -600)
+# -128 * -128 =     0 (Expected 16384)
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(23)
+#    Time: 150 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 23
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 23
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# A= 15, B= 20, sel0=zzz, sel1=zzz, sel2=zzz, sel3=zzz, pp0=zzzzzzzzzzzzzzzz, pp1=zzzzzzzzzzzzzzzz, pp2=zzzzzzzzzzzzzzzz, pp3=zzzzzzzzzzzzzzzz, sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz, result=    0
+# A=100, B=250, sel0=zzz, sel1=zzz, sel2=zzz, sel3=zzz, pp0=zzzzzzzzzzzzzzzz, pp1=zzzzzzzzzzzzzzzz, pp2=zzzzzzzzzzzzzzzz, pp3=zzzzzzzzzzzzzzzz, sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz, result=    0
+# A=128, B=128, sel0=zzz, sel1=zzz, sel2=zzz, sel3=zzz, pp0=zzzzzzzzzzzzzzzz, pp1=zzzzzzzzzzzzzzzz, pp2=zzzzzzzzzzzzzzzz, pp3=zzzzzzzzzzzzzzzz, sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz, result=    0
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(33)
+#    Time: 30 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 33
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 33
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# A=  0, B=  0, sel0=zzz, sel1=zzz, sel2=zzz, sel3=zzz, pp0=zzzzzzzzzzzzzzzz, pp1=zzzzzzzzzzzzzzzz, pp2=zzzzzzzzzzzzzzzz, pp3=zzzzzzzzzzzzzzzz, sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz, result=    0
+# A= 15, B= 20, sel0=zzz, sel1=zzz, sel2=zzz, sel3=zzz, pp0=zzzzzzzzzzzzzzzz, pp1=zzzzzzzzzzzzzzzz, pp2=zzzzzzzzzzzzzzzz, pp3=zzzzzzzzzzzzzzzz, sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz, result=    0
+# A=100, B=250, sel0=zzz, sel1=zzz, sel2=zzz, sel3=zzz, pp0=zzzzzzzzzzzzzzzz, pp1=zzzzzzzzzzzzzzzz, pp2=zzzzzzzzzzzzzzzz, pp3=zzzzzzzzzzzzzzzz, sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz, result=    0
+# A=128, B=128, sel0=zzz, sel1=zzz, sel2=zzz, sel3=zzz, pp0=zzzzzzzzzzzzzzzz, pp1=zzzzzzzzzzzzzzzz, pp2=zzzzzzzzzzzzzzzz, pp3=zzzzzzzzzzzzzzzz, sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz, result=    0
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(37)
+#    Time: 35 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 37
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 37
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+cd run
+# couldn't change working directory to "run": no such file or directory
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# Time=0 | A=  0, B=  0 | sel0=001, sel1=001, sel2=001, sel3=001 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=    0
+# Time=10000 | A= 15, B= 20 | sel0=001, sel1=110, sel2=110, sel3=001 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=    0
+# Time=20000 | A=100, B=250 | sel0=110, sel1=100, sel2=001, sel3=001 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=    0
+# Time=30000 | A=128, B=128 | sel0=001, sel1=001, sel2=001, sel3=110 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=    0
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(39)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# Time=0 | A=  0, B=  0 | sel0=001, sel1=001, sel2=001, sel3=001 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=    0
+# Time=10000 | A= 15, B= 20 | sel0=001, sel1=110, sel2=110, sel3=001 | pp0=0000000000001111, pp1=1111111111100010, pp2=1111111111100010, pp3=0000000000001111 | sum0=1111111111110001, sum1=1111111111010011 | result=65506
+# Time=20000 | A=100, B=250 | sel0=110, sel1=100, sel2=001, sel3=001 | pp0=1111111100111000, pp1=0000000000000000, pp2=0000000001100100, pp3=0000000001100100 | sum0=1111111100111000, sum1=1111111110011100 | result=    0
+# Time=30000 | A=128, B=128 | sel0=001, sel1=001, sel2=001, sel3=110 | pp0=1111111110000000, pp1=1111111110000000, pp2=1111111110000000, pp3=0000000100000000 | sum0=1111111100000000, sum1=1111111010000000 | result=65408
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(39)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# Time=0 | A=  0, B=  0 | sel0=001, sel1=001, sel2=001, sel3=001 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=    0
+# Time=10000 | A= 15, B= 20 | sel0=001, sel1=110, sel2=110, sel3=001 | pp0=0000000000001111, pp1=1111111111100010, pp2=1111111111100010, pp3=0000000000001111 | sum0=1111111111110001, sum1=1111111111010011 | result=65506
+# Time=20000 | A=100, B=250 | sel0=110, sel1=100, sel2=001, sel3=001 | pp0=1111111100111000, pp1=0000000000000000, pp2=0000000001100100, pp3=0000000001100100 | sum0=1111111100111000, sum1=1111111110011100 | result=    0
+# Time=30000 | A=128, B=128 | sel0=001, sel1=001, sel2=001, sel3=110 | pp0=1111111110000000, pp1=1111111110000000, pp2=1111111110000000, pp3=0000000100000000 | sum0=1111111100000000, sum1=1111111010000000 | result=65408
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(39)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# Time=0 | A=  0, B=  0 | sel0=000, sel1=000, sel2=000, sel3=000 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=    0
+# Time=10000 | A= 15, B= 20 | sel0=000, sel1=001, sel2=001, sel3=000 | pp0=0000000000000000, pp1=0000000000001111, pp2=0000000000001111, pp3=0000000000000000 | sum0=0000000000001111, sum1=0000000000011110 | result=   30
+# Time=20000 | A=100, B=250 | sel0=110, sel1=101, sel2=000, sel3=000 | pp0=1111111100111000, pp1=1111111110011100, pp2=0000000000000000, pp3=0000000000000000 | sum0=1111111011010100, sum1=1111111011010100 | result=65236
+# Time=30000 | A=128, B=128 | sel0=000, sel1=000, sel2=000, sel3=110 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000100000000 | sum0=0000000000000000, sum1=0000000000000000 | result=  256
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(39)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+cd run
+# couldn't change working directory to "run": no such file or directory
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(76): [PCDPC] - Port size (16 or 16) does not match connection size (18) for port 'b'.
+#         Region: /tb_multiplier/uut/add0
+# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(77): [PCDPC] - Port size (16 or 16) does not match connection size (20) for port 'b'.
+#         Region: /tb_multiplier/uut/add1
+# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (16 or 16) does not match connection size (22) for port 'b'.
+#         Region: /tb_multiplier/uut/add2
+# Time=0 | A=  0, B=  0 | sel0=000, sel1=000, sel2=000, sel3=000 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=    0
+# Time=10000 | A= 15, B= 20 | sel0=000, sel1=001, sel2=001, sel3=000 | pp0=0000000000000000, pp1=0000000000001111, pp2=0000000000001111, pp3=0000000000000000 | sum0=0000000000111100, sum1=0000000100101100 | result=  300
+# Time=20000 | A=100, B=250 | sel0=110, sel1=101, sel2=000, sel3=000 | pp0=1111111100111000, pp1=1111111110011100, pp2=0000000000000000, pp3=0000000000000000 | sum0=1111110110101000, sum1=1111110110101000 | result=64936
+# Time=30000 | A=128, B=128 | sel0=000, sel1=000, sel2=000, sel3=110 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000100000000 | sum0=0000000000000000, sum1=0000000000000000 | result=16384
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(39)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# Time=0 | A=  0, B=  0 | sel0=000, sel1=000, sel2=000, sel3=000 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=    0
+# Time=10000 | A= 15, B= 20 | sel0=000, sel1=001, sel2=001, sel3=000 | pp0=0000000000000000, pp1=0000000000001111, pp2=0000000000001111, pp3=0000000000000000 | sum0=0000000000001111, sum1=0000000000011110 | result=   30
+# Time=20000 | A=100, B=250 | sel0=110, sel1=101, sel2=000, sel3=000 | pp0=1111111100111000, pp1=1111111110011100, pp2=0000000000000000, pp3=0000000000000000 | sum0=1111111011010100, sum1=1111111011010100 | result=65236
+# Time=30000 | A=128, B=128 | sel0=000, sel1=000, sel2=000, sel3=110 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000100000000 | sum0=0000000000000000, sum1=0000000000000000 | result=  256
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(39)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(76): [PCDPC] - Port size (16 or 16) does not match connection size (18) for port 'b'.
+#         Region: /tb_multiplier/uut/add0
+# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(77): [PCDPC] - Port size (16 or 16) does not match connection size (20) for port 'b'.
+#         Region: /tb_multiplier/uut/add1
+# ** Warning: (vsim-3015) ../src/arithmetic_unit/multiplier.v(78): [PCDPC] - Port size (16 or 16) does not match connection size (22) for port 'b'.
+#         Region: /tb_multiplier/uut/add2
+# Time=0 | A=  0, B=  0 | sel0=000, sel1=000, sel2=000, sel3=000 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=    0
+# Time=10000 | A= 15, B= 20 | sel0=000, sel1=001, sel2=001, sel3=000 | pp0=0000000000000000, pp1=0000000000001111, pp2=0000000000001111, pp3=0000000000000000 | sum0=0000000000111100, sum1=0000000100101100 | result=  300
+# Time=20000 | A=100, B=250 | sel0=110, sel1=101, sel2=000, sel3=000 | pp0=1111111100111000, pp1=1111111110011100, pp2=0000000000000000, pp3=0000000000000000 | sum0=1111110110101000, sum1=1111110110101000 | result=64936
+# Time=30000 | A=128, B=128 | sel0=000, sel1=000, sel2=000, sel3=110 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000100000000 | sum0=0000000000000000, sum1=0000000000000000 | result=16384
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(39)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# Time=0 | A=  0, B=  0 | sel0=000, sel1=000, sel2=000, sel3=000 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=    0
+# Time=10000 | A= 15, B= 20 | sel0=000, sel1=001, sel2=001, sel3=000 | pp0=0000000000000000, pp1=0000000000001111, pp2=0000000000001111, pp3=0000000000000000 | sum0=0000000000111100, sum1=0000000100101100 | result=  300
+# Time=20000 | A=100, B=250 | sel0=110, sel1=101, sel2=000, sel3=000 | pp0=1111111100111000, pp1=1111111110011100, pp2=0000000000000000, pp3=0000000000000000 | sum0=1111110110101000, sum1=1111110110101000 | result=64936
+# Time=30000 | A=128, B=128 | sel0=000, sel1=000, sel2=000, sel3=110 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000100000000 | sum0=0000000000000000, sum1=0000000000000000 | result=16384
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(39)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+cd run
+# couldn't change working directory to "run": no such file or directory
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# Time=0 | A=  0, B=  0 | sel0=000, sel1=000, sel2=000, sel3=000 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz | result=    0
+# Time=10000 | A= 15, B= 20 | sel0=000, sel1=001, sel2=001, sel3=000 | pp0=0000000000000000, pp1=0000000000001111, pp2=0000000000001111, pp3=0000000000000000 | sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz | result=  300
+# Time=20000 | A=100, B=250 | sel0=110, sel1=101, sel2=000, sel3=000 | pp0=1111111100111000, pp1=1111111110011100, pp2=0000000000000000, pp3=0000000000000000 | sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz | result=64936
+# Time=30000 | A=128, B=128 | sel0=000, sel1=000, sel2=000, sel3=110 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000100000000 | sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz | result=16384
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(39)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+vdel -lib
+# Usage: vdel -help
+#        vdel [-lib <path>] [-verbose] { -all | <primary> [<secondary>] | -allsystemc |  [-obj [<platform>|<compiler>|<platform_compiler>|all] ]}
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vdel failed.
+vlib -del
+# Usage: vlib -help
+#        vlib [-short | -dos | -long | -unix ] [-archive [-compact <compact>]]
+#             [-depend [<depend>]] [-mapping [<mapping>]] [-target [<target>]]
+#             [-vendor [<vendor>]] [-version [<version>]]
+#             [-unnamed_designs <count>] [(-lock|-unlock) <design>]
+#             [-locklib|-unlocklib] <library_name>
+vdel -all
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# Time=0 | A=  0, B=  0 | sel0=000, sel1=000, sel2=000, sel3=000 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz | result=    0
+# Time=10000 | A= 15, B= 20 | sel0=000, sel1=001, sel2=001, sel3=000 | pp0=0000000000000000, pp1=0000000000001111, pp2=0000000000001111, pp3=0000000000000000 | sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz | result=  300
+# Time=20000 | A=100, B=250 | sel0=110, sel1=101, sel2=000, sel3=000 | pp0=1111111100111000, pp1=1111111110011100, pp2=0000000000000000, pp3=0000000000000000 | sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz | result=64936
+# Time=30000 | A=128, B=128 | sel0=000, sel1=000, sel2=000, sel3=110 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000100000000 | sum0=zzzzzzzzzzzzzzzz, sum1=zzzzzzzzzzzzzzzz | result=16384
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(39)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 39
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+cd run
+# couldn't change working directory to "run": no such file or directory
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# Time=0 | A=   0, B=   0 | sel0=000, sel1=000, sel2=000, sel3=000 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000000000000 | sum0=0000000000000000, sum1=0000000000000000 | result=     0
+# Time=10000000 | A=  15, B=  20 | sel0=000, sel1=001, sel2=001, sel3=000 | pp0=0000000000000000, pp1=0000000000001111, pp2=0000000000001111, pp3=0000000000000000 | sum0=0000000000111100, sum1=0000000100101100 | result=   300
+# Time=20000000 | A= 100, B=  -6 | sel0=110, sel1=101, sel2=000, sel3=000 | pp0=1111111100111000, pp1=1111111110011100, pp2=0000000000000000, pp3=0000000000000000 | sum0=1111110110101000, sum1=1111110110101000 | result=  -600
+# Time=30000000 | A=-128, B=-128 | sel0=000, sel1=000, sel2=000, sel3=110 | pp0=0000000000000000, pp1=0000000000000000, pp2=0000000000000000, pp3=0000000100000000 | sum0=0000000000000000, sum1=0000000000000000 | result= 16384
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(43)
+#    Time: 40 us  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 43
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 43
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# Starting Booth Radix-4 Multiplier Testbench...
+# TEST PASSED: A=   0 (00000000), B=   0 (00000000) | result=     0 (0000000000000000)
+# TEST PASSED: A=   5 (00000101), B=   6 (00000110) | result=    30 (0000000000011110)
+# TEST PASSED: A= 127 (01111111), B= 127 (01111111) | result= 16129 (0011111100000001)
+# TEST PASSED: A=-128 (10000000), B=-128 (10000000) | result= 16384 (0100000000000000)
+# TEST PASSED: A= 100 (01100100), B=  -6 (11111010) | result=  -600 (1111110110101000)
+# TEST PASSED: A= -15 (11110001), B=  20 (00010100) | result=  -300 (1111111011010100)
+# TEST PASSED: A= 127 (01111111), B=-128 (10000000) | result=-16256 (1100000010000000)
+# TEST PASSED: A=  -3 (11111101), B=  -4 (11111100) | result=    12 (0000000000001100)
+# TEST FAILED: A= -86 (10101010), B=  85 (01010101) | Expected: result= 14450 (0011100001110010) | Got: result= -7310 (1110001101110010)
+# TEST PASSED: A= -45 (11010011), B=  73 (01001001) | result= -3285 (1111001100101011)
+# TEST PASSED: A=  16 (00010000), B=   8 (00001000) | result=   128 (0000000010000000)
+# TEST PASSED: A=   0 (00000000), B=-100 (10011100) | result=     0 (0000000000000000)
+# TEST FAILED: A= 100 (01100100), B=  -6 (11111010) | Expected: result= 25000 (0110000110101000) | Got: result=  -600 (1111110110101000)
+# TEST FAILED: A=  85 (01010101), B= -86 (10101010) | Expected: result= 14450 (0011100001110010) | Got: result= -7310 (1110001101110010)
+# TEST FAILED: A=  64 (01000000), B=  -1 (11111111) | Expected: result= 16320 (0011111111000000) | Got: result=   -64 (1111111111000000)
+# TEST PASSED: A=  73 (01001001), B= -19 (11101101) | result= -1387 (1111101010010101)
+# All tests completed.
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(98)
+#    Time: 160 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 98
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 98
+# MACRO ./run_tb_multiplier.do PAUSED at line 17
+do run_tb_multiplier.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_multiplier
+# 
+# Top level modules:
+# 	tb_multiplier
+# vsim tb_multiplier 
+# Loading work.tb_multiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_multiplier/uut/add0/fa0
+# Starting Booth Radix-4 Multiplier Testbench...
+# TEST PASSED: A=   0 (00000000), B=   0 (00000000) | result=     0 (0000000000000000)
+# TEST PASSED: A=   5 (00000101), B=   6 (00000110) | result=    30 (0000000000011110)
+# TEST PASSED: A= 127 (01111111), B= 127 (01111111) | result= 16129 (0011111100000001)
+# TEST PASSED: A=-128 (10000000), B=-128 (10000000) | result= 16384 (0100000000000000)
+# TEST PASSED: A= 100 (01100100), B=  -6 (11111010) | result=  -600 (1111110110101000)
+# TEST PASSED: A= -15 (11110001), B=  20 (00010100) | result=  -300 (1111111011010100)
+# TEST PASSED: A= 127 (01111111), B=-128 (10000000) | result=-16256 (1100000010000000)
+# TEST PASSED: A=  -3 (11111101), B=  -4 (11111100) | result=    12 (0000000000001100)
+# TEST PASSED: A= -86 (10101010), B=  85 (01010101) | result= -7310 (1110001101110010)
+# TEST PASSED: A= -45 (11010011), B=  73 (01001001) | result= -3285 (1111001100101011)
+# TEST PASSED: A=  16 (00010000), B=   8 (00001000) | result=   128 (0000000010000000)
+# TEST PASSED: A=   0 (00000000), B=-100 (10011100) | result=     0 (0000000000000000)
+# TEST PASSED: A= 100 (01100100), B=  -6 (11111010) | result=  -600 (1111110110101000)
+# TEST PASSED: A=  85 (01010101), B= -86 (10101010) | result= -7310 (1110001101110010)
+# TEST PASSED: A=  64 (01000000), B=  -1 (11111111) | result=   -64 (1111111111000000)
+# TEST PASSED: A=  73 (01001001), B= -19 (11101101) | result= -1387 (1111101010010101)
+# All tests completed.
+# ** Note: $finish    : ../testbenches/tb_multiplier.v(98)
+#    Time: 160 ns  Iteration: 0  Instance: /tb_multiplier
+# 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 98
+# Simulation Breakpoint: 1
+# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 98
+# MACRO ./run_tb_multiplier.do PAUSED at line 17

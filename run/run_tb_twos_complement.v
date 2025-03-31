@@ -9,10 +9,11 @@ if [file exists "work"] {vdel -all}
 vlib work
 
 # Compile Verilog files (add more if needed)
-vlog ../src/arithmetic_unit/multiplier.v
-vlog ../testbenches/tb_multiplier.v
+vlog ../src/other/twos_complement.v
+vlog ../src/other/full_adder.v
+vlog ../testbenches/tb_twos_complement.v
 
-vsim tb_multiplier
+vsim tb_twos_complement
 
 run -all
 
