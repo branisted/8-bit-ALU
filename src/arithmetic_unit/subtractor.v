@@ -1,6 +1,6 @@
 module subtractor (
-    input [7:0] A, B,
-    output [7:0] Diff,
+    input signed [7:0] A, B,
+    output signed [7:0] Diff,
     output Borrow
 );
     wire [7:0] B_complement;

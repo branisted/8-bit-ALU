@@ -8,13 +8,12 @@ vlib work
 
 # Compile Verilog files
 vlog ../src/arithmetic_unit/adder.v
+vlog ../src/other/*.v
 vlog ../src/arithmetic_unit/divider.v
 vlog ../src/arithmetic_unit/multiplier.v
 vlog ../src/arithmetic_unit/subtractor.v
 vlog ../src/control_unit/control_unit.v
-vlog ../src/mux/mux4to1.v
-vlog ../src/registers/input_register.v
-vlog ../src/registers/output_register.v
+vlog ../src/control_unit/arithmetic_unit.v
 vlog ../src/alu_top.v
 
 # Compile the testbench
@@ -27,14 +26,6 @@ vsim tb_alu_top
 log -r /*
 
 # Add signals to the waveform viewer
-add wave -radix unsigned /tb_alu_top/operand_A
-add wave -radix unsigned /tb_alu_top/operand_B
-add wave -radix unsigned /tb_alu_top/result
-add wave -radix unsigned /tb_alu_top/opcode
-add wave -radix unsigned /tb_alu_top/clk
-add wave -radix unsigned /tb_alu_top/rst
-add wave -radix unsigned /tb_alu_top/start
-add wave -radix unsigned /tb_alu_top/done
 
 # Run the simulation for 200 ns
 run -all

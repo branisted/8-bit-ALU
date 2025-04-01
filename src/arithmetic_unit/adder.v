@@ -3,9 +3,9 @@
 `timescale 1ns / 1ps
 
 module adder (
-    input [7:0] A, B,
+    input signed [7:0] A, B,
     input Cin,
-    output [7:0] Sum,
+    output signed [7:0] Sum,
     output Cout
 );
     wire C4;

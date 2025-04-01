@@ -1,4 +1,4 @@
-module non_restoring_divider(
+module divider(
     input signed [7:0] dividend,
     input signed [7:0] divisor,
     output reg signed [7:0] quotient,
@@ -36,7 +36,7 @@ module non_restoring_divider(
             for (i = 0; i < 8; i = i + 1) begin
                 // Left shift remainder and bring down next bit
                 temp_dividend = temp_dividend << 1;
-                temp_dividend[0] = (dividend_sign ? -dividend[7-i] : dividend[7-i]);
+                temp_dividend[0] = dividend[7-i];
 
                 // Perform non-restoring subtraction
                 if (temp_dividend[15:8] >= temp_divisor) begin

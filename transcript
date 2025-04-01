@@ -1,285 +1,338 @@
 cd run
-do run_tb_divider.do
+do run_tb_alu_top.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
 # -- Compiling module full_adder
-# -- Compiling module subtractor_8bit
-# -- Compiling module non_restoring_divider
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
 # 
 # Top level modules:
-# 	non_restoring_divider
+# 	multiplier
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_divider
+# -- Compiling module subtractor
 # 
 # Top level modules:
-# 	tb_divider
-# vsim tb_divider 
-# Loading work.tb_divider
-# Loading work.non_restoring_divider
-# ** Warning: (vsim-3009) [TSCALE] - Module 'non_restoring_divider' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_divider/uut
-# Loading work.subtractor_8bit
-# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor_8bit' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_divider/uut/division_steps[0]/sub
-# Loading work.full_adder
-# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_divider/uut/division_steps[0]/sub/fa0
-# Time=0 | Dividend= 100, Divisor=   5 | Quotient=   x, Remainder=   X
-# Time=10000 | Dividend=-100, Divisor=   5 | Quotient=   x, Remainder=   X
-# Time=20000 | Dividend= 100, Divisor=  -5 | Quotient=   x, Remainder=   X
-# Time=30000 | Dividend=-100, Divisor=  -5 | Quotient=   x, Remainder=   X
-# Time=40000 | Dividend= 127, Divisor=   3 | Quotient=   x, Remainder=   X
-# Time=50000 | Dividend=-128, Divisor=   2 | Quotient=   x, Remainder=   X
-# Time=60000 | Dividend=  45, Divisor=   7 | Quotient=   x, Remainder=   X
-# Time=70000 | Dividend=   0, Divisor=  10 | Quotient=   x, Remainder=   X
-# Time=80000 | Dividend=  50, Divisor=   0 | Quotient=   0, Remainder=   0
-# Time=90000 | Dividend=-128, Divisor=  -1 | Quotient=   x, Remainder=   X
-# ** Note: $finish    : ../testbenches/tb_divider.v(70)
-#    Time: 100 ns  Iteration: 0  Instance: /tb_divider
-# 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 70
-# Simulation Breakpoint: 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 70
-# MACRO ./run_tb_divider.do PAUSED at line 17
-do run_tb_divider.do
+# 	subtractor
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module full_adder
-# -- Compiling module subtractor_8bit
-# -- Compiling module non_restoring_divider
+# -- Compiling module control_unit
 # 
 # Top level modules:
-# 	non_restoring_divider
+# 	control_unit
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_divider
-# 
-# Top level modules:
-# 	tb_divider
-# vsim tb_divider 
-# Loading work.tb_divider
-# Loading work.non_restoring_divider
-# ** Warning: (vsim-3009) [TSCALE] - Module 'non_restoring_divider' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_divider/uut
-# Loading work.subtractor_8bit
-# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor_8bit' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_divider/uut/division_steps[0]/sub
-# Loading work.full_adder
-# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_divider/uut/division_steps[0]/sub/fa0
-# Time=0 | Dividend= 100, Divisor=   5 | Quotient=   x, Remainder=   X
-# Time=10000 | Dividend=-100, Divisor=   5 | Quotient=   x, Remainder=   X
-# Time=20000 | Dividend= 100, Divisor=  -5 | Quotient=   x, Remainder=   X
-# Time=30000 | Dividend=-100, Divisor=  -5 | Quotient=   x, Remainder=   X
-# Time=40000 | Dividend= 127, Divisor=   3 | Quotient=   x, Remainder=   X
-# Time=50000 | Dividend=-128, Divisor=   2 | Quotient=   x, Remainder=   X
-# Time=60000 | Dividend=  45, Divisor=   7 | Quotient=   x, Remainder=   X
-# Time=70000 | Dividend=   0, Divisor=  10 | Quotient=   x, Remainder=   X
-# Time=80000 | Dividend=  50, Divisor=   0 | Quotient=   0, Remainder=   0
-# Time=90000 | Dividend=-128, Divisor=  -1 | Quotient=   x, Remainder=   X
-# ** Note: $finish    : ../testbenches/tb_divider.v(70)
-#    Time: 100 ns  Iteration: 0  Instance: /tb_divider
-# 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 70
-# Simulation Breakpoint: 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 70
-# MACRO ./run_tb_divider.do PAUSED at line 17
-cd run
-# couldn't change working directory to "run": no such file or directory
-do run_tb_divider.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module full_adder
-# -- Compiling module subtractor_8bit
-# -- Compiling module non_restoring_divider
-# 
-# Top level modules:
-# 	non_restoring_divider
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_divider
-# 
-# Top level modules:
-# 	tb_divider
-# vsim tb_divider 
-# Loading work.tb_divider
-# Loading work.non_restoring_divider
-# ** Warning: (vsim-3009) [TSCALE] - Module 'non_restoring_divider' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_divider/uut
-# Loading work.subtractor_8bit
-# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor_8bit' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_divider/uut/division_steps[0]/sub
-# Loading work.full_adder
-# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_divider/uut/division_steps[0]/sub/fa0
-# Debug: Dividend= 100, Divisor=   5, Quotient=   x, Remainder=   X
-# Time=0 | Dividend= 100, Divisor=   5 | Quotient=   x, Remainder=   X
-# Debug: Dividend=-100, Divisor=   5, Quotient=   x, Remainder=   X
-# Time=10000 | Dividend=-100, Divisor=   5 | Quotient=   x, Remainder=   X
-# Debug: Dividend= 100, Divisor=  -5, Quotient=   x, Remainder=   X
-# Time=20000 | Dividend= 100, Divisor=  -5 | Quotient=   x, Remainder=   X
-# Debug: Dividend=-100, Divisor=  -5, Quotient=   x, Remainder=   X
-# Time=30000 | Dividend=-100, Divisor=  -5 | Quotient=   x, Remainder=   X
-# Debug: Dividend= 127, Divisor=   3, Quotient=   x, Remainder=   X
-# Time=40000 | Dividend= 127, Divisor=   3 | Quotient=   x, Remainder=   X
-# Debug: Dividend=-128, Divisor=   2, Quotient=   x, Remainder=   X
-# Time=50000 | Dividend=-128, Divisor=   2 | Quotient=   x, Remainder=   X
-# Debug: Dividend=  45, Divisor=   7, Quotient=   x, Remainder=   X
-# Time=60000 | Dividend=  45, Divisor=   7 | Quotient=   x, Remainder=   X
-# Debug: Dividend=   0, Divisor=  10, Quotient=   x, Remainder=   X
-# Time=70000 | Dividend=   0, Divisor=  10 | Quotient=   x, Remainder=   X
-# Debug: Dividend=  50, Divisor=   0, Quotient=   0, Remainder=   0
-# Time=80000 | Dividend=  50, Divisor=   0 | Quotient=   0, Remainder=   0
-# Debug: Dividend=-128, Divisor=  -1, Quotient=   x, Remainder=   X
-# Time=90000 | Dividend=-128, Divisor=  -1 | Quotient=   x, Remainder=   X
-# ** Note: $finish    : ../testbenches/tb_divider.v(70)
-#    Time: 100 ns  Iteration: 0  Instance: /tb_divider
-# 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 70
-# Simulation Breakpoint: 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 70
-# MACRO ./run_tb_divider.do PAUSED at line 17
-do run_tb_divider.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module non_restoring_divider
-# 
-# Top level modules:
-# 	non_restoring_divider
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_divider
-# 
-# Top level modules:
-# 	tb_divider
-# vsim tb_divider 
-# Loading work.tb_divider
-# Loading work.non_restoring_divider
-# Time=0 | Dividend= 100, Divisor=   5 | Quotient=  20, Remainder=   0
-# Time=10 | Dividend=-100, Divisor=   5 | Quotient=  31, Remainder=   1
-# Time=20 | Dividend= 100, Divisor=  -5 | Quotient=   0, Remainder= 100
-# Time=30 | Dividend=-100, Divisor=  -5 | Quotient=   0, Remainder=-100
-# Time=40 | Dividend= 127, Divisor=   3 | Quotient=  42, Remainder=   1
-# Time=50 | Dividend=-128, Divisor=   2 | Quotient=  64, Remainder=   0
-# Time=60 | Dividend=  45, Divisor=   7 | Quotient=   6, Remainder=   3
-# Time=70 | Dividend=   0, Divisor=  10 | Quotient=   0, Remainder=   0
-# Time=80 | Dividend=  50, Divisor=   0 | Quotient=   0, Remainder=   0
-# Time=90 | Dividend=-128, Divisor=  -1 | Quotient=   0, Remainder=-128
-# ** Note: $finish    : ../testbenches/tb_divider.v(28)
-#    Time: 100 ps  Iteration: 0  Instance: /tb_divider
-# 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 28
-# Simulation Breakpoint: 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 28
-# MACRO ./run_tb_divider.do PAUSED at line 17
-cd run
-# couldn't change working directory to "run": no such file or directory
-do run_tb_divider.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module non_restoring_divider
-# ** Error: ../src/arithmetic_unit/divider.v(39): near "[": syntax error, unexpected '[', expecting ';'
+# ** Error: (vlog-7) Failed to open design unit file "../src/mux/mux4to1.v" in read mode.
+# No such file or directory. (errno = ENOENT)
 # ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_divider.do line 12
+# Error in macro ./run_tb_alu_top.do line 15
 # /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
 #     while executing
-# "vlog ../src/arithmetic_unit/divider.v"
-do run_tb_divider.do
+# "vlog ../src/mux/mux4to1.v"
+do run_tb_alu_top.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module non_restoring_divider
-# ** Error: ../src/arithmetic_unit/divider.v(39): near "[": syntax error, unexpected '[', expecting ';'
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# ** Error: (vlog-7) Failed to open design unit file "../src/mux/arithmetic_unit.v" in read mode.
+# No such file or directory. (errno = ENOENT)
 # ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_divider.do line 12
+# Error in macro ./run_tb_alu_top.do line 15
 # /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
 #     while executing
-# "vlog ../src/arithmetic_unit/divider.v"
-do run_tb_divider.do
+# "vlog ../src/mux/arithmetic_unit.v"
+do run_tb_alu_top.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module non_restoring_divider
+# -- Compiling module adder
 # 
 # Top level modules:
-# 	non_restoring_divider
+# 	adder
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_divider
+# -- Compiling module divider
 # 
 # Top level modules:
-# 	tb_divider
-# vsim tb_divider 
-# Loading work.tb_divider
-# Loading work.non_restoring_divider
-# Time=0 | Dividend= 100, Divisor=   5 | Quotient=  20, Remainder=   0
-# Time=10 | Dividend=-100, Divisor=   5 | Quotient= -20, Remainder=   0
-# Time=20 | Dividend= 100, Divisor=  -5 | Quotient= -20, Remainder=   0
-# Time=30 | Dividend=-100, Divisor=  -5 | Quotient=  20, Remainder=   0
-# Time=40 | Dividend= 127, Divisor=   3 | Quotient=  42, Remainder=   1
-# Time=50 | Dividend=-128, Divisor=   2 | Quotient= -64, Remainder=   0
-# Time=60 | Dividend=  45, Divisor=   7 | Quotient=   6, Remainder=   3
-# Time=70 | Dividend=   0, Divisor=  10 | Quotient=   0, Remainder=   0
-# Time=80 | Dividend=  50, Divisor=   0 | Quotient=   0, Remainder=   0
-# Time=90 | Dividend=-128, Divisor=  -1 | Quotient=-128, Remainder=   0
-# ** Note: $finish    : ../testbenches/tb_divider.v(28)
-#    Time: 100 ps  Iteration: 0  Instance: /tb_divider
-# 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 28
-# Simulation Breakpoint: 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 28
-# MACRO ./run_tb_divider.do PAUSED at line 17
-do run_tb_divider.do
+# 	divider
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module non_restoring_divider
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
 # 
 # Top level modules:
-# 	non_restoring_divider
+# 	multiplier
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_divider
+# -- Compiling module subtractor
 # 
 # Top level modules:
-# 	tb_divider
-# vsim tb_divider 
-# Loading work.tb_divider
-# Loading work.non_restoring_divider
-# Time=0 | Dividend= 100, Divisor=   5 | Quotient=  20, Remainder=   0
-# Time=10 | Dividend=-100, Divisor=   5 | Quotient= -20, Remainder=   0
-# Time=20 | Dividend= 100, Divisor=  -5 | Quotient= -20, Remainder=   0
-# Time=30 | Dividend=-100, Divisor=  -5 | Quotient=  20, Remainder=   0
-# Time=40 | Dividend= 127, Divisor=   3 | Quotient=  42, Remainder=   1
-# Time=50 | Dividend=-128, Divisor=   2 | Quotient= -64, Remainder=   0
-# Time=60 | Dividend=  45, Divisor=   7 | Quotient=   6, Remainder=   3
-# Time=70 | Dividend=   0, Divisor=  10 | Quotient=   0, Remainder=   0
-# Time=80 | Dividend=  50, Divisor=   0 | Quotient=   0, Remainder=   0
-# Time=90 | Dividend=-128, Divisor=  -1 | Quotient=-128, Remainder=   0
-# ** Note: $finish    : ../testbenches/tb_divider.v(28)
-#    Time: 100 ps  Iteration: 0  Instance: /tb_divider
-# 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 28
-# Simulation Breakpoint: 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 28
-# MACRO ./run_tb_divider.do PAUSED at line 17
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arithmetic_unit
+# 
+# Top level modules:
+# 	arithmetic_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top_tb
+# 
+# Top level modules:
+# 	alu_top_tb
+# vsim tb_alu_top 
+# ** Error: (vsim-3170) Could not find '/home/brad/Desktop/projects/8-bit-ALU/run/work.tb_alu_top'.
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run_tb_alu_top.do PAUSED at line 22
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arithmetic_unit
+# 
+# Top level modules:
+# 	arithmetic_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_top' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut
+# Loading work.arithmetic_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'arithmetic_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au
+# Loading work.adder
+# ** Error: (vsim-3033) ../src/arithmetic_unit/adder.v(20): Instantiation of 'cla_4bit' failed. The design unit was not found.
+#         Region: /tb_alu_top/uut/au/adder_inst
+#         Searched libraries:
+#             /home/brad/Desktop/projects/8-bit-ALU/run/work
+# ** Error: (vsim-3033) ../src/arithmetic_unit/adder.v(29): Instantiation of 'cla_4bit' failed. The design unit was not found.
+#         Region: /tb_alu_top/uut/au/adder_inst
+#         Searched libraries:
+#             /home/brad/Desktop/projects/8-bit-ALU/run/work
+# Loading work.subtractor
+# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/subtractor_inst
+# ** Error: (vsim-3033) ../src/arithmetic_unit/adder.v(20): Instantiation of 'cla_4bit' failed. The design unit was not found.
+#         Region: /tb_alu_top/uut/au/subtractor_inst/cla_adder
+#         Searched libraries:
+#             /home/brad/Desktop/projects/8-bit-ALU/run/work
+# ** Error: (vsim-3033) ../src/arithmetic_unit/adder.v(29): Instantiation of 'cla_4bit' failed. The design unit was not found.
+#         Region: /tb_alu_top/uut/au/subtractor_inst/cla_adder
+#         Searched libraries:
+#             /home/brad/Desktop/projects/8-bit-ALU/run/work
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0/fa0
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/divider_inst
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run_tb_alu_top.do PAUSED at line 22
 cd run
 # couldn't change working directory to "run": no such file or directory
-do run_tb_divider.do
+do run_tb_alu_top.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module non_restoring_divider
+# -- Compiling module adder
 # 
 # Top level modules:
-# 	non_restoring_divider
+# 	adder
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_divider
+# -- Compiling module arith_right_shifter
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# -- Compiling module mux2x1_8bit
+# -- Compiling module twos_complement
 # 
 # Top level modules:
-# 	tb_divider
-# vsim tb_divider 
-# Loading work.tb_divider
-# Loading work.non_restoring_divider
-# Time=0 | Dividend= 100, Divisor=   5 | Quotient=  20, Remainder=   0
-# Time=10 | Dividend=-100, Divisor=   5 | Quotient= -20, Remainder=   0
-# Time=20 | Dividend= 100, Divisor=  -5 | Quotient= -20, Remainder=   0
-# Time=30 | Dividend=-100, Divisor=  -5 | Quotient=  20, Remainder=   0
-# Time=40 | Dividend= 127, Divisor=   3 | Quotient=  42, Remainder=   1
-# Time=50 | Dividend=-128, Divisor=   2 | Quotient= -64, Remainder=   0
-# Time=60 | Dividend=  45, Divisor=   7 | Quotient=   6, Remainder=   3
-# Time=70 | Dividend=   0, Divisor=  10 | Quotient=   0, Remainder=   0
-# Time=80 | Dividend=  50, Divisor=   0 | Quotient=   0, Remainder=   0
-# Time=90 | Dividend=-128, Divisor=  -1 | Quotient= 127, Remainder=   0
-# ** Note: $finish    : ../testbenches/tb_divider.v(28)
-#    Time: 100 ps  Iteration: 0  Instance: /tb_divider
-# 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 28
-# Simulation Breakpoint: 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 28
-# MACRO ./run_tb_divider.do PAUSED at line 17
+# 	arith_right_shifter
+# 	cla_4bit
+# 	half_adder
+# 	mux2x1_8bit
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arithmetic_unit
+# 
+# Top level modules:
+# 	arithmetic_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_top' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut
+# Loading work.arithmetic_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'arithmetic_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au
+# Loading work.adder
+# Loading work.cla_4bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'cla_4bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low
+# Loading work.gp_logic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'gp_logic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/gp0
+# Loading work.carry_lookahead_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'carry_lookahead_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/clu
+# Loading work.subtractor
+# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/subtractor_inst
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0/fa0
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/divider_inst
+# Starting ALU Testbench...
+# [PASS] Time=10000 | A= 100, B=   5, Op=00 | Result=   105
+# [FAIL] Time=20000 | A=-100, B=   5, Op=01 | Expected=65431, Got=   151
+# [PASS] Time=30000 | A=  10, B=   3, Op=10 | Result=    30
+# [FAIL] Time=40000 | A=-100, B=   5, Op=11 | Expected= 5120, Got= -5120
+# [PASS] Time=50000 | A=  50, B=   0, Op=11 | Result=     0
+# ALU Testbench Completed with 2 errors.
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 47
+# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 47
+# MACRO ./run_tb_alu_top.do PAUSED at line 31
 do run_tb_adder.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
 # -- Compiling module adder
@@ -409,7 +462,33 @@ do run_tb_subtractor.do
 # Simulation Breakpoint: 1
 # Break in Module tb_subtractor at ../testbenches/tb_subtractor.v line 85
 # MACRO ./run_tb_subtractor.do PAUSED at line 26
-do run_tb_multiplier.do
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arith_right_shifter
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# -- Compiling module mux2x1_8bit
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	arith_right_shifter
+# 	cla_4bit
+# 	half_adder
+# 	mux2x1_8bit
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
 # -- Compiling module booth_encoder
 # -- Compiling module partial_product
@@ -420,58 +499,305 @@ do run_tb_multiplier.do
 # Top level modules:
 # 	multiplier
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_multiplier
+# -- Compiling module subtractor
 # 
 # Top level modules:
-# 	tb_multiplier
-# vsim tb_multiplier 
-# Loading work.tb_multiplier
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arithmetic_unit
+# 
+# Top level modules:
+# 	arithmetic_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_top' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut
+# Loading work.arithmetic_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'arithmetic_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au
+# Loading work.adder
+# Loading work.cla_4bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'cla_4bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low
+# Loading work.gp_logic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'gp_logic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/gp0
+# Loading work.carry_lookahead_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'carry_lookahead_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/clu
+# Loading work.subtractor
+# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/subtractor_inst
 # Loading work.multiplier
 # ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_multiplier/uut
+#         Region: /tb_alu_top/uut/au/multiplier_inst
 # Loading work.booth_encoder
 # ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_multiplier/uut/enc0
+#         Region: /tb_alu_top/uut/au/multiplier_inst/enc0
 # Loading work.partial_product
 # ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_multiplier/uut/pp_gen0
+#         Region: /tb_alu_top/uut/au/multiplier_inst/pp_gen0
 # Loading work.adder_16bit
 # ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_multiplier/uut/add0
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0
 # Loading work.full_adder
 # ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
-#         Region: /tb_multiplier/uut/add0/fa0
-# Starting Booth Radix-4 Multiplier Testbench...
-# TEST PASSED: A=   0 (00000000), B=   0 (00000000) | result=     0 (0000000000000000)
-# TEST PASSED: A=   5 (00000101), B=   6 (00000110) | result=    30 (0000000000011110)
-# TEST PASSED: A= 127 (01111111), B= 127 (01111111) | result= 16129 (0011111100000001)
-# TEST PASSED: A=-128 (10000000), B=-128 (10000000) | result= 16384 (0100000000000000)
-# TEST PASSED: A= 100 (01100100), B=  -6 (11111010) | result=  -600 (1111110110101000)
-# TEST PASSED: A= -15 (11110001), B=  20 (00010100) | result=  -300 (1111111011010100)
-# TEST PASSED: A= 127 (01111111), B=-128 (10000000) | result=-16256 (1100000010000000)
-# TEST PASSED: A=  -3 (11111101), B=  -4 (11111100) | result=    12 (0000000000001100)
-# TEST PASSED: A= -86 (10101010), B=  85 (01010101) | result= -7310 (1110001101110010)
-# TEST PASSED: A= -45 (11010011), B=  73 (01001001) | result= -3285 (1111001100101011)
-# TEST PASSED: A=  16 (00010000), B=   8 (00001000) | result=   128 (0000000010000000)
-# TEST PASSED: A=   0 (00000000), B=-100 (10011100) | result=     0 (0000000000000000)
-# TEST PASSED: A= 100 (01100100), B=  -6 (11111010) | result=  -600 (1111110110101000)
-# TEST PASSED: A=  85 (01010101), B= -86 (10101010) | result= -7310 (1110001101110010)
-# TEST PASSED: A=  64 (01000000), B=  -1 (11111111) | result=   -64 (1111111111000000)
-# TEST PASSED: A=  73 (01001001), B= -19 (11101101) | result= -1387 (1111101010010101)
-# All tests completed.
-# ** Note: $finish    : ../testbenches/tb_multiplier.v(98)
-#    Time: 160 ns  Iteration: 0  Instance: /tb_multiplier
-# 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 98
-# Simulation Breakpoint: 1
-# Break in Module tb_multiplier at ../testbenches/tb_multiplier.v line 98
-# MACRO ./run_tb_multiplier.do PAUSED at line 17
-do run_tb_divider.do
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0/fa0
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/divider_inst
+# Starting ALU Testbench...
+# [PASS] Time=10000 | A=01100100, B=00000101, Op=00 | Result=0000000001101001
+# [FAIL] Time=20000 | A=10011100, B=00000101, Op=01 | Expected=1111111110010111, Got=0000000010010111
+# [PASS] Time=30000 | A=00001010, B=00000011, Op=10 | Result=0000000000011110
+# [FAIL] Time=40000 | A=10011100, B=00000101, Op=11 | Expected=1111111111101100, Got=1110110000000000
+# [PASS] Time=50000 | A=00110010, B=00000000, Op=11 | Result=0000000000000000
+# ALU Testbench Completed with 2 errors.
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 47
+# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 47
+# MACRO ./run_tb_alu_top.do PAUSED at line 31
+do run_tb_alu_top.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module non_restoring_divider
+# -- Compiling module adder
 # 
 # Top level modules:
-# 	non_restoring_divider
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arith_right_shifter
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# -- Compiling module mux2x1_8bit
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	arith_right_shifter
+# 	cla_4bit
+# 	half_adder
+# 	mux2x1_8bit
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arithmetic_unit
+# 
+# Top level modules:
+# 	arithmetic_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_top' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut
+# Loading work.arithmetic_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'arithmetic_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au
+# Loading work.adder
+# Loading work.cla_4bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'cla_4bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low
+# Loading work.gp_logic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'gp_logic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/gp0
+# Loading work.carry_lookahead_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'carry_lookahead_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/clu
+# Loading work.subtractor
+# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/subtractor_inst
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0/fa0
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/divider_inst
+# Starting ALU Testbench...
+# [PASS] Time=10000 | A=01100100, B=00000101, Op=00 | Result=0000000001101001
+# [PASS] Time=20000 | A=10011100, B=00000101, Op=01 | Result=10010111
+# [PASS] Time=30000 | A=00001010, B=00000011, Op=10 | Result=0000000000011110
+# [FAIL] Time=40000 | A=10011100, B=00000101, Op=11 | Expected=0001010000000000, Got=1110110000000000
+# [PASS] Time=50000 | A=00110010, B=00000000, Op=11 | Result=0000000000000000
+# ALU Testbench Completed with 1 errors.
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 60
+# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 60
+# MACRO ./run_tb_alu_top.do PAUSED at line 31
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arith_right_shifter
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# -- Compiling module mux2x1_8bit
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	arith_right_shifter
+# 	cla_4bit
+# 	half_adder
+# 	mux2x1_8bit
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arithmetic_unit
+# 
+# Top level modules:
+# 	arithmetic_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_top' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut
+# Loading work.arithmetic_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'arithmetic_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au
+# Loading work.adder
+# Loading work.cla_4bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'cla_4bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low
+# Loading work.gp_logic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'gp_logic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/gp0
+# Loading work.carry_lookahead_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'carry_lookahead_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/clu
+# Loading work.subtractor
+# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/subtractor_inst
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0/fa0
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/divider_inst
+# Starting ALU Testbench...
+# [PASS] Time=10000 | A=01100100, B=00000101, Op=00 | Result=0000000001101001
+# [PASS] Time=20000 | A=10011100, B=00000101, Op=01 | Result=10010111
+# [PASS] Time=30000 | A=00001010, B=00000011, Op=10 | Result=0000000000011110
+# [FAIL] Time=40000 | A=10011100, B=00000101, Op=11 | Expected=0001010000000000, Got=1110110000000000
+# [PASS] Time=50000 | A=00110010, B=00000000, Op=11 | Result=0000000000000000
+# ALU Testbench Completed with 1 errors.
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 60
+# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 60
+# MACRO ./run_tb_alu_top.do PAUSED at line 31
+do run_tb_divider.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
 # -- Compiling module tb_divider
 # 
@@ -479,21 +805,459 @@ do run_tb_divider.do
 # 	tb_divider
 # vsim tb_divider 
 # Loading work.tb_divider
-# Loading work.non_restoring_divider
-# Time=0 | Dividend= 100, Divisor=   5 | Quotient=  20, Remainder=   0
-# Time=10 | Dividend=-100, Divisor=   5 | Quotient= -20, Remainder=   0
-# Time=20 | Dividend= 100, Divisor=  -5 | Quotient= -20, Remainder=   0
-# Time=30 | Dividend=-100, Divisor=  -5 | Quotient=  20, Remainder=   0
-# Time=40 | Dividend= 127, Divisor=   3 | Quotient=  42, Remainder=   1
-# Time=50 | Dividend=-128, Divisor=   2 | Quotient= -64, Remainder=   0
-# Time=60 | Dividend=  45, Divisor=   7 | Quotient=   6, Remainder=   3
-# Time=70 | Dividend=   0, Divisor=  10 | Quotient=   0, Remainder=   0
-# Time=80 | Dividend=  50, Divisor=   0 | Quotient=   0, Remainder=   0
-# Time=90 | Dividend=-128, Divisor=  -1 | Quotient= 127, Remainder=   0
-# ** Note: $finish    : ../testbenches/tb_divider.v(28)
-#    Time: 100 ps  Iteration: 0  Instance: /tb_divider
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_divider/uut
+# Starting Non-Restoring Division Testbench...
+# TEST PASSED: dividend=  16, divisor=   4 | quotient=   4, remainder=   0
+# TEST PASSED: dividend= -16, divisor=   4 | quotient=  -4, remainder=   0
+# TEST PASSED: dividend=  19, divisor=   4 | quotient=   4, remainder=   3
+# TEST PASSED: dividend= -19, divisor=   4 | quotient=  -4, remainder=  -3
+# TEST PASSED: dividend= 127, divisor=   5 | quotient=  25, remainder=   2
+# TEST PASSED: dividend=-127, divisor=   5 | quotient= -25, remainder=  -2
+# TEST PASSED: dividend=  50, divisor=   0 | quotient=   0, remainder=   0
+# TEST PASSED: dividend=-100, divisor=  -1 | quotient= 100, remainder=   0
+# TEST PASSED: dividend=-128, divisor=  -1 | quotient= 127, remainder=   0
+# TEST PASSED: dividend= 100, divisor=  -7 | quotient= -14, remainder=   2
+# All tests completed.
+# ** Note: $finish    : ../testbenches/tb_divider.v(76)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_divider
 # 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 28
+# Break in Module tb_divider at ../testbenches/tb_divider.v line 76
 # Simulation Breakpoint: 1
-# Break in Module tb_divider at ../testbenches/tb_divider.v line 28
+# Break in Module tb_divider at ../testbenches/tb_divider.v line 76
 # MACRO ./run_tb_divider.do PAUSED at line 17
+do run_tb_divider.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_divider
+# 
+# Top level modules:
+# 	tb_divider
+# vsim tb_divider 
+# Loading work.tb_divider
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_divider/uut
+# Starting Non-Restoring Division Testbench...
+# TEST PASSED: dividend=  16, divisor=   4 | quotient=   4, remainder=   0
+# TEST PASSED: dividend= -16, divisor=   4 | quotient=  -4, remainder=   0
+# TEST PASSED: dividend=  19, divisor=   4 | quotient=   4, remainder=   3
+# TEST PASSED: dividend= -19, divisor=   4 | quotient=  -4, remainder=  -3
+# TEST PASSED: dividend= 127, divisor=   5 | quotient=  25, remainder=   2
+# TEST PASSED: dividend=-127, divisor=   5 | quotient= -25, remainder=  -2
+# TEST PASSED: dividend=  50, divisor=   0 | quotient=   0, remainder=   0
+# TEST PASSED: dividend=-100, divisor=  -1 | quotient= 100, remainder=   0
+# TEST PASSED: dividend=-128, divisor=  -1 | quotient= 127, remainder=   0
+# TEST PASSED: dividend= 100, divisor=  -7 | quotient= -14, remainder=   2
+# All tests completed.
+# ** Note: $finish    : ../testbenches/tb_divider.v(76)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_divider
+# 1
+# Break in Module tb_divider at ../testbenches/tb_divider.v line 76
+# Simulation Breakpoint: 1
+# Break in Module tb_divider at ../testbenches/tb_divider.v line 76
+# MACRO ./run_tb_divider.do PAUSED at line 17
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arith_right_shifter
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# -- Compiling module mux2x1_8bit
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	arith_right_shifter
+# 	cla_4bit
+# 	half_adder
+# 	mux2x1_8bit
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arithmetic_unit
+# 
+# Top level modules:
+# 	arithmetic_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_top' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut
+# Loading work.arithmetic_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'arithmetic_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au
+# Loading work.adder
+# Loading work.cla_4bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'cla_4bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low
+# Loading work.gp_logic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'gp_logic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/gp0
+# Loading work.carry_lookahead_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'carry_lookahead_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/clu
+# Loading work.subtractor
+# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/subtractor_inst
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0/fa0
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/divider_inst
+# Starting ALU Testbench...
+# [PASS] Time=10000 | A=01100100, B=00000101, Op=00 | Result=0000000001101001
+# [PASS] Time=20000 | A=10011100, B=00000101, Op=01 | Result=10010111
+# [PASS] Time=30000 | A=00001010, B=00000011, Op=10 | Result=0000000000011110
+# [PASS] Time=40000 | A=10011100, B=00000101, Op=11 | Result=1110110000000000
+# [PASS] Time=50000 | A=00110010, B=00000000, Op=11 | Result=0000000000000000
+# ALU Testbench Completed with 0 errors.
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 60
+# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 60
+# MACRO ./run_tb_alu_top.do PAUSED at line 31
+do run_tb_subtractor.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arith_right_shifter
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# -- Compiling module mux2x1_8bit
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	arith_right_shifter
+# 	cla_4bit
+# 	half_adder
+# 	mux2x1_8bit
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_subtractor
+# 
+# Top level modules:
+# 	tb_subtractor
+# vsim tb_subtractor 
+# Loading work.tb_subtractor
+# Loading work.subtractor
+# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_subtractor/uut
+# Loading work.adder
+# Loading work.cla_4bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'cla_4bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_subtractor/uut/cla_adder/cla_low
+# Loading work.gp_logic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'gp_logic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_subtractor/uut/cla_adder/cla_low/gp0
+# Loading work.carry_lookahead_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'carry_lookahead_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_subtractor/uut/cla_adder/cla_low/clu
+# Starting 8-bit Subtractor Testbench...
+# TEST PASSED: A=00000000, B=00000000 | Diff=00000000, Borrow=0
+# TEST PASSED: A=00000001, B=00000000 | Diff=00000001, Borrow=0
+# TEST PASSED: A=00000000, B=00000001 | Diff=11111111, Borrow=1
+# TEST PASSED: A=00001010, B=00000101 | Diff=00000101, Borrow=0
+# TEST PASSED: A=00000001, B=11111111 | Diff=00000010, Borrow=1
+# TEST PASSED: A=11111111, B=11111111 | Diff=00000000, Borrow=0
+# TEST PASSED: A=00001010, B=00001010 | Diff=00000000, Borrow=0
+# TEST PASSED: A=10000000, B=11111111 | Diff=10000001, Borrow=1
+# TEST PASSED: A=01010101, B=10101010 | Diff=10101011, Borrow=1
+# TEST PASSED: A=11110000, B=00001111 | Diff=11100001, Borrow=0
+# TEST PASSED: A=00001111, B=00000001 | Diff=00001110, Borrow=0
+# TEST PASSED: A=01101011, B=00100101 | Diff=01000110, Borrow=0
+# TEST PASSED: A=00110010, B=01100100 | Diff=11001110, Borrow=1
+# All tests completed.
+# ** Note: $finish    : ../testbenches/tb_subtractor.v(85)
+#    Time: 130 ns  Iteration: 0  Instance: /tb_subtractor
+# 1
+# Break in Module tb_subtractor at ../testbenches/tb_subtractor.v line 85
+# Simulation Breakpoint: 1
+# Break in Module tb_subtractor at ../testbenches/tb_subtractor.v line 85
+# MACRO ./run_tb_subtractor.do PAUSED at line 26
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arith_right_shifter
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# -- Compiling module mux2x1_8bit
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	arith_right_shifter
+# 	cla_4bit
+# 	half_adder
+# 	mux2x1_8bit
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arithmetic_unit
+# 
+# Top level modules:
+# 	arithmetic_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_top' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut
+# Loading work.arithmetic_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'arithmetic_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au
+# Loading work.adder
+# Loading work.cla_4bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'cla_4bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low
+# Loading work.gp_logic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'gp_logic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/gp0
+# Loading work.carry_lookahead_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'carry_lookahead_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/clu
+# Loading work.subtractor
+# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/subtractor_inst
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0/fa0
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/divider_inst
+# Starting ALU Testbench...
+# [PASS] Time=10000 | A= 100, B=   5, Op=0 | Result=   105
+# [PASS] Time=20000 | A=-100, B=   5, Op=1 | Result=151
+# [PASS] Time=30000 | A=  10, B=   3, Op=2 | Result=    30
+# [PASS] Time=40000 | A=-100, B=   5, Op=3 | Result= -5120
+# [PASS] Time=50000 | A=  50, B=   0, Op=3 | Result=     0
+# ALU Testbench Completed with 0 errors.
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 60
+# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 60
+# MACRO ./run_tb_alu_top.do PAUSED at line 31
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arith_right_shifter
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module full_adder
+# -- Compiling module gp_logic
+# -- Compiling module half_adder
+# -- Compiling module mux2x1_8bit
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	arith_right_shifter
+# 	cla_4bit
+# 	half_adder
+# 	mux2x1_8bit
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module divider
+# 
+# Top level modules:
+# 	divider
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module booth_encoder
+# -- Compiling module partial_product
+# -- Compiling module full_adder
+# -- Compiling module adder_16bit
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module subtractor
+# 
+# Top level modules:
+# 	subtractor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module arithmetic_unit
+# 
+# Top level modules:
+# 	arithmetic_unit
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_top' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut
+# Loading work.arithmetic_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'arithmetic_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au
+# Loading work.adder
+# Loading work.cla_4bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'cla_4bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low
+# Loading work.gp_logic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'gp_logic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/gp0
+# Loading work.carry_lookahead_unit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'carry_lookahead_unit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/adder_inst/cla_low/clu
+# Loading work.subtractor
+# ** Warning: (vsim-3009) [TSCALE] - Module 'subtractor' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/subtractor_inst
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst
+# Loading work.booth_encoder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'booth_encoder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/enc0
+# Loading work.partial_product
+# ** Warning: (vsim-3009) [TSCALE] - Module 'partial_product' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/pp_gen0
+# Loading work.adder_16bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'adder_16bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0
+# Loading work.full_adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/multiplier_inst/add0/fa0
+# Loading work.divider
+# ** Warning: (vsim-3009) [TSCALE] - Module 'divider' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_alu_top/uut/au/divider_inst
+# Starting ALU Testbench...
+# [PASS] Time=10000 | A=01100100, B=00000101, Op=00 | Result=0000000001101001
+# [PASS] Time=20000 | A=10011100, B=00000101, Op=01 | Result=10010111
+# [PASS] Time=30000 | A=00001010, B=00000011, Op=10 | Result=0000000000011110
+# [PASS] Time=40000 | A=10011100, B=00000101, Op=11 | Result=1110110000000000
+# [PASS] Time=50000 | A=00110010, B=00000000, Op=11 | Result=0000000000000000
+# ALU Testbench Completed with 0 errors.
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 60
+# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 60
+# MACRO ./run_tb_alu_top.do PAUSED at line 31
