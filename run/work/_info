@@ -3,85 +3,29 @@ K3
 13
 cModel Technology
 Z0 d/home/brad/Desktop/projects/8-bit-ALU/run
-vadder_16bit
-IcMQdI<Ijn;f]?KA?9l9b<2
-V4hVkII]dPY3KNA8A:0OZ40
-Z1 w1743460933
-Z2 8../src/arithmetic_unit/multiplier.v
-Z3 F../src/arithmetic_unit/multiplier.v
-L0 32
-Z4 OV;L;6.5b;42
-r1
-31
-o-O0
-!s100 J=OS;o^fe^5n=@=Hi1hck1
-!s85 0
-!s101 -O0
-vbooth_encoder
-IC_G=YDc^ZSn][7_7Bbd:X3
-V]GBmUmzU3R8_adWcad1290
-R1
-R2
-R3
+vnon_restoring_divider
+I_`lz?6^ARJKz[GcE=Jknj0
+VIm>EcP5mAKFPj26Ll2@kY3
+w1743515543
+8../src/arithmetic_unit/divider.v
+F../src/arithmetic_unit/divider.v
 L0 1
-R4
+Z1 OV;L;6.5b;42
 r1
 31
 o-O0
-!s100 Z:ldgzD8UWkf6P>zha68d1
+!s100 KIJJn6JIkaTMUO9^]VAl10
 !s85 0
 !s101 -O0
-vfull_adder
-ILW19aAZ[KB;Po>COac5]L3
-VDXIz@A8ZlZIe0^?_MInkU1
+vtb_divider
+!s100 cdZ`Z_]l22BV_87gh:]gY0
+IVCA6=Kf04ji<=X2X>4n0K0
+V=2:IaMhR5zMV0LRV`0`2G2
+w1743515279
+8../testbenches/tb_divider.v
+F../testbenches/tb_divider.v
+L0 1
 R1
-R2
-R3
-L0 27
-R4
-r1
-31
-o-O0
-!s100 PHdEgQ4g?eoo:JJ=5P3zz3
-!s85 0
-!s101 -O0
-vmultiplier
-I?oaEAj=D^>`Kk6fAKXUZT3
-V[31IMznGEk9_Q?bX?]hgX2
-R1
-R2
-R3
-L0 53
-R4
-r1
-31
-o-O0
-!s100 _=<KDQXCcTA3I;NEc82b<1
-!s85 0
-!s101 -O0
-vpartial_product
-ILSgDH:G3TZ0NAQ=^^Ui3S0
-V2M>QHjBfaVDnH3P2UG;9`2
-R1
-R2
-R3
-L0 14
-R4
-r1
-31
-o-O0
-!s100 B2;C;3nGo8gDT7Z?dPi=D1
-!s85 0
-!s101 -O0
-vtb_multiplier
-!s100 P2JTf]ZkIX9Gnk=:Bg02C0
-I?YOTeRm3?2dFI4jG`SIj92
-VzjL;ioaV=?_4H6n?5lzoa2
-w1743461365
-8../testbenches/tb_multiplier.v
-F../testbenches/tb_multiplier.v
-L0 3
-R4
 r1
 !s85 0
 31

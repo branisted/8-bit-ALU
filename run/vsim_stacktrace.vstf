@@ -1,0 +1,147 @@
+# Current time Tue Apr  1 16:12:33 2025
+# ModelSim Stack Trace
+# Program = vsim
+# Id = "6.5b"
+# Version = "2009.10"
+# Date = "Oct  1 2009"
+# Platform = linuxle
+# 0    0xf7a72c07: 'IO_fclose + 0x17' in '/lib/i386-linux-gnu/libc.so.6'
+# 1    0x082360fa: '<unknown (@0x82360fa)>'
+# 2    0x082363ed: '<unknown (@0x82363ed)>'
+# 3    0x0824ddf3: '<unknown (@0x824ddf3)>'
+# 4    0xf648778c: '<unknown (@0xf648778c)>'
+# 5    0x0814d20e: '<unknown (@0x814d20e)>'
+# 6    0x0814d32e: '<unknown (@0x814d32e)>'
+# 7    0x0824f730: '<unknown (@0x824f730)>'
+# 8    0x08250126: '<unknown (@0x8250126)>'
+# 9    0xf6486136: '<unknown (@0xf6486136)>'
+# 10   0x0814d20e: '<unknown (@0x814d20e)>'
+# 11   0x0814d32e: '<unknown (@0x814d32e)>'
+# 12   0x08281b69: '<unknown (@0x8281b69)>'
+# 13   0x08283031: '<unknown (@0x8283031)>'
+# 14   0x084a7d33: '<unknown (@0x84a7d33)>'
+# 15   0x086a2027: '<unknown (@0x86a2027)>'
+# 16   0x086a37d9: '<unknown (@0x86a37d9)>'
+# 17   0x086c910b: '<unknown (@0x86c910b)>'
+# 18   0x086ce1f3: '<unknown (@0x86ce1f3)>'
+# 19   0x086a576c: '<unknown (@0x86a576c)>'
+# 20   0x086a881d: '<unknown (@0x86a881d)>'
+# 21   0x086a37d9: '<unknown (@0x86a37d9)>'
+# 22   0x086c910b: '<unknown (@0x86c910b)>'
+# 23   0x086ce453: '<unknown (@0x86ce453)>'
+# 24   0x086a3eec: '<unknown (@0x86a3eec)>'
+# 25   0x086ab5ed: '<unknown (@0x86ab5ed)>'
+# 26   0x086a37d9: '<unknown (@0x86a37d9)>'
+# 27   0x086a4c6d: '<unknown (@0x86a4c6d)>'
+# 28   0x086a50b0: '<unknown (@0x86a50b0)>'
+# 29   0x086a5a9a: '<unknown (@0x86a5a9a)>'
+# 30   0x08585b2a: '<unknown (@0x8585b2a)>'
+# 31   0x086dbe0b: '<unknown (@0x86dbe0b)>'
+# 32   0x0870a93e: '<unknown (@0x870a93e)>'
+# 33   0x086eb270: '<unknown (@0x86eb270)>'
+# 34   0x086eb56e: '<unknown (@0x86eb56e)>'
+# 35   0x08662d70: '<unknown (@0x8662d70)>'
+# 36   0x083554f0: '<unknown (@0x83554f0)>'
+# 37   0x082bafed: '<unknown (@0x82bafed)>'
+# 38   0x0805cfa9: '<unknown (@0x805cfa9)>'
+# End of Stack Trace
+
+
+# Current time Tue Apr  1 16:12:51 2025
+# ModelSim Stack Trace
+# Program = vsim
+# Id = "6.5b"
+# Version = "2009.10"
+# Date = "Oct  1 2009"
+# Platform = linuxle
+# 0    0xf7a72c07: 'IO_fclose + 0x17' in '/lib/i386-linux-gnu/libc.so.6'
+# 1    0x082360fa: '<unknown (@0x82360fa)>'
+# 2    0x082363ed: '<unknown (@0x82363ed)>'
+# 3    0x0824ddf3: '<unknown (@0x824ddf3)>'
+# 4    0xf648778c: '<unknown (@0xf648778c)>'
+# 5    0x0814d20e: '<unknown (@0x814d20e)>'
+# 6    0x0814d32e: '<unknown (@0x814d32e)>'
+# 7    0x0824f730: '<unknown (@0x824f730)>'
+# 8    0x08250126: '<unknown (@0x8250126)>'
+# 9    0xf6486136: '<unknown (@0xf6486136)>'
+# 10   0x0814d20e: '<unknown (@0x814d20e)>'
+# 11   0x0814d32e: '<unknown (@0x814d32e)>'
+# 12   0x08281b69: '<unknown (@0x8281b69)>'
+# 13   0x08283031: '<unknown (@0x8283031)>'
+# 14   0x084a7d33: '<unknown (@0x84a7d33)>'
+# 15   0x086a2027: '<unknown (@0x86a2027)>'
+# 16   0x086a37d9: '<unknown (@0x86a37d9)>'
+# 17   0x086c910b: '<unknown (@0x86c910b)>'
+# 18   0x086ce1f3: '<unknown (@0x86ce1f3)>'
+# 19   0x086a576c: '<unknown (@0x86a576c)>'
+# 20   0x086a881d: '<unknown (@0x86a881d)>'
+# 21   0x086a37d9: '<unknown (@0x86a37d9)>'
+# 22   0x086c910b: '<unknown (@0x86c910b)>'
+# 23   0x086ce453: '<unknown (@0x86ce453)>'
+# 24   0x086a3eec: '<unknown (@0x86a3eec)>'
+# 25   0x086ab5ed: '<unknown (@0x86ab5ed)>'
+# 26   0x086a37d9: '<unknown (@0x86a37d9)>'
+# 27   0x086a4c6d: '<unknown (@0x86a4c6d)>'
+# 28   0x086a50b0: '<unknown (@0x86a50b0)>'
+# 29   0x086a5a9a: '<unknown (@0x86a5a9a)>'
+# 30   0x08585b2a: '<unknown (@0x8585b2a)>'
+# 31   0x086dbe0b: '<unknown (@0x86dbe0b)>'
+# 32   0x0870a93e: '<unknown (@0x870a93e)>'
+# 33   0x086eb270: '<unknown (@0x86eb270)>'
+# 34   0x086eb56e: '<unknown (@0x86eb56e)>'
+# 35   0x08662d70: '<unknown (@0x8662d70)>'
+# 36   0x083554f0: '<unknown (@0x83554f0)>'
+# 37   0x082bafed: '<unknown (@0x82bafed)>'
+# 38   0x0805cfa9: '<unknown (@0x805cfa9)>'
+# End of Stack Trace
+
+
+# Current time Tue Apr  1 16:19:36 2025
+# ModelSim Stack Trace
+# Program = vsim
+# Id = "6.5b"
+# Version = "2009.10"
+# Date = "Oct  1 2009"
+# Platform = linuxle
+# 0    0xf7c72c07: 'IO_fclose + 0x17' in '/lib/i386-linux-gnu/libc.so.6'
+# 1    0x082360fa: '<unknown (@0x82360fa)>'
+# 2    0x082363ed: '<unknown (@0x82363ed)>'
+# 3    0x0824ddf3: '<unknown (@0x824ddf3)>'
+# 4    0xf668778c: '<unknown (@0xf668778c)>'
+# 5    0x0814d20e: '<unknown (@0x814d20e)>'
+# 6    0x0814d32e: '<unknown (@0x814d32e)>'
+# 7    0x0824f730: '<unknown (@0x824f730)>'
+# 8    0x08250126: '<unknown (@0x8250126)>'
+# 9    0xf6686136: '<unknown (@0xf6686136)>'
+# 10   0x0814d20e: '<unknown (@0x814d20e)>'
+# 11   0x0814d32e: '<unknown (@0x814d32e)>'
+# 12   0x08281b69: '<unknown (@0x8281b69)>'
+# 13   0x08283031: '<unknown (@0x8283031)>'
+# 14   0x084a7d33: '<unknown (@0x84a7d33)>'
+# 15   0x086a2027: '<unknown (@0x86a2027)>'
+# 16   0x086a37d9: '<unknown (@0x86a37d9)>'
+# 17   0x086c910b: '<unknown (@0x86c910b)>'
+# 18   0x086ce1f3: '<unknown (@0x86ce1f3)>'
+# 19   0x086a576c: '<unknown (@0x86a576c)>'
+# 20   0x086a881d: '<unknown (@0x86a881d)>'
+# 21   0x086a37d9: '<unknown (@0x86a37d9)>'
+# 22   0x086c910b: '<unknown (@0x86c910b)>'
+# 23   0x086ce453: '<unknown (@0x86ce453)>'
+# 24   0x086a3eec: '<unknown (@0x86a3eec)>'
+# 25   0x086ab5ed: '<unknown (@0x86ab5ed)>'
+# 26   0x086a37d9: '<unknown (@0x86a37d9)>'
+# 27   0x086a4c6d: '<unknown (@0x86a4c6d)>'
+# 28   0x086a50b0: '<unknown (@0x86a50b0)>'
+# 29   0x086a5a9a: '<unknown (@0x86a5a9a)>'
+# 30   0x08585b2a: '<unknown (@0x8585b2a)>'
+# 31   0x086dbe0b: '<unknown (@0x86dbe0b)>'
+# 32   0x0870a93e: '<unknown (@0x870a93e)>'
+# 33   0x086eb270: '<unknown (@0x86eb270)>'
+# 34   0x086eb56e: '<unknown (@0x86eb56e)>'
+# 35   0x08662d70: '<unknown (@0x8662d70)>'
+# 36   0x083554f0: '<unknown (@0x83554f0)>'
+# 37   0x082bafed: '<unknown (@0x82bafed)>'
+# 38   0x0805cfa9: '<unknown (@0x805cfa9)>'
+# End of Stack Trace
+
+
