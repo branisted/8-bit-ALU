@@ -11,17 +11,7 @@ module tb_alu_top;
     task check_result;
         input [15:0] expected;
         begin
-            if (op == 2'b01) begin
-                if (result[7:0] !== expected[7:0]) begin
-                    $display("[FAIL] Time=%0t | A=%b, B=%b, Op=%b | Expected=%b, Got=%b", 
-                             $time, A, B, op, expected[7:0], result[7:0]);
-                    errors = errors + 1;
-                end else begin
-                    $display("[PASS] Time=%0t | A=%b, B=%b, Op=%b | Result=%b", 
-                             $time, A, B, op, result[7:0]);
-                end
-            end else begin
-                if (result !== expected) begin
+            if (result !== expected) begin
                     $display("[FAIL] Time=%0t | A=%b, B=%b, Op=%b | Expected=%b, Got=%b", 
                              $time, A, B, op, expected, result);
                     errors = errors + 1;
@@ -29,7 +19,6 @@ module tb_alu_top;
                     $display("[PASS] Time=%0t | A=%b, B=%b, Op=%b | Result=%b", 
                              $time, A, B, op, result);
                 end
-            end
         end
     endtask
 
@@ -55,6 +44,7 @@ module tb_alu_top;
         // Edge Case: Zero Division
         A = 8'd50; B = 8'd0; op = 2'b11; #10;
         check_result(16'd0);
+
 
         $display("ALU Testbench Completed with %0d errors.", errors);
         $stop;
