@@ -1,0 +1,159 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/brad/Desktop/projects/8-bit-ALU/sequential/run
+valu_add
+INA0h?PQTaLEX:DoXz9<892
+VkXHRF1[nCaSab_1nbKLj^3
+w1744736661
+8../src/arithmetic/alu_add.v
+F../src/arithmetic/alu_add.v
+L0 3
+Z1 OV;L;6.5b;42
+r1
+31
+o-O0
+!s100 RjDlleDN;oWm;j5]YPKmY0
+!s85 0
+!s101 -O0
+valu_and
+InfI8e`<6j5bmQHcmnEbn53
+VM^?;AJLmoZa^eLUO:@`eN0
+w1744736808
+8../src/logical/alu_and.v
+F../src/logical/alu_and.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 L67i@E;S6zGX<>fJZ9FSJ1
+!s85 0
+!s101 -O0
+valu_control
+I038hnl@O1]]MeoN6I^1Uc3
+VQh7aMiQ6J9h`Hn_I5jF:Y0
+w1744736723
+8../src/control/alu_control.v
+F../src/control/alu_control.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 ?BXhY3=ObDAN7KlgXnCF[1
+!s85 0
+!s101 -O0
+valu_div
+IE3=1hnLMoLI3f<I4G3VEn2
+V@:=XLYz0dW_jh=^UO>md;2
+w1744736677
+8../src/arithmetic/alu_div.v
+F../src/arithmetic/alu_div.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 MLZIJ`5LQ5zIIBOOK6TDB1
+!s85 0
+!s101 -O0
+valu_mul
+IUY=F2Z^RbK2MQYK8<ASGB1
+VlVbzLCSh0T3MV8?KNNhk>2
+w1744736672
+8../src/arithmetic/alu_mul.v
+F../src/arithmetic/alu_mul.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 0J0F1cBXgS5b>7:m2KR6X2
+!s85 0
+!s101 -O0
+valu_or
+I0>DSHQDAlJjES7g@O[Hb[2
+VZ2O^O`4hd?DD5D_8LY9SM0
+w1744736802
+8../src/logical/alu_or.v
+F../src/logical/alu_or.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 U1]T<gN^Z]TH:dcf_knmE0
+!s85 0
+!s101 -O0
+valu_sub
+ITX14nzMJghB2QoBKk^W@P3
+Vl]P@bh23[g2Ch0Xbd2@>E2
+w1744736664
+8../src/arithmetic/alu_sub.v
+F../src/arithmetic/alu_sub.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 PTN^Om;cT6T>Ah9;9PUMm0
+!s85 0
+!s101 -O0
+valu_top
+IKoVLIdU7QN1C0S=:h09?J1
+V_neG_[<__1gKYo0[=H@^W3
+w1744736818
+8../src/alu_top.v
+F../src/alu_top.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 i3GjCz:YCZVO0LSVY1iRP1
+!s85 0
+!s101 -O0
+valu_xor
+I=cFldi==9>]kfM]CEHG:m0
+VBKdD4EbdUIl__8`C7K7Ji0
+w1744736786
+8../src/logical/alu_xor.v
+F../src/logical/alu_xor.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 UJ=0WYE16]o`:`Z6ZhamQ0
+!s85 0
+!s101 -O0
+vregn
+IA:WR0V=31IlWI1jgZlXN@2
+Vi=VQHG:?Kz=SJZz@R=iK30
+w1744736831
+8../src/other/regn.v
+F../src/other/regn.v
+L0 3
+R1
+r1
+31
+o-O0
+!s100 ENi[:oRb1m`hLnPR[?Vn=0
+!s85 0
+!s101 -O0
+vtb_alu_top
+!s100 >`DP@1RHRcZbFc950<m_k3
+ImAOcVzQX[ORgEkGD:om<f1
+V[^bcgM<CGOJY[XhOI]GRJ1
+w1744736130
+8../testbenches/tb_alu_top.v
+F../testbenches/tb_alu_top.v
+L0 3
+R1
+r1
+!s85 0
+31
+!s101 -O0
+o-O0
