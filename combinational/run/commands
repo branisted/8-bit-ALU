@@ -1,6 +1,0 @@
-optional:
-vdel -all
-
-vlib work
-vlog work -sv -work work src/**/*.v src/*.v testbenches/tb_alu_top.v
-vsim work.tb_alu_8bit

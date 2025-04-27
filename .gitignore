@@ -1,0 +1,7 @@
+modelsim/
+run/work/
+run/vsim.wlf
+src/work/
+work/
+transcript
+vsim.sh
