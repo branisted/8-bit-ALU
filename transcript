@@ -68,11 +68,11 @@ do run_tb_alu_top.do
 # T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
 # T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
 # T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
-# T=430000 | DIV  | A=100, B=4 => Result=255 | Done=1
-# T=620000 | DIV0 | A=10, B=0 => Result=255 | Done=1
-# T=690000 | AND  | A=170, B=204 => Result=136 | Done=1
-# T=760000 | OR   | A=170, B=204 => Result=238 | Done=1
-# T=830000 | XOR  | A=170, B=204 => Result=102 | Done=1
+# T=320000 | DIV  | A=100, B=4 => Result=25 | Done=1
+# T=400000 | DIV0 | A=10, B=0 => Result=255 | Done=1
+# T=470000 | AND  | A=170, B=204 => Result=136 | Done=1
+# T=540000 | OR   | A=170, B=204 => Result=238 | Done=1
+# T=610000 | XOR  | A=170, B=204 => Result=102 | Done=1
 # ==== ALU TESTBENCH COMPLETE ====
 # Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
 # Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
@@ -145,90 +145,12 @@ do run_tb_alu_top.do
 # ==== STARTING ALU TESTBENCH ====
 # T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
 # T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
-# T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
-# T=500000 | DIV  | A=100, B=4 => Result=21844 | Done=1
-# T=760000 | DIV0 | A=10, B=0 => Result=32767 | Done=1
-# T=830000 | AND  | A=170, B=204 => Result=136 | Done=1
-# T=900000 | OR   | A=170, B=204 => Result=238 | Done=1
-# T=970000 | XOR  | A=170, B=204 => Result=102 | Done=1
-# ==== ALU TESTBENCH COMPLETE ====
-# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
-# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
-# MACRO ./run_tb_alu_top.do PAUSED at line 23
-do run_tb_alu_top.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_top
-# 
-# Top level modules:
-# 	alu_top
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_add
-# -- Compiling module alu_div
-# -- Compiling module alu_mul
-# -- Compiling module alu_sub
-# 
-# Top level modules:
-# 	alu_add
-# 	alu_div
-# 	alu_mul
-# 	alu_sub
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_control
-# 
-# Top level modules:
-# 	alu_control
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_and
-# -- Compiling module alu_or
-# -- Compiling module alu_xor
-# 
-# Top level modules:
-# 	alu_and
-# 	alu_or
-# 	alu_xor
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module cla_8bit
-# -- Compiling module gp_logic
-# -- Compiling module regn
-# -- Compiling module twos_complement
-# 
-# Top level modules:
-# 	cla_8bit
-# 	regn
-# 	twos_complement
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_alu_top
-# 
-# Top level modules:
-# 	tb_alu_top
-# vsim tb_alu_top 
-# Loading work.tb_alu_top
-# Loading work.alu_top
-# Loading work.alu_control
-# Loading work.regn
-# Loading work.alu_add
-# Loading work.cla_8bit
-# Loading work.cla_4bit
-# Loading work.gp_logic
-# Loading work.carry_lookahead_unit
-# Loading work.alu_sub
-# Loading work.twos_complement
-# Loading work.alu_mul
-# Loading work.alu_div
-# Loading work.alu_and
-# Loading work.alu_or
-# Loading work.alu_xor
-# ==== STARTING ALU TESTBENCH ====
-# T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
-# T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
-# T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
-# T=500000 | DIV  | A=100, B=4 => Result=21844 | Done=1
-# T=760000 | DIV0 | A=10, B=0 => Result=32767 | Done=1
-# T=830000 | AND  | A=170, B=204 => Result=136 | Done=1
-# T=900000 | OR   | A=170, B=204 => Result=238 | Done=1
-# T=970000 | XOR  | A=170, B=204 => Result=102 | Done=1
+# T=340000 | MUL  | A=6, B=9 => Result=0 | Done=1
+# T=420000 | DIV  | A=100, B=4 => Result=25 | Done=1
+# T=500000 | DIV0 | A=10, B=0 => Result=255 | Done=1
+# T=570000 | AND  | A=170, B=204 => Result=136 | Done=1
+# T=640000 | OR   | A=170, B=204 => Result=238 | Done=1
+# T=710000 | XOR  | A=170, B=204 => Result=102 | Done=1
 # ==== ALU TESTBENCH COMPLETE ====
 # Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
 # Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
@@ -303,12 +225,12 @@ do run_tb_alu_top.do
 # ==== STARTING ALU TESTBENCH ====
 # T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
 # T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
-# T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
-# T=500000 | DIV  | A=100, B=4 => Result=21844 | Done=1
-# T=760000 | DIV0 | A=10, B=0 => Result=32767 | Done=1
-# T=830000 | AND  | A=170, B=204 => Result=136 | Done=1
-# T=900000 | OR   | A=170, B=204 => Result=238 | Done=1
-# T=970000 | XOR  | A=170, B=204 => Result=102 | Done=1
+# T=330000 | MUL  | A=6, B=9 => Result=0 | Done=1
+# T=410000 | DIV  | A=100, B=4 => Result=25 | Done=1
+# T=490000 | DIV0 | A=10, B=0 => Result=255 | Done=1
+# T=560000 | AND  | A=170, B=204 => Result=136 | Done=1
+# T=630000 | OR   | A=170, B=204 => Result=238 | Done=1
+# T=700000 | XOR  | A=170, B=204 => Result=102 | Done=1
 # ==== ALU TESTBENCH COMPLETE ====
 # Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
 # Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
@@ -379,14 +301,14 @@ do run_tb_alu_top.do
 # Loading work.alu_or
 # Loading work.alu_xor
 # ==== STARTING ALU TESTBENCH ====
-# T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
-# T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
-# T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
-# T=500000 | DIV  | A=100, B=4 => Result=21844 | Done=1
-# T=760000 | DIV0 | A=10, B=0 => Result=32767 | Done=1
-# T=830000 | AND  | A=170, B=204 => Result=136 | Done=1
-# T=900000 | OR   | A=170, B=204 => Result=238 | Done=1
-# T=970000 | XOR  | A=170, B=204 => Result=102 | Done=1
+# T=80000 | ADD  | A=25, B=17 => Result=42 | Done=1
+# T=140000 | SUB  | A=42, B=15 => Result=27 | Done=1
+# T=210000 | MUL  | A=6, B=9 => Result=54 | Done=1
+# T=280000 | DIV  | A=100, B=4 => Result=25 | Done=1
+# T=350000 | DIV0 | A=10, B=0 => Result=255 | Done=1
+# T=410000 | AND  | A=170, B=204 => Result=136 | Done=1
+# T=470000 | OR   | A=170, B=204 => Result=238 | Done=1
+# T=530000 | XOR  | A=170, B=204 => Result=102 | Done=1
 # ==== ALU TESTBENCH COMPLETE ====
 # Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
 # Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
@@ -457,14 +379,14 @@ do run_tb_alu_top.do
 # Loading work.alu_or
 # Loading work.alu_xor
 # ==== STARTING ALU TESTBENCH ====
-# T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
-# T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
-# T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
-# T=500000 | DIV  | A=100, B=4 => Result=21844 | Done=1
-# T=760000 | DIV0 | A=10, B=0 => Result=32767 | Done=1
-# T=830000 | AND  | A=170, B=204 => Result=136 | Done=1
-# T=900000 | OR   | A=170, B=204 => Result=238 | Done=1
-# T=970000 | XOR  | A=170, B=204 => Result=102 | Done=1
+# T=80000 | ADD  | A=25, B=17 => Result=42 | Done=1
+# T=140000 | SUB  | A=42, B=15 => Result=27 | Done=1
+# T=300000 | MUL  | A=6, B=9 => Result=0 | Done=1
+# T=370000 | DIV  | A=100, B=4 => Result=25 | Done=1
+# T=440000 | DIV0 | A=10, B=0 => Result=255 | Done=1
+# T=500000 | AND  | A=170, B=204 => Result=136 | Done=1
+# T=560000 | OR   | A=170, B=204 => Result=238 | Done=1
+# T=620000 | XOR  | A=170, B=204 => Result=102 | Done=1
 # ==== ALU TESTBENCH COMPLETE ====
 # Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
 # Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
@@ -537,14 +459,14 @@ do run_tb_alu_top.do
 # Loading work.alu_or
 # Loading work.alu_xor
 # ==== STARTING ALU TESTBENCH ====
-# T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
-# T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
-# T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
-# T=430000 | DIV  | A=100, B=4 => Result=255 | Done=1
-# T=620000 | DIV0 | A=10, B=0 => Result=255 | Done=1
-# T=690000 | AND  | A=170, B=204 => Result=136 | Done=1
-# T=760000 | OR   | A=170, B=204 => Result=238 | Done=1
-# T=830000 | XOR  | A=170, B=204 => Result=102 | Done=1
+# T=80000 | ADD  | A=25, B=17 => Result=42 | Done=1
+# T=140000 | SUB  | A=42, B=15 => Result=27 | Done=1
+# T=320000 | MUL  | A=6, B=9 => Result=0 | Done=1
+# T=390000 | DIV  | A=100, B=4 => Result=25 | Done=1
+# T=460000 | DIV0 | A=10, B=0 => Result=255 | Done=1
+# T=520000 | AND  | A=170, B=204 => Result=136 | Done=1
+# T=580000 | OR   | A=170, B=204 => Result=238 | Done=1
+# T=640000 | XOR  | A=170, B=204 => Result=102 | Done=1
 # ==== ALU TESTBENCH COMPLETE ====
 # Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
 # Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
@@ -614,10 +536,340 @@ do run_tb_alu_top.do
 # Loading work.alu_and
 # Loading work.alu_or
 # Loading work.alu_xor
+# ** Error: (vsim-3389) ../src/alu_top.v(63): Port 'reset' not found in the connected module (2nd connection).
+#         Region: /tb_alu_top/DUT/mul_unit
+# ** Error: (vsim-3389) ../src/alu_top.v(63): Port 'multiplicand' not found in the connected module (4th connection).
+#         Region: /tb_alu_top/DUT/mul_unit
+# ** Error: (vsim-3389) ../src/alu_top.v(63): Port 'multiplier' not found in the connected module (5th connection).
+#         Region: /tb_alu_top/DUT/mul_unit
+# ** Fatal: (vsim-3365) ../src/alu_top.v(63): Too many port connections. Expected 6, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_alu_top/DUT/mul_unit File: ../src/arithmetic/alu_mul.v
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run_tb_alu_top.do PAUSED at line 20
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_add
+# -- Compiling module alu_div
+# -- Compiling module alu_mul
+# -- Compiling module alu_sub
+# 
+# Top level modules:
+# 	alu_add
+# 	alu_div
+# 	alu_mul
+# 	alu_sub
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_and
+# -- Compiling module alu_or
+# -- Compiling module alu_xor
+# 
+# Top level modules:
+# 	alu_and
+# 	alu_or
+# 	alu_xor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module cla_8bit
+# -- Compiling module gp_logic
+# -- Compiling module regn
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	cla_8bit
+# 	regn
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.alu_control
+# Loading work.regn
+# Loading work.alu_add
+# Loading work.cla_8bit
+# Loading work.cla_4bit
+# Loading work.gp_logic
+# Loading work.carry_lookahead_unit
+# Loading work.alu_sub
+# Loading work.twos_complement
+# Loading work.alu_mul
+# Loading work.alu_div
+# Loading work.alu_and
+# Loading work.alu_or
+# Loading work.alu_xor
 # ==== STARTING ALU TESTBENCH ====
-# T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
-# T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
-# T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
+# T=80000 | ADD  | A=25, B=17 => Result=42 | Done=1
+# T=140000 | SUB  | A=42, B=15 => Result=27 | Done=1
+# T=210000 | MUL  | A=6, B=9 => Result=54 | Done=1
+# T=280000 | DIV  | A=100, B=4 => Result=25 | Done=1
+# T=350000 | DIV0 | A=10, B=0 => Result=255 | Done=1
+# T=410000 | AND  | A=170, B=204 => Result=136 | Done=1
+# T=470000 | OR   | A=170, B=204 => Result=238 | Done=1
+# T=530000 | XOR  | A=170, B=204 => Result=102 | Done=1
+# ==== ALU TESTBENCH COMPLETE ====
+# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
+# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
+# MACRO ./run_tb_alu_top.do PAUSED at line 23
+cd run
+# couldn't change working directory to "run": no such file or directory
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_add
+# -- Compiling module alu_div
+# -- Compiling module alu_mul
+# -- Compiling module alu_sub
+# 
+# Top level modules:
+# 	alu_add
+# 	alu_div
+# 	alu_mul
+# 	alu_sub
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_and
+# -- Compiling module alu_or
+# -- Compiling module alu_xor
+# 
+# Top level modules:
+# 	alu_and
+# 	alu_or
+# 	alu_xor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module cla_8bit
+# -- Compiling module gp_logic
+# -- Compiling module regn
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	cla_8bit
+# 	regn
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.alu_control
+# Loading work.regn
+# Loading work.alu_add
+# Loading work.cla_8bit
+# Loading work.cla_4bit
+# Loading work.gp_logic
+# Loading work.carry_lookahead_unit
+# Loading work.alu_sub
+# Loading work.twos_complement
+# Loading work.alu_mul
+# Loading work.alu_and
+# Loading work.alu_or
+# Loading work.alu_xor
+# ==== STARTING ALU TESTBENCH ====
+# T=80000 | ADD  | A=25, B=17 => Result=42 | Done=1
+# T=140000 | SUB  | A=42, B=15 => Result=27 | Done=1
+# T=320000 | MUL  | A=6, B=9 => Result=0 | Done=1
+# Break key hit 
+# Simulation stop requested.
+# Simulation Breakpoint: Simulation stop requested.
+# MACRO ./run_tb_alu_top.do PAUSED at line 23
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_add
+# -- Compiling module alu_div
+# -- Compiling module alu_mul
+# -- Compiling module alu_sub
+# 
+# Top level modules:
+# 	alu_add
+# 	alu_div
+# 	alu_mul
+# 	alu_sub
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_control
+# ** Error: ../src/control/alu_control.v(37): Undefined variable: current_state.
+# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+# Error in macro ./run_tb_alu_top.do line 14
+# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
+#     while executing
+# "vlog ../src/control/*.v"
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_add
+# -- Compiling module alu_div
+# -- Compiling module alu_mul
+# -- Compiling module alu_sub
+# 
+# Top level modules:
+# 	alu_add
+# 	alu_div
+# 	alu_mul
+# 	alu_sub
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_and
+# -- Compiling module alu_or
+# -- Compiling module alu_xor
+# 
+# Top level modules:
+# 	alu_and
+# 	alu_or
+# 	alu_xor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module cla_8bit
+# -- Compiling module gp_logic
+# -- Compiling module regn
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	cla_8bit
+# 	regn
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.alu_control
+# Loading work.regn
+# Loading work.alu_add
+# Loading work.cla_8bit
+# Loading work.cla_4bit
+# Loading work.gp_logic
+# Loading work.carry_lookahead_unit
+# Loading work.alu_sub
+# Loading work.twos_complement
+# Loading work.alu_mul
+# Loading work.alu_and
+# Loading work.alu_or
+# Loading work.alu_xor
+# ==== STARTING ALU TESTBENCH ====
+# T=70000 | ADD  | A=25, B=17 => Result=x | Done=1
+# T=120000 | SUB  | A=42, B=15 => Result=42 | Done=1
+# T=290000 | MUL  | A=6, B=9 => Result=42 | Done=1
+# Break key hit 
+# Break in Module tb_alu_top in file ../testbenches/tb_alu_top.v
+# Simulation Breakpoint: Break in Module tb_alu_top in file ../testbenches/tb_alu_top.v
+# MACRO ./run_tb_alu_top.do PAUSED at line 23
+
+
+
+
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_add
+# -- Compiling module alu_div
+# -- Compiling module alu_mul
+# -- Compiling module alu_sub
+# 
+# Top level modules:
+# 	alu_add
+# 	alu_div
+# 	alu_mul
+# 	alu_sub
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_and
+# -- Compiling module alu_or
+# -- Compiling module alu_xor
+# 
+# Top level modules:
+# 	alu_and
+# 	alu_or
+# 	alu_xor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module cla_8bit
+# -- Compiling module gp_logic
+# -- Compiling module regn
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	cla_8bit
+# 	regn
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.alu_control
+# Loading work.regn
+# Loading work.alu_add
+# Loading work.cla_8bit
+# Loading work.cla_4bit
+# Loading work.gp_logic
+# Loading work.carry_lookahead_unit
+# Loading work.alu_sub
+# Loading work.twos_complement
+# Loading work.alu_mul
+# Loading work.alu_and
+# Loading work.alu_or
+# Loading work.alu_xor
+# ==== STARTING ALU TESTBENCH ====
+# T=80000 | ADD  | A=25, B=17 => Result=42 | Done=1
+# T=140000 | SUB  | A=42, B=15 => Result=27 | Done=1
+# T=320000 | MUL  | A=6, B=9 => Result=0 | Done=1
 # Break key hit 
 # Simulation stop requested.
 # Simulation Breakpoint: Simulation stop requested.
@@ -683,25 +935,167 @@ do run_tb_alu_top.do
 # Loading work.alu_sub
 # Loading work.twos_complement
 # Loading work.alu_mul
-# Loading work.alu_div
 # Loading work.alu_and
 # Loading work.alu_or
 # Loading work.alu_xor
 # ==== STARTING ALU TESTBENCH ====
 # T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
 # T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
-# T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
-# T=500000 | DIV  | A=100, B=4 => Result=21845 | Done=1
-# T=760000 | DIV0 | A=10, B=0 => Result=32767 | Done=1
-# T=830000 | AND  | A=170, B=204 => Result=136 | Done=1
-# T=900000 | OR   | A=170, B=204 => Result=238 | Done=1
-# T=970000 | XOR  | A=170, B=204 => Result=102 | Done=1
-# ==== ALU TESTBENCH COMPLETE ====
-# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
-# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
+# T=350000 | MUL  | A=6, B=9 => Result=0 | Done=1
+# Break key hit 
+# Simulation stop requested.
+# Simulation Breakpoint: Simulation stop requested.
 # MACRO ./run_tb_alu_top.do PAUSED at line 23
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_add
+# -- Compiling module alu_div
+# -- Compiling module alu_mul
+# -- Compiling module alu_sub
+# 
+# Top level modules:
+# 	alu_add
+# 	alu_div
+# 	alu_mul
+# 	alu_sub
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_and
+# -- Compiling module alu_or
+# -- Compiling module alu_xor
+# 
+# Top level modules:
+# 	alu_and
+# 	alu_or
+# 	alu_xor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module cla_8bit
+# -- Compiling module gp_logic
+# -- Compiling module regn
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	cla_8bit
+# 	regn
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.alu_control
+# Loading work.regn
+# Loading work.alu_add
+# Loading work.cla_8bit
+# Loading work.cla_4bit
+# Loading work.gp_logic
+# Loading work.carry_lookahead_unit
+# Loading work.alu_sub
+# Loading work.twos_complement
+# Loading work.alu_mul
+# Loading work.alu_and
+# Loading work.alu_or
+# Loading work.alu_xor
+# ** Error: (vsim-3389) ../src/alu_top.v(56): Port 'reset' not found in the connected module (2nd connection).
+#         Region: /tb_alu_top/DUT/mul_unit
+# ** Error: (vsim-3389) ../src/alu_top.v(56): Port 'multiplicand' not found in the connected module (4th connection).
+#         Region: /tb_alu_top/DUT/mul_unit
+# ** Error: (vsim-3389) ../src/alu_top.v(56): Port 'multiplier' not found in the connected module (5th connection).
+#         Region: /tb_alu_top/DUT/mul_unit
+# ** Fatal: (vsim-3365) ../src/alu_top.v(56): Too many port connections. Expected 6, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_alu_top/DUT/mul_unit File: ../src/arithmetic/alu_mul.v
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run_tb_alu_top.do PAUSED at line 20
 cd run
 # couldn't change working directory to "run": no such file or directory
+do run_tb_alu_top.do
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_top
+# 
+# Top level modules:
+# 	alu_top
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_add
+# -- Compiling module alu_div
+# -- Compiling module alu_mul
+# -- Compiling module alu_sub
+# 
+# Top level modules:
+# 	alu_add
+# 	alu_div
+# 	alu_mul
+# 	alu_sub
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module alu_and
+# -- Compiling module alu_or
+# -- Compiling module alu_xor
+# 
+# Top level modules:
+# 	alu_and
+# 	alu_or
+# 	alu_xor
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module carry_lookahead_unit
+# -- Compiling module cla_4bit
+# -- Compiling module cla_8bit
+# -- Compiling module gp_logic
+# -- Compiling module regn
+# -- Compiling module twos_complement
+# 
+# Top level modules:
+# 	cla_8bit
+# 	regn
+# 	twos_complement
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module tb_alu_top
+# 
+# Top level modules:
+# 	tb_alu_top
+# vsim tb_alu_top 
+# Loading work.tb_alu_top
+# Loading work.alu_top
+# Loading work.alu_control
+# Loading work.regn
+# Loading work.alu_add
+# Loading work.cla_8bit
+# Loading work.cla_4bit
+# Loading work.gp_logic
+# Loading work.carry_lookahead_unit
+# Loading work.alu_sub
+# Loading work.twos_complement
+# Loading work.alu_mul
+# Loading work.alu_and
+# Loading work.alu_or
+# Loading work.alu_xor
+# ==== STARTING ALU TESTBENCH ====
+# T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
+# T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
+# Break key hit 
+# Simulation stop requested.
+# Simulation Breakpoint: Simulation stop requested.
+# MACRO ./run_tb_alu_top.do PAUSED at line 23
 do run_tb_alu_top.do
 # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
 # -- Compiling module alu_top
@@ -779,682 +1173,4 @@ do run_tb_alu_top.do
 # ==== ALU TESTBENCH COMPLETE ====
 # Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
 # Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
-# MACRO ./run_tb_alu_top.do PAUSED at line 23
-do run_tb_alu_top.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_top
-# 
-# Top level modules:
-# 	alu_top
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_add
-# -- Compiling module alu_div
-# -- Compiling module alu_mul
-# -- Compiling module alu_sub
-# 
-# Top level modules:
-# 	alu_add
-# 	alu_div
-# 	alu_mul
-# 	alu_sub
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_control
-# 
-# Top level modules:
-# 	alu_control
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_and
-# -- Compiling module alu_or
-# -- Compiling module alu_xor
-# 
-# Top level modules:
-# 	alu_and
-# 	alu_or
-# 	alu_xor
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module cla_8bit
-# -- Compiling module gp_logic
-# -- Compiling module regn
-# -- Compiling module twos_complement
-# 
-# Top level modules:
-# 	cla_8bit
-# 	regn
-# 	twos_complement
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_alu_top
-# 
-# Top level modules:
-# 	tb_alu_top
-# vsim tb_alu_top 
-# Loading work.tb_alu_top
-# Loading work.alu_top
-# Loading work.alu_control
-# Loading work.regn
-# Loading work.alu_add
-# Loading work.cla_8bit
-# Loading work.cla_4bit
-# Loading work.gp_logic
-# Loading work.carry_lookahead_unit
-# Loading work.alu_sub
-# Loading work.twos_complement
-# Loading work.alu_mul
-# Loading work.alu_div
-# Loading work.alu_and
-# Loading work.alu_or
-# Loading work.alu_xor
-# ==== STARTING ALU TESTBENCH ====
-# Time    | Op   | Operands (A, B)            | Result              | Done
-# -----------------------------------------------------------------------
-# T=   90000 | ADD  | A=  25 (0x19), B=  17 (0x11) => Result=    42 (0x002a) | Done=1
-# T=  180000 | ADD  | A= 127 (0x7f), B=   1 (0x01) => Result= 65408 (0xff80) | Done=1
-# ERROR: ADD mismatch
-# T=  270000 | ADD  | A= 128 (0x80), B= 255 (0xff) => Result=   127 (0x007f) | Done=1
-# ERROR: ADD mismatch
-# T=  360000 | ADD  | A= 128 (0x80), B= 127 (0x7f) => Result= 65535 (0xffff) | Done=1
-# ERROR: ADD mismatch
-# T=  450000 | ADD  | A=   0 (0x00), B=   0 (0x00) => Result=     0 (0x0000) | Done=1
-# T=  540000 | SUB  | A=  42 (0x2a), B=  15 (0x0f) => Result=    27 (0x001b) | Done=1
-# T=  630000 | SUB  | A= 128 (0x80), B=   1 (0x01) => Result=   127 (0x007f) | Done=1
-# T=  720000 | SUB  | A= 127 (0x7f), B= 255 (0xff) => Result= 65408 (0xff80) | Done=1
-# T=  810000 | SUB  | A=   0 (0x00), B=   0 (0x00) => Result=     0 (0x0000) | Done=1
-# T=  900000 | SUB  | A=  10 (0x0a), B=  20 (0x14) => Result= 65526 (0xfff6) | Done=1
-# T= 1000000 | MUL  | A=   6 (0x06), B=   9 (0x09) => Result=    54 (0x0036) | Done=1
-# T= 1100000 | MUL  | A= 244 (0xf4), B=   5 (0x05) => Result= 65476 (0xffc4) | Done=1
-# T= 1200000 | MUL  | A= 248 (0xf8), B= 249 (0xf9) => Result=    56 (0x0038) | Done=1
-# T= 1300000 | MUL  | A= 127 (0x7f), B= 127 (0x7f) => Result= 16129 (0x3f01) | Done=1
-# T= 1400000 | MUL  | A= 128 (0x80), B= 128 (0x80) => Result= 16384 (0x4000) | Done=1
-# T= 1500000 | MUL  | A=   0 (0x00), B= 100 (0x64) => Result=     0 (0x0000) | Done=1
-# T= 1600000 | DIV  | A= 100 (0x64), B=   4 (0x04) => Result=    25 (0x0019) | Done=1
-# T= 1700000 | DIV  | A= 156 (0x9c), B=   4 (0x04) => Result=    39 (0x0027) | Done=1
-# T= 1800000 | DIV  | A= 100 (0x64), B= 252 (0xfc) => Result=     0 (0x0000) | Done=1
-# T= 1900000 | DIV  | A= 156 (0x9c), B= 252 (0xfc) => Result=     0 (0x0000) | Done=1
-# T= 2000000 | DIV0 | A=  10 (0x0a), B=   0 (0x00) => Result=   255 (0x00ff) | Done=1
-# ERROR: DIV0 mismatch
-# T= 2100000 | DIV  | A=   0 (0x00), B=  10 (0x0a) => Result=     0 (0x0000) | Done=1
-# T= 2200000 | DIV  | A=   1 (0x01), B=   3 (0x03) => Result=     0 (0x0000) | Done=1
-# T= 2300000 | DIV  | A= 128 (0x80), B=   1 (0x01) => Result=   128 (0x0080) | Done=1
-# T= 2400000 | DIV  | A= 128 (0x80), B= 255 (0xff) => Result=     0 (0x0000) | Done=1
-# T= 2490000 | AND  | A= 170 (0xaa), B= 204 (0xcc) => Result=   136 (0x0088) | Done=1
-# T= 2580000 | AND  | A= 255 (0xff), B= 170 (0xaa) => Result=   170 (0x00aa) | Done=1
-# T= 2670000 | AND  | A=   0 (0x00), B= 255 (0xff) => Result=     0 (0x0000) | Done=1
-# T= 2760000 | AND  | A= 255 (0xff), B= 255 (0xff) => Result=   255 (0x00ff) | Done=1
-# T= 2850000 | AND  | A=   0 (0x00), B=   0 (0x00) => Result=     0 (0x0000) | Done=1
-# T= 2940000 | OR   | A= 170 (0xaa), B= 204 (0xcc) => Result=   238 (0x00ee) | Done=1
-# T= 3030000 | OR   | A=  85 (0x55), B= 170 (0xaa) => Result=   255 (0x00ff) | Done=1
-# T= 3120000 | OR   | A=   0 (0x00), B= 255 (0xff) => Result=   255 (0x00ff) | Done=1
-# T= 3210000 | OR   | A= 255 (0xff), B= 255 (0xff) => Result=   255 (0x00ff) | Done=1
-# T= 3300000 | OR   | A=   0 (0x00), B=   0 (0x00) => Result=     0 (0x0000) | Done=1
-# T= 3390000 | XOR  | A= 170 (0xaa), B= 204 (0xcc) => Result=   102 (0x0066) | Done=1
-# T= 3480000 | XOR  | A= 255 (0xff), B= 170 (0xaa) => Result=    85 (0x0055) | Done=1
-# T= 3570000 | XOR  | A= 255 (0xff), B= 255 (0xff) => Result=     0 (0x0000) | Done=1
-# T= 3660000 | XOR  | A=  85 (0x55), B= 170 (0xaa) => Result=   255 (0x00ff) | Done=1
-# T= 3750000 | XOR  | A=   0 (0x00), B=   0 (0x00) => Result=     0 (0x0000) | Done=1
-# T= 3840000 | ADD_OVF | A= 127 (0x7f), B=   1 (0x01) => Result= 65408 (0xff80) | Done=1
-# T= 3930000 | SUB_OVF | A= 128 (0x80), B=   1 (0x01) => Result=   127 (0x007f) | Done=1
-# T= 4030000 | MUL_EDGE | A= 128 (0x80), B= 127 (0x7f) => Result= 49280 (0xc080) | Done=1
-# T= 4130000 | DIV_EDGE | A= 128 (0x80), B= 127 (0x7f) => Result=     1 (0x0001) | Done=1
-# -----------------------------------------------------------------------
-# ==== ALU TESTBENCH COMPLETE ====
-# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 114
-# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 114
-# MACRO ./run_tb_alu_top.do PAUSED at line 23
-do run_tb_alu_top.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_top
-# 
-# Top level modules:
-# 	alu_top
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_add
-# -- Compiling module alu_div
-# -- Compiling module alu_mul
-# -- Compiling module alu_sub
-# 
-# Top level modules:
-# 	alu_add
-# 	alu_div
-# 	alu_mul
-# 	alu_sub
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_control
-# 
-# Top level modules:
-# 	alu_control
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_and
-# -- Compiling module alu_or
-# -- Compiling module alu_xor
-# 
-# Top level modules:
-# 	alu_and
-# 	alu_or
-# 	alu_xor
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module cla_8bit
-# -- Compiling module gp_logic
-# -- Compiling module regn
-# -- Compiling module twos_complement
-# 
-# Top level modules:
-# 	cla_8bit
-# 	regn
-# 	twos_complement
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_alu_top
-# 
-# Top level modules:
-# 	tb_alu_top
-# vsim tb_alu_top 
-# Loading work.tb_alu_top
-# Loading work.alu_top
-# Loading work.alu_control
-# Loading work.regn
-# Loading work.alu_add
-# Loading work.cla_8bit
-# Loading work.cla_4bit
-# Loading work.gp_logic
-# Loading work.carry_lookahead_unit
-# Loading work.alu_sub
-# Loading work.twos_complement
-# Loading work.alu_mul
-# Loading work.alu_div
-# Loading work.alu_and
-# Loading work.alu_or
-# Loading work.alu_xor
-# ==== STARTING ALU TESTBENCH ====
-# T=90000 | ADD  | A=  25, B=  17 => Result=    42 | Done=1
-# T=160000 | ADD  | A= -25, B= -17 => Result=   -42 | Done=1
-# T=230000 | ADD  | A=  50, B= -30 => Result=    20 | Done=1
-# T=300000 | ADD  | A= 127, B=   1 => Result=  -128 | Done=1
-# ERROR: Expected -128, got -128
-# T=370000 | ADD  | A=-128, B=  -1 => Result=   127 | Done=1
-# ERROR: Expected 127, got 127
-# T=440000 | SUB  | A=  42, B=  15 => Result=    27 | Done=1
-# T=510000 | SUB  | A= -42, B= -15 => Result=   -27 | Done=1
-# T=580000 | SUB  | A=  30, B= -20 => Result=    50 | Done=1
-# T=650000 | SUB  | A= -50, B=  30 => Result=   -80 | Done=1
-# T=720000 | SUB  | A=-128, B=   1 => Result=   127 | Done=1
-# ERROR: Expected 127, got 127
-# T=800000 | MUL  | A=   6, B=   9 => Result=    54 | Done=1
-# T=880000 | MUL  | A=  -6, B=   9 => Result=   -54 | Done=1
-# T=960000 | MUL  | A=   6, B=  -9 => Result=   -54 | Done=1
-# T=1040000 | MUL  | A=  -6, B=  -9 => Result=    54 | Done=1
-# T=1120000 | MUL  | A= 127, B= 127 => Result= 16129 | Done=1
-# T=1200000 | MUL  | A=-128, B=-128 => Result= 16384 | Done=1
-# T=1280000 | DIV  | A= 100, B=   4 => Result=    25 | Done=1
-# T=1360000 | DIV  | A=-100, B=   4 => Result=    39 | Done=1
-# ERROR: Expected -25, got 39
-# T=1440000 | DIV  | A= 100, B=  -4 => Result=     0 | Done=1
-# ERROR: Expected -25, got 0
-# T=1520000 | DIV  | A=-100, B=  -4 => Result=     0 | Done=1
-# ERROR: Expected 25, got 0
-# T=1600000 | DIV0 | A=  10, B=   0 => Result=   255 | Done=1
-# ERROR: Expected 32767 for divide by zero
-# T=1680000 | DIV  | A=-128, B=   1 => Result=   128 | Done=1
-# ERROR: Expected -128, got 128
-# T=1760000 | DIV  | A=-128, B=  -1 => Result=     0 | Done=1
-# ERROR: Expected -128, got 0
-# ==== ALU TESTBENCH COMPLETE ====
-# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 78
-# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 78
-# MACRO ./run_tb_alu_top.do PAUSED at line 23
-do run_tb_alu_top.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_top
-# 
-# Top level modules:
-# 	alu_top
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_add
-# -- Compiling module alu_div
-# -- Compiling module alu_mul
-# -- Compiling module alu_sub
-# 
-# Top level modules:
-# 	alu_add
-# 	alu_div
-# 	alu_mul
-# 	alu_sub
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_control
-# 
-# Top level modules:
-# 	alu_control
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_and
-# -- Compiling module alu_or
-# -- Compiling module alu_xor
-# 
-# Top level modules:
-# 	alu_and
-# 	alu_or
-# 	alu_xor
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module cla_8bit
-# -- Compiling module gp_logic
-# -- Compiling module regn
-# -- Compiling module twos_complement
-# 
-# Top level modules:
-# 	cla_8bit
-# 	regn
-# 	twos_complement
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_alu_top
-# 
-# Top level modules:
-# 	tb_alu_top
-# vsim tb_alu_top 
-# Loading work.tb_alu_top
-# Loading work.alu_top
-# Loading work.alu_control
-# Loading work.regn
-# Loading work.alu_add
-# Loading work.cla_8bit
-# Loading work.cla_4bit
-# Loading work.gp_logic
-# Loading work.carry_lookahead_unit
-# Loading work.alu_sub
-# Loading work.twos_complement
-# Loading work.alu_mul
-# Loading work.alu_div
-# Loading work.alu_and
-# Loading work.alu_or
-# Loading work.alu_xor
-# ==== STARTING ALU TESTBENCH ====
-# T=90000 | ADD  | A=  25, B=  17 => Result=    42 | Done=1
-# T=160000 | ADD  | A= -25, B= -17 => Result=   -42 | Done=1
-# T=230000 | ADD  | A=  50, B= -30 => Result=    20 | Done=1
-# T=300000 | ADD  | A= 127, B=   1 => Result=  -128 | Done=1
-# ERROR: Expected -128, got -128
-# T=370000 | ADD  | A=-128, B=  -1 => Result=   127 | Done=1
-# ERROR: Expected 127, got 127
-# T=440000 | SUB  | A=  42, B=  15 => Result=    27 | Done=1
-# T=510000 | SUB  | A= -42, B= -15 => Result=   -27 | Done=1
-# T=580000 | SUB  | A=  30, B= -20 => Result=    50 | Done=1
-# T=650000 | SUB  | A= -50, B=  30 => Result=   -80 | Done=1
-# T=720000 | SUB  | A=-128, B=   1 => Result=   127 | Done=1
-# ERROR: Expected 127, got 127
-# T=800000 | MUL  | A=   6, B=   9 => Result=    54 | Done=1
-# T=880000 | MUL  | A=  -6, B=   9 => Result=   -54 | Done=1
-# T=960000 | MUL  | A=   6, B=  -9 => Result=   -54 | Done=1
-# T=1040000 | MUL  | A=  -6, B=  -9 => Result=    54 | Done=1
-# T=1120000 | MUL  | A= 127, B= 127 => Result= 16129 | Done=1
-# T=1200000 | MUL  | A=-128, B=-128 => Result= 16384 | Done=1
-# T=1460000 | DIV  | A= 100, B=   4 => Result= 21845 | Done=1
-# ERROR: Expected 25, got 21845
-# T=1720000 | DIV  | A=-100, B=   4 => Result=-21845 | Done=1
-# ERROR: Expected -25, got -21845
-# T=1980000 | DIV  | A= 100, B=  -4 => Result=-21845 | Done=1
-# ERROR: Expected -25, got -21845
-# T=2240000 | DIV  | A=-100, B=  -4 => Result= 21845 | Done=1
-# ERROR: Expected 25, got 21845
-# T=2500000 | DIV0 | A=  10, B=   0 => Result= 32767 | Done=1
-# T=2760000 | DIV  | A=-128, B=   1 => Result=-21845 | Done=1
-# ERROR: Expected -128, got -21845
-# T=3020000 | DIV  | A=-128, B=  -1 => Result= 21845 | Done=1
-# ERROR: Expected -128, got 21845
-# ==== ALU TESTBENCH COMPLETE ====
-# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 78
-# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 78
-# MACRO ./run_tb_alu_top.do PAUSED at line 23
-do run_tb_alu_top.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_top
-# 
-# Top level modules:
-# 	alu_top
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_add
-# -- Compiling module alu_div
-# -- Compiling module alu_mul
-# -- Compiling module alu_sub
-# 
-# Top level modules:
-# 	alu_add
-# 	alu_div
-# 	alu_mul
-# 	alu_sub
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_control
-# 
-# Top level modules:
-# 	alu_control
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_and
-# -- Compiling module alu_or
-# -- Compiling module alu_xor
-# 
-# Top level modules:
-# 	alu_and
-# 	alu_or
-# 	alu_xor
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module cla_8bit
-# -- Compiling module gp_logic
-# -- Compiling module regn
-# -- Compiling module twos_complement
-# 
-# Top level modules:
-# 	cla_8bit
-# 	regn
-# 	twos_complement
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_alu_top
-# 
-# Top level modules:
-# 	tb_alu_top
-# vsim tb_alu_top 
-# Loading work.tb_alu_top
-# Loading work.alu_top
-# Loading work.alu_control
-# Loading work.regn
-# Loading work.alu_add
-# Loading work.cla_8bit
-# Loading work.cla_4bit
-# Loading work.gp_logic
-# Loading work.carry_lookahead_unit
-# Loading work.alu_sub
-# Loading work.twos_complement
-# Loading work.alu_mul
-# Loading work.alu_div
-# Loading work.alu_and
-# Loading work.alu_or
-# Loading work.alu_xor
-# ==== STARTING ALU TESTBENCH ====
-# T=90000 | ADD  | A=  25, B=  17 => Result=    42 | Done=1
-# T=160000 | ADD  | A= -25, B= -17 => Result=   -42 | Done=1
-# T=230000 | ADD  | A=  50, B= -30 => Result=    20 | Done=1
-# T=300000 | ADD  | A= 127, B=   1 => Result=  -128 | Done=1
-# T=370000 | ADD  | A=-128, B=  -1 => Result=   127 | Done=1
-# T=440000 | SUB  | A=  42, B=  15 => Result=    27 | Done=1
-# T=510000 | SUB  | A= -42, B= -15 => Result=   -27 | Done=1
-# T=580000 | SUB  | A=  30, B= -20 => Result=    50 | Done=1
-# T=650000 | SUB  | A= -50, B=  30 => Result=   -80 | Done=1
-# T=720000 | SUB  | A=-128, B=   1 => Result=   127 | Done=1
-# T=800000 | MUL  | A=   6, B=   9 => Result=    54 | Done=1
-# T=880000 | MUL  | A=  -6, B=   9 => Result=   -54 | Done=1
-# T=960000 | MUL  | A=   6, B=  -9 => Result=   -54 | Done=1
-# T=1040000 | MUL  | A=  -6, B=  -9 => Result=    54 | Done=1
-# T=1120000 | MUL  | A= 127, B= 127 => Result= 16129 | Done=1
-# T=1200000 | MUL  | A=-128, B=-128 => Result= 16384 | Done=1
-# T=1280000 | DIV  | A= 100, B=   4 => Result=    25 | Done=1
-# T=1360000 | DIV  | A=-100, B=   4 => Result=    39 | Done=1
-# T=1440000 | DIV  | A= 100, B=  -4 => Result=     0 | Done=1
-# T=1520000 | DIV  | A=-100, B=  -4 => Result=     0 | Done=1
-# T=1600000 | DIV0 | A=  10, B=   0 => Result=   255 | Done=1
-# T=1680000 | DIV  | A=-128, B=   1 => Result=   128 | Done=1
-# T=1760000 | DIV  | A=-128, B=  -1 => Result=     0 | Done=1
-# ==== ALU TESTBENCH COMPLETE ====
-# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 78
-# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 78
-# MACRO ./run_tb_alu_top.do PAUSED at line 23
-cd run
-# couldn't change working directory to "run": no such file or directory
-do run_tb_alu_top.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_top
-# 
-# Top level modules:
-# 	alu_top
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_add
-# -- Compiling module alu_div
-# -- Compiling module alu_mul
-# -- Compiling module alu_sub
-# 
-# Top level modules:
-# 	alu_add
-# 	alu_div
-# 	alu_mul
-# 	alu_sub
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_control
-# 
-# Top level modules:
-# 	alu_control
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_and
-# -- Compiling module alu_or
-# -- Compiling module alu_xor
-# 
-# Top level modules:
-# 	alu_and
-# 	alu_or
-# 	alu_xor
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module cla_8bit
-# -- Compiling module gp_logic
-# -- Compiling module regn
-# -- Compiling module twos_complement
-# 
-# Top level modules:
-# 	cla_8bit
-# 	regn
-# 	twos_complement
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_alu_top
-# 
-# Top level modules:
-# 	tb_alu_top
-# vsim tb_alu_top 
-# Loading work.tb_alu_top
-# Loading work.alu_top
-# Loading work.alu_control
-# Loading work.regn
-# Loading work.alu_add
-# Loading work.cla_8bit
-# Loading work.cla_4bit
-# Loading work.gp_logic
-# Loading work.carry_lookahead_unit
-# Loading work.alu_sub
-# Loading work.twos_complement
-# Loading work.alu_mul
-# Loading work.alu_div
-# Loading work.alu_and
-# Loading work.alu_or
-# Loading work.alu_xor
-# ==== STARTING ALU TESTBENCH ====
-# T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
-# T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
-# T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
-# T=320000 | DIV  | A=100, B=4 => Result=25 | Done=1
-# T=400000 | DIV0 | A=10, B=0 => Result=255 | Done=1
-# T=470000 | AND  | A=170, B=204 => Result=136 | Done=1
-# T=540000 | OR   | A=170, B=204 => Result=238 | Done=1
-# T=610000 | XOR  | A=170, B=204 => Result=102 | Done=1
-# ==== ALU TESTBENCH COMPLETE ====
-# Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
-# Simulation Breakpoint: Break in Module tb_alu_top at ../testbenches/tb_alu_top.v line 57
-# MACRO ./run_tb_alu_top.do PAUSED at line 23
-do run_tb_alu_top.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_top
-# 
-# Top level modules:
-# 	alu_top
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_add
-# -- Compiling module alu_div
-# ** Error: ../src/arithmetic/alu_div.v(62): Declarations not allowed in unnamed block.
-# -- Compiling module alu_mul
-# -- Compiling module alu_sub
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_alu_top.do line 13
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic/*.v"
-do run_tb_alu_top.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_top
-# 
-# Top level modules:
-# 	alu_top
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_add
-# -- Compiling module alu_div
-# -- Compiling module alu_mul
-# -- Compiling module alu_sub
-# 
-# Top level modules:
-# 	alu_add
-# 	alu_div
-# 	alu_mul
-# 	alu_sub
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_control
-# 
-# Top level modules:
-# 	alu_control
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_and
-# -- Compiling module alu_or
-# -- Compiling module alu_xor
-# 
-# Top level modules:
-# 	alu_and
-# 	alu_or
-# 	alu_xor
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module cla_8bit
-# -- Compiling module gp_logic
-# -- Compiling module regn
-# -- Compiling module twos_complement
-# 
-# Top level modules:
-# 	cla_8bit
-# 	regn
-# 	twos_complement
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_alu_top
-# 
-# Top level modules:
-# 	tb_alu_top
-# vsim tb_alu_top 
-# Loading work.tb_alu_top
-# Loading work.alu_top
-# Loading work.alu_control
-# Loading work.regn
-# Loading work.alu_add
-# Loading work.cla_8bit
-# Loading work.cla_4bit
-# Loading work.gp_logic
-# Loading work.carry_lookahead_unit
-# Loading work.alu_sub
-# Loading work.twos_complement
-# Loading work.alu_mul
-# Loading work.alu_div
-# Loading work.alu_and
-# Loading work.alu_or
-# Loading work.alu_xor
-# ==== STARTING ALU TESTBENCH ====
-# T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
-# T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
-# T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
-# Break key hit 
-# Simulation stop requested.
-# Simulation Breakpoint: Simulation stop requested.
-# MACRO ./run_tb_alu_top.do PAUSED at line 23
-do run_tb_alu_top.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_top
-# 
-# Top level modules:
-# 	alu_top
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_add
-# -- Compiling module alu_div
-# ** Error: ../src/arithmetic/alu_div.v(62): Declarations not allowed in unnamed block.
-# -- Compiling module alu_mul
-# -- Compiling module alu_sub
-# ** Error: /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-# Error in macro ./run_tb_alu_top.do line 13
-# /home/brad/Desktop/projects/8-bit-ALU/modelsim/linuxaloem/vlog failed.
-#     while executing
-# "vlog ../src/arithmetic/*.v"
-do run_tb_alu_top.do
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_top
-# 
-# Top level modules:
-# 	alu_top
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_add
-# -- Compiling module alu_div
-# -- Compiling module alu_mul
-# -- Compiling module alu_sub
-# 
-# Top level modules:
-# 	alu_add
-# 	alu_div
-# 	alu_mul
-# 	alu_sub
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_control
-# 
-# Top level modules:
-# 	alu_control
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module alu_and
-# -- Compiling module alu_or
-# -- Compiling module alu_xor
-# 
-# Top level modules:
-# 	alu_and
-# 	alu_or
-# 	alu_xor
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module carry_lookahead_unit
-# -- Compiling module cla_4bit
-# -- Compiling module cla_8bit
-# -- Compiling module gp_logic
-# -- Compiling module regn
-# -- Compiling module twos_complement
-# 
-# Top level modules:
-# 	cla_8bit
-# 	regn
-# 	twos_complement
-# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
-# -- Compiling module tb_alu_top
-# 
-# Top level modules:
-# 	tb_alu_top
-# vsim tb_alu_top 
-# Loading work.tb_alu_top
-# Loading work.alu_top
-# Loading work.alu_control
-# Loading work.regn
-# Loading work.alu_add
-# Loading work.cla_8bit
-# Loading work.cla_4bit
-# Loading work.gp_logic
-# Loading work.carry_lookahead_unit
-# Loading work.alu_sub
-# Loading work.twos_complement
-# Loading work.alu_mul
-# Loading work.alu_div
-# Loading work.alu_and
-# Loading work.alu_or
-# Loading work.alu_xor
-# ==== STARTING ALU TESTBENCH ====
-# T=90000 | ADD  | A=25, B=17 => Result=42 | Done=1
-# T=160000 | SUB  | A=42, B=15 => Result=27 | Done=1
-# T=240000 | MUL  | A=6, B=9 => Result=54 | Done=1
-# Break key hit 
-# Simulation stop requested.
-# Simulation Breakpoint: Simulation stop requested.
 # MACRO ./run_tb_alu_top.do PAUSED at line 23
