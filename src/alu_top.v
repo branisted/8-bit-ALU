@@ -50,8 +50,10 @@ module alu_top (
     // === Arithmetic Modules (dummy) ===
     alu_add add_unit (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_add), .sum(alu_result_add));
     alu_sub sub_unit (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_sub), .diff(alu_result_sub));
-    alu_mul mul_unit (.clk(clk), .start(start_mul), .a(a_reg_out), .b(b_reg_out), .product(alu_result_mul), .done(mul_done));
+    alu_mul mul_unit (.clk(clk), .reset(reset), .start(start_mul), .a(a_reg_out), .b(b_reg_out), .product(alu_result_mul), .done(mul_done));
+    //alu_div div_unit (.clk(clk), .reset(reset), .start(start_div), .a(a_reg_out), .b(b_reg_out), .quotient(alu_result_div), .remainder(), .done(div_done), .error());
     alu_div div_unit (.clk(clk), .start(start_div), .a(a_reg_out), .b(b_reg_out), .quotient(alu_result_div), .done(div_done));
+
 
     // === Logic Modules (dummy) ===
     alu_and and_unit (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_and), .res(alu_result_and));
