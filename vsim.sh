@@ -1,1 +1,0 @@
-./modelsim/bin/vsim
