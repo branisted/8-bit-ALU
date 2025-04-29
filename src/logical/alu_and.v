@@ -1,23 +1,25 @@
 `timescale 1ns/1ps
-
-module alu_and(
-    input clk, 
-    input [7:0] a, b, 
-    input start, 
-    output reg [15:0] res
+// ALU AND
+module alu_and (
+    input clk,
+    input [7:0] a, b,
+    input start,
+    output reg [15:0] res,
+    output reg done
 );
-    wire [7:0] and_bits;
-
-    // Structural AND gates for each bit
-    genvar i;
-    generate
-        for (i = 0; i < 8; i = i + 1) begin : and_loop
-            and u_and(and_bits[i], a[i], b[i]);
-        end
-    endgenerate
+    reg started = 0;
+    wire [7:0] and_bits = a & b;
 
     always @(posedge clk) begin
-        if (start)
-            res <= {8'b0, and_bits};  // zero-extend to 16 bits
+        if (start && !started) begin
+            started <= 1;
+            done <= 0;
+        end else if (started) begin
+            res <= {8'b0, and_bits};
+            done <= 1;
+            started <= 0;
+        end else begin
+            done <= 0;
+        end
     end
 endmodule

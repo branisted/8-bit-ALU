@@ -1,28 +1,28 @@
 `timescale 1ns / 1ps
 
 module cla_8bit (
-    input signed [7:0] A, B,
-    input Cin,
-    output signed [7:0] Sum,
-    output Cout
+    input signed [7:0] a, b,
+    input cin,
+    output signed [7:0] sum,
+    output cout
 );
-    wire C4;
+    wire c4;
 
     // Lower 4-bit CLA
     cla_4bit cla_low (
-        .A(A[3:0]),
-        .B(B[3:0]),
-        .Cin(Cin),
-        .Sum(Sum[3:0]),
-        .Cout(C4)
+        .A(a[3:0]),
+        .B(b[3:0]),
+        .Cin(cin),
+        .Sum(sum[3:0]),
+        .Cout(c4)
     );
 
     // Upper 4-bit CLA
     cla_4bit cla_high (
-        .A(A[7:4]),
-        .B(B[7:4]),
-        .Cin(C4),
-        .Sum(Sum[7:4]),
-        .Cout(Cout)
+        .A(a[7:4]),
+        .B(b[7:4]),
+        .Cin(c4),
+        .Sum(sum[7:4]),
+        .Cout(cout)
     );
 endmodule

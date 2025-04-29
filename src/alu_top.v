@@ -12,14 +12,23 @@ module alu_top (
 );
 
     wire load_a, load_b, load_out;
-    wire start_add, start_sub, start_and, start_or, start_xor;
-    wire start_mul, start_div;
-    wire mul_done, div_done;
+    wire start_mul, start_div, start_add, start_sub, start_and, start_or, start_xor;
+    wire add_done, sub_done, and_done, or_done, xor_done, mul_done, div_done;
     wire [2:0] sel_op;
 
     wire [7:0] a_reg_out, b_reg_out;
     wire [15:0] alu_result_add, alu_result_sub, alu_result_and, alu_result_or, alu_result_xor;
     wire [15:0] alu_result_mul, alu_result_div;
+
+    wire op_done;
+    assign op_done = (op == 3'b000) ? add_done :
+                     (op == 3'b001) ? sub_done :
+                     (op == 3'b010) ? mul_done :
+                     (op == 3'b011) ? div_done :
+                     (op == 3'b100) ? and_done :
+                     (op == 3'b101) ? or_done :
+                     (op == 3'b110) ? xor_done : 1'b0;
+
     
     // === Control Unit ===
     alu_control ctrl (
@@ -27,8 +36,7 @@ module alu_top (
         .reset(reset),
         .start(start),
         .opcode(op),
-        .mul_done(mul_done),
-        .div_done(div_done),
+        .op_done(op_done),  // << new
         .done(done),
         .load_a(load_a),
         .load_b(load_b),
@@ -43,22 +51,22 @@ module alu_top (
         .sel_op(sel_op)
     );
 
+
     // === Input Registers ===
     regn #(8) reg_a (.clk(clk), .en(load_a), .d(in_a), .q(a_reg_out));
     regn #(8) reg_b (.clk(clk), .en(load_b), .d(in_b), .q(b_reg_out));
 
     // === Arithmetic Modules (dummy) ===
-    alu_add add_unit (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_add), .sum(alu_result_add));
-    alu_sub sub_unit (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_sub), .diff(alu_result_sub));
+    
+    alu_add add_unit (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_add), .sum(alu_result_add), .done(add_done));
+    alu_sub sub_unit (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_sub), .diff(alu_result_sub), .done(sub_done));
+    alu_and and_unit (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_and), .res(alu_result_and), .done(and_done));
+    alu_or  or_unit  (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_or),  .res(alu_result_or), .done(or_done));
+    alu_xor xor_unit (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_xor), .res(alu_result_xor), .done(xor_done));
+
+
     alu_mul mul_unit (.clk(clk), .reset(reset), .start(start_mul), .a(a_reg_out), .b(b_reg_out), .product(alu_result_mul), .done(mul_done));
-    //alu_div div_unit (.clk(clk), .reset(reset), .start(start_div), .a(a_reg_out), .b(b_reg_out), .quotient(alu_result_div), .remainder(), .done(div_done), .error());
-    alu_div div_unit (.clk(clk), .start(start_div), .a(a_reg_out), .b(b_reg_out), .quotient(alu_result_div), .done(div_done));
-
-
-    // === Logic Modules (dummy) ===
-    alu_and and_unit (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_and), .res(alu_result_and));
-    alu_or  or_unit  (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_or),  .res(alu_result_or));
-    alu_xor xor_unit (.clk(clk), .a(a_reg_out), .b(b_reg_out), .start(start_xor), .res(alu_result_xor));
+    alu_div div_unit (.clk(clk), .reset(reset), .start(start_div), .a(a_reg_out), .b(b_reg_out), .quotient(alu_result_div), .done(div_done));
 
     // === Result MUX ===
     reg [15:0] result_mux;
