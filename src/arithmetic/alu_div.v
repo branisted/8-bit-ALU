@@ -1,119 +1,137 @@
 `timescale 1ns/1ps
 
 module alu_div (
-    input clk,              // Clock signal
-    input reset,            // Reset signal
-    input start,            // Start signal
-    input signed [7:0] a,   // Dividend (8-bit signed)
-    input signed [7:0] b,   // Divisor (8-bit signed)
-    output reg signed [15:0] quotient, // Quotient (16-bit signed)
-    output reg done         // Done flag
+    input  clk,                // Clock
+    input  reset,              // Sync reset
+    input  start,              // Start signal
+    input  signed [7:0] a,     // Dividend
+    input  signed [7:0] b,     // Divisor
+    output reg signed [15:0] quotient, // Quotient
+    output reg done            // Done flag
 );
-    // Internal registers
-    reg [15:0] R;           // Remainder (16 bits, unsigned during computation)
-    reg [15:0] D;           // Divisor (16 bits, aligned, unsigned)
-    reg [7:0] Q;            // Quotient bits (8 bits)
-    reg [2:0] count;        // Step counter (0 to 7)
-    reg [2:0] state, next_state;
-    reg sign;               // Sign of quotient (a[7] XOR b[7])
-    reg [7:0] abs_a;        // Absolute value of dividend
-    reg [7:0] abs_b;        // Absolute value of divisor
 
-    // State definitions
-    localparam IDLE = 3'b000,
-               INIT = 3'b001,
-               CALC = 3'b010,
-               DONE = 3'b011;
+    //▌ State encoding
+    localparam IDLE = 2'd0,
+               INIT = 2'd1,
+               CALC = 2'd2,
+               DONE = 2'd3;
 
-    // State transition
-    always @(posedge clk) begin
+    reg [1:0]   state, next_state;
+    reg  [3:0]  count;           // 0..8
+    reg  a_sign, b_sign;         // original signs
+    reg [15:0] A;                // remainder register
+    reg  [7:0] Q;                // quotient register (abs value)
+    reg  [7:0] M;                // divisor register (abs value)
+
+    // Combinational helpers for the next-shift-and-sub/add step
+    reg  [15:0] next_A;
+    reg   [7:0] next_Q;
+
+    //──────────────────────────────────
+    // 1) State register
+    //──────────────────────────────────
+    always @(posedge clk or posedge reset) begin
         if (reset) begin
-            state <= IDLE;
-            done <= 0;
-            quotient <= 0;
+            state    <= IDLE;
+            done     <= 1'b0;
+            quotient <= 16'sd0;
         end else begin
             state <= next_state;
         end
     end
 
-    // Next state logic
+    //──────────────────────────────────
+    // 2) Next-state logic
+    //──────────────────────────────────
     always @(*) begin
         case (state)
-            IDLE: next_state = start ? INIT : IDLE;
-            INIT: next_state = (abs_b == 0) ? DONE : CALC;
-            CALC: next_state = (count == 3'd7) ? DONE : CALC;
-            DONE: next_state = IDLE;
+            IDLE:  next_state = start ? INIT : IDLE;
+            INIT:  next_state = (b == 0) ? DONE : CALC;
+            CALC:  next_state = (count == 4'd8) ? DONE : CALC;
+            DONE:  next_state = IDLE;
             default: next_state = IDLE;
         endcase
     end
 
-    // Datapath and control logic
+    //──────────────────────────────────
+    // 3) Datapath & control
+    //──────────────────────────────────
     always @(posedge clk) begin
         if (reset) begin
-            R <= 0;
-            D <= 0;
-            Q <= 0;
-            count <= 0;
-            done <= 0;
-            quotient <= 0;
-            sign <= 0;
-            abs_a <= 0;
-            abs_b <= 0;
+            // clear everything
+            count    <= 4'd0;
+            A        <= 16'd0;
+            Q        <= 8'd0;
+            M        <= 8'd0;
+            a_sign   <= 1'b0;
+            b_sign   <= 1'b0;
+            quotient <= 16'sd0;
+            done     <= 1'b0;
         end else begin
             case (state)
+                //--------------------------------
                 IDLE: begin
-                    done <= 0;  // Clear done flag
+                    done <= 1'b0;
                 end
 
+                //--------------------------------
                 INIT: begin
-                    // Compute sign and absolute values
-                    sign <= a[7] ^ b[7];  // Quotient sign
-                    abs_a <= a[7] ? -a : a;  // |a|
-                    abs_b <= b[7] ? -b : b;  // |b|
-                    if (abs_b == 0) begin
-                        // Division by zero: set max/min based on dividend sign
-                        quotient <= a[7] ? 16'h8000 : 16'h7FFF;  // -32768 or 32767
-                        done <= 1;
-                    end else begin
-                        // Initialize for division
-                        R <= {8'b0, abs_a};  // Zero-extend |a|
-                        D <= {abs_b, 7'b0};  // Shift |b| left by 7 bits
-                        Q <= 0;              // Clear quotient bits
-                        count <= 0;
-                        done <= 0;
-                    end
+                    // latch signs and abs values
+                    a_sign <= a[7];
+                    b_sign <= b[7];
+                    Q      <= a[7] ? -a : a;  
+                    M      <= b[7] ? -b : b;
+                    A      <= 16'd0;
+                    count  <= 4'd0;
+                    done   <= 1'b0;
+
+                    // If b==0, we'll jump to DONE next cycle
                 end
 
+                //--------------------------------
                 CALC: begin
-                    // Step 1: Subtract divisor
-                    R <= R - D;
-                    // Step 2: Check remainder and set quotient bit
-                    if (R[15] == 0) begin  // R >= 0
-                        Q <= {Q[6:0], 1'b1};  // Append 1 to quotient
+                    // Compute next_{A,Q} in one step:
+                    // 1) shift-left {A,Q}
+                    // 2) if shifted_A MSB==0 subtract M, set Q[0]=1
+                    //    else add M, set Q[0]=0
+                    // This avoids racing between two always-blocks.
+                    //
+                    // first do the shift
+                    { next_A, next_Q } = { A[14:0], Q, 1'b0 };
+
+                    // then adjust remainder and quotient bit
+                    if (next_A[15] == 1'b0) begin
+                        next_A = next_A - { 8'd0, M };
+                        next_Q[0] = 1'b1;
                     end else begin
-                        R <= R + D;           // Restore remainder
-                        Q <= {Q[6:0], 1'b0};  // Append 0 to quotient
+                        next_A = next_A + { 8'd0, M };
+                        next_Q[0] = 1'b0;
                     end
-                    // Step 3: Shift divisor right
-                    D <= D >> 1;
-                    // Step 4: Update counter and finalize
-                    count <= count + 1;
-                    if (count == 3'd7) begin
-                        // Apply sign to quotient
-                        quotient <= sign ? -{{8{Q[7]}}, Q} : {{8{Q[7]}}, Q};
-                        done <= 1;
-                    end
+
+                    // finally, commit
+                    A     <= next_A;
+                    Q     <= next_Q;
+                    count <= count + 4'd1;
                 end
 
+                //--------------------------------
                 DONE: begin
-                    done <= 0;  // Clear done flag
+                    // Division by zero? We forced b==0 → DONE with Q==abs(a),
+                    // but here we simply return zero quotient.
+                    if (b == 0) begin
+                        quotient <= 16'sd0;
+                    end else begin
+                        // apply final sign to abs-quotient Q
+                        if (a_sign ^ b_sign)
+                            quotient <= -{8'd0, Q};
+                        else
+                            quotient <=  {8'd0, Q};
+                    end
+                    done <= 1'b1;
                 end
 
-                default: begin
-                    done <= 0;
-                    quotient <= quotient;  // Hold quotient
-                end
             endcase
         end
     end
+
 endmodule

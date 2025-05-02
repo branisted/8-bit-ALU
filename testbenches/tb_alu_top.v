@@ -53,7 +53,7 @@ module tb_alu_top();
         test_operation(3'b010, 10, -5, "MUL+-");
         test_operation(3'b010, -10, 5, "MUL-+");
         test_operation(3'b010, -10, -5, "MUL--");
-        test_operation(3'b011, 100, 4, "DIV");
+        test_operation(3'b011, -100, 4, "DIV");
         test_operation(3'b011, 10, 0, "DIV0");
         test_operation(3'b100, 8'b10101010, 8'b11001100, "AND");
         test_operation(3'b101, 8'b10101010, 8'b11001100, "OR");
