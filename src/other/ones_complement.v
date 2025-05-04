@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module twos_complement(
+module ones_complement(
     input [7:0] a,
     output [7:0] not_a
 );
