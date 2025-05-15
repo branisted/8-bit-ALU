@@ -5,3 +5,4 @@ src/work/
 work/
 transcript
 vsim.sh
+docs/*
