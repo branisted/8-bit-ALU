@@ -1,14 +1,14 @@
 `timescale 1ns/1ps
 
 module alu_add (
-    input clk,                      // Clock signal
-    input reset,                    // Reset signal
-    input start,                    // Start signal
-    input signed [7:0] a, b,        // Operands
-    output reg signed [15:0] sum,   // Output sum (extend to 16 bits)
-    output reg done                 // Done flag
+    input clk,
+    input reset,
+    input start,
+    input signed [7:0] a, b,
+    output reg signed [15:0] sum,
+    output reg done                 
 );
-    // FSM state definitions
+
     localparam IDLE = 3'b000,
                INIT = 3'b001,
                CALC = 3'b010,
@@ -16,13 +16,11 @@ module alu_add (
 
     reg [2:0] state, next_state;
 
-    // Internal operands
     reg [7:0] A, B;
     reg [7:0] G, P, C;
-    reg [8:0] S;  // Sum including carry-out
+    reg [8:0] S;
     reg carry_out;
 
-    // State transitions
     always @(posedge clk) begin
         if (reset) begin
             state <= IDLE;
@@ -33,7 +31,6 @@ module alu_add (
         end
     end
 
-    // Next state logic
     always @(*) begin
         case (state)
             IDLE: next_state = start ? INIT : IDLE;
@@ -44,7 +41,6 @@ module alu_add (
         endcase
     end
 
-    // Datapath and control logic
     always @(posedge clk) begin
         if (reset) begin
             A <= 0;
@@ -69,11 +65,10 @@ module alu_add (
                 end
 
                 CALC: begin
-                    // Generate and propagate
                     G = A & B;
                     P = A ^ B;
 
-                    // Carry lookahead
+                    // Carry lookahead - formula din cursul de AC
                     C[0] = 0;
                     C[1] = G[0] | (P[0] & C[0]);
                     C[2] = G[1] | (P[1] & C[1]);
@@ -84,15 +79,14 @@ module alu_add (
                     C[7] = G[6] | (P[6] & C[6]);
                     carry_out = G[7] | (P[7] & C[7]);
 
-                    // Final sum
                     S = {carry_out, (P ^ C[7:0])};
 
-                    sum <= {{8{S[8]}}, S};  // Sign-extend to 16 bits
+                    sum <= {{8{S[8]}}, S};
                     done <= 1;
                 end
 
                 DONE: begin
-                    done <= 0;  // Clear done on next cycle
+                    done <= 0;
                 end
 
                 default: begin

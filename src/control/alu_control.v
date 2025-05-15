@@ -23,7 +23,6 @@ module alu_control (
     output reg [2:0]   sel_op
 );
 
-    // FSM states
     localparam IDLE    = 2'b00,
                LOAD    = 2'b01,
                EXECUTE = 2'b10,
@@ -32,7 +31,6 @@ module alu_control (
     reg [1:0] current_state, next_state;
     reg [2:0] opcode_latched;
 
-    // State register, registered done, and latch opcode
     always @(posedge clk or posedge reset) begin
         if (reset) begin
             current_state  <= IDLE;
@@ -46,7 +44,6 @@ module alu_control (
         end
     end
 
-    // Next‐state logic
     always @(*) begin
         case (current_state)
             IDLE:    next_state = start   ? LOAD    : IDLE;
@@ -57,9 +54,7 @@ module alu_control (
         endcase
     end
 
-    // Output logic – two‐phase handshake
     always @(*) begin
-        // defaults
         load_a    = 1'b0;
         load_b    = 1'b0;
         load_out  = 1'b0;
@@ -76,17 +71,17 @@ module alu_control (
 
         case (current_state)
             IDLE: begin
-                // nothing
+
             end
 
             LOAD: begin
-                // Phase 1: clock in operands only
+                // Semnalul de load
                 load_a = 1'b1;
                 load_b = 1'b1;
             end
 
             EXECUTE: begin
-                // Phase 2: start the operation on freshly loaded data
+                // 2. Inceperea operatiei pe datele incarcate in registrii de input
                 case (opcode_latched)
                     3'b000: start_add = 1'b1;
                     3'b001: start_sub = 1'b1;
@@ -100,7 +95,6 @@ module alu_control (
             end
 
             STORE: begin
-                // Phase 3: latch result and pulse done
                 load_out = 1'b1;
             end
         endcase

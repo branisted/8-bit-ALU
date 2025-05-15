@@ -61,16 +61,14 @@ module alu_sub (
 
                 INIT: begin
                     A <= a;
-                    B <= ~b;  // Take 1's complement of B
+                    B <= ~b;
                     done <= 0;
                 end
 
                 CALC: begin
-                    // Generate and propagate
                     G = A & B;
                     P = A ^ B;
 
-                    // Carry lookahead with carry-in = 1 (adds +1 to make 2's complement)
                     C[0] = 1;
                     C[1] = G[0] | (P[0] & C[0]);
                     C[2] = G[1] | (P[1] & C[1]);

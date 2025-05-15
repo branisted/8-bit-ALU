@@ -35,7 +35,12 @@ module tb_alu_top();
             $time, opname, $signed(operand_a), $signed(operand_b), $signed(result), done);
     endtask
 
-    // Test Procedure
+    
+    initial begin
+        $dumpfile("tb_alu_top.vcd"); // Name of the VCD file to write
+        $dumpvars(0, tb_alu_top); 
+    end
+
     initial begin
         $display("==== STARTING ALU TESTBENCH ====");
 

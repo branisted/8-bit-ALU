@@ -4,7 +4,7 @@ module alu_top (
     input clk,
     input reset,
     input start,
-    input [2:0] op,           // operation selector
+    input [2:0] op,
     input signed [7:0] in_a,
     input signed [7:0] in_b,
     output signed [15:0] result,
@@ -20,23 +20,30 @@ module alu_top (
     wire [15:0] alu_result_add, alu_result_sub, alu_result_and, alu_result_or, alu_result_xor;
     wire [15:0] alu_result_mul, alu_result_div;
 
-    wire op_done;
-    assign op_done = (op == 3'b000) ? add_done :
-                     (op == 3'b001) ? sub_done :
-                     (op == 3'b010) ? mul_done :
-                     (op == 3'b011) ? div_done :
-                     (op == 3'b100) ? and_done :
-                     (op == 3'b101) ? or_done :
-                     (op == 3'b110) ? xor_done : 1'b0;
+    // Selectarea semnalului done
+    wire [7:0] done_signals;
+    assign done_signals[0] = add_done;
+    assign done_signals[1] = sub_done;
+    assign done_signals[2] = mul_done;
+    assign done_signals[3] = div_done;
+    assign done_signals[4] = and_done;
+    assign done_signals[5] = or_done;
+    assign done_signals[6] = xor_done;
+    assign done_signals[7] = 1'b0;
 
-    
-    // === Control Unit ===
+    mux8to1 op_done_mux (
+        .in(done_signals),
+        .sel(op),
+        .y(op_done)
+    );
+
+    // Instantierea control unit-ului
     alu_control ctrl (
         .clk(clk),
         .reset(reset),
         .start(start),
         .opcode(op),
-        .op_done(op_done),  // << new
+        .op_done(op_done),
         .done(done),
         .load_a(load_a),
         .load_b(load_b),
@@ -51,39 +58,36 @@ module alu_top (
         .sel_op(sel_op)
     );
 
-
-    // === Input Registers ===
+    // Registri de input
     regn #(8) reg_a (.clk(clk), .en(load_a), .d(in_a), .q(a_reg_out));
     regn #(8) reg_b (.clk(clk), .en(load_b), .d(in_b), .q(b_reg_out));
 
-    // === Arithmetic Modules (dummy) ===
-    
+    // Instantierea modulelor aritmetice
     alu_add add_unit (.clk(clk), .reset(reset), .a(a_reg_out), .b(b_reg_out), .start(start_add), .sum(alu_result_add), .done(add_done));
     alu_sub sub_unit (.clk(clk), .reset(reset), .a(a_reg_out), .b(b_reg_out), .start(start_sub), .diff(alu_result_sub), .done(sub_done));
     alu_and and_unit (.clk(clk), .reset(reset), .a(a_reg_out), .b(b_reg_out), .start(start_and), .res(alu_result_and), .done(and_done));
     alu_or  or_unit  (.clk(clk), .reset(reset), .a(a_reg_out), .b(b_reg_out), .start(start_or),  .res(alu_result_or), .done(or_done));
     alu_xor xor_unit (.clk(clk), .reset(reset), .a(a_reg_out), .b(b_reg_out), .start(start_xor), .res(alu_result_xor), .done(xor_done));
-
-
     alu_mul mul_unit (.clk(clk), .reset(reset), .start(start_mul), .a(a_reg_out), .b(b_reg_out), .product(alu_result_mul), .done(mul_done));
     alu_div div_unit (.clk(clk), .reset(reset), .start(start_div), .a(a_reg_out), .b(b_reg_out), .quotient(alu_result_div), .done(div_done));
 
-    // === Result MUX ===
-    reg [15:0] result_mux;
-    always @(*) begin
-        case (sel_op)
-            3'b000: result_mux = alu_result_add;
-            3'b001: result_mux = alu_result_sub;
-            3'b010: result_mux = alu_result_mul;
-            3'b011: result_mux = alu_result_div;
-            3'b100: result_mux = alu_result_and;
-            3'b101: result_mux = alu_result_or;
-            3'b110: result_mux = alu_result_xor;
-            default: result_mux = 16'h0000;
-        endcase
-    end
+    // Mux 8 to 1 16 bit 
+    wire [15:0] result_mux;
 
-    // === Output Register ===
+    mux8to1_16bit result_mux_inst (
+        .in0(alu_result_add),
+        .in1(alu_result_sub),
+        .in2(alu_result_mul),
+        .in3(alu_result_div),
+        .in4(alu_result_and),
+        .in5(alu_result_or),
+        .in6(alu_result_xor),
+        .in7(16'h0000),
+        .sel(sel_op),
+        .y(result_mux)
+    );
+
+    // Registru de iesire
     regn #(16) reg_out (.clk(clk), .en(load_out), .d(result_mux), .q(result));
 
 endmodule
