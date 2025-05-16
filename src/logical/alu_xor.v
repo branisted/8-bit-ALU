@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-// ALU AND
+
 module alu_xor (
     input clk,
     input reset,
